@@ -1,9 +1,8 @@
-import datetime, re, asyncio
+import datetime, asyncio
 from playwright.async_api import async_playwright
 from src.models import JobPosting
 from src.normalizer import clean
-
-CHROME_PATH = r"C:/Users/ASUS/AppData/Local/ms-playwright/chromium-1234/chrome-win64/chrome.exe"
+from src.config import get_launch_kwargs, DEBUG_DIR, ensure_dirs
 
 SEARCHES = [
     ("AI Engineer", "https://glints.com/id/lowongan-kerja?keywords=AI%20Engineer&sortBy=LATEST"),
@@ -13,7 +12,9 @@ SEARCHES = [
 async def scrape_all(headless=True):
     all_jobs=[]
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=headless, executable_path=CHROME_PATH, args=["--no-sandbox","--disable-blink-features=AutomationControlled","--disable-gpu"])
+        launch_kwargs = get_launch_kwargs(headless)
+
+        browser = await p.chromium.launch(**launch_kwargs)
         for kw, url in SEARCHES:
             try:
                 ctx = await browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36", locale="id-ID")
@@ -31,7 +32,8 @@ async def scrape_all(headless=True):
                 print(f"  total job links={cnt}")
                 if cnt==0:
                     html = await page.content()
-                    with open(f"F:/alpha/debug/glints_{kw.replace(' ','_')}.html","w",encoding="utf-8") as f:
+                    ensure_dirs()
+                    with open(DEBUG_DIR / f"glints_{kw.replace(' ','_')}.html","w",encoding="utf-8") as f:
                         f.write(html[:20000])
                 else:
                     for i in range(min(cnt, 15)):

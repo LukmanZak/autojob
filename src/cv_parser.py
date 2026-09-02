@@ -1,10 +1,12 @@
 import json, re, pathlib
 import pymupdf
+from .config import CV_PDF, CV_JSON, ensure_dirs
 
-def parse_cv(pdf_path="F:/alpha/CV.pdf"):
-    doc = pymupdf.open(pdf_path)
+def parse_cv(pdf_path=None):
+    # pakai config jika tidak diisi
+    pdf_path = pathlib.Path(pdf_path) if pdf_path else CV_PDF
+    doc = pymupdf.open(str(pdf_path))
     text = "\n".join([p.get_text() for p in doc])
-    # basic extraction
     email = re.search(r"[\w.+-]+@[\w-]+\.[\w.-]+", text)
     linkedin = re.search(r"https?://www\.linkedin\.com[^\s]+", text)
     phone = re.search(r"\+?\d[\d\s-]{8,}", text)
@@ -22,10 +24,8 @@ def parse_cv(pdf_path="F:/alpha/CV.pdf"):
     return data
 
 if __name__ == "__main__":
-    import pathlib
+    ensure_dirs()
     data = parse_cv()
-    out = pathlib.Path("F:/alpha/data/cv_data.json")
-    out.parent.mkdir(parents=True, exist_ok=True)
-    # remove raw_text for json pretty? keep
-    json.dump(data, open(out,"w",encoding="utf-8"), ensure_ascii=False, indent=2)
-    print(f"Saved {out} with email {data['email']}")
+    import json as _json
+    _json.dump(data, open(CV_JSON,"w",encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"Saved {CV_JSON} with email {data['email']}")

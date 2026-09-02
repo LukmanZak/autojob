@@ -1,13 +1,10 @@
-import datetime, re, asyncio, random
+import datetime, re, asyncio
 from playwright.async_api import async_playwright
 from src.models import JobPosting
 from src.normalizer import clean
+from src.config import get_launch_kwargs, DEBUG_DIR, ensure_dirs
 
-CHROME_PATH = r"C:/Users/ASUS/AppData/Local/ms-playwright/chromium-1234/chrome-win64/chrome.exe"
-
-# Use multiple domains for overseas; SG/MY/AU are jobstreet regions. Also use id but filter luar negeri
 SEARCH_CONFIGS = [
-    # Singapore - overseas
     ("Singapore", "https://www.jobstreet.com.sg/en/job-search/machine-learning-engineer-jobs/", "Singapore"),
     ("Singapore-AI", "https://www.jobstreet.com.sg/en/job-search/ai-engineer-jobs/", "Singapore"),
     ("Malaysia", "https://www.jobstreet.com.my/en/job-search/machine-learning-engineer-jobs/", "Malaysia"),
@@ -17,21 +14,20 @@ SEARCH_CONFIGS = [
 async def scrape_one_config(keyword_label, url, country_hint, headless=True):
     jobs=[]
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=headless, executable_path=CHROME_PATH, args=["--no-sandbox","--disable-blink-features=AutomationControlled"])
+        launch_kwargs = get_launch_kwargs(headless)
+
+        browser = await p.chromium.launch(**launch_kwargs)
         ctx = await browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36", locale="en-SG")
         page = await ctx.new_page()
         try:
             print(f"[jobstreet:{country_hint}] goto {url}")
             await page.goto(url, wait_until="domcontentloaded", timeout=45000)
             await page.wait_for_timeout(4000)
-            # handle cloudflare?
             title = await page.title()
             print(f"  title: {title[:120]}")
             if "Just a moment" in title or "Checking" in title:
                 print("  cloudflare detected, waiting 8s")
                 await page.wait_for_timeout(8000)
-            # try stealth wait for job cards
-            # multiple selectors
             selectors = ["[data-automation='jobCard']", "article", "div[data-testid='job-card']", "a[data-automation='jobTitle']"]
             found=False
             for sel in selectors:
@@ -43,17 +39,15 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
             if not found:
                 html = await page.content()
                 print(f"  no cards, html len {len(html)} snippet: {html[:800]}")
-                # save debug
-                with open(f"F:/alpha/debug/jobstreet_{country_hint}.html","w",encoding="utf-8") as f:
+                ensure_dirs()
+                with open(DEBUG_DIR / f"jobstreet_{country_hint}.html","w",encoding="utf-8") as f:
                     f.write(html)
             else:
-                # parse cards
                 cards = page.locator("[data-automation='jobCard']")
                 cnt = await cards.count()
                 if cnt==0:
                     cards = page.locator("a[data-automation='jobTitle']")
                     cnt = await cards.count()
-                    # fallback parse by title links
                     for i in range(min(cnt, 15)):
                         a = cards.nth(i)
                         try:
@@ -61,19 +55,15 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
                             href = await a.get_attribute("href")
                             if href and href.startswith("/"):
                                 href = "https://www.jobstreet.com.sg" + href if "sg" in url else "https://www.jobstreet.com.my" + href
-                            # find location near
-                            parent = a.locator("xpath=ancestor::div[contains(@class,'job')] | ancestor::article")
                             loc=""
                             try:
                                 loc_el = page.locator("[data-automation='jobLocation']").nth(i)
                                 if await loc_el.count()>0:
                                     loc = clean(await loc_el.inner_text())
                             except: pass
-                            # filter India
                             if "india" in loc.lower() or "india" in title_txt.lower():
                                 print(f"    skip india {title_txt}")
                                 continue
-                            country = country_hint
                             jobs.append(JobPosting(
                                 source="jobstreet",
                                 keyword=keyword_label,
@@ -82,7 +72,7 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
                                 title=title_txt,
                                 company="",
                                 location=loc or country_hint,
-                                country=country,
+                                country=country_hint,
                                 salary="",
                                 url=href or url,
                                 job_id=href.split("/")[-1].split("?")[0].split("#")[0] if href else str(i),
@@ -99,7 +89,6 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
                             href = await t_el.get_attribute("href") if await t_el.count()>0 else ""
                             if href and href.startswith("/"):
                                 href = "https://www.jobstreet.com.sg" + href if "sg" in url else "https://www.jobstreet.com.my" + href
-                            # company
                             comp=""
                             comp_el = c.locator("[data-automation='jobCompany']").first
                             if await comp_el.count()>0:
@@ -108,7 +97,6 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
                             loc_el = c.locator("[data-automation='jobLocation']").first
                             if await loc_el.count()>0:
                                 loc = clean(await loc_el.inner_text())
-                            # date
                             date_raw=""
                             date_el = c.locator("[data-automation='jobListingDate']").first
                             if await date_el.count()>0:
@@ -139,7 +127,6 @@ async def scrape_all(headless=True):
         print(f"  -> {label} got {len(jobs)}")
         all_jobs.extend(jobs)
         await asyncio.sleep(1)
-    # final filter exclude India strictly
     filtered = [j for j in all_jobs if "india" not in j.country.lower() and "india" not in j.location.lower()]
     return filtered
 

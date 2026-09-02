@@ -1,5 +1,7 @@
 .env
 data/sessions/
+data/cv_data.json
+CV.pdf
 __pycache__/
 *.pyc
 debug/*.png
@@ -7,3 +9,4 @@ debug/*.html
 logs/
 .hermes/
 playwright/.cache
+data/applied.json
