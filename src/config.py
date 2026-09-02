@@ -24,14 +24,16 @@ def _detect_chrome():
     env_path = os.getenv("PLAYWRIGHT_CHROME_PATH", "").strip()
     if env_path:
         return env_path
-    docker_paths = [
-        "/root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome",
-        "/root/.cache/ms-playwright/chromium-1187/chrome-linux/chrome",
-        "/ms-playwright/chromium-1234/chrome-linux64/chrome",
+    candidates = [
+        pathlib.Path("C:/Users/ASUS/AppData/Local/ms-playwright/chromium-1234/chrome-win64/chrome.exe"),
+        pathlib.Path.home() / "AppData/Local/ms-playwright/chromium-1234/chrome-win64/chrome.exe",
+        pathlib.Path("/root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome"),
+        pathlib.Path("/root/.cache/ms-playwright/chromium-1187/chrome-linux/chrome"),
+        pathlib.Path("/ms-playwright/chromium-1234/chrome-linux64/chrome"),
     ]
-    for p in docker_paths:
-        if pathlib.Path(p).exists():
-            return p
+    for p in candidates:
+        if p.exists():
+            return str(p)
     return None
 
 PLAYWRIGHT_CHROME_PATH = _detect_chrome()

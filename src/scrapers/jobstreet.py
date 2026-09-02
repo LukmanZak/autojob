@@ -4,30 +4,33 @@ from src.models import JobPosting
 from src.normalizer import clean
 from src.config import get_launch_kwargs, DEBUG_DIR, ensure_dirs
 
+# Tetap pakai id.jobstreet.com, location ganti via ?where=
 SEARCH_CONFIGS = [
-    ("Singapore", "https://www.jobstreet.com.sg/en/job-search/machine-learning-engineer-jobs/", "Singapore"),
-    ("Singapore-AI", "https://www.jobstreet.com.sg/en/job-search/ai-engineer-jobs/", "Singapore"),
-    ("Malaysia", "https://www.jobstreet.com.my/en/job-search/machine-learning-engineer-jobs/", "Malaysia"),
-    ("Malaysia-AI", "https://www.jobstreet.com.my/en/job-search/ai-engineer-jobs/", "Malaysia"),
+    ("Malaysia-AI", "https://id.jobstreet.com/id/ai-engineer-jobs?where=Malaysia", "Malaysia"),
+    ("Malaysia-ML", "https://id.jobstreet.com/id/machine-learning-engineer-jobs?where=Malaysia", "Malaysia"),
+    ("Singapore-ML", "https://id.jobstreet.com/id/machine-learning-engineer-jobs?where=Singapore", "Singapore"),
+    ("Australia-ML", "https://id.jobstreet.com/id/machine-learning-engineer-jobs?where=Australia", "Australia"),
+    ("Singapore-AI", "https://id.jobstreet.com/id/ai-engineer-jobs?where=Singapore", "Singapore"),
 ]
 
 async def scrape_one_config(keyword_label, url, country_hint, headless=True):
     jobs=[]
     async with async_playwright() as p:
         launch_kwargs = get_launch_kwargs(headless)
-
         browser = await p.chromium.launch(**launch_kwargs)
-        ctx = await browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36", locale="en-SG")
+        ctx = await browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36", locale="id-ID")
         page = await ctx.new_page()
         try:
             print(f"[jobstreet:{country_hint}] goto {url}")
             await page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            await page.wait_for_timeout(4000)
+            await page.wait_for_timeout(6000)
             title = await page.title()
-            print(f"  title: {title[:120]}")
-            if "Just a moment" in title or "Checking" in title:
-                print("  cloudflare detected, waiting 8s")
+            print(f"  title: {title[:120]} -> {page.url[:80]}")
+            if "Just a moment" in title or "Checking" in title or "Tunggu sebentar" in title:
+                print("  cloudflare/cek sebentar, waiting 8s")
                 await page.wait_for_timeout(8000)
+                title = await page.title()
+                print(f"  title2: {title[:120]}")
             selectors = ["[data-automation='jobCard']", "article", "div[data-testid='job-card']", "a[data-automation='jobTitle']"]
             found=False
             for sel in selectors:
@@ -38,7 +41,7 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
                     break
             if not found:
                 html = await page.content()
-                print(f"  no cards, html len {len(html)} snippet: {html[:800]}")
+                print(f"  no cards, html len {len(html)}")
                 ensure_dirs()
                 with open(DEBUG_DIR / f"jobstreet_{country_hint}.html","w",encoding="utf-8") as f:
                     f.write(html)
@@ -54,7 +57,7 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
                             title_txt = clean(await a.inner_text())
                             href = await a.get_attribute("href")
                             if href and href.startswith("/"):
-                                href = "https://www.jobstreet.com.sg" + href if "sg" in url else "https://www.jobstreet.com.my" + href
+                                href = "https://id.jobstreet.com" + href
                             loc=""
                             try:
                                 loc_el = page.locator("[data-automation='jobLocation']").nth(i)
@@ -88,7 +91,7 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
                             title_txt = clean(await t_el.inner_text()) if await t_el.count()>0 else clean(await c.inner_text())[:80]
                             href = await t_el.get_attribute("href") if await t_el.count()>0 else ""
                             if href and href.startswith("/"):
-                                href = "https://www.jobstreet.com.sg" + href if "sg" in url else "https://www.jobstreet.com.my" + href
+                                href = "https://id.jobstreet.com" + href
                             comp=""
                             comp_el = c.locator("[data-automation='jobCompany']").first
                             if await comp_el.count()>0:
