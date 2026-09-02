@@ -1,0 +1,23 @@
+{
+  "name": "Lukman Zakaria",
+  "email": "lukmanzakaria04@gmail.com",
+  "phone": "2023 - 2025",
+  "location": "Setiabudi, Jakarta Selatan",
+  "linkedin": "https://www.linkedin.com/in/lukman-zakaria-3443a522a/",
+  "education": "S1 Matematika Universitas Brawijaya GPA 3.43",
+  "skills": [
+    "Python",
+    "FastAPI",
+    "PyTorch",
+    "Docker",
+    "PostgreSQL",
+    "S3",
+    "Vector DB",
+    "LLMs",
+    "RAG",
+    "Computer Vision",
+    "AWS"
+  ],
+  "summary": "Machine Learning Engineer dengan latar S1 Matematika, spesialis Python/FastAPI/PyTorch/Docker/PostgreSQL/S3/VectorDB/LLMs, RAG chatbot & n8n automation.",
+  "raw_text": "Lukman Zakaria\nMachine Learning Engineer | AI Engineer\nIBM Generative AI Engineering  (09 Aug)\nPython for Data Science, AI & Development\nMachine Learning with Python  (30 Juli)\nGoogle Data Analytics  (28 Mei)\n(22 Juli)\nAgustus, 2017 - Januari, 2022\nS1 Matematika \nUniversitas Brawijaya \nGPA: 3.43, TOEFL: 500\nSetiabudi, Jakarta Selatan, lukmanzakaria04@gmail.com, https://www.linkedin.com/in/lukman-zakaria-3443a522a/\nMachine Learning Engineer dengan latar belakang S1 Matematika Universitas Brawijaya dan pengalaman membangun sistem AI end to\nend. Menguasai Python, FastAPI, PyTorch, Docker, PostgreSQL, S3, Vector Database dan LLMs untuk mengembangkan pipeline ML\nproduksi, RAG chatbot dan automation n8n. Berpengalaman mengelola data 750 ribu pengguna dan 50GB media per hari dengan\nakurasi 99,2 persen dan false rejection rate di bawah 1 persen, mengurangi latency deployment sebesar 40 persen serta memangkas\nbeban kerja HR dan dokumentasi hingga 80 persen.\nP E N D I D I K A N\nS E R T I F I K A S I\nR A N G K U M A N\nP E N G A L A M A N\nU T A M A\nCoursera (2025)\nDinas Kominfo Kabupaten Malang (Juni - Juli 2020)\nMemimpin tim 3 analis memproses 300K+ data layanan publik dari 4 sektor\nMengimplementasikan pelaporan otomatis mengurangi pekerjaan manual 60%\nBerkoordinasi dengan stakeholders memastikan 100% ketepatan waktu analitik mingguan\nLead Data Analyst (Magang)\nProyek Independent (2023 - 2025)\nAI Engineer (Independent Project)\nMenghasilkan akurasi 95% pada model ML perbankan untuk prediksi deposito (750K users) \nMembangun 30+ workflow n8n untuk otomasi (SQL, APIs, web scraping, chatbots) \nMengurangi waktu pemrosesan 80% melalui pipeline ML otomatis \nMachine Learning Engineer (PEEPL)\nPT. Aneka Search Indonesia (2025 - sekarang)\nK O M P E T E N S I  \nSkills: Python, FastAPI, PyTorch, Computer Vision, LLMs, RAG, Model Deployment, Vector Databases, Automation, Docker, AWS, SonarQube\nMembuat model serta deploy FastAPI di Docker untuk Document Authentication dengan akurasi 99,2 persen dan false rejection rate di bawah 1\npersen, memproses lebih dari 50GB media per hari dan mengurangi latency deployment sebesar 40 persen dengan pipeline terintegrasi PostgreSQL,\nS3 dan automation n8n.\nMerancang sistem RAG Chatbot Enterprise berbasis Vector Database dan evaluasi RAGas untuk klien dan assessor, dilengkapi guardrails anti\njailbreak dengan mitigasi 95 persen, penyaringan toxic statement dan mekanisme feedback loop dengan kepatuhan keamanan 100 persen.\nMembangun API dan automated media processing pipeline untuk dokumentasi wawancara internal mencakup video to audio conversion, speaker\ndiarization, thumbnail creation dan caption generation yang memotong waktu dokumentasi sebesar 70 persen dan mendukung hingga 1000\nconcurrent users.\nMendeploy platform video conferencing terintegrasi fitur realtime Speech to Text dan automated candidate scoring berbasis AI sesuai konteks\njabatan untuk efisiensi kualifikasi HR 60 persen lebih cepat dengan akurasi scoring 80 persen.\nMengimple"
+}
