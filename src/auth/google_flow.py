@@ -5,6 +5,7 @@ from playwright.sync_api import sync_playwright
 from src.config import get_launch_kwargs, SESSIONS_DIR, ensure_dirs
 
 FLOW_URL = "https://labs.google/fx/tools/flow"
+FLOW_URL = FLOW_URL.replace("@url:", "").replace("`", "").strip()
 SESSION_FILE = SESSIONS_DIR / "google_flow.json"
 
 def find_try_button(page):
@@ -151,7 +152,12 @@ def main(headless=False, keep_open=True):
         page = ctx.new_page()
 
         print(f"[goto] {FLOW_URL}")
-        page.goto(FLOW_URL, wait_until="domcontentloaded", timeout=60000)
+        try:
+            page.goto(FLOW_URL, wait_until="commit", timeout=30000)
+        except Exception as e:
+            print(f"goto commit fail {e}, coba domcontentloaded")
+            try: page.goto(FLOW_URL, wait_until="domcontentloaded", timeout=30000)
+            except Exception as e2: print(f"goto fail {e2}")
         page.wait_for_timeout(4000)
         print(f"Title: {page.title()}")
         print(f"URL: {page.url}")

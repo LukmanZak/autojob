@@ -6,6 +6,8 @@ from src.config import get_launch_kwargs, SESSIONS_DIR, ensure_dirs
 from src.vision.flow_advisor import ensure_flow_session, save_step, advisor_click
 
 FLOW_URL = "https://labs.google/fx/tools/flow"
+# sanitize jika kepaste @url:`...`
+FLOW_URL = FLOW_URL.replace("@url:", "").replace("`", "").strip()
 SESSION_FILE = SESSIONS_DIR / "google_flow.json"
 
 def find_try_button(page):
@@ -86,8 +88,15 @@ def main(headless=False):
             except: pass
         ctx=browser.new_context(**ctx_kwargs)
         page=ctx.new_page()
-        # 0 home
-        print(f"[goto] {FLOW_URL}"); page.goto(FLOW_URL, wait_until="domcontentloaded", timeout=60000); page.wait_for_timeout(3500)
+        # 0 home - pakai commit biar tidak timeout domcontentloaded di labs.google
+        print(f"[goto] {FLOW_URL}")
+        try:
+            page.goto(FLOW_URL, wait_until="commit", timeout=30000)
+        except Exception as e:
+            print(f"goto commit fail {e}, coba domcontentloaded")
+            try: page.goto(FLOW_URL, wait_until="domcontentloaded", timeout=30000)
+            except Exception as e2: print(f"goto fail {e2}")
+        page.wait_for_timeout(3500)
         advisor_click(page, folder, "01_home", "Cari tombol 'Try in Google Flow' - dimana? Return koordinat klik.")
         # 1 Try - scroll dulu biar viewport kena (y 2530 -> 425)
         btn=find_try_button(page)
