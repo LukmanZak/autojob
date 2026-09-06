@@ -142,9 +142,12 @@ def main(headless=False):
         if has_session:
             try: ctx_kwargs["storage_state"]=str(SESSION_FILE); print(f"[load] session {SESSION_FILE} -> auto-skip login ENTER")
             except: pass
-        # viewport tinggi biar tidak kepotong bawah (Video/Image di bawah)
-        ctx=browser.new_context(viewport={"width": 1280, "height": 1200}, **ctx_kwargs)
+        # viewport besar biar bottom bar "What do you want to create?" + Video tidak kepotong
+        ctx=browser.new_context(viewport={"width": 1920, "height": 1080}, **ctx_kwargs)
         page=ctx.new_page()
+        # set window lebih tinggi kalau headed
+        try: page.set_viewport_size({"width": 1920, "height": 1080})
+        except: pass
         # 0 home - pakai commit biar tidak timeout domcontentloaded di labs.google
         print(f"[goto] {FLOW_URL}")
         try:
@@ -266,19 +269,27 @@ def main(headless=False):
             advisor_click(page, folder, "05_get_started_clicked", "Sudah klik Get Started. Cari area bawah tombol Video -> Images")
         else:
             advisor_click(page, folder, "05_get_started_not_found", "Popup Get Started tidak muncul")
-        # 5 Video -> Images - viewport tinggi jadi tidak kepotong bawah
-        # jangan scrollTo bottom mentok, cukup scroll ke settings area
+        # 5 Video -> Images - pastikan bottom input bar kelihatan (jangan kepotong)
+        # scroll ke input bar "What do you want to create?" biar Video·720p kelihatan
         try:
-            # scroll ke video settings
-            vloc_tmp = page.locator("span.settings-summary:has-text('Video')").first
-            if vloc_tmp.count()>0:
-                vloc_tmp.scroll_into_view_if_needed()
-                page.wait_for_timeout(600)
-                page.evaluate("window.scrollBy(0, -80)") # biar tidak kepotong
+            bottom = page.locator("text='What do you want to create?'").first
+            if bottom.count()>0:
+                bottom.scroll_into_view_if_needed()
+                page.wait_for_timeout(500)
+                # jangan scroll terlalu bawah, biar Video button tetap di viewport tengah-bawah
+                page.evaluate("window.scrollBy(0, 80)")
+                page.wait_for_timeout(400)
             else:
-                page.evaluate("window.scrollBy(0, 400)")
+                # fallback: scroll ke settings-summary
+                vloc_tmp = page.locator("span.settings-summary:has-text('Video')").first
+                if vloc_tmp.count()>0:
+                    vloc_tmp.scroll_into_view_if_needed()
+                    page.wait_for_timeout(500)
+                    page.evaluate("window.scrollBy(0, -120)")
+                else:
+                    page.evaluate("window.scrollBy(0, 300)")
         except:
-            page.evaluate("window.scrollTo(0, document.body.scrollHeight - 400)")
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight - 600)")
         page.wait_for_timeout(600)
         advisor_click(page, folder, "06_before_video_switch", "Di bawah ada tombol Video yang harus diganti jadi Images - tunjuk koordinat Video")
         ok=switch_video_to_images(page)
