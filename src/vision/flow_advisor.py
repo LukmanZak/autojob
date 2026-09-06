@@ -11,7 +11,7 @@ def ensure_flow_session():
     print(f"[vision] session folder: {folder}")
     return folder
 
-def save_step(folder: pathlib.Path, page, step_name: str, ai_decision=None):
+def save_step(folder: pathlib.Path, page, step_name: str, ai_decision=None, full_page=False):
     """Screenshot + log steps.json"""
     folder = pathlib.Path(folder)
     # hitung nomor
@@ -20,9 +20,10 @@ def save_step(folder: pathlib.Path, page, step_name: str, ai_decision=None):
     fname = f"{idx:02d}_{step_name}.png"
     path = folder / fname
     try:
-        # viewport 1200 height, full_page False cukup, tapi jangan kepotong - screenshot viewport yang sudah di-scroll
-        page.screenshot(path=str(path), full_page=False)
-        print(f"[vision] screenshot {fname} -> {path} ({path.stat().st_size} bytes)")
+        # untuk 06/07 pakai full_page True biar bawah tidak kepotong walau DevTools dock
+        is_full = full_page or "before_video" in step_name or "after_video" in step_name
+        page.screenshot(path=str(path), full_page=is_full)
+        print(f"[vision] screenshot {fname} -> {path} ({path.stat().st_size} bytes) full={is_full}")
     except Exception as e:
         print(f"screenshot fail {e}")
         path = None

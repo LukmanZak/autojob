@@ -142,11 +142,11 @@ def main(headless=False):
         if has_session:
             try: ctx_kwargs["storage_state"]=str(SESSION_FILE); print(f"[load] session {SESSION_FILE} -> auto-skip login ENTER")
             except: pass
-        # viewport besar biar bottom bar "What do you want to create?" + Video tidak kepotong
-        ctx=browser.new_context(viewport={"width": 1920, "height": 1080}, **ctx_kwargs)
+        # viewport native kamu 1280x720 biar tidak kepotong taskbar
+        ctx=browser.new_context(viewport={"width": 1280, "height": 720}, **ctx_kwargs)
         page=ctx.new_page()
-        # set window lebih tinggi kalau headed
-        try: page.set_viewport_size({"width": 1920, "height": 1080})
+        # set window sesuai layar
+        try: page.set_viewport_size({"width": 1280, "height": 720})
         except: pass
         # 0 home - pakai commit biar tidak timeout domcontentloaded di labs.google
         print(f"[goto] {FLOW_URL}")
