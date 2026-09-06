@@ -45,10 +45,23 @@ def find_create_button(page):
         except: pass
     return None
 def find_new_project(page):
-    for sel in ["button:has-text('New project')","button:has-text('New Project')","a:has-text('New project')"]:
+    # selector presisi kamu: button dengan <span class="mat-focus-indicator"></span> + text New project
+    for sel in [
+        "button:has(span.mat-focus-indicator):has-text('New project')",
+        "button:has(span.mat-focus-indicator):has-text('New Project')",
+        "button:has-text('New project')",
+        "button:has-text('New Project')",
+        "a:has-text('New project')",
+        "[aria-label*='New project']",
+    ]:
         try:
             loc=page.locator(sel).first
-            if loc.count()>0: return loc
+            if loc.count()>0:
+                # cek is_visible atau ada
+                if loc.is_visible():
+                    print(f"[found] New project {sel}")
+                    return loc
+                return loc
         except: pass
     return None
 def find_get_started(page):
@@ -59,6 +72,47 @@ def find_get_started(page):
         except: pass
     return None
 def switch_video_to_images(page):
+    # Video: <span settingstriggercontent class="settings-summary"> Video · 720p · 8s ... x2 </span>
+    # Image: <button id="mat-button-toggle-5-button" role="radio">...<span class="toggle-text">Image</span></button>
+    # Langkah: klik settings-summary Video dulu untuk buka panel, lalu klik toggle Image
+    try:
+        vloc = page.locator("span.settings-summary:has-text('Video'), span[settingstriggercontent]:has-text('Video')").first
+        if vloc.count()>0 and vloc.is_visible():
+            print(f"[found] Video settings {vloc.inner_text()[:50]}")
+            vloc.click(); page.wait_for_timeout(1200)
+            # sekarang cari Image toggle
+            for isel in [
+                "button#mat-button-toggle-5-button",
+                "button[role='radio']:has-text('Image')",
+                "span.toggle-text:has-text('Image')",
+                "button:has(span.toggle-text:has-text('Image'))",
+                "[role='radio']:has-text('Image')",
+            ]:
+                try:
+                    iloc = page.locator(isel).first
+                    if iloc.count()>0:
+                        print(f"[found] Image toggle {isel} visible={iloc.is_visible()}")
+                        iloc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+                        # klik via force atau JS karena mat-button
+                        try:
+                            iloc.click(force=True, timeout=3000)
+                        except:
+                            page.evaluate("(el)=>el.click()", iloc.element_handle())
+                        page.wait_for_timeout(800)
+                        # cek aria-checked
+                        try:
+                            checked = iloc.get_attribute("aria-checked")
+                            print(f"  aria-checked={checked}")
+                        except: pass
+                        print("✅ Video -> Images berhasil (via settings-summary)")
+                        return True
+                except Exception as e:
+                    print(f"  image toggle {isel} err {e}")
+            print("[info] Video settings diklik tapi Image toggle tidak ketemu")
+            return False
+    except Exception as e:
+        print(f"video settings err {e}")
+    # fallback lama: button Video tab
     for vsel in ["button:has-text('Video')","[role='tab']:has-text('Video')"]:
         try:
             vloc=page.locator(vsel).first
@@ -72,6 +126,7 @@ def switch_video_to_images(page):
                     except: pass
                 return False
         except: pass
+    print("[warn] Tombol Video tidak ketemu")
     return False
 
 def main(headless=False):
