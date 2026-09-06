@@ -82,115 +82,193 @@ def find_get_started(page):
         except: pass
     return None
 def switch_video_to_images(page):
-    # LOGIKA BARU: extract dulu semua, cari Videos, klik, extract lagi cari Images -> klik
-    # Sesuai arahan: di videos ada apa aja -> cari mana Videos -> klik -> extract lagi -> cari Images -> klik
-    print("[switch] extract Videos candidates...")
-    try:
-        # extract semua kandidat Video
+    # LOGIKA BARU: extract loop sampai Video muncul, baru cari Images
+    # Sesuai arahan: run terus sampai bisa klik Images, log extract tiap iterasi
+    print("[switch] polling Videos candidates sampai muncul...")
+    target_video = None
+    for attempt in range(6):  # 6 x 1.5s = 9s polling
         candidates = []
-        # span settings-summary adalah video trigger utama
         for loc in page.locator("span.settings-summary, span[settingstriggercontent]").all():
             try:
                 txt = loc.inner_text().strip()
-                vis = loc.is_visible()
-                candidates.append((loc, txt, vis))
-                print(f"  candidate Video: '{txt[:40]}' vis={vis}")
+                if txt:
+                    candidates.append((loc, txt, loc.is_visible()))
+                    print(f"  candidate Video ({attempt}): '{txt[:60]}' vis={loc.is_visible()}")
             except: pass
-        # fallback juga cek button Video
         for loc in page.locator("button:has-text('Video')").all():
             try:
                 txt = loc.inner_text().strip()
-                candidates.append((loc, txt, loc.is_visible()))
-                print(f"  candidate Video btn: '{txt[:40]}'")
+                if txt: candidates.append((loc, txt, loc.is_visible()))
             except: pass
-        # cari yang Videos (teks mengandung Video)
-        target_video = None
+        # cari Videos
         for loc, txt, vis in candidates:
             if "video" in txt.lower() and "720p" in txt.lower():
                 target_video = loc
-                print(f"[pick] Video -> '{txt[:50]}'")
+                print(f"[pick] Video ({attempt}) -> '{txt[:60]}'")
                 break
-        if not target_video:
-            # cari yang mengandung Video aja
-            for loc, txt, vis in candidates:
-                if "video" in txt.lower():
-                    target_video = loc
-                    print(f"[pick fallback] Video -> '{txt[:50]}'")
-                    break
-        if target_video:
-            try: target_video.scroll_into_view_if_needed(); page.wait_for_timeout(400)
-            except: pass
-            try:
-                target_video.click(force=True, timeout=3000)
-                print("  Video clicked (force)")
-            except:
-                try: page.evaluate("(el)=>el.click()", target_video.element_handle())
-                except: pass
-            page.wait_for_timeout(1200)
-        else:
-            print("[warn] Videos tidak ketemu di extract")
-            return False
+        if target_video: break
+        for loc, txt, vis in candidates:
+            if "video" in txt.lower():
+                target_video = loc
+                print(f"[pick fallback] Video ({attempt}) -> '{txt[:60]}'")
+                break
+        if target_video: break
+        print(f"  Videos belum muncul, tunggu 1.5s ({attempt+1}/6)")
+        page.wait_for_timeout(1500)
+        # coba scroll sedikit biar trigger render
+        try: page.evaluate("window.scrollBy(0, 100)")
+        except: pass
+        try:
+            page.wait_for_selector("span.settings-summary:has-text('Video')", timeout=1500)
+            print("  wait_for_selector Video found")
+        except: pass
 
-        # extract lagi semua kandidat Images setelah klik Video (panel kebuka)
-        print("[switch] extract Images candidates setelah klik Video...")
-        page.wait_for_timeout(600)
+    if not target_video:
+        print("[warn] Videos tidak ketemu setelah polling")
+        # log semua text di page untuk debug
+        try:
+            all_text = page.locator("body").inner_text()
+            print(f"  body snippet: {all_text[:500].replace(chr(10),' ')}")
+        except: pass
+        return False
+
+    try: target_video.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+    except: pass
+    try:
+        target_video.click(force=True, timeout=3000)
+        print("  Video clicked (force)")
+    except:
+        try: page.evaluate("(el)=>el.click()", target_video.element_handle())
+        except: pass
+    page.wait_for_timeout(1500)
+
+    # extract Images dengan polling juga
+    print("[switch] polling Images candidates setelah klik Video...")
+    target_img = None
+    for attempt in range(5):
         img_candidates = []
         for loc in page.locator("button[role='radio'], span.toggle-text, button:has-text('Image'), [role='radio']").all():
             try:
                 txt = loc.inner_text().strip()
                 if not txt: continue
                 img_candidates.append((loc, txt, loc.is_visible()))
-                print(f"  candidate Image: '{txt[:40]}' vis={loc.is_visible()} tag={loc.evaluate('el=>el.tagName')}")
+                print(f"  candidate Image ({attempt}): '{txt[:40]}' vis={loc.is_visible()} id={loc.get_attribute('id')}")
             except: pass
-        # cari Images
-        target_img = None
         for loc, txt, vis in img_candidates:
             if txt.lower().strip() == "image":
                 target_img = loc
-                print(f"[pick] Image -> '{txt}'")
+                print(f"[pick] Image ({attempt}) -> '{txt}'")
                 break
         if not target_img:
             for loc, txt, vis in img_candidates:
                 if "image" in txt.lower():
                     target_img = loc
-                    print(f"[pick fallback] Image -> '{txt}'")
+                    print(f"[pick fallback] Image ({attempt}) -> '{txt}'")
                     break
-        if target_img:
-            try: target_img.scroll_into_view_if_needed(); page.wait_for_timeout(300)
-            except: pass
-            try:
-                target_img.click(force=True, timeout=3000, no_wait_after=True)
-                print("  Image clicked (force)")
+        if target_img: break
+        print(f"  Images belum muncul, tunggu 1s ({attempt+1}/5)")
+        page.wait_for_timeout(1000)
+
+    if target_img:
+        try: target_img.scroll_into_view_if_needed(); page.wait_for_timeout(300)
+        except: pass
+        try:
+            target_img.click(force=True, timeout=3000, no_wait_after=True)
+            print("  Image clicked (force)")
+        except:
+            try: page.evaluate("(el)=>el.click()", target_img.element_handle())
             except:
-                try: page.evaluate("(el)=>el.click()", target_img.element_handle())
-                except:
-                    box = target_img.bounding_box()
-                    if box: page.mouse.click(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
-            page.wait_for_timeout(800)
-            # cek aria-checked pada parent button jika span
+                box = target_img.bounding_box()
+                if box: page.mouse.click(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
+        page.wait_for_timeout(800)
+        try:
+            btn = target_img
+            if "toggle-text" in target_img.evaluate("el=>el.outerHTML").lower():
+                btn = page.locator("button:has(span.toggle-text:has-text('Image'))").first
+            chk = btn.get_attribute("aria-checked")
+            print(f"  aria-checked={chk}")
+        except: pass
+        print("✅ Video -> Images berhasil (polling extract)")
+        return True
+    else:
+        print("[warn] Images tidak ketemu setelah polling")
+        return False
+
+def fill_prompt(page, prompt_text: str):
+    """Isi fill 'What do you want to create?' dengan prompt lalu Enter"""
+    print(f"[fill] isi prompt: '{prompt_text[:60]}'")
+    # cari input fill
+    sels = [
+        "textarea[placeholder*='What do you want to create']",
+        "input[placeholder*='What do you want to create']",
+        "textarea[placeholder*='What do you want']",
+        "input[placeholder*='What do you want']",
+        "div[contenteditable='true']",
+        "textarea[placeholder*='create']",
+    ]
+    fill_loc = None
+    for sel in sels:
+        try:
+            loc = page.locator(sel).first
+            if loc.count()>0:
+                print(f"[found] fill {sel} vis={loc.is_visible()}")
+                fill_loc = loc
+                break
+        except: pass
+    # fallback text
+    if not fill_loc:
+        try:
+            loc = page.locator("text='What do you want to create?'").first
+            # parentnya adalah input
+            # coba cari sibling textarea
+            parent = page.locator("textarea, input, div[contenteditable]").first
+            if parent.count()>0:
+                fill_loc = parent
+                print(f"[fallback] fill via generic textarea/input")
+        except: pass
+    if not fill_loc:
+        print("[warn] fill input tidak ketemu")
+        return False
+    try:
+        fill_loc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+        fill_loc.click(force=True); page.wait_for_timeout(300)
+        # isi prompt
+        try:
+            fill_loc.fill(prompt_text)
+        except:
+            # contenteditable
+            fill_loc.evaluate(f"(el)=>el.textContent=`{prompt_text}`")
+            fill_loc.evaluate("(el)=>el.dispatchEvent(new Event('input',{bubbles:true}))")
+        print(f"  filled '{prompt_text[:40]}'")
+        page.wait_for_timeout(500)
+        # tekan Enter atau klik tombol arrow kirim
+        try:
+            fill_loc.press("Enter")
+            print("  pressed Enter")
+        except: pass
+        # coba klik tombol kirim (arrow)
+        for sel in ["button:has(mat-icon:has-text('arrow_forward'))", "button:has-text('→')", "button[aria-label*='Send']", "button:has(mat-icon)"]:
             try:
-                btn = target_img
-                # jika span toggle-text, ambil parent button
-                if "toggle-text" in target_img.evaluate("el=>el.outerHTML").lower():
-                    btn = page.locator("button:has(span.toggle-text:has-text('Image'))").first
-                chk = btn.get_attribute("aria-checked")
-                print(f"  aria-checked={chk}")
+                btn = page.locator(sel).first
+                if btn.count()>0 and btn.is_visible():
+                    btn.click(force=True, timeout=2000)
+                    print(f"  clicked send {sel}")
+                    break
             except: pass
-            print("✅ Video -> Images berhasil (extract logic)")
-            return True
-        else:
-            print("[warn] Images tidak ketemu setelah extract")
-            return False
+        page.wait_for_timeout(1500)
+        print("✅ Fill prompt done")
+        return True
     except Exception as e:
-        print(f"video->images extract err {e}")
+        print(f"fill fail {e}")
         import traceback; traceback.print_exc()
         return False
 
-def main(headless=False):
+def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi."):
     ensure_dirs()
     folder = ensure_flow_session()
     print(f"=== Google Flow Vision ({folder.name}) ===")
     print(f"Images folder: {folder}")
+    print(f"Prompt: {prompt_text}")
     launch_kwargs = get_launch_kwargs(headless=headless)
     with sync_playwright() as p:
         browser=p.chromium.launch(**launch_kwargs)
@@ -371,6 +449,14 @@ def main(headless=False):
         advisor_click(page, folder, "07_after_video_switch", "Setelah switch Video->Images, apakah sudah jadi Images? Jika belum, dimana tombol Images?")
         if ok: print("✅ Video -> Images OK")
         else: print("⚠️  Cek manual Video->Images di browser")
+        # 6 Fill prompt + Enter
+        print(f"\n[step 6] Fill prompt '{prompt_text}' -> Images mode")
+        filled = fill_prompt(page, prompt_text)
+        advisor_click(page, folder, "08_after_fill", f"Sudah isi fill dengan '{prompt_text[:40]}' dan Enter. Apakah generate mulai?")
+        if filled:
+            print("✅ Fill prompt + Enter done")
+            page.wait_for_timeout(2500)
+            advisor_click(page, folder, "09_generating", "Setelah Enter, cek apakah loading/generating muncul")
         ctx.storage_state(path=str(SESSION_FILE))
         print(f"\n=== SELESAI ===")
         print(f"Folder: {folder}")
@@ -385,5 +471,6 @@ if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--headless", action="store_true", default=False)
     ap.add_argument("--no-headless", dest="headless", action="store_false")
+    ap.add_argument("--prompt", default="Buatkan logo untuk edukasi.", help="prompt untuk fill What do you want to create?")
     args=ap.parse_args()
-    main(headless=args.headless)
+    main(headless=args.headless, prompt_text=args.prompt)
