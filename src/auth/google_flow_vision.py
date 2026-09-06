@@ -264,16 +264,14 @@ def fill_prompt(page, prompt_text: str):
         return False
 
 def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
-    """Tunggu 2 image muncul, klik titik tiga per image -> Download -> 1K -> save ke result image/"""
+    """Tunggu 2 image muncul, hover image -> titik tiga (More) muncul -> Download -> 1K -> save ke result image/"""
     import pathlib as _pl
     result_dir = _pl.Path(result_dir)
     result_dir.mkdir(parents=True, exist_ok=True)
     print(f"[download] tunggu 2 image generate di {page.url}")
     # polling sampai image muncul (max 120s)
     for attempt in range(24):  # 24 x 5s = 120s
-        # cari image hasil - Flow biasanya img dengan src blob atau cards
         img_candidates = page.locator("img").all()
-        # filter yang besar (result)
         big_imgs = []
         for im in img_candidates:
             try:
@@ -285,7 +283,6 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
         if len(big_imgs) >= 2:
             print(f"  ✅ 2 image terdeteksi")
             break
-        # juga cek text/loading
         try:
             if page.locator("text='Generating'").count()>0:
                 print("  Generating...")
@@ -297,41 +294,90 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
         except: pass
         return False
 
-    # cari tombol titik tiga per image
-    # Flow: tiap image card ada button dengan mat-icon more_vert / more_horiz atau aria-label More
-    print("[download] cari titik tiga per image...")
-    # extract semua more buttons
-    more_sels = [
-        "button:has(mat-icon:has-text('more_vert'))",
-        "button:has(mat-icon:has-text('more_horiz'))",
-        "button[aria-label*='More']",
-        "button:has-text('⋮')",
-    ]
-    more_btns = []
-    for sel in more_sels:
-        for loc in page.locator(sel).all():
-            try:
-                if loc.is_visible():
-                    more_btns.append(loc)
-            except: pass
-    print(f"  more buttons found: {len(more_btns)}")
-    # jika tidak ketemu via more_vert, coba cari via image card container
-    if len(more_btns) < 2:
-        # coba cari semua button di dekat img
-        for loc in page.locator("button").all():
-            try:
-                txt = loc.inner_text()
-                if "more" in loc.evaluate("el=>el.outerHTML").lower():
-                    more_btns.append(loc)
-            except: pass
-        print(f"  after fallback more buttons: {len(more_btns)}")
-
-    # download 2 image
-    downloaded = 0
-    for idx, more_btn in enumerate(more_btns[:2]):
+    # download 2 image via hover -> More
+    print("[download] hover image -> cari titik tiga (More)...")
+    # re-extract big images yang visible
+    big_imgs = []
+    for im in page.locator("img").all():
         try:
-            print(f"[download] image {idx+1} klik titik tiga...")
-            more_btn.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+            box = im.bounding_box()
+            if box and box["width"] > 200 and box["height"] > 200 and im.is_visible():
+                big_imgs.append(im)
+        except: pass
+    # jika kurang dari 2, fallback ambil yang ada
+    big_imgs = big_imgs[:2]
+    print(f"  big_imgs final {len(big_imgs)}")
+
+    downloaded = 0
+    for idx, img in enumerate(big_imgs):
+        try:
+            print(f"[download] image {idx+1} hover...")
+            # hover biar More muncul (sesuai screenshot kamu harus di-hover)
+            try:
+                img.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+                img.hover(force=True); page.wait_for_timeout(800)
+            except: 
+                # fallback pyautogui jika hover playwright tidak trigger (pakai bounding_box + mouse)
+                try:
+                    box = img.bounding_box()
+                    if box:
+                        print(f"  hover fallback via mouse {box}")
+                        page.mouse.move(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
+                        page.wait_for_timeout(600)
+                except: pass
+            # fallback pyautogui jika ada (move real mouse)
+            try:
+                import pyautogui
+                box = img.bounding_box()
+                if box:
+                    # playwright viewport offset + window chrome, pakai pyautogui sebagai last resort
+                    # cek apakah more button masih belum muncul setelah hover
+                    if page.locator("button[aria-label*='More'], button:has(mat-icon:has-text('more_vert'))").count()==0:
+                        print("  hover playwright belum muncul More, coba pyautogui")
+                        # pyautogui butuh screen coords - kita skip jika tidak ada, cukup log
+                        pass
+            except: pass
+
+            # cari More setelah hover
+            more_btn = None
+            for sel in [
+                "button[aria-label*='More']",
+                "button:has(mat-icon:has-text('more_vert'))",
+                "button:has(mat-icon:has-text('more_horiz'))",
+                "button[aria-label*='more']",
+            ]:
+                loc = page.locator(sel).first
+                # cek yang visible setelah hover, atau yang dekat img
+                # kita coba all dan filter yang dekat img
+                for cand in page.locator(sel).all():
+                    try:
+                        if cand.is_visible():
+                            # cek dekat img (bounding box dekat)
+                            cbox = cand.bounding_box()
+                            ibox = img.bounding_box()
+                            if cbox and ibox and abs(cbox["x"]-ibox["x"]) < 300:
+                                more_btn = cand
+                                print(f"  found More near img {sel} box {cbox}")
+                                break
+                    except: pass
+                if more_btn: break
+                if loc.count()>0 and loc.is_visible():
+                    more_btn = loc
+                    print(f"  found More {sel}")
+                    break
+            if not more_btn:
+                # fallback: cari More di dekat img via parent
+                try:
+                    # coba hover lagi + tunggu
+                    page.wait_for_selector("button[aria-label*='More']", state="visible", timeout=3000)
+                    more_btn = page.locator("button[aria-label*='More']").first
+                    print("  wait_for_selector More found")
+                except:
+                    print("  More tidak ketemu setelah hover, screenshot")
+                    try: page.screenshot(path=str(folder / f"10_hover_{idx+1}.png"))
+                    except: pass
+                    continue
+            print(f"  klik More image {idx+1}...")
             more_btn.click(force=True, timeout=3000)
             page.wait_for_timeout(800)
             # di menu, klik Download
@@ -343,26 +389,24 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
                     print(f"  found Download {sel}")
                     break
             if not dl_btn:
-                print("  Download tidak ketemu, coba page.locator text Download")
+                print("  Download tidak ketemu")
                 continue
             dl_btn.click(force=True, timeout=3000)
             page.wait_for_timeout(800)
-            # pilih 1K (bukan 2K)
+            # pilih 1K
             one_k = None
-            for sel in ["text='1K'", "button:has-text('1K')", "[role='menuitem']:has-text('1K')", "text='1k'"]:
+            for sel in ["text='1K'", "button:has-text('1K')", "[role='menuitem']:has-text('1K')"]:
                 loc = page.locator(sel).first
                 if loc.count()>0:
                     one_k = loc
                     print(f"  found 1K {sel} vis={loc.is_visible()}")
                     break
             if one_k:
-                # handle download via expect_download
                 try:
                     with page.expect_download(timeout=15000) as dl_info:
                         one_k.click(force=True, timeout=3000)
                     download = dl_info.value
                     save_path = result_dir / f"result_{idx+1}_1K.png"
-                    # jika ada pilihan nama, pakai suggest
                     download.save_as(str(save_path))
                     print(f"  ✅ downloaded {save_path} ({save_path.stat().st_size} bytes)")
                     downloaded += 1
@@ -371,16 +415,12 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
                     try:
                         one_k.click(force=True)
                         page.wait_for_timeout(3000)
-                        # fallback: cek downloads folder browser?
                     except: pass
             else:
-                print("  1K tidak ketemu, coba klik Download langsung (mungkin default 1K)")
-                # jika tidak ada pilihan 1K, download langsung
-            page.wait_for_timeout(1000)
-            # tutup menu jika masih terbuka (klik elsewhere)
+                print("  1K tidak ketemu")
             try: page.keyboard.press("Escape")
             except: pass
-            page.wait_for_timeout(500)
+            page.wait_for_timeout(600)
         except Exception as e:
             print(f"  download image {idx+1} fail {e}")
             import traceback; traceback.print_exc()
