@@ -138,10 +138,12 @@ def main(headless=False):
     with sync_playwright() as p:
         browser=p.chromium.launch(**launch_kwargs)
         ctx_kwargs=dict(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36", locale="en-US")
-        if SESSION_FILE.exists():
-            try: ctx_kwargs["storage_state"]=str(SESSION_FILE); print(f"[load] session {SESSION_FILE}")
+        has_session = SESSION_FILE.exists()
+        if has_session:
+            try: ctx_kwargs["storage_state"]=str(SESSION_FILE); print(f"[load] session {SESSION_FILE} -> auto-skip login ENTER")
             except: pass
-        ctx=browser.new_context(**ctx_kwargs)
+        # viewport tinggi biar tidak kepotong bawah (Video/Image di bawah)
+        ctx=browser.new_context(viewport={"width": 1280, "height": 1200}, **ctx_kwargs)
         page=ctx.new_page()
         # 0 home - pakai commit biar tidak timeout domcontentloaded di labs.google
         print(f"[goto] {FLOW_URL}")
@@ -222,24 +224,41 @@ def main(headless=False):
         else:
             print("[info] Create button tidak ketemu di about (mungkin sudah login)") 
             advisor_click(page, folder, "02b_create_not_found", "Create button tidak ketemu, cek apakah sudah di login/dashboard")
-        # 2 login
-        print("\n>>> LOGIN GOOGLE MANUAL DI BROWSER - setelah login tekan ENTER <<<")
-        print(f"Folder gambar: {folder} - screenshot akan terus diambil")
-        try: input("ENTER jika sudah login >> ")
-        except: time.sleep(3)
+        # 2 login - auto-skip jika sudah ada session
+        if has_session:
+            print("\n[auto] Sudah ada session google_flow.json -> skip ENTER, lanjut...")
+            page.wait_for_timeout(1500)
+        else:
+            print("\n>>> LOGIN GOOGLE MANUAL DI BROWSER - setelah login tekan ENTER <<<")
+            print(f"Folder gambar: {folder} - screenshot akan terus diambil")
+            try: input("ENTER jika sudah login >> ")
+            except: time.sleep(3)
         ctx.storage_state(path=str(SESSION_FILE))
         advisor_click(page, folder, "03_after_login", "User sudah login Google. Cari 'New Project' - dimana?")
         page.wait_for_timeout(2500)
-        # 3 New Project
+        # 3 New Project - pakai full viewport screenshot biar tidak kepotong
         np=find_new_project(page)
         if np:
-            try: np.scroll_into_view_if_needed(); page.wait_for_timeout(400); np.click(); page.wait_for_timeout(3000)
-            except: pass
+            try:
+                np.scroll_into_view_if_needed(); page.wait_for_timeout(500)
+                # pastikan tidak kepotong bawah - scroll sedikit ke atas
+                page.evaluate("window.scrollBy(0, -100)")
+                page.wait_for_timeout(300)
+                np.click(force=True); page.wait_for_timeout(3000)
+                print("  -> New Project clicked")
+            except Exception as e:
+                print(f"  New Project click fail {e}")
+                try: page.evaluate("(el)=>el.click()", np.element_handle())
+                except: pass
             advisor_click(page, folder, "04_new_project_clicked", "Sudah klik New Project. Cari popup 'Get Started'")
         else:
             advisor_click(page, folder, "04_new_project_not_found", "Tombol New Project tidak ketemu - dimana?")
-            try: input("Klik New Project manual lalu ENTER >> ")
-            except: pass
+            if not has_session:
+                try: input("Klik New Project manual lalu ENTER >> ")
+                except: pass
+            else:
+                print("[auto] skip manual New Project (sudah login)")
+                page.wait_for_timeout(1000)
         # 4 Get Started
         gs=find_get_started(page)
         if gs:
@@ -247,8 +266,20 @@ def main(headless=False):
             advisor_click(page, folder, "05_get_started_clicked", "Sudah klik Get Started. Cari area bawah tombol Video -> Images")
         else:
             advisor_click(page, folder, "05_get_started_not_found", "Popup Get Started tidak muncul")
-        # 5 Video -> Images
-        page.evaluate("window.scrollTo(0, document.body.scrollHeight)"); page.wait_for_timeout(800)
+        # 5 Video -> Images - viewport tinggi jadi tidak kepotong bawah
+        # jangan scrollTo bottom mentok, cukup scroll ke settings area
+        try:
+            # scroll ke video settings
+            vloc_tmp = page.locator("span.settings-summary:has-text('Video')").first
+            if vloc_tmp.count()>0:
+                vloc_tmp.scroll_into_view_if_needed()
+                page.wait_for_timeout(600)
+                page.evaluate("window.scrollBy(0, -80)") # biar tidak kepotong
+            else:
+                page.evaluate("window.scrollBy(0, 400)")
+        except:
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight - 400)")
+        page.wait_for_timeout(600)
         advisor_click(page, folder, "06_before_video_switch", "Di bawah ada tombol Video yang harus diganti jadi Images - tunjuk koordinat Video")
         ok=switch_video_to_images(page)
         advisor_click(page, folder, "07_after_video_switch", "Setelah switch Video->Images, apakah sudah jadi Images? Jika belum, dimana tombol Images?")

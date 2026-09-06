@@ -20,6 +20,7 @@ def save_step(folder: pathlib.Path, page, step_name: str, ai_decision=None):
     fname = f"{idx:02d}_{step_name}.png"
     path = folder / fname
     try:
+        # viewport 1200 height, full_page False cukup, tapi jangan kepotong - screenshot viewport yang sudah di-scroll
         page.screenshot(path=str(path), full_page=False)
         print(f"[vision] screenshot {fname} -> {path} ({path.stat().st_size} bytes)")
     except Exception as e:
