@@ -294,8 +294,9 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
         except: pass
         return False
 
-    # download 2 image via hover -> More DI DALAM image (bukan More for this project)
-    print("[download] hover image -> cari titik tiga (More) DI DALAM image card...")
+    # download 2 image via hover -> More
+    print("[download] hover image -> cari titik tiga (More)...")
+    # re-extract big images yang visible
     big_imgs = []
     for im in page.locator("img").all():
         try:
@@ -303,15 +304,14 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
             if box and box["width"] > 200 and box["height"] > 200 and im.is_visible():
                 big_imgs.append(im)
         except: pass
+    # jika kurang dari 2, fallback ambil yang ada
     big_imgs = big_imgs[:2]
     print(f"  big_imgs final {len(big_imgs)}")
 
     downloaded = 0
     for idx, img in enumerate(big_imgs):
-        success = False
-        for retry in range(3):
-            try:
-                print(f"[download] image {idx+1} hover (retry {retry+1}/3)...")
+        try:
+            print(f"[download] image {idx+1} hover...")
             # hover biar More muncul (sesuai screenshot kamu harus di-hover)
             try:
                 img.scroll_into_view_if_needed(); page.wait_for_timeout(400)
@@ -325,7 +325,18 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
                         page.mouse.move(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
                         page.wait_for_timeout(600)
                 except: pass
-            # hover sudah, More harus muncul di dalam image card - jangan ambil More header
+            # fallback pyautogui jika ada (move real mouse)
+            try:
+                import pyautogui
+                box = img.bounding_box()
+                if box:
+                    # playwright viewport offset + window chrome, pakai pyautogui sebagai last resort
+                    # cek apakah more button masih belum muncul setelah hover
+                    if page.locator("button[aria-label*='More'], button:has(mat-icon:has-text('more_vert'))").count()==0:
+                        print("  hover playwright belum muncul More, coba pyautogui")
+                        # pyautogui butuh screen coords - kita skip jika tidak ada, cukup log
+                        pass
+            except: pass
 
             # cari More setelah hover
             more_btn = None
@@ -366,92 +377,30 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
                     try: page.screenshot(path=str(folder / f"10_hover_{idx+1}.png"))
                     except: pass
                     continue
-            print(f"  klik More DI DALAM image {idx+1}...")
+            print(f"  klik More image {idx+1}...")
             more_btn.click(force=True, timeout=3000)
-            page.wait_for_timeout(900)
-            # di popup bawah titik tiga, klik Downloads (popup)
-            # extract polling sampai Download muncul (logika extract -> parse -> klik)
-            print(f"  [extract] polling Downloads popup...")
+            page.wait_for_timeout(800)
+            # di menu, klik Download
             dl_btn = None
-            for attempt in range(5):
-                cands = []
-                for loc in page.locator("span.label:has-text('Download'), span.item-text:has-text('Download'), [class*='item-text']:has-text('Download'), button:has(mat-icon:has-text('download')), mat-icon:has-text('download')").all():
-                    try:
-                        txt = loc.inner_text().strip()
-                        cands.append((loc, txt))
-                        print(f"    cand Download ({attempt}): '{txt[:30]}' tag={loc.evaluate('el=>el.tagName')}")
-                    except: pass
-                # fallback broad
-                for loc in page.locator("text='Downloads', text='Download'").all():
-                    try:
-                        txt = loc.inner_text().strip()
-                        if txt: cands.append((loc, txt))
-                    except: pass
-                for loc, txt in cands:
-                    if txt.lower() == "download":
-                        # cari parent button
-                        try:
-                            parent_btn = loc.evaluate_handle("el=>el.closest('button') || el.closest('[role=\"menuitem\"]') || el")
-                            # coba ambil locator parent
-                            dl_btn = page.locator("button:has(span.label:has-text('Download'))").first
-                            if dl_btn.count()>0:
-                                print(f"  [pick] Downloads -> span.label Download")
-                                break
-                            dl_btn = loc
-                            print(f"  [pick] Download -> '{txt}'")
-                            break
-                        except:
-                            dl_btn = loc
-                            break
-                if dl_btn: break
-                print(f"    Downloads belum muncul {attempt+1}/5, tunggu 800ms")
-                page.wait_for_timeout(800)
+            for sel in ["text='Download'", "button:has-text('Download')", "a:has-text('Download')", "[role='menuitem']:has-text('Download')"]:
+                loc = page.locator(sel).first
+                if loc.count()>0 and loc.is_visible():
+                    dl_btn = loc
+                    print(f"  found Download {sel}")
+                    break
             if not dl_btn:
-                # coba langsung button yang ada left-content download
-                for sel in ["button:has(span.label:has-text('Download'))", "span.label:has-text('Download')", "mat-icon:has-text('download')"]:
-                    loc = page.locator(sel).first
-                    if loc.count()>0:
-                        # ambil parent button
-                        try:
-                            btn = page.locator("button:has(span.label:has-text('Download'))").first
-                            if btn.count()>0:
-                                dl_btn = btn
-                                print(f"  fallback Download {sel} -> button")
-                                break
-                        except: pass
-                if not dl_btn:
-                    print("  Download tidak ketemu setelah polling")
-                    try: page.screenshot(path=str(folder / f"12_dl_notfound_{idx+1}.png"))
-                    except: pass
-                    continue
-            # klik Downloads
-            try:
-                dl_btn.scroll_into_view_if_needed(); page.wait_for_timeout(300)
-                dl_btn.click(force=True, timeout=3000)
-                print(f"  clicked Download")
-            except:
-                try: page.evaluate("(el)=>el.click()", dl_btn.element_handle())
-                except: pass
-            page.wait_for_timeout(900)
-            # pilih 1K - polling extract
-            print(f"  [extract] polling 1K options...")
+                print("  Download tidak ketemu")
+                continue
+            dl_btn.click(force=True, timeout=3000)
+            page.wait_for_timeout(800)
+            # pilih 1K
             one_k = None
-            for attempt in range(5):
-                cands = []
-                for loc in page.locator("text='1K', text='1k', [role='menuitem']:has-text('1K'), button:has-text('1K')").all():
-                    try:
-                        txt = loc.inner_text().strip()
-                        cands.append((loc, txt))
-                        print(f"    cand 1K ({attempt}): '{txt}'")
-                    except: pass
-                for loc, txt in cands:
-                    if txt.strip() == "1K":
-                        one_k = loc
-                        print(f"  [pick] 1K -> '{txt}'")
-                        break
-                if one_k: break
-                print(f"    1K belum muncul {attempt+1}/5")
-                page.wait_for_timeout(600)
+            for sel in ["text='1K'", "button:has-text('1K')", "[role='menuitem']:has-text('1K')"]:
+                loc = page.locator(sel).first
+                if loc.count()>0:
+                    one_k = loc
+                    print(f"  found 1K {sel} vis={loc.is_visible()}")
+                    break
             if one_k:
                 try:
                     with page.expect_download(timeout=15000) as dl_info:
@@ -461,8 +410,6 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
                     download.save_as(str(save_path))
                     print(f"  ✅ downloaded {save_path} ({save_path.stat().st_size} bytes)")
                     downloaded += 1
-                    success = True
-                    break
                 except Exception as e:
                     print(f"  download expect fail {e}, coba click biasa")
                     try:
@@ -470,14 +417,12 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
                         page.wait_for_timeout(3000)
                     except: pass
             else:
-                print("  1K tidak ketemu setelah polling")
+                print("  1K tidak ketemu")
             try: page.keyboard.press("Escape")
             except: pass
             page.wait_for_timeout(600)
-            if success:
-                break
         except Exception as e:
-            print(f"  download image {idx+1} fail {e} (retry {retry+1}/3)")
+            print(f"  download image {idx+1} fail {e}")
             import traceback; traceback.print_exc()
 
     print(f"[download] selesai {downloaded}/2 ke {result_dir}")
