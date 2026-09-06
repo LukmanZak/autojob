@@ -263,6 +263,134 @@ def fill_prompt(page, prompt_text: str):
         import traceback; traceback.print_exc()
         return False
 
+def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
+    """Tunggu 2 image muncul, klik titik tiga per image -> Download -> 1K -> save ke result image/"""
+    import pathlib as _pl
+    result_dir = _pl.Path(result_dir)
+    result_dir.mkdir(parents=True, exist_ok=True)
+    print(f"[download] tunggu 2 image generate di {page.url}")
+    # polling sampai image muncul (max 120s)
+    for attempt in range(24):  # 24 x 5s = 120s
+        # cari image hasil - Flow biasanya img dengan src blob atau cards
+        img_candidates = page.locator("img").all()
+        # filter yang besar (result)
+        big_imgs = []
+        for im in img_candidates:
+            try:
+                box = im.bounding_box()
+                if box and box["width"] > 200 and box["height"] > 200:
+                    big_imgs.append(im)
+            except: pass
+        print(f"  attempt {attempt+1}/24: big_imgs={len(big_imgs)}")
+        if len(big_imgs) >= 2:
+            print(f"  ✅ 2 image terdeteksi")
+            break
+        # juga cek text/loading
+        try:
+            if page.locator("text='Generating'").count()>0:
+                print("  Generating...")
+        except: pass
+        page.wait_for_timeout(5000)
+    else:
+        print("[warn] 2 image tidak muncul setelah 120s, screenshot cek")
+        try: page.screenshot(path=str(folder / "10_before_download.png"), full_page=True)
+        except: pass
+        return False
+
+    # cari tombol titik tiga per image
+    # Flow: tiap image card ada button dengan mat-icon more_vert / more_horiz atau aria-label More
+    print("[download] cari titik tiga per image...")
+    # extract semua more buttons
+    more_sels = [
+        "button:has(mat-icon:has-text('more_vert'))",
+        "button:has(mat-icon:has-text('more_horiz'))",
+        "button[aria-label*='More']",
+        "button:has-text('⋮')",
+    ]
+    more_btns = []
+    for sel in more_sels:
+        for loc in page.locator(sel).all():
+            try:
+                if loc.is_visible():
+                    more_btns.append(loc)
+            except: pass
+    print(f"  more buttons found: {len(more_btns)}")
+    # jika tidak ketemu via more_vert, coba cari via image card container
+    if len(more_btns) < 2:
+        # coba cari semua button di dekat img
+        for loc in page.locator("button").all():
+            try:
+                txt = loc.inner_text()
+                if "more" in loc.evaluate("el=>el.outerHTML").lower():
+                    more_btns.append(loc)
+            except: pass
+        print(f"  after fallback more buttons: {len(more_btns)}")
+
+    # download 2 image
+    downloaded = 0
+    for idx, more_btn in enumerate(more_btns[:2]):
+        try:
+            print(f"[download] image {idx+1} klik titik tiga...")
+            more_btn.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+            more_btn.click(force=True, timeout=3000)
+            page.wait_for_timeout(800)
+            # di menu, klik Download
+            dl_btn = None
+            for sel in ["text='Download'", "button:has-text('Download')", "a:has-text('Download')", "[role='menuitem']:has-text('Download')"]:
+                loc = page.locator(sel).first
+                if loc.count()>0 and loc.is_visible():
+                    dl_btn = loc
+                    print(f"  found Download {sel}")
+                    break
+            if not dl_btn:
+                print("  Download tidak ketemu, coba page.locator text Download")
+                continue
+            dl_btn.click(force=True, timeout=3000)
+            page.wait_for_timeout(800)
+            # pilih 1K (bukan 2K)
+            one_k = None
+            for sel in ["text='1K'", "button:has-text('1K')", "[role='menuitem']:has-text('1K')", "text='1k'"]:
+                loc = page.locator(sel).first
+                if loc.count()>0:
+                    one_k = loc
+                    print(f"  found 1K {sel} vis={loc.is_visible()}")
+                    break
+            if one_k:
+                # handle download via expect_download
+                try:
+                    with page.expect_download(timeout=15000) as dl_info:
+                        one_k.click(force=True, timeout=3000)
+                    download = dl_info.value
+                    save_path = result_dir / f"result_{idx+1}_1K.png"
+                    # jika ada pilihan nama, pakai suggest
+                    download.save_as(str(save_path))
+                    print(f"  ✅ downloaded {save_path} ({save_path.stat().st_size} bytes)")
+                    downloaded += 1
+                except Exception as e:
+                    print(f"  download expect fail {e}, coba click biasa")
+                    try:
+                        one_k.click(force=True)
+                        page.wait_for_timeout(3000)
+                        # fallback: cek downloads folder browser?
+                    except: pass
+            else:
+                print("  1K tidak ketemu, coba klik Download langsung (mungkin default 1K)")
+                # jika tidak ada pilihan 1K, download langsung
+            page.wait_for_timeout(1000)
+            # tutup menu jika masih terbuka (klik elsewhere)
+            try: page.keyboard.press("Escape")
+            except: pass
+            page.wait_for_timeout(500)
+        except Exception as e:
+            print(f"  download image {idx+1} fail {e}")
+            import traceback; traceback.print_exc()
+
+    print(f"[download] selesai {downloaded}/2 ke {result_dir}")
+    try:
+        page.screenshot(path=str(folder / "11_after_download.png"), full_page=True)
+    except: pass
+    return downloaded > 0
+
 def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi."):
     ensure_dirs()
     folder = ensure_flow_session()
@@ -278,7 +406,7 @@ def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi."):
             try: ctx_kwargs["storage_state"]=str(SESSION_FILE); print(f"[load] session {SESSION_FILE} -> auto-skip login ENTER")
             except: pass
         # viewport native kamu 1280x720 biar tidak kepotong taskbar
-        ctx=browser.new_context(viewport={"width": 1280, "height": 720}, **ctx_kwargs)
+        ctx=browser.new_context(viewport={"width": 1280, "height": 720}, accept_downloads=True, **ctx_kwargs)
         page=ctx.new_page()
         # set window sesuai layar
         try: page.set_viewport_size({"width": 1280, "height": 720})
@@ -457,6 +585,19 @@ def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi."):
             print("✅ Fill prompt + Enter done")
             page.wait_for_timeout(2500)
             advisor_click(page, folder, "09_generating", "Setelah Enter, cek apakah loading/generating muncul")
+        # 7 Download 2 image via titik tiga -> 1K ke result image/
+        print(f"\n[step 7] Download 2 image (titik tiga -> Download -> 1K) ke result image/")
+        result_dir = pathlib.Path("F:/alpha/result image")
+        try:
+            ok_dl = download_results(page, result_dir, folder)
+            if ok_dl:
+                print(f"✅ Download selesai -> {result_dir}")
+                advisor_click(page, folder, "10_download_done", f"Download 2 image 1K ke {result_dir} selesai")
+            else:
+                print("⚠️ Download belum berhasil, cek manual titik tiga -> 1K")
+                advisor_click(page, folder, "10_download_fail", "Download gagal, cek manual")
+        except Exception as e:
+            print(f"download step fail {e}")
         ctx.storage_state(path=str(SESSION_FILE))
         print(f"\n=== SELESAI ===")
         print(f"Folder: {folder}")
