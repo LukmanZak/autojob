@@ -19,15 +19,27 @@ def find_try_button(page):
             if loc.count()==0: continue
             if not loc.is_visible(): continue
             box = loc.bounding_box()
-            if box and 0 <= box["x"] < 1800 and 0 <= box["y"] < 1200 and box["width"]>50:
+            if box and 0 <= box["x"] < 1800 and 0 <= box["y"] < 1500 and box["width"]>50:
                 print(f"[pick] Try button {i} box {box}")
                 return loc
         except: pass
     # fallback: first visible
-    for sel in ["a:has-text('Try in Google Flow')","a:has-text('Try Flow')","button:has-text('Try in Google Flow')","a:has-text('Try')","a[href*='flow.google']"]:
+    for sel in ["button[aria-label='Create with Google Flow']", "button:has-text('Create with Google Flow')", "a:has-text('Try in Google Flow')","a:has-text('Try Flow')","button:has-text('Try in Google Flow')","a:has-text('Try')","a[href*='flow.google']"]:
         try:
             loc=page.locator(sel).first
-            if loc.count()>0 and loc.is_visible(): return loc
+            if loc.count()>0 and loc.is_visible(): 
+                print(f"[fallback] Try/Create {sel}")
+                return loc
+        except: pass
+    return None
+
+def find_create_button(page):
+    for sel in ["button[aria-label='Create with Google Flow']", "button:has-text('Create with Google Flow')", "a:has-text('Create with Google Flow')"]:
+        try:
+            loc=page.locator(sel).first
+            if loc.count()>0 and loc.is_visible():
+                print(f"[found] Create {sel}")
+                return loc
         except: pass
     return None
 def find_new_project(page):
@@ -112,7 +124,40 @@ def main(headless=False):
                     page.wait_for_timeout(3000)
             advisor_click(page, folder, "02_after_try", "Setelah klik Try (atau fallback goto flow.google.com), cek apakah sudah di flow.google.com/about. Apa next step login?")
         else:
-            print("[warn] Try tidak ketemu"); advisor_click(page, folder, "02_try_not_found", "Try button tidak ketemu, dimana?")
+            print("[warn] Try tidak ketemu, langsung goto flow.google.com")
+            page.goto("https://flow.google.com", wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(3000)
+            advisor_click(page, folder, "02_try_not_found_goto", "Try tidak ketemu, sudah goto flow.google.com/about")
+        # 1b. Di flow.google.com/about klik Create with Google Flow (selector kamu)
+        create_btn=find_create_button(page)
+        if create_btn:
+            print("[step 1b] Klik Create with Google Flow...")
+            try:
+                create_btn.scroll_into_view_if_needed(); page.wait_for_timeout(600)
+                box2=create_btn.bounding_box()
+                print(f"  create box {box2}")
+                # no_wait_after biar tidak timeout nunggu navigasi login
+                try:
+                    create_btn.click(force=True, timeout=4000, no_wait_after=True)
+                except:
+                    # fallback: mouse atau JS
+                    if box2:
+                        page.mouse.click(box2["x"]+box2["width"]/2, box2["y"]+box2["height"]/2)
+                    else:
+                        page.evaluate("(el)=>el.click()", create_btn.element_handle())
+                print("  -> Create clicked (no_wait)")
+                page.wait_for_timeout(4000)
+                print(f"  -> URL after Create: {page.url}")
+            except Exception as e:
+                print(f"  Create click fail {e}")
+                try:
+                    page.evaluate("(el)=>el.click()", create_btn.element_handle())
+                    page.wait_for_timeout(3000)
+                except: pass
+            advisor_click(page, folder, "02b_after_create", "Setelah klik Create with Google Flow, seharusnya muncul login Google. Tunggu login?")
+        else:
+            print("[info] Create button tidak ketemu di about (mungkin sudah login)") 
+            advisor_click(page, folder, "02b_create_not_found", "Create button tidak ketemu, cek apakah sudah di login/dashboard")
         # 2 login
         print("\n>>> LOGIN GOOGLE MANUAL DI BROWSER - setelah login tekan ENTER <<<")
         print(f"Folder gambar: {folder} - screenshot akan terus diambil")

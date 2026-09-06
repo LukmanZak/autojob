@@ -22,6 +22,8 @@ def find_try_button(page):
                 return loc
         except: pass
     sels = [
+        "button[aria-label='Create with Google Flow']",
+        "button:has-text('Create with Google Flow')",
         "a:has-text('Try in Google Flow')",
         "a:has-text('Try Flow')",
         "button:has-text('Try in Google Flow')",
@@ -33,7 +35,17 @@ def find_try_button(page):
         try:
             loc = page.locator(sel).first
             if loc.count()>0 and loc.is_visible():
-                print(f"[found] Try button: {sel}")
+                print(f"[found] Try/Create button: {sel}")
+                return loc
+        except: pass
+    return None
+
+def find_create_button(page):
+    for sel in ["button[aria-label='Create with Google Flow']", "button:has-text('Create with Google Flow')"]:
+        try:
+            loc=page.locator(sel).first
+            if loc.count()>0 and loc.is_visible():
+                print(f"[found] Create {sel}")
                 return loc
         except: pass
     return None
