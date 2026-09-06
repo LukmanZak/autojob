@@ -82,89 +82,109 @@ def find_get_started(page):
         except: pass
     return None
 def switch_video_to_images(page):
-    # Video: <span settingstriggercontent class="settings-summary"> Video · 720p · 8s ... x2 </span> (bukan button)
-    # Image: <button id="mat-button-toggle-26-button" role="radio">...<span class="toggle-text">Image</span></button> (ID dynamic group-3/11)
-    # Langkah: klik settings-summary Video dulu untuk buka panel, lalu klik toggle Image generik tanpa hardcode ID
+    # LOGIKA BARU: extract dulu semua, cari Videos, klik, extract lagi cari Images -> klik
+    # Sesuai arahan: di videos ada apa aja -> cari mana Videos -> klik -> extract lagi -> cari Images -> klik
+    print("[switch] extract Videos candidates...")
     try:
-        vloc = page.locator("span.settings-summary:has-text('Video'), span[settingstriggercontent]:has-text('Video')").first
-        if vloc.count()>0:
-            # tunggu sampai visible, jangan cek is_visible langsung karena bisa kepotong
-            try: vloc.wait_for(state="visible", timeout=4000)
-            except: pass
-            print(f"[found] Video settings {vloc.inner_text()[:60] if vloc.count()>0 else ''}")
+        # extract semua kandidat Video
+        candidates = []
+        # span settings-summary adalah video trigger utama
+        for loc in page.locator("span.settings-summary, span[settingstriggercontent]").all():
             try:
-                vloc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+                txt = loc.inner_text().strip()
+                vis = loc.is_visible()
+                candidates.append((loc, txt, vis))
+                print(f"  candidate Video: '{txt[:40]}' vis={vis}")
+            except: pass
+        # fallback juga cek button Video
+        for loc in page.locator("button:has-text('Video')").all():
+            try:
+                txt = loc.inner_text().strip()
+                candidates.append((loc, txt, loc.is_visible()))
+                print(f"  candidate Video btn: '{txt[:40]}'")
+            except: pass
+        # cari yang Videos (teks mengandung Video)
+        target_video = None
+        for loc, txt, vis in candidates:
+            if "video" in txt.lower() and "720p" in txt.lower():
+                target_video = loc
+                print(f"[pick] Video -> '{txt[:50]}'")
+                break
+        if not target_video:
+            # cari yang mengandung Video aja
+            for loc, txt, vis in candidates:
+                if "video" in txt.lower():
+                    target_video = loc
+                    print(f"[pick fallback] Video -> '{txt[:50]}'")
+                    break
+        if target_video:
+            try: target_video.scroll_into_view_if_needed(); page.wait_for_timeout(400)
             except: pass
             try:
-                vloc.click(force=True, timeout=3000)
+                target_video.click(force=True, timeout=3000)
+                print("  Video clicked (force)")
             except:
-                try: page.evaluate("(el)=>el.click()", vloc.element_handle())
-                except: page.mouse.click(100,100)  # fallback
+                try: page.evaluate("(el)=>el.click()", target_video.element_handle())
+                except: pass
             page.wait_for_timeout(1200)
-            # sekarang cari Image toggle generik (tanpa ID 5/26 hardcode)
-            for isel in [
-                "button[role='radio']:has(span.toggle-text:has-text('Image'))",
-                "button[role='radio']:has-text('Image')",
-                "span.toggle-text:has-text('Image')",
-                "button:has(span.toggle-text:has-text('Image'))",
-            ]:
-                try:
-                    iloc = page.locator(isel).first
-                    if iloc.count()>0:
-                        print(f"[found] Image toggle {isel} visible={iloc.is_visible() if iloc.count()>0 else 'na'}")
-                        try: iloc.wait_for(state="visible", timeout=3000)
-                        except: pass
-                        iloc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
-                        # klik via force atau JS karena mat-button + overlay
-                        try:
-                            iloc.click(force=True, timeout=3000, no_wait_after=True)
-                        except:
-                            try: page.evaluate("(el)=>el.click()", iloc.element_handle())
-                            except:
-                                box = iloc.bounding_box()
-                                if box: page.mouse.click(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
-                        page.wait_for_timeout(800)
-                        # cek aria-checked pada button parent
-                        try:
-                            # jika isel adalah span, ambil parent button
-                            btn = iloc
-                            if "span.toggle-text" in isel:
-                                btn = page.locator("button:has(span.toggle-text:has-text('Image'))").first
-                            checked = btn.get_attribute("aria-checked")
-                            print(f"  aria-checked={checked} (harusnya true setelah klik)")
-                            if checked=="true":
-                                print("✅ Video -> Images berhasil (generik, no hardcode ID)")
-                                return True
-                            else:
-                                # coba lagi klik parent button
-                                btn.click(force=True, timeout=2000)
-                                page.wait_for_timeout(500)
-                                return True
-                        except: 
-                            print("✅ Video -> Images klik done (generik)")
-                            return True
-                except Exception as e:
-                    print(f"  image toggle {isel} err {e}")
-            print("[info] Video settings diklik tapi Image toggle tidak ketemu (coba screenshot 06)")
+        else:
+            print("[warn] Videos tidak ketemu di extract")
+            return False
+
+        # extract lagi semua kandidat Images setelah klik Video (panel kebuka)
+        print("[switch] extract Images candidates setelah klik Video...")
+        page.wait_for_timeout(600)
+        img_candidates = []
+        for loc in page.locator("button[role='radio'], span.toggle-text, button:has-text('Image'), [role='radio']").all():
+            try:
+                txt = loc.inner_text().strip()
+                if not txt: continue
+                img_candidates.append((loc, txt, loc.is_visible()))
+                print(f"  candidate Image: '{txt[:40]}' vis={loc.is_visible()} tag={loc.evaluate('el=>el.tagName')}")
+            except: pass
+        # cari Images
+        target_img = None
+        for loc, txt, vis in img_candidates:
+            if txt.lower().strip() == "image":
+                target_img = loc
+                print(f"[pick] Image -> '{txt}'")
+                break
+        if not target_img:
+            for loc, txt, vis in img_candidates:
+                if "image" in txt.lower():
+                    target_img = loc
+                    print(f"[pick fallback] Image -> '{txt}'")
+                    break
+        if target_img:
+            try: target_img.scroll_into_view_if_needed(); page.wait_for_timeout(300)
+            except: pass
+            try:
+                target_img.click(force=True, timeout=3000, no_wait_after=True)
+                print("  Image clicked (force)")
+            except:
+                try: page.evaluate("(el)=>el.click()", target_img.element_handle())
+                except:
+                    box = target_img.bounding_box()
+                    if box: page.mouse.click(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
+            page.wait_for_timeout(800)
+            # cek aria-checked pada parent button jika span
+            try:
+                btn = target_img
+                # jika span toggle-text, ambil parent button
+                if "toggle-text" in target_img.evaluate("el=>el.outerHTML").lower():
+                    btn = page.locator("button:has(span.toggle-text:has-text('Image'))").first
+                chk = btn.get_attribute("aria-checked")
+                print(f"  aria-checked={chk}")
+            except: pass
+            print("✅ Video -> Images berhasil (extract logic)")
+            return True
+        else:
+            print("[warn] Images tidak ketemu setelah extract")
             return False
     except Exception as e:
-        print(f"video settings err {e}")
-    # fallback lama: button Video tab
-    for vsel in ["button:has-text('Video')","[role='tab']:has-text('Video')"]:
-        try:
-            vloc=page.locator(vsel).first
-            if vloc.count()>0 and vloc.is_visible():
-                vloc.click(); page.wait_for_timeout(1200)
-                for isel in ["button:has-text('Images')","[role='tab']:has-text('Images')","text=Images"]:
-                    try:
-                        iloc=page.locator(isel).first
-                        if iloc.count()>0 and iloc.is_visible():
-                            iloc.click(); page.wait_for_timeout(800); return True
-                    except: pass
-                return False
-        except: pass
-    print("[warn] Tombol Video tidak ketemu")
-    return False
+        print(f"video->images extract err {e}")
+        import traceback; traceback.print_exc()
+        return False
 
 def main(headless=False):
     ensure_dirs()
