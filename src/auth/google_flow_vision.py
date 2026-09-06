@@ -65,50 +65,87 @@ def find_new_project(page):
         except: pass
     return None
 def find_get_started(page):
+    # overlay <div class="click-blocker-overlay"> nutupin klik, tunggu hidden dulu
     for sel in ["button:has-text('Get started')","button:has-text('Get Started')"]:
         try:
             loc=page.locator(sel).first
-            if loc.count()>0 and loc.is_visible(): return loc
+            if loc.count()>0:
+                # tunggu overlay hilang biar tidak intercepts pointer
+                try:
+                    page.wait_for_selector("div.click-blocker-overlay", state="hidden", timeout=4000)
+                except: pass
+                if loc.is_visible():
+                    print(f"[found] Get started {sel}")
+                    return loc
+                # tetap return meski belum visible untuk force click
+                return loc
         except: pass
     return None
 def switch_video_to_images(page):
-    # Video: <span settingstriggercontent class="settings-summary"> Video · 720p · 8s ... x2 </span>
-    # Image: <button id="mat-button-toggle-5-button" role="radio">...<span class="toggle-text">Image</span></button>
-    # Langkah: klik settings-summary Video dulu untuk buka panel, lalu klik toggle Image
+    # Video: <span settingstriggercontent class="settings-summary"> Video · 720p · 8s ... x2 </span> (bukan button)
+    # Image: <button id="mat-button-toggle-26-button" role="radio">...<span class="toggle-text">Image</span></button> (ID dynamic group-3/11)
+    # Langkah: klik settings-summary Video dulu untuk buka panel, lalu klik toggle Image generik tanpa hardcode ID
     try:
         vloc = page.locator("span.settings-summary:has-text('Video'), span[settingstriggercontent]:has-text('Video')").first
-        if vloc.count()>0 and vloc.is_visible():
-            print(f"[found] Video settings {vloc.inner_text()[:50]}")
-            vloc.click(); page.wait_for_timeout(1200)
-            # sekarang cari Image toggle
+        if vloc.count()>0:
+            # tunggu sampai visible, jangan cek is_visible langsung karena bisa kepotong
+            try: vloc.wait_for(state="visible", timeout=4000)
+            except: pass
+            print(f"[found] Video settings {vloc.inner_text()[:60] if vloc.count()>0 else ''}")
+            try:
+                vloc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+            except: pass
+            try:
+                vloc.click(force=True, timeout=3000)
+            except:
+                try: page.evaluate("(el)=>el.click()", vloc.element_handle())
+                except: page.mouse.click(100,100)  # fallback
+            page.wait_for_timeout(1200)
+            # sekarang cari Image toggle generik (tanpa ID 5/26 hardcode)
             for isel in [
-                "button#mat-button-toggle-5-button",
+                "button[role='radio']:has(span.toggle-text:has-text('Image'))",
                 "button[role='radio']:has-text('Image')",
                 "span.toggle-text:has-text('Image')",
                 "button:has(span.toggle-text:has-text('Image'))",
-                "[role='radio']:has-text('Image')",
             ]:
                 try:
                     iloc = page.locator(isel).first
                     if iloc.count()>0:
-                        print(f"[found] Image toggle {isel} visible={iloc.is_visible()}")
-                        iloc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
-                        # klik via force atau JS karena mat-button
-                        try:
-                            iloc.click(force=True, timeout=3000)
-                        except:
-                            page.evaluate("(el)=>el.click()", iloc.element_handle())
-                        page.wait_for_timeout(800)
-                        # cek aria-checked
-                        try:
-                            checked = iloc.get_attribute("aria-checked")
-                            print(f"  aria-checked={checked}")
+                        print(f"[found] Image toggle {isel} visible={iloc.is_visible() if iloc.count()>0 else 'na'}")
+                        try: iloc.wait_for(state="visible", timeout=3000)
                         except: pass
-                        print("✅ Video -> Images berhasil (via settings-summary)")
-                        return True
+                        iloc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+                        # klik via force atau JS karena mat-button + overlay
+                        try:
+                            iloc.click(force=True, timeout=3000, no_wait_after=True)
+                        except:
+                            try: page.evaluate("(el)=>el.click()", iloc.element_handle())
+                            except:
+                                box = iloc.bounding_box()
+                                if box: page.mouse.click(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
+                        page.wait_for_timeout(800)
+                        # cek aria-checked pada button parent
+                        try:
+                            # jika isel adalah span, ambil parent button
+                            btn = iloc
+                            if "span.toggle-text" in isel:
+                                btn = page.locator("button:has(span.toggle-text:has-text('Image'))").first
+                            checked = btn.get_attribute("aria-checked")
+                            print(f"  aria-checked={checked} (harusnya true setelah klik)")
+                            if checked=="true":
+                                print("✅ Video -> Images berhasil (generik, no hardcode ID)")
+                                return True
+                            else:
+                                # coba lagi klik parent button
+                                btn.click(force=True, timeout=2000)
+                                page.wait_for_timeout(500)
+                                return True
+                        except: 
+                            print("✅ Video -> Images klik done (generik)")
+                            return True
                 except Exception as e:
                     print(f"  image toggle {isel} err {e}")
-            print("[info] Video settings diklik tapi Image toggle tidak ketemu")
+            print("[info] Video settings diklik tapi Image toggle tidak ketemu (coba screenshot 06)")
             return False
     except Exception as e:
         print(f"video settings err {e}")
@@ -262,13 +299,31 @@ def main(headless=False):
             else:
                 print("[auto] skip manual New Project (sudah login)")
                 page.wait_for_timeout(1000)
-        # 4 Get Started
+        # 4 Get Started - handle overlay click-blocker
         gs=find_get_started(page)
         if gs:
-            gs.click(); page.wait_for_timeout(2000)
+            try:
+                # overlay bisa nutupin, tunggu hidden atau force JS
+                gs.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+                try:
+                    # tunggu overlay hilang
+                    page.wait_for_selector("div.click-blocker-overlay", state="hidden", timeout=3000)
+                except: pass
+                try:
+                    gs.click(force=True, timeout=3000, no_wait_after=True)
+                    print("  -> Get Started clicked (force)")
+                except:
+                    page.evaluate("(el)=>el.click()", gs.element_handle())
+                    print("  -> Get Started JS clicked")
+                page.wait_for_timeout(2000)
+            except Exception as e:
+                print(f"  Get Started fail {e}, coba JS")
+                try: page.evaluate("(el)=>el.click()", gs.element_handle())
+                except: pass
+                page.wait_for_timeout(1500)
             advisor_click(page, folder, "05_get_started_clicked", "Sudah klik Get Started. Cari area bawah tombol Video -> Images")
         else:
-            advisor_click(page, folder, "05_get_started_not_found", "Popup Get Started tidak muncul")
+            advisor_click(page, folder, "05_get_started_not_found", "Popup Get Started tidak muncul (mungkin sudah pernah, cek overlay hidden)")
         # 5 Video -> Images - pastikan bottom input bar kelihatan (jangan kepotong)
         # scroll ke input bar "What do you want to create?" biar Video·720p kelihatan
         try:
