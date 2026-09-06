@@ -9,6 +9,21 @@ FLOW_URL = "https://labs.google/fx/tools/flow"
 SESSION_FILE = SESSIONS_DIR / "google_flow.json"
 
 def find_try_button(page):
+    # ada 9 button yang sama di carousel, cuma 1 yang di viewport (x ~410)
+    # pilih yang bounding_box di dalam viewport
+    candidates = page.locator("button:has-text('Try in Google Flow'), a:has-text('Try in Google Flow')")
+    n = candidates.count()
+    for i in range(n):
+        try:
+            loc = candidates.nth(i)
+            if loc.count()==0: continue
+            if not loc.is_visible(): continue
+            box = loc.bounding_box()
+            if box and 0 <= box["x"] < 1800 and 0 <= box["y"] < 1200 and box["width"]>50:
+                print(f"[pick] Try button {i} box {box}")
+                return loc
+        except: pass
+    # fallback: first visible
     for sel in ["a:has-text('Try in Google Flow')","a:has-text('Try Flow')","button:has-text('Try in Google Flow')","a:has-text('Try')","a[href*='flow.google']"]:
         try:
             loc=page.locator(sel).first
@@ -62,11 +77,40 @@ def main(headless=False):
         # 0 home
         print(f"[goto] {FLOW_URL}"); page.goto(FLOW_URL, wait_until="domcontentloaded", timeout=60000); page.wait_for_timeout(3500)
         advisor_click(page, folder, "01_home", "Cari tombol 'Try in Google Flow' - dimana? Return koordinat klik.")
-        # 1 Try
+        # 1 Try - scroll dulu biar viewport kena (y 2530 -> 425)
         btn=find_try_button(page)
         if btn:
-            btn.click(); page.wait_for_timeout(4000)
-            advisor_click(page, folder, "02_after_try", "Setelah klik Try, cek apakah redirect ke flow.google.com. Apa next step?")
+            try:
+                print(f"[step 1] Klik Try in Google Flow...")
+                btn.scroll_into_view_if_needed(); page.wait_for_timeout(900)
+                box = btn.bounding_box()
+                print(f"  box after scroll {box}")
+                try:
+                    btn.click(force=True, timeout=4000)
+                    print("  -> force click OK")
+                except Exception as e:
+                    print(f"  force fail {e}, fallback mouse")
+                    if box:
+                        page.mouse.click(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
+                    else:
+                        page.evaluate("(el)=>el.click()", btn.element_handle())
+                page.wait_for_timeout(3500)
+                print(f"  -> URL after click: {page.url}")
+                # jika tidak navigasi (masih labs), fallback direct goto flow.google.com
+                if "labs.google" in page.url and "flow.google.com" not in page.url:
+                    print("  -> Try tidak navigasi, fallback goto https://flow.google.com")
+                    page.goto("https://flow.google.com", wait_until="domcontentloaded", timeout=30000)
+                    page.wait_for_timeout(3500)
+                    print(f"  -> URL fallback: {page.url}")
+            except Exception as e:
+                print(f"[warn] klik Try gagal {e}, coba JS click + fallback goto")
+                try: page.evaluate("(el)=>el.click()", btn.element_handle())
+                except: pass
+                page.wait_for_timeout(2500)
+                if "flow.google.com" not in page.url:
+                    page.goto("https://flow.google.com", wait_until="domcontentloaded", timeout=30000)
+                    page.wait_for_timeout(3000)
+            advisor_click(page, folder, "02_after_try", "Setelah klik Try (atau fallback goto flow.google.com), cek apakah sudah di flow.google.com/about. Apa next step login?")
         else:
             print("[warn] Try tidak ketemu"); advisor_click(page, folder, "02_try_not_found", "Try button tidak ketemu, dimana?")
         # 2 login

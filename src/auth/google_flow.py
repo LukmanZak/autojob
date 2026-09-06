@@ -8,6 +8,19 @@ FLOW_URL = "https://labs.google/fx/tools/flow"
 SESSION_FILE = SESSIONS_DIR / "google_flow.json"
 
 def find_try_button(page):
+    # ada 9 button yang sama di carousel, cuma 1 yang di viewport (x ~410)
+    candidates = page.locator("button:has-text('Try in Google Flow'), a:has-text('Try in Google Flow')")
+    n = candidates.count()
+    for i in range(n):
+        try:
+            loc = candidates.nth(i)
+            if loc.count()==0: continue
+            if not loc.is_visible(): continue
+            box = loc.bounding_box()
+            if box and 0 <= box["x"] < 1800 and 0 <= box["y"] < 1500 and box["width"]>50:
+                print(f"[pick] Try button {i} box {box}")
+                return loc
+        except: pass
     sels = [
         "a:has-text('Try in Google Flow')",
         "a:has-text('Try Flow')",
@@ -131,17 +144,38 @@ def main(headless=False, keep_open=True):
         print(f"Title: {page.title()}")
         print(f"URL: {page.url}")
 
-        # 1. Klik Try in Google Flow
+        # 1. Klik Try in Google Flow - scroll dulu (y 2530->425)
         btn = find_try_button(page)
         if btn:
             print("[step 1] Klik Try in Google Flow...")
             try:
-                btn.click()
-                page.wait_for_timeout(4000)
+                btn.scroll_into_view_if_needed(); page.wait_for_timeout(900)
+                box = btn.bounding_box()
+                print(f"  box {box}")
+                try:
+                    btn.click(force=True, timeout=4000)
+                    print("  force click OK")
+                except Exception as e:
+                    print(f"  force fail {e}")
+                    if box:
+                        page.mouse.click(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
+                    else:
+                        page.evaluate("(el)=>el.click()", btn.element_handle())
+                page.wait_for_timeout(3500)
                 print(f"  -> URL setelah klik: {page.url}")
+                if "labs.google" in page.url and "flow.google.com" not in page.url:
+                    print("  -> fallback goto https://flow.google.com")
+                    page.goto("https://flow.google.com", wait_until="domcontentloaded", timeout=30000)
+                    page.wait_for_timeout(3500)
+                    print(f"  -> URL fallback: {page.url}")
                 print(f"  -> Title: {page.title()}")
             except Exception as e:
                 print(f"  klik Try fail {e}")
+                try: page.evaluate("(el)=>el.click()", btn.element_handle())
+                except: pass
+                if "flow.google.com" not in page.url:
+                    page.goto("https://flow.google.com", wait_until="domcontentloaded", timeout=30000)
+                    page.wait_for_timeout(3000)
         else:
             print("[warn] Tombol Try tidak ketemu - mungkin sudah redirect atau perlu scroll")
             # coba scroll
