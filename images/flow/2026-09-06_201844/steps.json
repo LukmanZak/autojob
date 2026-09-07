@@ -1,0 +1,145 @@
+[
+  {
+    "idx": 1,
+    "step": "01_home",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\01_01_home.png",
+    "url": "https://labs.google/fx/tools/flow",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\01_01_home.png",
+      "prompt": "Cari tombol 'Try in Google Flow' - dimana? Return koordinat klik."
+    },
+    "time": "2026-09-06T20:19:14.215601"
+  },
+  {
+    "idx": 2,
+    "step": "02_after_try",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\02_02_after_try.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\02_02_after_try.png",
+      "prompt": "Setelah klik Try (atau fallback goto flow.google.com), cek apakah sudah di flow.google.com/about. Apa next step login?"
+    },
+    "time": "2026-09-06T20:19:37.988067"
+  },
+  {
+    "idx": 3,
+    "step": "02b_create_not_found",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\03_02b_create_not_found.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\03_02b_create_not_found.png",
+      "prompt": "Create button tidak ketemu, cek apakah sudah di login/dashboard"
+    },
+    "time": "2026-09-06T20:19:38.443258"
+  },
+  {
+    "idx": 4,
+    "step": "03_after_login",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\04_03_after_login.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\04_03_after_login.png",
+      "prompt": "User sudah login Google. Cari 'New Project' - dimana?"
+    },
+    "time": "2026-09-06T20:19:41.130339"
+  },
+  {
+    "idx": 5,
+    "step": "04_new_project_clicked",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\05_04_new_project_clicked.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\05_04_new_project_clicked.png",
+      "prompt": "Sudah klik New Project. Cari popup 'Get Started'"
+    },
+    "time": "2026-09-06T20:19:48.689207"
+  },
+  {
+    "idx": 6,
+    "step": "05_get_started_not_found",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\06_05_get_started_not_found.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\06_05_get_started_not_found.png",
+      "prompt": "Popup Get Started tidak muncul (mungkin sudah pernah, cek overlay hidden)"
+    },
+    "time": "2026-09-06T20:19:49.347658"
+  },
+  {
+    "idx": 7,
+    "step": "06_before_video_switch",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\07_06_before_video_switch.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\07_06_before_video_switch.png",
+      "prompt": "Di bawah ada tombol Video yang harus diganti jadi Images - tunjuk koordinat Video"
+    },
+    "time": "2026-09-06T20:19:50.490133"
+  },
+  {
+    "idx": 8,
+    "step": "07_after_video_switch",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\08_07_after_video_switch.png",
+    "url": "https://flow.google.com/project/95e6f4bc-5e46-44d0-a948-5248007f146c",
+    "title": "Google Flow - Sep 06 - 20:19",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\08_07_after_video_switch.png",
+      "prompt": "Setelah switch Video->Images, apakah sudah jadi Images? Jika belum, dimana tombol Images?"
+    },
+    "time": "2026-09-06T20:19:56.865417"
+  },
+  {
+    "idx": 9,
+    "step": "08_after_fill",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\09_08_after_fill.png",
+    "url": "https://flow.google.com/project/95e6f4bc-5e46-44d0-a948-5248007f146c",
+    "title": "Google Flow - Sep 06 - 20:19",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\09_08_after_fill.png",
+      "prompt": "Sudah isi fill dengan 'Create a clean, modern, friendly square ' dan Enter. Apakah generate mulai?"
+    },
+    "time": "2026-09-06T20:20:03.000034"
+  },
+  {
+    "idx": 10,
+    "step": "09_generating",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\10_09_generating.png",
+    "url": "https://flow.google.com/project/95e6f4bc-5e46-44d0-a948-5248007f146c",
+    "title": "Google Flow - Sep 06 - 20:19",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\10_09_generating.png",
+      "prompt": "Setelah Enter, cek apakah loading/generating muncul"
+    },
+    "time": "2026-09-06T20:20:06.861014"
+  },
+  {
+    "idx": 17,
+    "step": "10_download_done",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_201844\\17_10_download_done.png",
+    "url": "https://flow.google.com/project/95e6f4bc-5e46-44d0-a948-5248007f146c",
+    "title": "Google Flow - Sep 06 - 20:19",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_201844\\17_10_download_done.png",
+      "prompt": "Download 4 image 1K ke F:\\alpha\\result image selesai"
+    },
+    "time": "2026-09-06T20:21:27.318026"
+  }
+]

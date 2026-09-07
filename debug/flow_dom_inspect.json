@@ -1,0 +1,618 @@
+[
+  {
+    "i": 2,
+    "tag": "AISANDBOX-ROOT",
+    "cls": "",
+    "aria": null,
+    "role": null,
+    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "i": 3,
+    "tag": "MAIN",
+    "cls": "aisandbox-content",
+    "aria": null,
+    "role": null,
+    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "i": 6,
+    "tag": "FLOW-PROJECT-SHELL",
+    "cls": "",
+    "aria": null,
+    "role": null,
+    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1272,
+      "h": 720
+    }
+  },
+  {
+    "i": 8,
+    "tag": "FLOW-PROJECT-PAGE",
+    "cls": "",
+    "aria": null,
+    "role": null,
+    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1272,
+      "h": 720
+    }
+  },
+  {
+    "i": 16,
+    "tag": "DIV",
+    "cls": "page-layout",
+    "aria": null,
+    "role": null,
+    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1272,
+      "h": 720
+    }
+  },
+  {
+    "i": 33,
+    "tag": "BUTTON",
+    "cls": "mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-mdc-menu-trigger mat-mdc-tooltip-trigger more-options-button mat-unthemed flow-icon-button-transparent flow-button-large",
+    "aria": "More options for the project",
+    "role": null,
+    "text": "more_vert",
+    "rect": {
+      "x": 252,
+      "y": 18,
+      "w": 40,
+      "h": 40
+    }
+  },
+  {
+    "i": 72,
+    "tag": "BUTTON",
+    "cls": "mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-mdc-menu-trigger mat-mdc-tooltip-trigger mat-unthemed flow-icon-button-transparent flow-button-large",
+    "aria": "More options",
+    "role": null,
+    "text": "more_vert",
+    "rect": {
+      "x": 1084.359375,
+      "y": 18,
+      "w": 40,
+      "h": 40
+    }
+  },
+  {
+    "i": 91,
+    "tag": "IMG",
+    "cls": "gb_V",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 1198,
+      "y": 17,
+      "w": 42,
+      "h": 42
+    }
+  },
+  {
+    "i": 93,
+    "tag": "IMG",
+    "cls": "gb_X gbii",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 1203,
+      "y": 22,
+      "w": 32,
+      "h": 32
+    }
+  },
+  {
+    "i": 99,
+    "tag": "DIV",
+    "cls": "",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 798,
+      "y": 84,
+      "w": 420,
+      "h": 280
+    }
+  },
+  {
+    "i": 100,
+    "tag": "FLOW-PROJECT-SIDENAV-CONTAINER",
+    "cls": "has-header-offset",
+    "aria": null,
+    "role": null,
+    "text": "dashboard\nAll media\nimage\nImages\naccessibility_new\nCharacters\nmovie\nScenes\napps_spark_2\nTools\ndelete\nTrash\nleft_panel_cl",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1272,
+      "h": 720
+    }
+  },
+  {
+    "i": 101,
+    "tag": "MAT-SIDENAV-CONTAINER",
+    "cls": "mat-drawer-container mat-sidenav-container sidenav mat-drawer-transition",
+    "aria": null,
+    "role": null,
+    "text": "dashboard\nAll media\nimage\nImages\naccessibility_new\nCharacters\nmovie\nScenes\napps_spark_2\nTools\ndelete\nTrash\nleft_panel_cl",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1272,
+      "h": 720
+    }
+  },
+  {
+    "i": 153,
+    "tag": "MAT-SIDENAV-CONTENT",
+    "cls": "mat-drawer-content mat-sidenav-content",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 232,
+      "y": 0,
+      "w": 1040,
+      "h": 720
+    }
+  },
+  {
+    "i": 154,
+    "tag": "DIV",
+    "cls": "cdk-virtual-scrollable page-container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 232,
+      "y": 0,
+      "w": 1040,
+      "h": 720
+    }
+  },
+  {
+    "i": 155,
+    "tag": "DIV",
+    "cls": "mat-context-menu-trigger content-container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 232,
+      "y": 76,
+      "w": 1032,
+      "h": 644
+    }
+  },
+  {
+    "i": 157,
+    "tag": "CDK-VIRTUAL-SCROLL-VIEWPORT",
+    "cls": "cdk-virtual-scroll-viewport tiles-container cdk-virtual-scroll-orientation-vertical",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 1000,
+      "h": 644
+    }
+  },
+  {
+    "i": 158,
+    "tag": "DIV",
+    "cls": "cdk-virtual-scroll-content-wrapper",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 1000,
+      "h": 452
+    }
+  },
+  {
+    "i": 159,
+    "tag": "DIV",
+    "cls": "virtual-scroll-container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 1000,
+      "h": 250
+    }
+  },
+  {
+    "i": 160,
+    "tag": "DIV",
+    "cls": "tile-row virtual-item-container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 1000,
+      "h": 250
+    }
+  },
+  {
+    "i": 161,
+    "tag": "FLOW-GRID-TILE-CONTAINER",
+    "cls": "mat-context-menu-trigger",
+    "aria": "Blue yellow minimalist education\u2026",
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 162,
+    "tag": "FLOW-TILE-CONTAINER",
+    "cls": "",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 163,
+    "tag": "DIV",
+    "cls": "container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 164,
+    "tag": "FLOW-IMAGE-TILE",
+    "cls": "",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 165,
+    "tag": "DIV",
+    "cls": "container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 166,
+    "tag": "IMG",
+    "cls": "image",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 167,
+    "tag": "DIV",
+    "cls": "pre-hover-overlay",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 168,
+    "tag": "DIV",
+    "cls": "hover-overlay",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 169,
+    "tag": "DIV",
+    "cls": "hotbar-container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 177,
+    "tag": "BUTTON",
+    "cls": "mat-mdc-menu-trigger mat-mdc-tooltip-trigger",
+    "aria": "More options",
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 652.4375,
+      "y": 88,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "i": 180,
+    "tag": "DIV",
+    "cls": "footer-overlay",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 185,
+    "tag": "FLOW-GRID-TILE-CONTAINER",
+    "cls": "mat-context-menu-trigger",
+    "aria": "Minimalist educational blue yell\u2026",
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 186,
+    "tag": "FLOW-TILE-CONTAINER",
+    "cls": "",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 187,
+    "tag": "DIV",
+    "cls": "container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 188,
+    "tag": "FLOW-IMAGE-TILE",
+    "cls": "",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 189,
+    "tag": "DIV",
+    "cls": "container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 190,
+    "tag": "IMG",
+    "cls": "image",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 191,
+    "tag": "DIV",
+    "cls": "pre-hover-overlay",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 192,
+    "tag": "DIV",
+    "cls": "hover-overlay",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 193,
+    "tag": "DIV",
+    "cls": "hotbar-container",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 201,
+    "tag": "BUTTON",
+    "cls": "mat-mdc-menu-trigger mat-mdc-tooltip-trigger",
+    "aria": "More options",
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 1112.875,
+      "y": 88,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "i": 204,
+    "tag": "DIV",
+    "cls": "footer-overlay",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 708.4375,
+      "y": 76,
+      "w": 444.4375,
+      "h": 250
+    }
+  },
+  {
+    "i": 209,
+    "tag": "DIV",
+    "cls": "tile-view-footer",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 326,
+      "w": 1000,
+      "h": 202
+    }
+  },
+  {
+    "i": 210,
+    "tag": "DIV",
+    "cls": "cdk-virtual-scroll-spacer",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 248,
+      "y": 76,
+      "w": 1000,
+      "h": 250
+    }
+  },
+  {
+    "i": 261,
+    "tag": "DIV",
+    "cls": "keep-alive-layer hidden",
+    "aria": null,
+    "role": null,
+    "text": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 720
+    }
+  }
+]

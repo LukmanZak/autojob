@@ -1,0 +1,28 @@
+[
+  {
+    "idx": 1,
+    "step": "01_home",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_110117\\01_01_home.png",
+    "url": "https://labs.google/fx/tools/flow",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_110117\\01_01_home.png",
+      "prompt": "Cari tombol 'Try in Google Flow' - dimana? Return koordinat klik."
+    },
+    "time": "2026-09-06T11:02:19.307680"
+  },
+  {
+    "idx": 2,
+    "step": "02_after_try",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_110117\\02_02_after_try.png",
+    "url": "https://flow.google.com/about",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_110117\\02_02_after_try.png",
+      "prompt": "Setelah klik Try (atau fallback goto flow.google.com), cek apakah sudah di flow.google.com/about. Apa next step login?"
+    },
+    "time": "2026-09-06T11:02:56.560605"
+  }
+]

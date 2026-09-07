@@ -82,6 +82,26 @@ def find_get_started(page):
         except: pass
     return None
 def switch_video_to_images(page):
+    # Flow hides the Image/Video radios inside Settings. Open that panel
+    # before extracting them; a project may already reopen in Image mode.
+    settings_trigger = page.locator("button[aria-label='Settings trigger']").first
+    try:
+        page.wait_for_selector("button[aria-label='Settings trigger']", state="visible", timeout=10000)
+    except Exception:
+        pass
+    if settings_trigger.count() > 0:
+        try:
+            settings_trigger.click(force=True)
+            page.wait_for_timeout(500)
+            for loc in page.locator("button[role='radio']").all():
+                if not loc.is_visible():
+                    continue
+                text = " ".join(loc.inner_text().split())
+                if text.endswith("Image") and loc.get_attribute("aria-checked") == "true":
+                    print("[switch] Image sudah aktif; settings terbuka untuk ratio/count")
+                    return True
+        except Exception as exc:
+            print(f"[switch] gagal membuka Settings sebelum mode extract: {exc}")
     # LOGIKA BARU: extract loop sampai Video muncul, baru cari Images
     # Sesuai arahan: run terus sampai bisa klik Images, log extract tiap iterasi
     print("[switch] polling Videos candidates sampai muncul...")
@@ -194,6 +214,88 @@ def switch_video_to_images(page):
         print("[warn] Images tidak ketemu setelah polling")
         return False
 
+def configure_image_settings(page, ratio: str = "16:9", count: int = 2):
+    """Extract and select the requested Image ratio and generation count."""
+    import re
+    ratio_alias = {"crop_16_9": "16:9", "crop_landscape": "4:3", "crop_square": "1:1", "crop_portrait": "3:4", "crop_9_16": "9:16"}
+    ratio = ratio_alias.get(str(ratio).strip().lower(), str(ratio).strip())
+    ratio = ratio.replace("x", ":") if re.fullmatch(r"\d+x\d+", ratio) else ratio
+    if ratio not in {"16:9", "4:3", "1:1", "3:4", "9:16"}:
+        raise ValueError("ratio harus salah satu dari: 16:9, 4:3, 1:1, 3:4, 9:16")
+    count = int(count)
+    if count not in {1, 2, 3, 4}:
+        raise ValueError("count harus salah satu dari: 1, 2, 3, 4")
+
+    trigger = page.locator("button[aria-label='Settings trigger']").first
+    if trigger.count() == 0:
+        raise RuntimeError("Settings trigger tidak ketemu setelah Image dipilih")
+    # Detect the popup from visible radio buttons instead of locator count;
+    # Angular keeps hidden radio nodes mounted after Escape.
+    visible_settings = []
+    for item in page.locator("button[role='radio']").all():
+        try:
+            if item.is_visible():
+                visible_settings.append(item)
+        except Exception:
+            pass
+    if not any(ratio in " ".join(item.inner_text().split()) for item in visible_settings):
+        trigger.click(force=True)
+        page.wait_for_timeout(500)
+
+    print(f"[settings] extract Image settings; requested ratio={ratio}, count=x{count}")
+    visible = []
+    for item in page.locator("button[role='radio']").all():
+        try:
+            if not item.is_visible():
+                continue
+            text = " ".join(item.inner_text().split())
+            visible.append((item, text))
+            print(f"  candidate setting: {text!r} checked={item.get_attribute('aria-checked')}")
+        except Exception:
+            pass
+
+    ratio_btn = None
+    count_btn = None
+    for item, text in visible:
+        if text.endswith(ratio) or text == ratio:
+            ratio_btn = item
+        if text == f"x{count}":
+            count_btn = item
+    if ratio_btn is None:
+        raise RuntimeError(f"ratio {ratio} tidak ditemukan di popup Image settings")
+    if count_btn is None:
+        raise RuntimeError(f"x{count} tidak ditemukan di popup Image settings")
+
+    if ratio_btn.get_attribute("aria-checked") != "true":
+        ratio_btn.click(force=True)
+        page.wait_for_timeout(300)
+        print(f"  selected ratio {ratio}")
+    if count_btn.get_attribute("aria-checked") != "true":
+        count_btn.click(force=True)
+        page.wait_for_timeout(300)
+        print(f"  selected count x{count}")
+
+    summary = page.locator("span.settings-summary").first.inner_text().strip()
+    summary_ratio = {"16:9": "crop_16_9", "4:3": "crop_landscape", "1:1": "crop_square", "3:4": "crop_portrait", "9:16": "crop_9_16"}
+    selected_ratio = summary_ratio[ratio]
+    if ratio_btn.get_attribute("aria-checked") != "true" or count_btn.get_attribute("aria-checked") != "true":
+        raise RuntimeError(f"settings aria-checked tidak sesuai: ratio={ratio_btn.get_attribute('aria-checked')}, count={count_btn.get_attribute('aria-checked')}")
+    if selected_ratio not in summary and ratio not in summary:
+        raise RuntimeError(f"settings summary tidak sesuai: {summary!r}")
+    # Close the popup explicitly. Escape is flaky with the Material overlay;
+    # clicking the same trigger is deterministic when ratio radios are visible.
+    try:
+        open_ratio = any(
+            item.is_visible() and any(token in " ".join(item.inner_text().split()) for token in ("16:9", "4:3", "1:1", "3:4", "9:16"))
+            for item in page.locator("button[role='radio']").all()
+        )
+        if open_ratio:
+            trigger.click(force=True)
+            page.wait_for_timeout(400)
+    except Exception:
+        pass
+    return True
+
 def fill_prompt(page, prompt_text: str):
     """Isi fill 'What do you want to create?' dengan prompt lalu Enter"""
     print(f"[fill] isi prompt: '{prompt_text[:60]}'")
@@ -263,175 +365,99 @@ def fill_prompt(page, prompt_text: str):
         import traceback; traceback.print_exc()
         return False
 
-def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path):
-    """Tunggu 2 image muncul, hover image -> titik tiga (More) muncul -> Download -> 1K -> save ke result image/"""
+def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expected_count: int = 2):
+    """Download the first two generated image tiles at 1K."""
     import pathlib as _pl
+    import re
     result_dir = _pl.Path(result_dir)
     result_dir.mkdir(parents=True, exist_ok=True)
     print(f"[download] tunggu 2 image generate di {page.url}")
-    # polling sampai image muncul (max 120s)
-    for attempt in range(24):  # 24 x 5s = 120s
-        img_candidates = page.locator("img").all()
-        big_imgs = []
-        for im in img_candidates:
-            try:
-                box = im.bounding_box()
-                if box and box["width"] > 200 and box["height"] > 200:
-                    big_imgs.append(im)
-            except: pass
-        print(f"  attempt {attempt+1}/24: big_imgs={len(big_imgs)}")
-        if len(big_imgs) >= 2:
-            print(f"  ✅ 2 image terdeteksi")
+    expected_count = int(expected_count)
+    card_sel = "flow-grid-tile-container:has(flow-image-tile)"
+    cards = page.locator(card_sel)
+    for attempt in range(24):
+        count = cards.count()
+        print(f"  attempt {attempt + 1}/24: image_cards={count}, expected={expected_count}")
+        if count >= expected_count:
             break
-        try:
-            if page.locator("text='Generating'").count()>0:
-                print("  Generating...")
-        except: pass
         page.wait_for_timeout(5000)
     else:
-        print("[warn] 2 image tidak muncul setelah 120s, screenshot cek")
+        print(f"[warn] {expected_count} image card tidak muncul setelah 120s")
         try: page.screenshot(path=str(folder / "10_before_download.png"), full_page=True)
-        except: pass
+        except Exception: pass
         return False
-
-    # download 2 image via hover -> More
-    print("[download] hover image -> cari titik tiga (More)...")
-    # re-extract big images yang visible
-    big_imgs = []
-    for im in page.locator("img").all():
-        try:
-            box = im.bounding_box()
-            if box and box["width"] > 200 and box["height"] > 200 and im.is_visible():
-                big_imgs.append(im)
-        except: pass
-    # jika kurang dari 2, fallback ambil yang ada
-    big_imgs = big_imgs[:2]
-    print(f"  big_imgs final {len(big_imgs)}")
-
     downloaded = 0
-    for idx, img in enumerate(big_imgs):
-        try:
-            print(f"[download] image {idx+1} hover...")
-            # hover biar More muncul (sesuai screenshot kamu harus di-hover)
+    for idx in range(expected_count):
+        save_path = result_dir / f"result_{idx + 1}_1K.png"
+        # Always download the current run; overwrite stale output from a
+        # previous prompt instead of counting it as a new result.
+        if save_path.exists():
             try:
-                img.scroll_into_view_if_needed(); page.wait_for_timeout(400)
-                img.hover(force=True); page.wait_for_timeout(800)
-            except: 
-                # fallback pyautogui jika hover playwright tidak trigger (pakai bounding_box + mouse)
-                try:
-                    box = img.bounding_box()
-                    if box:
-                        print(f"  hover fallback via mouse {box}")
-                        page.mouse.move(box["x"]+box["width"]/2, box["y"]+box["height"]/2)
-                        page.wait_for_timeout(600)
-                except: pass
-            # fallback pyautogui jika ada (move real mouse)
+                save_path.unlink()
+            except Exception as exc:
+                print(f"[warn] tidak bisa menghapus output lama {save_path}: {exc}")
+        success = False
+        for retry in range(1, 6):
             try:
-                import pyautogui
-                box = img.bounding_box()
-                if box:
-                    # playwright viewport offset + window chrome, pakai pyautogui sebagai last resort
-                    # cek apakah more button masih belum muncul setelah hover
-                    if page.locator("button[aria-label*='More'], button:has(mat-icon:has-text('more_vert'))").count()==0:
-                        print("  hover playwright belum muncul More, coba pyautogui")
-                        # pyautogui butuh screen coords - kita skip jika tidak ada, cukup log
-                        pass
-            except: pass
+                card = page.locator(card_sel).nth(idx)
+                image = card.locator("img.image").first
+                more = card.locator("button[aria-label='More options']").first
+                print(f"[download] image {idx + 1}, retry {retry}/5")
+                image.scroll_into_view_if_needed()
+                image.hover(force=True)
+                page.wait_for_timeout(350)
+                if more.count() == 0 or not more.is_visible():
+                    raise RuntimeError("More image tidak visible di dalam card")
+                print(f"  found image More box={more.bounding_box()}")
+                more.click(force=True, timeout=4000)
+                page.wait_for_timeout(500)
+                dl = None
+                for item in page.locator("button[role='menuitem']").all():
+                    if not item.is_visible(): continue
+                    text = " ".join(item.inner_text().split())
+                    icon = item.locator("mat-icon").first
+                    icon_text = icon.inner_text().strip() if icon.count() else ""
+                    if text == "download Download" or (text == "Download" and icon_text == "download"):
+                        dl = item; break
+                if dl is None:
+                    raise RuntimeError("Download menuitem tidak ketemu setelah image More")
+                print(f"  found Download: {dl.inner_text()!r}")
+                dl.click(force=True, timeout=4000)
+                page.wait_for_timeout(500)
+                one_k = None
+                for item in page.locator("button[role='menuitem']").all():
+                    if not item.is_visible(): continue
+                    text = " ".join(item.inner_text().split())
+                    if text.startswith("1K"):
+                        one_k = item; break
+                if one_k is None:
+                    raise RuntimeError("1K menuitem tidak ketemu setelah Download")
+                print(f"  found 1K: {one_k.inner_text()!r}")
+                with page.expect_download(timeout=15000) as dl_info:
+                    one_k.click(force=True, timeout=4000)
+                download = dl_info.value
+                download.save_as(str(save_path))
+                if not save_path.exists() or save_path.stat().st_size == 0:
+                    raise RuntimeError("download event terjadi tetapi file kosong/tidak ada")
+                print(f"  downloaded {save_path} ({save_path.stat().st_size} bytes)")
+                downloaded += 1
+                success = True
+                break
+            except Exception as exc:
+                print(f"  retry {retry} gagal: {exc}")
+                try: page.keyboard.press("Escape")
+                except Exception: pass
+                page.wait_for_timeout(800)
+                try: page.screenshot(path=str(folder / f"10_download_{idx + 1}_{retry}.png"))
+                except Exception: pass
+        if not success:
+            print(f"[download] image {idx + 1} gagal setelah 5 retry")
+    print(f"[download] selesai {downloaded}/{expected_count} ke {result_dir}")
+    try: page.screenshot(path=str(folder / "11_after_download.png"), full_page=True)
+    except Exception: pass
+    return downloaded == expected_count
 
-            # cari More setelah hover
-            more_btn = None
-            for sel in [
-                "button[aria-label*='More']",
-                "button:has(mat-icon:has-text('more_vert'))",
-                "button:has(mat-icon:has-text('more_horiz'))",
-                "button[aria-label*='more']",
-            ]:
-                loc = page.locator(sel).first
-                # cek yang visible setelah hover, atau yang dekat img
-                # kita coba all dan filter yang dekat img
-                for cand in page.locator(sel).all():
-                    try:
-                        if cand.is_visible():
-                            # cek dekat img (bounding box dekat)
-                            cbox = cand.bounding_box()
-                            ibox = img.bounding_box()
-                            if cbox and ibox and abs(cbox["x"]-ibox["x"]) < 300:
-                                more_btn = cand
-                                print(f"  found More near img {sel} box {cbox}")
-                                break
-                    except: pass
-                if more_btn: break
-                if loc.count()>0 and loc.is_visible():
-                    more_btn = loc
-                    print(f"  found More {sel}")
-                    break
-            if not more_btn:
-                # fallback: cari More di dekat img via parent
-                try:
-                    # coba hover lagi + tunggu
-                    page.wait_for_selector("button[aria-label*='More']", state="visible", timeout=3000)
-                    more_btn = page.locator("button[aria-label*='More']").first
-                    print("  wait_for_selector More found")
-                except:
-                    print("  More tidak ketemu setelah hover, screenshot")
-                    try: page.screenshot(path=str(folder / f"10_hover_{idx+1}.png"))
-                    except: pass
-                    continue
-            print(f"  klik More image {idx+1}...")
-            more_btn.click(force=True, timeout=3000)
-            page.wait_for_timeout(800)
-            # di menu, klik Download
-            dl_btn = None
-            for sel in ["text='Download'", "button:has-text('Download')", "a:has-text('Download')", "[role='menuitem']:has-text('Download')"]:
-                loc = page.locator(sel).first
-                if loc.count()>0 and loc.is_visible():
-                    dl_btn = loc
-                    print(f"  found Download {sel}")
-                    break
-            if not dl_btn:
-                print("  Download tidak ketemu")
-                continue
-            dl_btn.click(force=True, timeout=3000)
-            page.wait_for_timeout(800)
-            # pilih 1K
-            one_k = None
-            for sel in ["text='1K'", "button:has-text('1K')", "[role='menuitem']:has-text('1K')"]:
-                loc = page.locator(sel).first
-                if loc.count()>0:
-                    one_k = loc
-                    print(f"  found 1K {sel} vis={loc.is_visible()}")
-                    break
-            if one_k:
-                try:
-                    with page.expect_download(timeout=15000) as dl_info:
-                        one_k.click(force=True, timeout=3000)
-                    download = dl_info.value
-                    save_path = result_dir / f"result_{idx+1}_1K.png"
-                    download.save_as(str(save_path))
-                    print(f"  ✅ downloaded {save_path} ({save_path.stat().st_size} bytes)")
-                    downloaded += 1
-                except Exception as e:
-                    print(f"  download expect fail {e}, coba click biasa")
-                    try:
-                        one_k.click(force=True)
-                        page.wait_for_timeout(3000)
-                    except: pass
-            else:
-                print("  1K tidak ketemu")
-            try: page.keyboard.press("Escape")
-            except: pass
-            page.wait_for_timeout(600)
-        except Exception as e:
-            print(f"  download image {idx+1} fail {e}")
-            import traceback; traceback.print_exc()
-
-    print(f"[download] selesai {downloaded}/2 ke {result_dir}")
-    try:
-        page.screenshot(path=str(folder / "11_after_download.png"), full_page=True)
-    except: pass
-    return downloaded > 0
-
-def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi."):
+def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi.", ratio: str = "16:9", count: int = 2):
     ensure_dirs()
     folder = ensure_flow_session()
     print(f"=== Google Flow Vision ({folder.name}) ===")
@@ -614,6 +640,14 @@ def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi."):
         page.wait_for_timeout(600)
         advisor_click(page, folder, "06_before_video_switch", "Di bawah ada tombol Video yang harus diganti jadi Images - tunjuk koordinat Video")
         ok=switch_video_to_images(page)
+        # Flow may already be in Images mode and expose no Video toggle.
+        # Configure ratio/count in either case so requested options are never skipped.
+        try:
+            configure_image_settings(page, ratio=ratio, count=count)
+            print(f"✅ Image settings OK: {ratio}, x{count}")
+        except Exception as e:
+            print(f"⚠️ Image settings gagal: {e}")
+            advisor_click(page, folder, "07b_image_settings_fail", "Image settings gagal; extract ratio/count candidates")
         advisor_click(page, folder, "07_after_video_switch", "Setelah switch Video->Images, apakah sudah jadi Images? Jika belum, dimana tombol Images?")
         if ok: print("✅ Video -> Images OK")
         else: print("⚠️  Cek manual Video->Images di browser")
@@ -626,13 +660,13 @@ def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi."):
             page.wait_for_timeout(2500)
             advisor_click(page, folder, "09_generating", "Setelah Enter, cek apakah loading/generating muncul")
         # 7 Download 2 image via titik tiga -> 1K ke result image/
-        print(f"\n[step 7] Download 2 image (titik tiga -> Download -> 1K) ke result image/")
+        print(f"\n[step 7] Download {count} image (titik tiga -> Download -> 1K) ke result image/")
         result_dir = pathlib.Path("F:/alpha/result image")
         try:
-            ok_dl = download_results(page, result_dir, folder)
+            ok_dl = download_results(page, result_dir, folder, expected_count=count)
             if ok_dl:
                 print(f"✅ Download selesai -> {result_dir}")
-                advisor_click(page, folder, "10_download_done", f"Download 2 image 1K ke {result_dir} selesai")
+                advisor_click(page, folder, "10_download_done", f"Download {count} image 1K ke {result_dir} selesai")
             else:
                 print("⚠️ Download belum berhasil, cek manual titik tiga -> 1K")
                 advisor_click(page, folder, "10_download_fail", "Download gagal, cek manual")
@@ -653,5 +687,7 @@ if __name__=="__main__":
     ap.add_argument("--headless", action="store_true", default=False)
     ap.add_argument("--no-headless", dest="headless", action="store_false")
     ap.add_argument("--prompt", default="Buatkan logo untuk edukasi.", help="prompt untuk fill What do you want to create?")
+    ap.add_argument("--ratio", default="16:9", choices=["16:9", "4:3", "1:1", "3:4", "9:16"], help="Image aspect ratio")
+    ap.add_argument("--count", type=int, default=2, choices=[1, 2, 3, 4], help="jumlah hasil gambar")
     args=ap.parse_args()
-    main(headless=args.headless, prompt_text=args.prompt)
+    main(headless=args.headless, prompt_text=args.prompt, ratio=args.ratio, count=args.count)

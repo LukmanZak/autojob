@@ -1,0 +1,106 @@
+[
+  {
+    "idx": 1,
+    "step": "01_home",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_114939\\01_01_home.png",
+    "url": "https://labs.google/fx/tools/flow",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_114939\\01_01_home.png",
+      "prompt": "Cari tombol 'Try in Google Flow' - dimana? Return koordinat klik."
+    },
+    "time": "2026-09-06T11:49:49.351816"
+  },
+  {
+    "idx": 2,
+    "step": "02_after_try",
+    "file": null,
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "None",
+      "prompt": "Setelah klik Try (atau fallback goto flow.google.com), cek apakah sudah di flow.google.com/about. Apa next step login?"
+    },
+    "time": "2026-09-06T11:50:30.820202"
+  },
+  {
+    "idx": 2,
+    "step": "02b_create_not_found",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_114939\\02_02b_create_not_found.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_114939\\02_02b_create_not_found.png",
+      "prompt": "Create button tidak ketemu, cek apakah sudah di login/dashboard"
+    },
+    "time": "2026-09-06T11:50:50.230927"
+  },
+  {
+    "idx": 3,
+    "step": "03_after_login",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_114939\\03_03_after_login.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_114939\\03_03_after_login.png",
+      "prompt": "User sudah login Google. Cari 'New Project' - dimana?"
+    },
+    "time": "2026-09-06T11:50:52.632984"
+  },
+  {
+    "idx": 4,
+    "step": "04_new_project_clicked",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_114939\\04_04_new_project_clicked.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_114939\\04_04_new_project_clicked.png",
+      "prompt": "Sudah klik New Project. Cari popup 'Get Started'"
+    },
+    "time": "2026-09-06T11:50:59.565106"
+  },
+  {
+    "idx": 5,
+    "step": "05_get_started_not_found",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_114939\\05_05_get_started_not_found.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_114939\\05_05_get_started_not_found.png",
+      "prompt": "Popup Get Started tidak muncul"
+    },
+    "time": "2026-09-06T11:50:59.981522"
+  },
+  {
+    "idx": 6,
+    "step": "06_before_video_switch",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_114939\\06_06_before_video_switch.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_114939\\06_06_before_video_switch.png",
+      "prompt": "Di bawah ada tombol Video yang harus diganti jadi Images - tunjuk koordinat Video"
+    },
+    "time": "2026-09-06T11:51:00.969300"
+  },
+  {
+    "idx": 7,
+    "step": "07_after_video_switch",
+    "file": "F:\\alpha\\images\\flow\\2026-09-06_114939\\07_07_after_video_switch.png",
+    "url": "https://flow.google.com/",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "ai_decision": {
+      "action": "manual_check",
+      "path": "F:\\alpha\\images\\flow\\2026-09-06_114939\\07_07_after_video_switch.png",
+      "prompt": "Setelah switch Video->Images, apakah sudah jadi Images? Jika belum, dimana tombol Images?"
+    },
+    "time": "2026-09-06T11:51:01.211581"
+  }
+]
