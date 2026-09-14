@@ -26,7 +26,7 @@ def find_try_button(page):
                 return loc
         except: pass
     # fallback: first visible
-    for sel in ["button[aria-label='Create with Google Flow']", "button:has-text('Create with Google Flow')", "a:has-text('Try in Google Flow')","a:has-text('Try Flow')","button:has-text('Try in Google Flow')","a:has-text('Try')","a[href*='flow.google']"]:
+    for sel in ["button[aria-label='Create with Google Flow']", "button:has-text('Create with Google Flow')", "a:has-text('Try in Google Flow')","a:has-text('Try Flow')","button:has-text('Try in Google Flow')","a:has-text('Try')"]:
         try:
             loc=page.locator(sel).first
             if loc.count()>0 and loc.is_visible(): 
@@ -214,8 +214,8 @@ def switch_video_to_images(page):
         print("[warn] Images tidak ketemu setelah polling")
         return False
 
-def configure_image_settings(page, ratio: str = "16:9", count: int = 2):
-    """Extract and select the requested Image ratio and generation count."""
+def configure_image_settings(page, ratio: str = "16:9", count: int = 2, model: str = "Nano Banana 2"):
+    """Extract and select Image ratio, model family, and generation count."""
     import re
     ratio_alias = {"crop_16_9": "16:9", "crop_landscape": "4:3", "crop_square": "1:1", "crop_portrait": "3:4", "crop_9_16": "9:16"}
     ratio = ratio_alias.get(str(ratio).strip().lower(), str(ratio).strip())
@@ -225,6 +225,14 @@ def configure_image_settings(page, ratio: str = "16:9", count: int = 2):
     count = int(count)
     if count not in {1, 2, 3, 4}:
         raise ValueError("count harus salah satu dari: 1, 2, 3, 4")
+    model_alias = {
+        "nano banana pro": "Nano Banana Pro",
+        "nano banana 2": "Nano Banana 2",
+        "nano banana 2 lite": "Nano Banana 2 Lite",
+    }
+    model = model_alias.get(str(model).strip().lower(), str(model).strip())
+    if model not in {"Nano Banana Pro", "Nano Banana 2", "Nano Banana 2 Lite"}:
+        raise ValueError("model harus Nano Banana Pro, Nano Banana 2, atau Nano Banana 2 Lite")
 
     trigger = page.locator("button[aria-label='Settings trigger']").first
     if trigger.count() == 0:
@@ -266,6 +274,25 @@ def configure_image_settings(page, ratio: str = "16:9", count: int = 2):
     if count_btn is None:
         raise RuntimeError(f"x{count} tidak ditemukan di popup Image settings")
 
+    model_btn = page.locator("button[aria-label='Select model family']").first
+    if model_btn.count() == 0:
+        raise RuntimeError("Select model family tidak ditemukan di Image settings")
+    current_model = " ".join(model_btn.inner_text().split())
+    if model not in current_model:
+        model_btn.click(force=True)
+        page.wait_for_timeout(300)
+        model_item = None
+        for item in page.locator("[role='menuitem']").all():
+            item_text = " ".join(item.inner_text().split())
+            if item.is_visible() and (item_text == model or item_text.endswith(model)):
+                model_item = item
+                break
+        if model_item is None:
+            raise RuntimeError(f"model {model} tidak ditemukan di dropdown")
+        model_item.click(force=True)
+        page.wait_for_timeout(500)
+        print(f"  selected model {model}")
+
     if ratio_btn.get_attribute("aria-checked") != "true":
         ratio_btn.click(force=True)
         page.wait_for_timeout(300)
@@ -276,6 +303,11 @@ def configure_image_settings(page, ratio: str = "16:9", count: int = 2):
         print(f"  selected count x{count}")
 
     summary = page.locator("span.settings-summary").first.inner_text().strip()
+    selected_settings = " ".join(page.locator("button[aria-label='Settings trigger']").first.inner_text().split())
+    known_models = ["Nano Banana Pro", "Nano Banana 2 Lite", "Nano Banana 2"]
+    detected_model = next((name for name in known_models if name in selected_settings), None)
+    if detected_model != model:
+        raise RuntimeError(f"model summary tidak sesuai: {selected_settings!r}")
     summary_ratio = {"16:9": "crop_16_9", "4:3": "crop_landscape", "1:1": "crop_square", "3:4": "crop_portrait", "9:16": "crop_9_16"}
     selected_ratio = summary_ratio[ratio]
     if ratio_btn.get_attribute("aria-checked") != "true" or count_btn.get_attribute("aria-checked") != "true":
@@ -294,6 +326,50 @@ def configure_image_settings(page, ratio: str = "16:9", count: int = 2):
             page.wait_for_timeout(400)
     except Exception:
         pass
+    return True
+
+def upload_reference_image(page, image_path: str):
+    """Open Add ingredients -> Upload media and attach a reference image."""
+    image = pathlib.Path(image_path).expanduser().resolve()
+    if not image.exists() or image.stat().st_size == 0:
+        raise FileNotFoundError(f"reference image tidak ada/kosong: {image}")
+    plus = page.locator("button[aria-label='Add ingredients to the prompt box']").first
+    for attempt in range(30):
+        if plus.count() > 0 and plus.is_visible() and plus.bounding_box():
+            break
+        print(f"[upload] menunggu tombol Add ingredients ({attempt + 1}/30)")
+        page.wait_for_timeout(1000)
+    if plus.count() == 0 or not plus.is_visible() or not plus.bounding_box():
+        raise RuntimeError("tombol Add ingredients to the prompt box tidak ditemukan")
+    plus.click(force=True)
+    page.wait_for_timeout(500)
+    upload = page.get_by_text("Upload media", exact=True).last
+    if upload.count() == 0 or not upload.is_visible():
+        raise RuntimeError("tombol Upload media tidak muncul setelah tombol +")
+    print(f"[upload] Upload media ditemukan box={upload.bounding_box()}")
+    with page.expect_file_chooser(timeout=5000) as chooser_info:
+        upload.click(force=True)
+    chooser_info.value.set_files(str(image))
+    # The uploaded asset can remain in a loading state for several seconds;
+    # visibility alone is not enough because Add to prompt is initially disabled.
+    add_to_prompt = page.get_by_text("Add to prompt", exact=True).last
+    for attempt in range(20):
+        if add_to_prompt.count() > 0 and add_to_prompt.is_visible() and add_to_prompt.is_enabled():
+            break
+        print(f"[upload] waiting for Add to prompt enabled ({attempt + 1}/20)")
+        page.wait_for_timeout(1000)
+    if add_to_prompt.count() == 0 or not add_to_prompt.is_visible() or not add_to_prompt.is_enabled():
+        raise RuntimeError("asset ter-upload tetapi tombol Add to prompt tetap disabled")
+    # Upload first creates an asset in the media picker. It is not yet an
+    # ingredient until the picker action "Add to prompt" is clicked.
+    print(f"[upload] klik Add to prompt box={add_to_prompt.bounding_box()}")
+    add_to_prompt.click(force=True)
+    page.wait_for_timeout(1800)
+    body = " ".join(page.locator("body").inner_text().split())
+    print(f"[upload] file dipasang: {image.name}; body_tail={body[-500:]}")
+    # Flow renders an ingredient chip/thumbnail after the upload completes.
+    if image.name not in body and page.locator("img").count() == 0:
+        print("[upload] nama file tidak tampil sebagai teks; lanjut dengan screenshot/DOM evidence")
     return True
 
 def fill_prompt(page, prompt_text: str):
@@ -334,13 +410,40 @@ def fill_prompt(page, prompt_text: str):
     try:
         fill_loc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
         fill_loc.click(force=True); page.wait_for_timeout(300)
-        # isi prompt
-        try:
+        # Flow's contenteditable requires real keyboard events; DOM fill can
+        # look correct while Flow's internal prompt state remains empty.
+        is_contenteditable = fill_loc.get_attribute("contenteditable") == "true"
+        if is_contenteditable:
+            fill_loc.press("Control+A")
+            fill_loc.press("Backspace")
+            fill_loc.press_sequentially(prompt_text, delay=0)
+        else:
             fill_loc.fill(prompt_text)
-        except:
-            # contenteditable
-            fill_loc.evaluate(f"(el)=>el.textContent=`{prompt_text}`")
-            fill_loc.evaluate("(el)=>el.dispatchEvent(new Event('input',{bubbles:true}))")
+        page.wait_for_timeout(300)
+        # Flow may render a contenteditable whose DOM text changes without
+        # updating the composer model. Read back the live value before submit.
+        live_text = ""
+        try:
+            live_text = fill_loc.input_value()
+        except Exception:
+            try:
+                live_text = fill_loc.inner_text()
+            except Exception:
+                live_text = fill_loc.text_content() or ""
+        if prompt_text.strip() not in live_text.strip():
+            print(f"[fill] composer readback mismatch; retry with keyboard insert_text")
+            fill_loc.click(force=True)
+            fill_loc.press("Control+A")
+            fill_loc.press("Backspace")
+            fill_loc.press_sequentially(prompt_text, delay=0)
+            page.wait_for_timeout(300)
+            try:
+                live_text = fill_loc.input_value()
+            except Exception:
+                live_text = fill_loc.inner_text()
+        if prompt_text.strip() not in live_text.strip():
+            raise RuntimeError(f"composer readback kosong/tidak sesuai: {live_text[:120]!r}")
+        print(f"  composer readback OK ({len(live_text)} chars)")
         print(f"  filled '{prompt_text[:40]}'")
         page.wait_for_timeout(500)
         # tekan Enter atau klik tombol arrow kirim
@@ -349,7 +452,7 @@ def fill_prompt(page, prompt_text: str):
             print("  pressed Enter")
         except: pass
         # coba klik tombol kirim (arrow)
-        for sel in ["button:has(mat-icon:has-text('arrow_forward'))", "button:has-text('→')", "button[aria-label*='Send']", "button:has(mat-icon)"]:
+        for sel in ["button:has(mat-icon:has-text('arrow_forward'))", "button:has-text('→')", "button[aria-label*='Send']"]:
             try:
                 btn = page.locator(sel).first
                 if btn.count()>0 and btn.is_visible():
@@ -365,24 +468,96 @@ def fill_prompt(page, prompt_text: str):
         import traceback; traceback.print_exc()
         return False
 
-def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expected_count: int = 2):
-    """Download the first two generated image tiles at 1K."""
+def add_generated_image_to_prompt(page, card_index: int = 0):
+    """Attach a generated result through its card menu before the next prompt."""
+    card_sel = "flow-grid-tile-container:has(flow-image-tile)"
+    cards = page.locator(card_sel)
+    ready_card = None
+    for attempt in range(36):
+        if cards.count() > card_index:
+            candidate = cards.nth(card_index)
+            try:
+                image = candidate.locator("img.image").first
+                ready = image.count() > 0 and image.is_visible() and image.evaluate("el => el.complete && el.naturalWidth > 0")
+                if ready:
+                    ready_card = candidate
+                    break
+            except Exception:
+                pass
+        print(f"[reuse] menunggu kartu hasil siap ({attempt + 1}/36)")
+        page.wait_for_timeout(2000)
+    if ready_card is None:
+        raise RuntimeError(f"kartu hasil index {card_index} belum memiliki gambar siap untuk Add to prompt")
+
+    card = ready_card
+    card.scroll_into_view_if_needed()
+    card.hover(force=True)
+    page.wait_for_timeout(500)
+    more = card.locator("button[aria-label='More options']").first
+    if more.count() == 0 or not more.is_visible():
+        raise RuntimeError("titik tiga More options tidak terlihat pada kartu hasil")
+    print(f"[reuse] buka titik tiga kartu index={card_index} box={more.bounding_box()}")
+    more.click(force=True)
+    page.wait_for_timeout(400)
+
+    # The menu is replaced dynamically, so reacquire only visible exact labels.
+    add_items = []
+    for selector in ["[role='menuitem']", "button", "div"]:
+        for item in page.locator(selector).all():
+            try:
+                text = " ".join(item.inner_text().split())
+                if text == "Add to prompt" and item.is_visible() and item.is_enabled():
+                    add_items.append(item)
+            except Exception:
+                pass
+    if not add_items:
+        try:
+            visible_menu_text = []
+            for item in page.locator("[role='menuitem'], [role='menu'], [role='dialog']").all():
+                if item.is_visible():
+                    visible_menu_text.append(" ".join(item.inner_text().split()))
+            print(f"[reuse] menu visible text: {visible_menu_text}")
+        except Exception:
+            pass
+        raise RuntimeError("menu titik tiga tidak memiliki Add to prompt yang aktif")
+    add_to_prompt = add_items[-1]
+    print(f"[reuse] klik Add to prompt box={add_to_prompt.bounding_box()}")
+    add_to_prompt.click(force=True)
+    page.wait_for_timeout(1200)
+
+    # Confirm the composer contains an ingredient before typing the next prompt.
+    body = " ".join(page.locator("body").inner_text().split())
+    composer = page.locator("textarea, input, div[contenteditable='true']")
+    ingredient_images = 0
+    for img in page.locator("img").all():
+        try:
+            if img.is_visible():
+                ingredient_images += 1
+        except Exception:
+            pass
+    if ingredient_images == 0:
+        raise RuntimeError("Add to prompt diklik tetapi thumbnail ingredient tidak terdeteksi")
+    print(f"✅ [reuse] kartu hasil index={card_index} dipasang sebagai reference; visible_images={ingredient_images}; body_tail={body[-300:]}")
+    return True
+
+def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expected_count: int = 2, start_index: int = 0):
+    """Download one batch of generated image tiles at 1K."""
     import pathlib as _pl
     import re
     result_dir = _pl.Path(result_dir)
     result_dir.mkdir(parents=True, exist_ok=True)
-    print(f"[download] tunggu 2 image generate di {page.url}")
+    print(f"[download] tunggu batch {expected_count} image generate di {page.url} mulai index {start_index}")
     expected_count = int(expected_count)
     card_sel = "flow-grid-tile-container:has(flow-image-tile)"
     cards = page.locator(card_sel)
     for attempt in range(24):
         count = cards.count()
         print(f"  attempt {attempt + 1}/24: image_cards={count}, expected={expected_count}")
-        if count >= expected_count:
+        if count >= start_index + expected_count:
             break
         page.wait_for_timeout(5000)
     else:
-        print(f"[warn] {expected_count} image card tidak muncul setelah 120s")
+        print(f"[warn] batch cards {start_index}:{start_index + expected_count} tidak muncul setelah 120s")
         try: page.screenshot(path=str(folder / "10_before_download.png"), full_page=True)
         except Exception: pass
         return False
@@ -399,10 +574,20 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expec
         success = False
         for retry in range(1, 6):
             try:
-                card = page.locator(card_sel).nth(idx)
+                card = page.locator(card_sel).nth(start_index + idx)
                 image = card.locator("img.image").first
                 more = card.locator("button[aria-label='More options']").first
-                print(f"[download] image {idx + 1}, retry {retry}/5")
+                print(f"[download] batch image {idx + 1}/{expected_count}, retry {retry}/5")
+                if image.count() == 0 or not image.is_visible() or not image.evaluate("el => el.complete && el.naturalWidth > 0"):
+                    print("  tunggu gambar hasil selesai dimuat (maks. 60s)")
+                    ready = False
+                    for wait_attempt in range(30):
+                        page.wait_for_timeout(2000)
+                        if image.count() > 0 and image.is_visible() and image.evaluate("el => el.complete && el.naturalWidth > 0"):
+                            ready = True
+                            break
+                    if not ready:
+                        raise RuntimeError("gambar hasil belum selesai dimuat setelah 60s")
                 image.scroll_into_view_if_needed()
                 image.hover(force=True)
                 page.wait_for_timeout(350)
@@ -457,7 +642,7 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expec
     except Exception: pass
     return downloaded == expected_count
 
-def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi.", ratio: str = "16:9", count: int = 2):
+def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str = "16:9", count: int = 2, input_image: str = None, model: str = "Nano Banana 2"):
     ensure_dirs()
     folder = ensure_flow_session()
     print(f"=== Google Flow Vision ({folder.name}) ===")
@@ -643,35 +828,58 @@ def main(headless=False, prompt_text: str = "Buatkan logo untuk edukasi.", ratio
         # Flow may already be in Images mode and expose no Video toggle.
         # Configure ratio/count in either case so requested options are never skipped.
         try:
-            configure_image_settings(page, ratio=ratio, count=count)
-            print(f"✅ Image settings OK: {ratio}, x{count}")
+            # Respect an explicit model choice even when a reference image is used.
+            selected_model = model
+            configure_image_settings(page, ratio=ratio, count=count, model=selected_model)
+            print(f"✅ Image settings OK: {selected_model}, {ratio}, x{count}")
         except Exception as e:
             print(f"⚠️ Image settings gagal: {e}")
             advisor_click(page, folder, "07b_image_settings_fail", "Image settings gagal; extract ratio/count candidates")
         advisor_click(page, folder, "07_after_video_switch", "Setelah switch Video->Images, apakah sudah jadi Images? Jika belum, dimana tombol Images?")
         if ok: print("✅ Video -> Images OK")
         else: print("⚠️  Cek manual Video->Images di browser")
-        # 6 Fill prompt + Enter
-        print(f"\n[step 6] Fill prompt '{prompt_text}' -> Images mode")
-        filled = fill_prompt(page, prompt_text)
-        advisor_click(page, folder, "08_after_fill", f"Sudah isi fill dengan '{prompt_text[:40]}' dan Enter. Apakah generate mulai?")
-        if filled:
-            print("✅ Fill prompt + Enter done")
+        if input_image:
+            print(f"\n[step 5b] Upload reference image: {input_image}")
+            try:
+                upload_reference_image(page, input_image)
+                advisor_click(page, folder, "07c_after_upload", "Reference image sudah di-upload. Pastikan thumbnail/ingredient muncul di prompt box.")
+                print("✅ Reference image upload done")
+            except Exception as e:
+                print(f"⚠️ Upload reference image gagal: {e}")
+                advisor_click(page, folder, "07c_upload_fail", "Upload media gagal; cek DOM, menu, dan file chooser.")
+                raise
+        # 6-7 Batch prompts: one settings setup, then one prompt/download group
+        prompt_list = prompt_text if isinstance(prompt_text, (list, tuple)) else [prompt_text]
+        batch_root = pathlib.Path("F:/alpha/result image") / f"batch_{folder.name}"
+        batch_root.mkdir(parents=True, exist_ok=True)
+        for batch_idx, current_prompt in enumerate(prompt_list, start=1):
+            # Flow prepends the newest generation cards before older cards.
+            # Each batch therefore downloads the newest `count` cards at index 0.
+            batch_start = 0
+            if input_image and batch_idx > 1:
+                print(f"\n[batch {batch_idx}] Pasang hasil batch sebelumnya sebagai reference via titik tiga")
+                add_generated_image_to_prompt(page, card_index=0)
+            print(f"\n[batch {batch_idx}/{len(prompt_list)}] Fill prompt '{current_prompt}' -> Images mode")
+            filled = fill_prompt(page, current_prompt)
+            advisor_click(page, folder, f"08_after_fill_{batch_idx}", f"Batch {batch_idx} prompt sudah diisi. Apakah generate mulai?")
+            if not filled:
+                print(f"⚠️ Batch {batch_idx} prompt gagal diisi, lanjut batch berikutnya")
+                continue
+            print(f"✅ Batch {batch_idx} prompt submitted; existing_cards={batch_start}")
             page.wait_for_timeout(2500)
-            advisor_click(page, folder, "09_generating", "Setelah Enter, cek apakah loading/generating muncul")
-        # 7 Download 2 image via titik tiga -> 1K ke result image/
-        print(f"\n[step 7] Download {count} image (titik tiga -> Download -> 1K) ke result image/")
-        result_dir = pathlib.Path("F:/alpha/result image")
-        try:
-            ok_dl = download_results(page, result_dir, folder, expected_count=count)
-            if ok_dl:
-                print(f"✅ Download selesai -> {result_dir}")
-                advisor_click(page, folder, "10_download_done", f"Download {count} image 1K ke {result_dir} selesai")
-            else:
-                print("⚠️ Download belum berhasil, cek manual titik tiga -> 1K")
-                advisor_click(page, folder, "10_download_fail", "Download gagal, cek manual")
-        except Exception as e:
-            print(f"download step fail {e}")
+            advisor_click(page, folder, f"09_generating_{batch_idx}", f"Batch {batch_idx} sedang generate")
+            result_dir = batch_root / f"prompt_{batch_idx}"
+            print(f"[batch {batch_idx}] Download {count} image ke {result_dir}")
+            try:
+                ok_dl = download_results(page, result_dir, folder, expected_count=count, start_index=batch_start)
+                if ok_dl:
+                    print(f"✅ Batch {batch_idx} download selesai -> {result_dir}")
+                    advisor_click(page, folder, f"10_download_done_{batch_idx}", f"Batch {batch_idx} download {count} image selesai")
+                else:
+                    print(f"⚠️ Batch {batch_idx} download belum lengkap")
+                    advisor_click(page, folder, f"10_download_fail_{batch_idx}", f"Batch {batch_idx} download gagal")
+            except Exception as e:
+                print(f"batch {batch_idx} download step fail {e}")
         ctx.storage_state(path=str(SESSION_FILE))
         print(f"\n=== SELESAI ===")
         print(f"Folder: {folder}")
@@ -686,8 +894,10 @@ if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--headless", action="store_true", default=False)
     ap.add_argument("--no-headless", dest="headless", action="store_false")
-    ap.add_argument("--prompt", default="Buatkan logo untuk edukasi.", help="prompt untuk fill What do you want to create?")
+    ap.add_argument("--prompt", action="append", dest="prompts", default=None, help="prompt; ulangi opsi ini untuk menjalankan batch beberapa prompt")
     ap.add_argument("--ratio", default="16:9", choices=["16:9", "4:3", "1:1", "3:4", "9:16"], help="Image aspect ratio")
     ap.add_argument("--count", type=int, default=2, choices=[1, 2, 3, 4], help="jumlah hasil gambar")
+    ap.add_argument("--input-image", default=None, help="path foto referensi untuk di-upload sebagai ingredient")
+    ap.add_argument("--model", default="Nano Banana 2", choices=["Nano Banana Pro", "Nano Banana 2", "Nano Banana 2 Lite"], help="model Image; otomatis Pro jika memakai input-image")
     args=ap.parse_args()
-    main(headless=args.headless, prompt_text=args.prompt, ratio=args.ratio, count=args.count)
+    main(headless=args.headless, prompt_text=args.prompts or ["Buatkan logo untuk edukasi."], ratio=args.ratio, count=args.count, input_image=args.input_image, model=args.model)

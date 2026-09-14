@@ -32,12 +32,20 @@ def save_step(folder: pathlib.Path, page, step_name: str, ai_decision=None, full
     try:
         steps = json.loads(log_path.read_text(encoding="utf-8")) if log_path.exists() else []
     except: steps=[]
+    try:
+        current_url = page.url if hasattr(page, 'url') else ""
+    except Exception:
+        current_url = ""
+    try:
+        current_title = page.title() if hasattr(page, 'title') else ""
+    except Exception:
+        current_title = ""
     steps.append({
         "idx": idx,
         "step": step_name,
         "file": str(path) if path else None,
-        "url": page.url if hasattr(page, 'url') else "",
-        "title": page.title() if hasattr(page, 'title') else "",
+        "url": current_url,
+        "title": current_title,
         "ai_decision": ai_decision,
         "time": datetime.datetime.now().isoformat()
     })
