@@ -1,0 +1,133 @@
+- generic [ref=f1e1]:
+  - link "Skip to main content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - main [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - generic: Start creating or drop media
+        - generic [ref=f1e19]:
+          - generic [ref=f1e22]:
+            - generic [ref=f1e23]:
+              - navigation [ref=f1e25]:
+                - button "Home" [ref=f1e26] [cursor=pointer]:
+                  - img [aria-hidden] [ref=f1e27]: home
+                - textbox "Editable text" [ref=f1e32]:
+                  - /placeholder: ""
+                  - text: Sep 24 - 20:23
+              - button "More options for the project" [ref=f1e33] [cursor=pointer]:
+                - img [aria-hidden] [ref=f1e34]: more_vert
+            - generic [ref=f1e38]:
+              - generic [ref=f1e39]:
+                - button "Search" [ref=f1e40] [cursor=pointer]:
+                  - img [aria-hidden] [ref=f1e41]: search
+                - textbox "Search" [ref=f1e43]
+              - button "Filtering and sorting options" [ref=f1e44] [cursor=pointer]:
+                - img [aria-hidden] [ref=f1e45]: filter_list
+            - generic [ref=f1e47]:
+              - generic [ref=f1e49]:
+                - button "Add media menu" [ref=f1e50] [cursor=pointer]:
+                  - img [aria-hidden] [ref=f1e51]: add
+                - button "Product help" [ref=f1e53] [cursor=pointer]:
+                  - img [aria-hidden] [ref=f1e54]: help
+                - button "Tile grid settings" [ref=f1e56] [cursor=pointer]:
+                  - img [aria-hidden] [ref=f1e57]: settings_2
+                - button "More options" [ref=f1e60] [cursor=pointer]:
+                  - img [aria-hidden] [ref=f1e61]: more_vert
+              - button "Account details" [ref=f1e64] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - 'button "Google Account: Lukman Zakaria (lukmanzakaria04@gmail.com)"'
+          - navigation "Project navigation" [ref=f1e71]:
+            - generic [ref=f1e72]:
+              - generic [ref=f1e73] [cursor=pointer]:
+                - img [aria-hidden] [ref=f1e74]: dashboard
+                - generic [ref=f1e75]: All media
+              - generic [ref=f1e76] [cursor=pointer]:
+                - img [aria-hidden] [ref=f1e77]: accessibility_new
+                - generic [ref=f1e78]: Characters
+              - generic [ref=f1e79] [cursor=pointer]:
+                - img [aria-hidden] [ref=f1e80]: movie
+                - generic [ref=f1e81]: Scenes
+              - separator [ref=f1e82]
+              - link "Tools" [ref=f1e83] [cursor=pointer]:
+                - /url: /project/d8d825ab-0b55-49a6-8287-073a9be1ec46/tools
+                - img [aria-hidden] [ref=f1e84]: apps_spark_2
+            - generic [ref=f1e86]:
+              - generic [ref=f1e87] [cursor=pointer]:
+                - img [aria-hidden] [ref=f1e88]: delete
+                - generic [ref=f1e89]: Trash
+              - generic [ref=f1e90] [cursor=pointer]:
+                - img [aria-hidden] [ref=f1e91]: left_panel_close
+                - generic [ref=f1e92]: Collapse
+        - generic [ref=f1e106]:
+          - generic [ref=f1e108]:
+            - generic: What do you want to create?
+            - paragraph [ref=f1e111]
+          - generic [ref=f1e112]:
+            - button "Add ingredients to the prompt box" [ref=f1e115] [cursor=pointer]:
+              - img [aria-hidden] [ref=f1e116]: add
+            - button "Agent" [ref=f1e120] [cursor=pointer]
+            - generic [ref=f1e122]:
+              - button "Settings trigger" [active] [ref=f1e123] [cursor=pointer]:
+                - generic [ref=f1e125]:
+                  - text: 🍌 Nano Banana 2 Lite
+                  - img [aria-hidden] [ref=f1e126]: crop_square
+                  - text: x4
+              - generic [ref=f1e129]:
+                - button "Start generation" [disabled]:
+                  - img [aria-hidden]: arrow_forward
+      - generic:
+        - paragraph: Google Flow can make mistakes, so double check it
+  - generic [ref=f1e132]:
+    - generic "Mode" [ref=f1e133]:
+      - radiogroup [ref=f1e134]:
+        - radio "Image" [checked] [ref=f1e135] [cursor=pointer]:
+          - generic [ref=f1e137]:
+            - img [aria-hidden] [ref=f1e138]: image
+            - generic [ref=f1e139]: Image
+        - radio "Video" [ref=f1e140] [cursor=pointer]:
+          - generic [ref=f1e142]:
+            - img [aria-hidden] [ref=f1e143]: videocam
+            - generic [ref=f1e144]: Video
+    - generic "Aspect ratio" [ref=f1e145]:
+      - radiogroup [ref=f1e146]:
+        - radio "16:9" [ref=f1e147] [cursor=pointer]:
+          - generic [ref=f1e149]:
+            - img [aria-hidden] [ref=f1e150]: crop_16_9
+            - generic [ref=f1e151]: 16:9
+        - radio "4:3" [ref=f1e152] [cursor=pointer]:
+          - generic [ref=f1e154]:
+            - img [aria-hidden] [ref=f1e155]: crop_landscape
+            - generic [ref=f1e156]: 4:3
+        - radio "1:1" [checked] [ref=f1e157] [cursor=pointer]:
+          - generic [ref=f1e159]:
+            - img [aria-hidden] [ref=f1e160]: crop_square
+            - generic [ref=f1e161]: 1:1
+        - radio "3:4" [ref=f1e162] [cursor=pointer]:
+          - generic [ref=f1e164]:
+            - img [aria-hidden] [ref=f1e165]: crop_portrait
+            - generic [ref=f1e166]: 3:4
+        - radio "9:16" [ref=f1e167] [cursor=pointer]:
+          - generic [ref=f1e169]:
+            - img [aria-hidden] [ref=f1e170]: crop_9_16
+            - generic [ref=f1e171]: 9:16
+    - separator [ref=f1e172]
+    - button "Select model family" [ref=f1e173]:
+      - generic [ref=f1e175]:
+        - text: 🍌 Nano Banana 2 Lite
+        - img [aria-hidden] [ref=f1e176]: arrow_drop_down
+    - generic "Output count" [ref=f1e179]:
+      - radiogroup [ref=f1e180]:
+        - radio "x1" [ref=f1e181] [cursor=pointer]
+        - radio "x2" [ref=f1e185] [cursor=pointer]
+        - radio "x3" [ref=f1e189] [cursor=pointer]
+        - radio "x4" [checked] [ref=f1e193] [cursor=pointer]
+    - generic [ref=f1e199]:
+      - text: Generating will use
+      - link "0 credits" [ref=f1e200] [cursor=pointer]:
+        - /url: https://support.google.com/googleone?p=g1_ai_credit_menu

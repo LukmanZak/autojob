@@ -1,0 +1,2733 @@
+- generic [ref=f1e3]:
+  - heading "Lowongan kerja di Indonesia - Cari Lowongan Kerja - Karir | Jobstreet" [level=1] [ref=f1e5]
+  - button "Lewati ke konten" [ref=f1e6] [cursor=pointer]
+  - generic [ref=f1e7]:
+    - status
+  - banner [ref=f1e9]:
+    - generic [ref=f1e13]:
+      - generic [ref=f1e14]:
+        - link "Jobstreet" [ref=f1e16] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f1e24]:
+          - link "Cari lowongan" [ref=f1e26] [cursor=pointer]:
+            - /url: /
+          - link "Cari profil" [ref=f1e31] [cursor=pointer]:
+            - /url: /id/profiles/search?tracking=ILC-profile-search-header
+          - link "Sumber daya karir" [ref=f1e36] [cursor=pointer]:
+            - /url: /id/career-advice
+          - link "Perusahaan" [ref=f1e41] [cursor=pointer]:
+            - /url: /id/companies
+      - generic [ref=f1e45]:
+        - button "Bahasa" [ref=f1e48] [cursor=pointer]
+        - button "Profile Avatar" [ref=f1e67] [cursor=pointer]
+        - link "Untuk perusahaan" [ref=f1e80] [cursor=pointer]:
+          - /url: https://id.employer.seek.com/id
+  - main [ref=f1e82]:
+    - generic [ref=f1e83]:
+      - search [ref=f1e85]:
+        - heading "Lakukan pencarian lowongan" [level=2] [ref=f1e87]
+        - generic [ref=f1e97]:
+          - region "Masukkan kata kunci" [ref=f1e100]:
+            - generic [ref=f1e101]:
+              - generic [ref=f1e106]:
+                - combobox "Perawat ners par" [ref=f1e107]
+                - generic [ref=f1e108]:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button "Clear"
+              - generic [ref=f1e109]: Suggestions will appear below the field as you type
+          - region "Masukkan lokasi" [ref=f1e113]:
+            - generic [ref=f1e114]:
+              - generic [ref=f1e119]:
+                - combobox "Masukkan kota atau wilayah" [ref=f1e120]
+                - generic [ref=f1e121]:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button "Clear"
+              - generic [ref=f1e122]: Suggestions will appear below the field as you type
+          - button "Kirim pencarian" [ref=f1e126] [cursor=pointer]:
+            - generic [ref=f1e127]: Cari
+      - generic [ref=f1e128]:
+        - generic [ref=f1e131]:
+          - heading "Dasbor" [level=1] [ref=f1e133]
+          - heading "Dasbor" [level=1] [ref=f1e135]
+          - generic [ref=f1e136]:
+            - generic [ref=f1e138]:
+              - generic [ref=f1e139]:
+                - generic [ref=f1e140]:
+                  - heading "Direkomendasikan" [level=3] [ref=f1e142]
+                  - generic "Info" [ref=f1e143]
+                - button [ref=f1e150] [cursor=pointer]:
+                  - generic [ref=f1e151]:
+                    - generic:
+                      - generic:
+                        - generic [aria-hidden]: ⁠
+                        - text: Preferensi
+              - list [ref=f1e155]:
+                - listitem [ref=f1e156]:
+                  - generic [ref=f1e158] [cursor=pointer]:
+                    - link "AI & Automation Engineer" [ref=f1e159]:
+                      - /url: /id/job/94357791?ref=recom-homepage&pos=1#sol=1f9bb94be4c8c2c789c37dade2c94427348b4268
+                    - generic [ref=f1e160]:
+                      - generic [ref=f1e168]:
+                        - generic [ref=f1e169]:
+                          - heading "AI & Automation Engineer" [level=3] [ref=f1e170]
+                          - generic [ref=f1e171]: PT. SUPERMAL KARAWACI
+                        - generic [ref=f1e172]:
+                          - generic [ref=f1e173]:
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e174]:
+                            - generic [ref=f1e175]: Kontrak/Temporer
+                            - generic [ref=f1e176]: Karawaci, Banten
+                      - generic [ref=f1e177]: 22 hari yang lalu
+                    - generic [ref=f1e179]:
+                      - generic [ref=f1e180]:
+                        - button "Sembunyikan" [ref=f1e184]
+                        - button "Simpan" [ref=f1e192]
+                      - generic [ref=f1e198]:
+                        - generic [ref=f1e202]: Sembunyikan loker tidak relevan untuk dapat rekomendasi lebih cocok.
+                        - button "Tutup" [ref=f1e207]
+                - listitem [ref=f1e212]:
+                  - generic [ref=f1e214] [cursor=pointer]:
+                    - link "AI Engineer" [ref=f1e215]:
+                      - /url: /id/job/94338686?ref=recom-homepage&pos=2#sol=8cf33c58c207e4b1bc5efdae7235099b2beff2b6
+                    - generic [ref=f1e216]:
+                      - generic [ref=f1e224]:
+                        - generic [ref=f1e225]:
+                          - heading "AI Engineer" [level=3] [ref=f1e226]
+                          - generic [ref=f1e227]: PT Kolink Network Solutions
+                        - generic [ref=f1e228]:
+                          - generic [ref=f1e229]:
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e230]:
+                            - generic [ref=f1e231]: Kontrak/Temporer
+                            - generic [ref=f1e232]: Jakarta Utara, Jakarta Raya
+                      - generic [ref=f1e233]: 23 hari yang lalu
+                    - generic [ref=f1e236]:
+                      - button "Sembunyikan" [ref=f1e240]
+                      - button "Simpan" [ref=f1e247]
+                - listitem [ref=f1e252]:
+                  - generic [ref=f1e254] [cursor=pointer]:
+                    - link "Full Stack Engineer (Payment/FinTech)" [ref=f1e255]:
+                      - /url: /id/job/94616991?ref=recom-homepage&pos=3#sol=5391fcbc5ce55c142101817a82981e340531d0c6
+                    - generic [ref=f1e256]:
+                      - generic [ref=f1e264]:
+                        - generic [ref=f1e265]:
+                          - heading "Full Stack Engineer (Payment/FinTech)" [level=3] [ref=f1e266]
+                          - generic [ref=f1e267]: COINUT PTE LTD
+                        - generic [ref=f1e268]:
+                          - generic [ref=f1e269]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e270]:
+                            - generic [ref=f1e271]: Full time
+                            - generic [ref=f1e272]: Jakarta Raya(Jarak jauh)
+                            - generic [ref=f1e273]: Rp 15,000,000 – Rp 22,000,000 per month
+                      - generic [ref=f1e274]: 10 hari yang lalu
+                    - generic [ref=f1e277]:
+                      - button "Sembunyikan" [ref=f1e281]
+                      - button "Simpan" [ref=f1e288]
+                - listitem [ref=f1e293]:
+                  - generic [ref=f1e295] [cursor=pointer]:
+                    - link "AI Engineer" [ref=f1e296]:
+                      - /url: /id/job/94426556?ref=recom-homepage&pos=4#sol=7a144e95298fac225558e6feb4f0fe40802083f1
+                    - generic [ref=f1e297]:
+                      - generic [ref=f1e305]:
+                        - generic [ref=f1e306]:
+                          - heading "AI Engineer" [level=3] [ref=f1e307]
+                          - generic [ref=f1e308]: Hanwha Life Insurance Indonesia
+                        - generic [ref=f1e309]:
+                          - generic [ref=f1e310]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e311]:
+                            - generic [ref=f1e312]: Full time
+                            - generic [ref=f1e313]: Jakarta Selatan, Jakarta Raya
+                      - generic [ref=f1e314]: 20 hari yang lalu
+                    - generic [ref=f1e317]:
+                      - button "Sembunyikan" [ref=f1e321]
+                      - button "Simpan" [ref=f1e328]
+                - listitem [ref=f1e333]:
+                  - generic [ref=f1e335] [cursor=pointer]:
+                    - link "AI Engineer" [ref=f1e336]:
+                      - /url: /id/job/94397829?ref=recom-homepage&pos=5#sol=b21311f20c7d4e570d793e8d8b6e30be5ea2c932
+                    - generic [ref=f1e337]:
+                      - generic [ref=f1e345]:
+                        - generic [ref=f1e346]:
+                          - heading "AI Engineer" [level=3] [ref=f1e347]
+                          - generic [ref=f1e348]: PT Datra Internusa
+                        - generic [ref=f1e349]:
+                          - generic [ref=f1e350]:
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e351]:
+                            - generic [ref=f1e352]: Kontrak/Temporer
+                            - generic [ref=f1e353]: Jakarta Barat, Jakarta Raya
+                      - generic [ref=f1e354]: 21 hari yang lalu
+                    - generic [ref=f1e357]:
+                      - button "Sembunyikan" [ref=f1e361]
+                      - button "Simpan" [ref=f1e368]
+                - listitem [ref=f1e373]:
+                  - generic [ref=f1e375] [cursor=pointer]:
+                    - link "AI Engineer" [ref=f1e376]:
+                      - /url: /id/job/94337382?ref=recom-homepage&pos=6#sol=ff37f5ff95dfcb3e931918e1dcab788b9e51e4ce
+                    - generic [ref=f1e377]:
+                      - generic [ref=f1e381]:
+                        - generic [ref=f1e382]:
+                          - heading "AI Engineer" [level=3] [ref=f1e383]
+                          - generic [ref=f1e384]: PT Graha Karya Informasi
+                        - generic [ref=f1e385]:
+                          - generic [ref=f1e386]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e387]:
+                            - generic [ref=f1e388]: Full time
+                            - generic [ref=f1e389]: Jakarta Pusat, Jakarta Raya
+                      - generic [ref=f1e390]: 21 hari yang lalu
+                    - generic [ref=f1e393]:
+                      - button "Sembunyikan" [ref=f1e397]
+                      - button "Simpan" [ref=f1e404]
+                - listitem [ref=f1e409]:
+                  - generic [ref=f1e411] [cursor=pointer]:
+                    - link "Middle AI Engineer" [ref=f1e412]:
+                      - /url: /id/job/94429217?ref=recom-homepage&pos=7#sol=6a0d329a8a8139b56f3cca2894148086acf4aa4a
+                    - generic [ref=f1e413]:
+                      - generic [ref=f1e421]:
+                        - generic [ref=f1e422]:
+                          - heading "Middle AI Engineer" [level=3] [ref=f1e423]
+                          - generic [ref=f1e424]: PT Fata Organa Solusi
+                        - generic [ref=f1e425]:
+                          - generic [ref=f1e426]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e427]:
+                            - generic [ref=f1e428]: Full time
+                            - generic [ref=f1e429]: Banten(Jarak jauh)
+                            - generic [ref=f1e430]: Rp 10.000.000 – Rp 15.000.000 per month
+                      - generic [ref=f1e431]: 20 hari yang lalu
+                    - generic [ref=f1e434]:
+                      - button "Sembunyikan" [ref=f1e438]
+                      - button "Simpan" [ref=f1e445]
+                - listitem [ref=f1e450]:
+                  - generic [ref=f1e452] [cursor=pointer]:
+                    - link "Full Stack React Developer" [ref=f1e453]:
+                      - /url: /id/job/94434122?ref=recom-homepage&pos=8#sol=cc78a0edd45bd65509bdf9af6344341fdd309145
+                    - generic [ref=f1e454]:
+                      - generic [ref=f1e462]:
+                        - generic [ref=f1e463]:
+                          - heading "Full Stack React Developer" [level=3] [ref=f1e464]
+                          - generic [ref=f1e465]: Eterna Indonesia
+                        - generic [ref=f1e466]:
+                          - generic [ref=f1e467]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e468]:
+                            - generic [ref=f1e469]: Full time
+                            - generic [ref=f1e470]: Jakarta Raya(Jarak jauh)
+                            - generic [ref=f1e471]: Rp 10.000.000 – Rp 15.000.000 per month
+                        - list [ref=f1e472]:
+                          - listitem [ref=f1e473]:
+                            - generic [ref=f1e477]: Remote Work
+                          - listitem [ref=f1e479]:
+                            - generic [ref=f1e483]: U.S. Based Clients
+                          - listitem [ref=f1e485]:
+                            - generic [ref=f1e489]: Competitive Salary
+                      - generic [ref=f1e491]: 19 hari yang lalu
+                    - generic [ref=f1e494]:
+                      - button "Sembunyikan" [ref=f1e498]
+                      - button "Simpan" [ref=f1e505]
+                - listitem [ref=f1e510]:
+                  - generic [ref=f1e512] [cursor=pointer]:
+                    - link "Applied AI / Full-Stack AI Engineer (Mandarin / English Speaker)" [ref=f1e513]:
+                      - /url: /id/job/94261469?ref=recom-homepage&pos=9#sol=6c8ad7fc00bb9b79183e91633515a7815373de2e
+                    - generic [ref=f1e514]:
+                      - generic [ref=f1e522]:
+                        - generic [ref=f1e523]:
+                          - heading "Applied AI / Full-Stack AI Engineer (Mandarin / English Speaker)" [level=3] [ref=f1e524]
+                          - generic [ref=f1e525]: HITHINK TECHNOLOGY INDONESIA
+                        - generic [ref=f1e526]:
+                          - generic [ref=f1e527]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e528]:
+                            - generic [ref=f1e529]: Full time
+                            - generic [ref=f1e530]: Jakarta Selatan, Jakarta Raya
+                            - generic [ref=f1e531]: Rp 8.000.000 – Rp 12.000.000 per month
+                        - list [ref=f1e532]:
+                          - listitem [ref=f1e533]:
+                            - generic [ref=f1e537]: New opportunities in Indonesia market with potential career path goal.
+                          - listitem [ref=f1e539]:
+                            - generic [ref=f1e543]: South Jakarta CBD area
+                          - listitem [ref=f1e545]:
+                            - generic [ref=f1e549]: Multinational Company (PMA)
+                      - generic [ref=f1e551]: 27 hari yang lalu
+                    - generic [ref=f1e554]:
+                      - button "Sembunyikan" [ref=f1e558]
+                      - button "Simpan" [ref=f1e565]
+                - listitem [ref=f1e570]:
+                  - generic [ref=f1e572] [cursor=pointer]:
+                    - link "AI IMPLEMENTATION SPECIALIST" [ref=f1e573]:
+                      - /url: /id/job/94583595?ref=recom-homepage&pos=10#sol=0604a55dc84482e643785a0104556784378ce34a
+                    - generic [ref=f1e574]:
+                      - generic [ref=f1e582]:
+                        - generic [ref=f1e583]:
+                          - heading "AI IMPLEMENTATION SPECIALIST" [level=3] [ref=f1e584]
+                          - generic [ref=f1e585]: PT Trimitra Putra Mandiri
+                        - generic [ref=f1e586]:
+                          - generic [ref=f1e587]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e588]:
+                            - generic [ref=f1e589]: Full time
+                            - generic [ref=f1e590]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e591]:
+                          - listitem [ref=f1e592]:
+                            - generic [ref=f1e596]: AI Expertise & Innovation
+                          - listitem [ref=f1e598]:
+                            - generic [ref=f1e602]: Business Process Optimization
+                          - listitem [ref=f1e604]:
+                            - generic [ref=f1e608]: AI-Driven Productivity
+                      - generic [ref=f1e610]: 13 hari yang lalu
+                    - generic [ref=f1e613]:
+                      - button "Sembunyikan" [ref=f1e617]
+                      - button "Simpan" [ref=f1e624]
+                - listitem [ref=f1e629]:
+                  - generic [ref=f1e631] [cursor=pointer]:
+                    - link "System Engineer (AI/ML)" [ref=f1e632]:
+                      - /url: /id/job/94773423?ref=recom-homepage&pos=11#sol=a5dbf1572242832a3d1c2110da64f3fde05d680e
+                    - generic [ref=f1e633]:
+                      - generic [ref=f1e641]:
+                        - generic [ref=f1e642]:
+                          - heading "System Engineer (AI/ML)" [level=3] [ref=f1e643]
+                          - generic [ref=f1e644]: Sibernetik Integra Data
+                        - generic [ref=f1e645]:
+                          - generic [ref=f1e646]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e647]:
+                            - generic [ref=f1e648]: Kontrak/Temporer
+                            - generic [ref=f1e649]: Jakarta Raya
+                      - generic [ref=f1e650]: 3 hari yang lalu
+                    - generic [ref=f1e653]:
+                      - button "Sembunyikan" [ref=f1e657]
+                      - button "Simpan" [ref=f1e664]
+                - listitem [ref=f1e669]:
+                  - generic [ref=f1e671] [cursor=pointer]:
+                    - link "Senior Software Engineer - Web Fullstack" [ref=f1e672]:
+                      - /url: /id/job/94621394?ref=recom-homepage&pos=12#sol=23087ad235b341ece8efa7f43a10ec192e67ac2f
+                    - generic [ref=f1e673]:
+                      - generic [ref=f1e681]:
+                        - generic [ref=f1e682]:
+                          - heading "Senior Software Engineer - Web Fullstack" [level=3] [ref=f1e683]
+                          - generic [ref=f1e684]: The Economist Group (Asia/Pacific) Limited
+                        - generic [ref=f1e685]:
+                          - generic [ref=f1e686]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e687]:
+                            - generic [ref=f1e688]: Full time
+                            - generic [ref=f1e689]: Bandung Barat, Jawa Barat(Jarak jauh)
+                      - generic [ref=f1e690]: 10 hari yang lalu
+                    - generic [ref=f1e693]:
+                      - button "Sembunyikan" [ref=f1e697]
+                      - button "Simpan" [ref=f1e704]
+                - listitem [ref=f1e709]:
+                  - generic [ref=f1e711] [cursor=pointer]:
+                    - link "Ai Specialist (Dept. Marketing & Operational)" [ref=f1e712]:
+                      - /url: /id/job/94456896?ref=recom-homepage&pos=13#sol=1718fcfa6420a038bee21d0cbab3a6125676d241
+                    - generic [ref=f1e713]:
+                      - generic [ref=f1e721]:
+                        - generic [ref=f1e722]:
+                          - heading "Ai Specialist (Dept. Marketing & Operational)" [level=3] [ref=f1e723]
+                          - generic [ref=f1e724]: ZAP Clinic (PT. Zulu Alpha Papa)
+                        - generic [ref=f1e725]:
+                          - generic [ref=f1e726]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e727]:
+                            - generic [ref=f1e728]: Kontrak/Temporer
+                            - generic [ref=f1e729]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e730]:
+                          - listitem [ref=f1e731]:
+                            - generic [ref=f1e735]: Competitive salary and attractive incentive scheme.
+                          - listitem [ref=f1e737]:
+                            - generic [ref=f1e741]: Professional training and career development opportunities.
+                          - listitem [ref=f1e743]:
+                            - generic [ref=f1e747]: Employee Gathering
+                      - generic [ref=f1e749]: 17 hari yang lalu
+                    - generic [ref=f1e752]:
+                      - button "Sembunyikan" [ref=f1e756]
+                      - button "Simpan" [ref=f1e763]
+                - listitem [ref=f1e768]:
+                  - generic [ref=f1e770] [cursor=pointer]:
+                    - link "AI Engineer" [ref=f1e771]:
+                      - /url: /id/job/94765485?ref=recom-homepage&pos=14#sol=1c1998a56570200221d8089eb9e16410d33444ad
+                    - generic [ref=f1e772]:
+                      - generic [ref=f1e780]:
+                        - generic [ref=f1e781]:
+                          - heading "AI Engineer" [level=3] [ref=f1e782]
+                          - generic [ref=f1e783]: PT Karisma Zona Kreatifku
+                        - generic [ref=f1e784]:
+                          - generic [ref=f1e785]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e786]:
+                            - generic [ref=f1e787]: Kontrak/Temporer
+                            - generic [ref=f1e788]: Jakarta Selatan, Jakarta Raya
+                            - generic [ref=f1e789]: Rp 10.000.000 – Rp 15.000.000 per month
+                        - list [ref=f1e790]:
+                          - listitem [ref=f1e791]:
+                            - generic [ref=f1e795]: Python-first role
+                          - listitem [ref=f1e797]:
+                            - generic [ref=f1e801]: Eksposur langsung ke proyek AI/ML dan GenAI/LLM terkini
+                          - listitem [ref=f1e803]:
+                            - generic [ref=f1e807]: Kesempatan berkembang end-to-end
+                      - generic [ref=f1e809]: 3 hari yang lalu
+                    - generic [ref=f1e812]:
+                      - button "Sembunyikan" [ref=f1e816]
+                      - button "Simpan" [ref=f1e823]
+                - listitem [ref=f1e828]:
+                  - generic [ref=f1e830] [cursor=pointer]:
+                    - link "AI Engineer Lead" [ref=f1e831]:
+                      - /url: /id/job/94423663?ref=recom-homepage&pos=15#sol=d9f169bfbf6381149003b6957d526711d2eb9066
+                    - generic [ref=f1e832]:
+                      - generic [ref=f1e840]:
+                        - generic [ref=f1e841]:
+                          - heading "AI Engineer Lead" [level=3] [ref=f1e842]
+                          - generic [ref=f1e843]: AGRO BOGA UTAMA GROUP
+                        - generic [ref=f1e844]:
+                          - generic [ref=f1e845]:
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e846]:
+                            - generic [ref=f1e847]: Full time
+                            - generic [ref=f1e848]: Jakarta Selatan, Jakarta Raya
+                      - generic [ref=f1e849]: 20 hari yang lalu
+                    - generic [ref=f1e852]:
+                      - button "Sembunyikan" [ref=f1e856]
+                      - button "Simpan" [ref=f1e863]
+                - listitem [ref=f1e868]:
+                  - generic [ref=f1e870] [cursor=pointer]:
+                    - link "AI Product Developer" [ref=f1e871]:
+                      - /url: /id/job/94463829?ref=recom-homepage&pos=16#sol=0b577d7b0bd3536152cecde590c92f53f033433f
+                    - generic [ref=f1e872]:
+                      - generic [ref=f1e880]:
+                        - generic [ref=f1e881]:
+                          - heading "AI Product Developer" [level=3] [ref=f1e882]
+                          - generic [ref=f1e883]: PT SR12 Herbal Kosmetik
+                        - generic [ref=f1e884]:
+                          - generic [ref=f1e885]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e886]:
+                            - generic [ref=f1e887]: Full time
+                            - generic [ref=f1e888]: Bogor, Jawa Barat
+                      - generic [ref=f1e889]: 17 hari yang lalu
+                    - generic [ref=f1e892]:
+                      - button "Sembunyikan" [ref=f1e896]
+                      - button "Simpan" [ref=f1e903]
+                - listitem [ref=f1e908]:
+                  - generic [ref=f1e910] [cursor=pointer]:
+                    - link "Staff Engineer - Web Fullstack" [ref=f1e911]:
+                      - /url: /id/job/94621556?ref=recom-homepage&pos=17#sol=3806fce082af4d4d16d2f39190a4f6d7fc186537
+                    - generic [ref=f1e912]:
+                      - generic [ref=f1e920]:
+                        - generic [ref=f1e921]:
+                          - heading "Staff Engineer - Web Fullstack" [level=3] [ref=f1e922]
+                          - generic [ref=f1e923]: The Economist Group (Asia/Pacific) Limited
+                        - generic [ref=f1e924]:
+                          - generic [ref=f1e925]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e926]:
+                            - generic [ref=f1e927]: Full time
+                            - generic [ref=f1e928]: Bandung Barat, Jawa Barat(Jarak jauh)
+                      - generic [ref=f1e929]: 10 hari yang lalu
+                    - generic [ref=f1e932]:
+                      - button "Sembunyikan" [ref=f1e936]
+                      - button "Simpan" [ref=f1e943]
+                - listitem [ref=f1e948]:
+                  - generic [ref=f1e950] [cursor=pointer]:
+                    - link "AI Engineer" [ref=f1e951]:
+                      - /url: /id/job/94823702?ref=recom-homepage&pos=18#sol=6cf9b4a4e7881ee89ee69dbfe84026e76a98302d
+                    - generic [ref=f1e952]:
+                      - generic [ref=f1e960]:
+                        - generic [ref=f1e961]:
+                          - heading "AI Engineer" [level=3] [ref=f1e962]
+                          - generic [ref=f1e963]: PT Inovasi Daya Solusi
+                        - generic [ref=f1e964]:
+                          - generic [ref=f1e965]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e966]:
+                            - generic [ref=f1e967]: Full time
+                            - generic [ref=f1e968]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e969]:
+                          - listitem [ref=f1e970]:
+                            - generic [ref=f1e974]: Experience real technology transformation
+                          - listitem [ref=f1e976]:
+                            - generic [ref=f1e980]: Always provide high integrity in every aspect company development
+                          - listitem [ref=f1e982]:
+                            - generic [ref=f1e986]: Fun, Passionate and Innovative
+                      - generic [ref=f1e988]: 1 hari yang lalu
+                    - generic [ref=f1e991]:
+                      - button "Sembunyikan" [ref=f1e995]
+                      - button "Simpan" [ref=f1e1002]
+                - listitem [ref=f1e1007]:
+                  - generic [ref=f1e1009] [cursor=pointer]:
+                    - link "AI Agent Developer / AI Automation Engineer" [ref=f1e1010]:
+                      - /url: /id/job/94743147?ref=recom-homepage&pos=19#sol=66750d43b1ca88c7edaccfe7c2f4b5280de5353b
+                    - generic [ref=f1e1011]:
+                      - generic [ref=f1e1019]:
+                        - generic [ref=f1e1020]:
+                          - heading "AI Agent Developer / AI Automation Engineer" [level=3] [ref=f1e1021]
+                          - generic [ref=f1e1022]: PT Mitra Distribusi Utama
+                        - generic [ref=f1e1023]:
+                          - generic [ref=f1e1024]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e1025]:
+                            - generic [ref=f1e1026]: Full time
+                            - generic [ref=f1e1027]: Tangerang Regency, Banten
+                        - list [ref=f1e1028]:
+                          - listitem [ref=f1e1029]:
+                            - generic [ref=f1e1033]: Real AI Implementation, Not Toy Projects
+                          - listitem [ref=f1e1035]:
+                            - generic [ref=f1e1039]: Direct Access to Owner + Fast Decision Making
+                          - listitem [ref=f1e1041]:
+                            - generic [ref=f1e1045]: Opportunity to Build a Future AI Product
+                      - generic [ref=f1e1047]: 5 hari yang lalu
+                    - generic [ref=f1e1050]:
+                      - button "Sembunyikan" [ref=f1e1054]
+                      - button "Simpan" [ref=f1e1061]
+                - listitem [ref=f1e1066]:
+                  - generic [ref=f1e1068] [cursor=pointer]:
+                    - link "AI AUTOMATION & CRM SPECIALIST" [ref=f1e1069]:
+                      - /url: /id/job/94386978?ref=recom-homepage&pos=20#sol=d74ea5dbc958d45312cce3cb92399155c897063e
+                    - generic [ref=f1e1070]:
+                      - generic [ref=f1e1078]:
+                        - generic [ref=f1e1079]:
+                          - heading "AI AUTOMATION & CRM SPECIALIST" [level=3] [ref=f1e1080]
+                          - generic [ref=f1e1081]: PT RACHMAT CAHAYASAKTI
+                        - generic [ref=f1e1082]:
+                          - generic [ref=f1e1083]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e1084]:
+                            - generic [ref=f1e1085]: Full time
+                            - generic [ref=f1e1086]: Jakarta Barat, Jakarta Raya
+                            - generic [ref=f1e1087]: Rp 6.000.000 – Rp 8.000.000 per month
+                        - list [ref=f1e1088]:
+                          - listitem [ref=f1e1089]:
+                            - generic [ref=f1e1093]: Competitive remuneration packages commensurate with experience & qualifications
+                          - listitem [ref=f1e1095]:
+                            - generic [ref=f1e1099]: Collaborative and inclusive work environment
+                          - listitem [ref=f1e1101]:
+                            - generic [ref=f1e1105]: Provide a comprehensive benefits package designed to support you
+                      - generic [ref=f1e1107]: 21 hari yang lalu
+                    - generic [ref=f1e1110]:
+                      - button "Sembunyikan" [ref=f1e1114]
+                      - button "Simpan" [ref=f1e1121]
+                - listitem [ref=f1e1126]:
+                  - generic [ref=f1e1130]:
+                    - generic [ref=f1e1131]: Apakah rekomendasi ini cocok untuk Anda?
+                    - generic [ref=f1e1132]:
+                      - button [ref=f1e1133] [cursor=pointer]:
+                        - generic [ref=f1e1134]:
+                          - generic:
+                            - generic:
+                              - generic [aria-hidden]: ⁠
+                              - text: Ya
+                      - button [ref=f1e1135] [cursor=pointer]:
+                        - generic [ref=f1e1136]:
+                          - generic:
+                            - generic:
+                              - generic [aria-hidden]: ⁠
+                              - text: Tidak
+                - listitem [ref=f1e1137]:
+                  - generic [ref=f1e1139] [cursor=pointer]:
+                    - link "IT DEVELOPER" [ref=f1e1140]:
+                      - /url: /id/job/94552212?ref=recom-homepage&pos=21#sol=9136384fdd2fd5ad2b9d9bf7ca898f6f6dd0ef58
+                    - generic [ref=f1e1141]:
+                      - generic [ref=f1e1149]:
+                        - generic [ref=f1e1150]:
+                          - heading "IT DEVELOPER" [level=3] [ref=f1e1151]
+                          - generic [ref=f1e1152]: PT China Taiping Insurance Indonesia
+                        - generic [ref=f1e1153]:
+                          - generic [ref=f1e1154]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e1155]:
+                            - generic [ref=f1e1156]: Full time
+                            - generic [ref=f1e1157]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e1158]:
+                          - listitem [ref=f1e1159]:
+                            - generic [ref=f1e1163]: Develop Innovative Digital Solutions
+                          - listitem [ref=f1e1165]:
+                            - generic [ref=f1e1169]: Grow Your IT Career
+                          - listitem [ref=f1e1171]:
+                            - generic [ref=f1e1175]: Collaborate With Global Teams
+                      - generic [ref=f1e1177]: 14 hari yang lalu
+                    - generic [ref=f1e1180]:
+                      - button "Sembunyikan" [ref=f1e1184]
+                      - button "Simpan" [ref=f1e1191]
+                - listitem [ref=f1e1196]:
+                  - generic [ref=f1e1198] [cursor=pointer]:
+                    - link "IT Staff - Full Stack" [ref=f1e1199]:
+                      - /url: /id/job/94496636?ref=recom-homepage&pos=22#sol=62ab8c6ea2db7f117824aeb2ead6e3da5e1bb7af
+                    - generic [ref=f1e1200]:
+                      - generic [ref=f1e1208]:
+                        - generic [ref=f1e1209]:
+                          - heading "IT Staff - Full Stack" [level=3] [ref=f1e1210]
+                          - generic [ref=f1e1211]: PT DWIDA AGRO TAMA
+                        - generic [ref=f1e1212]:
+                          - generic [ref=f1e1213]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e1214]:
+                            - generic [ref=f1e1215]: Full time
+                            - generic [ref=f1e1216]: Jakarta Raya
+                      - generic [ref=f1e1217]: 16 hari yang lalu
+                    - generic [ref=f1e1220]:
+                      - button "Sembunyikan" [ref=f1e1224]
+                      - button "Simpan" [ref=f1e1231]
+                - listitem [ref=f1e1236]:
+                  - generic [ref=f1e1238] [cursor=pointer]:
+                    - link "Programmer" [ref=f1e1239]:
+                      - /url: /id/job/94581629?ref=recom-homepage&pos=23#sol=403e3b9523290d8e733b8cb658be5a5268b06d6b
+                    - generic [ref=f1e1240]:
+                      - generic [ref=f1e1248]:
+                        - generic [ref=f1e1249]:
+                          - heading "Programmer" [level=3] [ref=f1e1250]
+                          - generic [ref=f1e1251]: PT Bridgestone Tire Indonesia
+                        - generic [ref=f1e1252]:
+                          - generic [ref=f1e1253]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e1254]:
+                            - generic [ref=f1e1255]: Full time
+                            - generic [ref=f1e1256]: Bekasi, Jawa Barat
+                        - list [ref=f1e1257]:
+                          - listitem [ref=f1e1258]:
+                            - generic [ref=f1e1262]: Annual Bonus
+                          - listitem [ref=f1e1264]:
+                            - generic [ref=f1e1268]: Self Insurance + BPJS Kesehatan
+                          - listitem [ref=f1e1270]:
+                            - generic [ref=f1e1274]: Employee Wellbeing Program
+                      - generic [ref=f1e1276]: 13 hari yang lalu
+                    - generic [ref=f1e1279]:
+                      - button "Sembunyikan" [ref=f1e1283]
+                      - button "Simpan" [ref=f1e1290]
+                - listitem [ref=f1e1295]:
+                  - generic [ref=f1e1297] [cursor=pointer]:
+                    - link "Specialist, AI Automation Transformation & System" [ref=f1e1298]:
+                      - /url: /id/job/94394027?ref=recom-homepage&pos=24#sol=b18e4689ca4b3b78197ff9acdd556e64c3e521d0
+                    - generic [ref=f1e1299]:
+                      - generic [ref=f1e1307]:
+                        - generic [ref=f1e1308]:
+                          - heading "Specialist, AI Automation Transformation & System" [level=3] [ref=f1e1309]
+                          - generic [ref=f1e1310]: ASIA PULP AND PAPER
+                        - generic [ref=f1e1311]:
+                          - generic [ref=f1e1312]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e1313]:
+                            - generic [ref=f1e1314]: Full time
+                            - generic [ref=f1e1315]: Karawang, Jawa Barat
+                      - generic [ref=f1e1316]: 21 hari yang lalu
+                    - generic [ref=f1e1319]:
+                      - button "Sembunyikan" [ref=f1e1323]
+                      - button "Simpan" [ref=f1e1330]
+                - listitem [ref=f1e1335]:
+                  - generic [ref=f1e1337] [cursor=pointer]:
+                    - link "AI & Backend Developer" [ref=f1e1338]:
+                      - /url: /id/job/94294308?ref=recom-homepage&pos=25#sol=5ed08d48a4d0f811346b2d40d73c87fc195fc3e5
+                    - generic [ref=f1e1339]:
+                      - generic [ref=f1e1347]:
+                        - generic [ref=f1e1348]:
+                          - heading "AI & Backend Developer" [level=3] [ref=f1e1349]
+                          - generic [ref=f1e1350]: Rintisan Teknologi Waralaba
+                        - generic [ref=f1e1351]:
+                          - generic [ref=f1e1352]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e1353]:
+                            - generic [ref=f1e1354]: Full time
+                            - generic [ref=f1e1355]: Jakarta Raya
+                            - generic [ref=f1e1356]: Rp 7.000.000 – Rp 10.000.000 per month
+                      - generic [ref=f1e1357]: 24 hari yang lalu
+                    - generic [ref=f1e1360]:
+                      - button "Sembunyikan" [ref=f1e1364]
+                      - button "Simpan" [ref=f1e1371]
+                - listitem [ref=f1e1376]:
+                  - generic [ref=f1e1378] [cursor=pointer]:
+                    - link "AI Implementation Engineer" [ref=f1e1379]:
+                      - /url: /id/job/94339530?ref=recom-homepage&pos=26#sol=b203412625898133b52c323b137903ef456d6f73
+                    - generic [ref=f1e1380]:
+                      - generic [ref=f1e1384]:
+                        - generic [ref=f1e1385]:
+                          - heading "AI Implementation Engineer" [level=3] [ref=f1e1386]
+                          - generic [ref=f1e1387]: Pengiklan Anonim
+                        - generic [ref=f1e1388]:
+                          - generic [ref=f1e1389]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e1390]:
+                            - generic [ref=f1e1391]: Paruh waktu
+                            - generic [ref=f1e1392]: Jakarta Timur, Jakarta Raya
+                      - generic [ref=f1e1393]: 23 hari yang lalu
+                    - generic [ref=f1e1396]:
+                      - button "Sembunyikan" [ref=f1e1400]
+                      - button "Simpan" [ref=f1e1407]
+                - listitem [ref=f1e1412]:
+                  - generic [ref=f1e1414] [cursor=pointer]:
+                    - link "AI Productivity & Enablement Specialist" [ref=f1e1415]:
+                      - /url: /id/job/94600458?ref=recom-homepage&pos=27#sol=3c8c44723dd428c3d6ac514fa245a68232e721ac
+                    - generic [ref=f1e1416]:
+                      - generic [ref=f1e1424]:
+                        - generic [ref=f1e1425]:
+                          - heading "AI Productivity & Enablement Specialist" [level=3] [ref=f1e1426]
+                          - generic [ref=f1e1427]: PT Organik Sehat Alami
+                        - generic [ref=f1e1428]:
+                          - generic [ref=f1e1429]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e1430]:
+                            - generic [ref=f1e1431]: Full time
+                            - generic [ref=f1e1432]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e1433]:
+                          - listitem [ref=f1e1434]:
+                            - generic [ref=f1e1438]: Punya ruang besar untuk eksperimen, prototype, dan implementasi AI.
+                          - listitem [ref=f1e1440]:
+                            - generic [ref=f1e1444]: Learning curve tinggi untuk berkembang di bidang AI & digital transformation.
+                          - listitem [ref=f1e1446]:
+                            - generic [ref=f1e1450]: Exposure langsung ke decision maker dan prioritas strategis perusahaan.
+                      - generic [ref=f1e1452]: 10 hari yang lalu
+                    - generic [ref=f1e1455]:
+                      - button "Sembunyikan" [ref=f1e1459]
+                      - button "Simpan" [ref=f1e1466]
+                - listitem [ref=f1e1471]:
+                  - generic [ref=f1e1473] [cursor=pointer]:
+                    - link "Software Developer Supervisor" [ref=f1e1474]:
+                      - /url: /id/job/94605476?ref=recom-homepage&pos=28#sol=941b73e4acf42927155efc304167378fd7029c5f
+                    - generic [ref=f1e1475]:
+                      - generic [ref=f1e1483]:
+                        - generic [ref=f1e1484]:
+                          - heading "Software Developer Supervisor" [level=3] [ref=f1e1485]
+                          - generic [ref=f1e1486]: PT. Agrinesia Raya
+                        - generic [ref=f1e1487]:
+                          - generic [ref=f1e1488]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e1489]:
+                            - generic [ref=f1e1490]: Full time
+                            - generic [ref=f1e1491]: Kabupaten Bogor, Jawa Barat
+                        - list [ref=f1e1492]:
+                          - listitem [ref=f1e1493]:
+                            - generic [ref=f1e1497]: Basic Salary
+                          - listitem [ref=f1e1499]:
+                            - generic [ref=f1e1503]: BPJS & Private Insurance
+                          - listitem [ref=f1e1505]:
+                            - generic [ref=f1e1509]: Lunch & Communication
+                      - generic [ref=f1e1511]: 10 hari yang lalu
+                    - generic [ref=f1e1514]:
+                      - button "Sembunyikan" [ref=f1e1518]
+                      - button "Simpan" [ref=f1e1525]
+                - listitem [ref=f1e1530]:
+                  - generic [ref=f1e1532] [cursor=pointer]:
+                    - link "Senior Software Engineer" [ref=f1e1533]:
+                      - /url: /id/job/94776439?ref=recom-homepage&pos=29#sol=2d9e37fee2625ee12b5b507a951f0f712da2f1eb
+                    - generic [ref=f1e1534]:
+                      - generic [ref=f1e1542]:
+                        - generic [ref=f1e1543]:
+                          - heading "Senior Software Engineer" [level=3] [ref=f1e1544]
+                          - generic [ref=f1e1545]: PT Indo Online Mitra Usaha (Vox Asia)
+                        - generic [ref=f1e1546]:
+                          - generic [ref=f1e1547]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e1548]:
+                            - generic [ref=f1e1549]: Full time
+                            - generic [ref=f1e1550]: Bandung, Jawa Barat(Hibrid)
+                        - list [ref=f1e1551]:
+                          - listitem [ref=f1e1552]:
+                            - generic [ref=f1e1556]: Global Company (Base in Belgium)
+                          - listitem [ref=f1e1558]:
+                            - generic [ref=f1e1562]: Health insurance
+                          - listitem [ref=f1e1564]:
+                            - generic [ref=f1e1568]: Inclusive Culture & Work-Life Balance
+                      - generic [ref=f1e1570]: 3 hari yang lalu
+                    - generic [ref=f1e1573]:
+                      - button "Sembunyikan" [ref=f1e1577]
+                      - button "Simpan" [ref=f1e1584]
+                - listitem [ref=f1e1589]:
+                  - generic [ref=f1e1591] [cursor=pointer]:
+                    - link "Artificial Intelligence (AI) Technical Lead" [ref=f1e1592]:
+                      - /url: /id/job/94635059?ref=recom-homepage&pos=30#sol=1783e6d9ebf25a7a3d19f22b90bd38c765e62427
+                    - generic [ref=f1e1593]:
+                      - generic [ref=f1e1601]:
+                        - generic [ref=f1e1602]:
+                          - heading "Artificial Intelligence (AI) Technical Lead" [level=3] [ref=f1e1603]
+                          - generic [ref=f1e1604]: PT DSSE Energi Mas Utama
+                        - generic [ref=f1e1605]:
+                          - generic [ref=f1e1606]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e1607]:
+                            - generic [ref=f1e1608]: Full time
+                            - generic [ref=f1e1609]: Jakarta Pusat, Jakarta Raya
+                      - generic [ref=f1e1610]: 9 hari yang lalu
+                    - generic [ref=f1e1613]:
+                      - button "Sembunyikan" [ref=f1e1617]
+                      - button "Simpan" [ref=f1e1624]
+                - listitem [ref=f1e1629]:
+                  - generic [ref=f1e1631] [cursor=pointer]:
+                    - link "AI PROMPTER" [ref=f1e1632]:
+                      - /url: /id/job/94481746?ref=recom-homepage&pos=31#sol=791f5ae40dd0f2f966e0b205b42341280d468efe
+                    - generic [ref=f1e1633]:
+                      - generic [ref=f1e1641]:
+                        - generic [ref=f1e1642]:
+                          - heading "AI PROMPTER" [level=3] [ref=f1e1643]
+                          - generic [ref=f1e1644]: CV Sentosa Indika Bunga Tanjung
+                        - generic [ref=f1e1645]:
+                          - generic [ref=f1e1646]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e1647]:
+                            - generic [ref=f1e1648]: Kontrak/Temporer
+                            - generic [ref=f1e1649]: Jakarta Pusat, Jakarta Raya
+                        - list [ref=f1e1650]:
+                          - listitem [ref=f1e1651]:
+                            - generic [ref=f1e1655]: Kesempatan Memimpin dan Mengembangkan Tim
+                          - listitem [ref=f1e1657]:
+                            - generic [ref=f1e1661]: Berkarier di Industri Premium dan Bernilai Tinggi
+                          - listitem [ref=f1e1663]:
+                            - generic [ref=f1e1667]: Training dan Pengembangan Profesional
+                      - generic [ref=f1e1669]: 16 hari yang lalu
+                    - generic [ref=f1e1672]:
+                      - button "Sembunyikan" [ref=f1e1676]
+                      - button "Simpan" [ref=f1e1683]
+                - listitem [ref=f1e1688]:
+                  - generic [ref=f1e1690] [cursor=pointer]:
+                    - link "AI Developer" [ref=f1e1691]:
+                      - /url: /id/job/94727139?ref=recom-homepage&pos=32#sol=709c52396a9c6a586b8ba3ee4b653ccfa84299c7
+                    - generic [ref=f1e1692]:
+                      - generic [ref=f1e1700]:
+                        - generic [ref=f1e1701]:
+                          - heading "AI Developer" [level=3] [ref=f1e1702]
+                          - generic [ref=f1e1703]: PT. CLT TOOLBOX INDONESIA
+                        - generic [ref=f1e1704]:
+                          - generic [ref=f1e1705]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e1706]:
+                            - generic [ref=f1e1707]: Kontrak/Temporer
+                            - generic [ref=f1e1708]: Semarang, Jawa Tengah
+                            - generic [ref=f1e1709]: Rp 5.000.000 – Rp 6.000.000 per month
+                        - list [ref=f1e1710]:
+                          - listitem [ref=f1e1711]:
+                            - generic [ref=f1e1715]: Innovative Construction Technology
+                          - listitem [ref=f1e1717]:
+                            - generic [ref=f1e1721]: Pure Computational Challenge
+                          - listitem [ref=f1e1723]:
+                            - generic [ref=f1e1727]: Competitive Benefits & Supportive Culture
+                      - generic [ref=f1e1729]: 6 hari yang lalu
+                    - generic [ref=f1e1732]:
+                      - button "Sembunyikan" [ref=f1e1736]
+                      - button "Simpan" [ref=f1e1743]
+                - listitem [ref=f1e1748]:
+                  - generic [ref=f1e1750] [cursor=pointer]:
+                    - link "Software Engineer (Full-Stack Web)" [ref=f1e1751]:
+                      - /url: /id/job/94771069?ref=recom-homepage&pos=33#sol=a525b8d922decc88b5f3919a1c2368de8effd1ba
+                    - generic [ref=f1e1752]:
+                      - generic [ref=f1e1760]:
+                        - generic [ref=f1e1761]:
+                          - heading "Software Engineer (Full-Stack Web)" [level=3] [ref=f1e1762]
+                          - generic [ref=f1e1763]: PT Formulatrix Indonesia
+                        - generic [ref=f1e1764]:
+                          - generic [ref=f1e1765]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e1766]:
+                            - generic [ref=f1e1767]: Full time
+                            - generic [ref=f1e1768]: Bandung, Jawa Barat
+                        - list [ref=f1e1769]:
+                          - listitem [ref=f1e1770]:
+                            - generic [ref=f1e1774]: High ownership with real influence on product and technical direction
+                          - listitem [ref=f1e1776]:
+                            - generic [ref=f1e1780]: Fast-growing startup environment with direct collaboration with leadership
+                          - listitem [ref=f1e1782]:
+                            - generic [ref=f1e1786]: Backed by the same group as Formulatrix, with flexible working hour
+                      - generic [ref=f1e1788]: 3 hari yang lalu
+                    - generic [ref=f1e1791]:
+                      - button "Sembunyikan" [ref=f1e1795]
+                      - button "Simpan" [ref=f1e1802]
+                - listitem [ref=f1e1807]:
+                  - generic [ref=f1e1809] [cursor=pointer]:
+                    - link "Senior Programmer" [ref=f1e1810]:
+                      - /url: /id/job/94577704?ref=recom-homepage&pos=34#sol=90ebb82e3a0723fb80838191834feee62fcfb77e
+                    - generic [ref=f1e1811]:
+                      - generic [ref=f1e1819]:
+                        - generic [ref=f1e1820]:
+                          - heading "Senior Programmer" [level=3] [ref=f1e1821]
+                          - generic [ref=f1e1822]: PHINTRACO GROUP
+                        - generic [ref=f1e1823]:
+                          - generic [ref=f1e1824]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e1825]:
+                            - generic [ref=f1e1826]: Full time
+                            - generic [ref=f1e1827]: Jakarta Selatan, Jakarta Raya
+                            - generic [ref=f1e1828]: Rp 8.000.000 – Rp 10.000.000 per month
+                        - list [ref=f1e1829]:
+                          - listitem [ref=f1e1830]:
+                            - generic [ref=f1e1834]: BPJS Kesehatan dan Ketenagakerjaan
+                          - listitem [ref=f1e1836]:
+                            - generic [ref=f1e1840]: Medical Claim
+                          - listitem [ref=f1e1842]:
+                            - generic [ref=f1e1846]: Career Improvement
+                      - generic [ref=f1e1848]: 13 hari yang lalu
+                    - generic [ref=f1e1851]:
+                      - button "Sembunyikan" [ref=f1e1855]
+                      - button "Simpan" [ref=f1e1862]
+                - listitem [ref=f1e1867]:
+                  - generic [ref=f1e1869] [cursor=pointer]:
+                    - link "Software Engineer (Japanese Speaker)" [ref=f1e1870]:
+                      - /url: /id/job/94605132?ref=recom-homepage&pos=35#sol=063be9e4640a58ea3bd23aaaa17f25eae6223d8a
+                    - generic [ref=f1e1871]:
+                      - generic [ref=f1e1879]:
+                        - generic [ref=f1e1880]:
+                          - heading "Software Engineer (Japanese Speaker)" [level=3] [ref=f1e1881]
+                          - generic [ref=f1e1882]: HITHINK TECHNOLOGY INDONESIA
+                        - generic [ref=f1e1883]:
+                          - generic [ref=f1e1884]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e1885]:
+                            - generic [ref=f1e1886]: Full time
+                            - generic [ref=f1e1887]: Jakarta Selatan, Jakarta Raya
+                            - generic [ref=f1e1888]: Rp 12.000.000 – Rp 15.000.000 per month
+                        - list [ref=f1e1889]:
+                          - listitem [ref=f1e1890]:
+                            - generic [ref=f1e1894]: New opportunities in Indonesia market with potential career path goal.
+                          - listitem [ref=f1e1896]:
+                            - generic [ref=f1e1900]: South Jakarta CBD area
+                          - listitem [ref=f1e1902]:
+                            - generic [ref=f1e1906]: Multinational Company (PMA)
+                      - generic [ref=f1e1908]: 10 hari yang lalu
+                    - generic [ref=f1e1911]:
+                      - button "Sembunyikan" [ref=f1e1915]
+                      - button "Simpan" [ref=f1e1922]
+                - listitem [ref=f1e1927]:
+                  - generic [ref=f1e1929] [cursor=pointer]:
+                    - link "SENIOR BACKEND ENGINEER – ERP INTEGRATION" [ref=f1e1930]:
+                      - /url: /id/job/94277634?ref=recom-homepage&pos=36#sol=451e7e852b24aadecadcb79ad1914c495ee685cc
+                    - generic [ref=f1e1931]:
+                      - generic [ref=f1e1939]:
+                        - generic [ref=f1e1940]:
+                          - heading "SENIOR BACKEND ENGINEER – ERP INTEGRATION" [level=3] [ref=f1e1941]
+                          - generic [ref=f1e1942]: PT Tera Data Indonusa, Tbk
+                        - generic [ref=f1e1943]:
+                          - generic [ref=f1e1944]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e1945]:
+                            - generic [ref=f1e1946]: Full time
+                            - generic [ref=f1e1947]: Cakung, Jakarta Raya
+                      - generic [ref=f1e1948]: 27 hari yang lalu
+                    - generic [ref=f1e1951]:
+                      - button "Sembunyikan" [ref=f1e1955]
+                      - button "Simpan" [ref=f1e1962]
+                - listitem [ref=f1e1967]:
+                  - generic [ref=f1e1969] [cursor=pointer]:
+                    - link "Junior Web Developer .Net" [ref=f1e1970]:
+                      - /url: /id/job/94223632?ref=recom-homepage&pos=37#sol=3c6a39f1381ddf7ea70f9e2f0ecaad75d95c6440
+                    - generic [ref=f1e1971]:
+                      - generic [ref=f1e1979]:
+                        - generic [ref=f1e1980]:
+                          - heading "Junior Web Developer .Net" [level=3] [ref=f1e1981]
+                          - generic [ref=f1e1982]: PT Mozaik Bintang Persada
+                        - generic [ref=f1e1983]:
+                          - generic [ref=f1e1984]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e1985]:
+                            - generic [ref=f1e1986]: Full time
+                            - generic [ref=f1e1987]: Jakarta Raya(Hibrid)
+                            - generic [ref=f1e1988]: Rp 5.200.000 – Rp 6.800.000 per month
+                      - generic [ref=f1e1989]: 28 hari yang lalu
+                    - generic [ref=f1e1992]:
+                      - button "Sembunyikan" [ref=f1e1996]
+                      - button "Simpan" [ref=f1e2003]
+                - listitem [ref=f1e2008]:
+                  - generic [ref=f1e2010] [cursor=pointer]:
+                    - link "SOFTWARE ENGINEER PROGRAMMER" [ref=f1e2011]:
+                      - /url: /id/job/94821245?ref=recom-homepage&pos=38#sol=3cb83fbd3a0efa6d1bf5c21ec4af22f325341734
+                    - generic [ref=f1e2012]:
+                      - generic [ref=f1e2020]:
+                        - generic [ref=f1e2021]:
+                          - heading "SOFTWARE ENGINEER PROGRAMMER" [level=3] [ref=f1e2022]
+                          - generic [ref=f1e2023]: PT Sahabat Inti Solusindo
+                        - generic [ref=f1e2024]:
+                          - generic [ref=f1e2025]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2026]:
+                            - generic [ref=f1e2027]: Full time
+                            - generic [ref=f1e2028]: Jakarta Raya
+                        - list [ref=f1e2029]:
+                          - listitem [ref=f1e2030]:
+                            - generic [ref=f1e2034]: Experience with SCADA systems will be a strong advantage
+                          - listitem [ref=f1e2036]:
+                            - generic [ref=f1e2040]: Strong understanding and experience in SQL Server, MySQL, SQLite, and PostgreSQL
+                      - generic [ref=f1e2042]: 1 hari yang lalu
+                    - generic [ref=f1e2045]:
+                      - button "Sembunyikan" [ref=f1e2049]
+                      - button "Simpan" [ref=f1e2056]
+                - listitem [ref=f1e2061]:
+                  - generic [ref=f1e2063] [cursor=pointer]:
+                    - link "Data Engineer Manager" [ref=f1e2064]:
+                      - /url: /id/job/94395967?ref=recom-homepage&pos=39#sol=a14d9635c483663844749f22ec526734fce8e44e
+                    - generic [ref=f1e2065]:
+                      - generic [ref=f1e2073]:
+                        - generic [ref=f1e2074]:
+                          - heading "Data Engineer Manager" [level=3] [ref=f1e2075]
+                          - generic [ref=f1e2076]: Orang Tua Group
+                        - generic [ref=f1e2077]:
+                          - generic [ref=f1e2078]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e2079]:
+                            - generic [ref=f1e2080]: Full time
+                            - generic [ref=f1e2081]: Cengkareng, Jakarta Raya
+                      - generic [ref=f1e2082]: 21 hari yang lalu
+                    - generic [ref=f1e2085]:
+                      - button "Sembunyikan" [ref=f1e2089]
+                      - button "Simpan" [ref=f1e2096]
+                - listitem [ref=f1e2101]:
+                  - generic [ref=f1e2103] [cursor=pointer]:
+                    - link "Full Stack Developer" [ref=f1e2104]:
+                      - /url: /id/job/94327363?ref=recom-homepage&pos=40#sol=a0b7ff1fb97ef2fbd517132b3a98340d0af3f103
+                    - generic [ref=f1e2105]:
+                      - generic [ref=f1e2113]:
+                        - generic [ref=f1e2114]:
+                          - heading "Full Stack Developer" [level=3] [ref=f1e2115]
+                          - generic [ref=f1e2116]: PT Sinergi Prakarsa Utama
+                        - generic [ref=f1e2117]:
+                          - generic [ref=f1e2118]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e2119]:
+                            - generic [ref=f1e2120]: Kontrak/Temporer
+                            - generic [ref=f1e2121]: Tangerang, Banten
+                        - list [ref=f1e2122]:
+                          - listitem [ref=f1e2123]:
+                            - generic [ref=f1e2127]: Competitive benefit & salary
+                          - listitem [ref=f1e2129]:
+                            - generic [ref=f1e2133]: Career Growth
+                      - generic [ref=f1e2135]: 23 hari yang lalu
+                    - generic [ref=f1e2138]:
+                      - button "Sembunyikan" [ref=f1e2142]
+                      - button "Simpan" [ref=f1e2149]
+                - listitem [ref=f1e2154]:
+                  - generic [ref=f1e2156] [cursor=pointer]:
+                    - link "IT Developer, (ERP Odoo Implementor)" [ref=f1e2157]:
+                      - /url: /id/job/94609647?ref=recom-homepage&pos=41#sol=d1da9312d9779947d3bf2167a6fcb2dcc1ef1271
+                    - generic [ref=f1e2158]:
+                      - generic [ref=f1e2166]:
+                        - generic [ref=f1e2167]:
+                          - heading "IT Developer, (ERP Odoo Implementor)" [level=3] [ref=f1e2168]
+                          - generic [ref=f1e2169]: PT Multi Ide Luhur
+                        - generic [ref=f1e2170]:
+                          - generic [ref=f1e2171]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2172]:
+                            - generic [ref=f1e2173]: Full time
+                            - generic [ref=f1e2174]: Jakarta Selatan, Jakarta Raya
+                      - generic [ref=f1e2175]: 10 hari yang lalu
+                    - generic [ref=f1e2178]:
+                      - button "Sembunyikan" [ref=f1e2182]
+                      - button "Simpan" [ref=f1e2189]
+                - listitem [ref=f1e2194]:
+                  - generic [ref=f1e2196] [cursor=pointer]:
+                    - link "Programmer" [ref=f1e2197]:
+                      - /url: /id/job/94570416?ref=recom-homepage&pos=42#sol=efc74d35fa75992fa6d2532d8ff4edf7cd39e402
+                    - generic [ref=f1e2198]:
+                      - generic [ref=f1e2206]:
+                        - generic [ref=f1e2207]:
+                          - heading "Programmer" [level=3] [ref=f1e2208]
+                          - generic [ref=f1e2209]: Pt.jayakarya integrasi
+                        - generic [ref=f1e2210]:
+                          - generic [ref=f1e2211]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e2212]:
+                            - generic [ref=f1e2213]: Kontrak/Temporer
+                            - generic [ref=f1e2214]: South Tangerang, Banten
+                            - generic [ref=f1e2215]: Rp 6.000.000 – Rp 8.400.000 per month
+                      - generic [ref=f1e2216]: 13 hari yang lalu
+                    - generic [ref=f1e2219]:
+                      - button "Sembunyikan" [ref=f1e2223]
+                      - button "Simpan" [ref=f1e2230]
+                - listitem [ref=f1e2235]:
+                  - generic [ref=f1e2237] [cursor=pointer]:
+                    - link "Full Stack Developer (Vue.js, Tailwind, Ali Cloud Server, Supabase, Laravel)" [ref=f1e2238]:
+                      - /url: /id/job/94235371?ref=recom-homepage&pos=43#sol=a4949027096e2003a639eb173d7763a2a967caa9
+                    - generic [ref=f1e2239]:
+                      - generic [ref=f1e2247]:
+                        - generic [ref=f1e2248]:
+                          - heading "Full Stack Developer (Vue.js, Tailwind, Ali Cloud Server, Supabase, Laravel)" [level=3] [ref=f1e2249]
+                          - generic [ref=f1e2250]: PT MLP Indonesia Trading
+                        - generic [ref=f1e2251]:
+                          - generic [ref=f1e2252]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e2253]:
+                            - generic [ref=f1e2254]: Full time
+                            - generic [ref=f1e2255]: Jakarta Selatan, Jakarta Raya
+                            - generic [ref=f1e2256]: Rp 8.000.000 – Rp 11.000.000 per month
+                      - generic [ref=f1e2257]: 28 hari yang lalu
+                    - generic [ref=f1e2260]:
+                      - button "Sembunyikan" [ref=f1e2264]
+                      - button "Simpan" [ref=f1e2271]
+                - listitem [ref=f1e2276]:
+                  - generic [ref=f1e2278] [cursor=pointer]:
+                    - link "Full Stack Engineer — Payment Gateway Integration" [ref=f1e2279]:
+                      - /url: /id/job/94338835?ref=recom-homepage&pos=44#sol=95a4d21d34be385dcb48724aacb11230db58aff5
+                    - generic [ref=f1e2280]:
+                      - generic [ref=f1e2288]:
+                        - generic [ref=f1e2289]:
+                          - heading "Full Stack Engineer — Payment Gateway Integration" [level=3] [ref=f1e2290]
+                          - generic [ref=f1e2291]: PT RUMAH PENGIRIMAN UANG INDONESIA
+                        - generic [ref=f1e2292]:
+                          - generic [ref=f1e2293]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e2294]:
+                            - generic [ref=f1e2295]: Kasual
+                            - generic [ref=f1e2296]: Jakarta Barat, Jakarta Raya
+                            - generic [ref=f1e2297]: Rp 7.500.000 – Rp 10.000.000 per month
+                        - list [ref=f1e2298]:
+                          - listitem [ref=f1e2299]:
+                            - generic [ref=f1e2303]: Fasilitas mess tempat tinggal
+                          - listitem [ref=f1e2305]:
+                            - generic [ref=f1e2309]: Self improvement program
+                      - generic [ref=f1e2311]: 23 hari yang lalu
+                    - generic [ref=f1e2314]:
+                      - button "Sembunyikan" [ref=f1e2318]
+                      - button "Simpan" [ref=f1e2325]
+                - listitem [ref=f1e2330]:
+                  - generic [ref=f1e2332] [cursor=pointer]:
+                    - link "Data Scientist" [ref=f1e2333]:
+                      - /url: /id/job/94618702?ref=recom-homepage&pos=45#sol=88ffab79654ea5a59a049853873b20195fc268fc
+                    - generic [ref=f1e2334]:
+                      - generic [ref=f1e2342]:
+                        - generic [ref=f1e2343]:
+                          - heading "Data Scientist" [level=3] [ref=f1e2344]
+                          - generic [ref=f1e2345]: PT Tera Data Indonusa, Tbk
+                        - generic [ref=f1e2346]:
+                          - generic [ref=f1e2347]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e2348]:
+                            - generic [ref=f1e2349]: Kontrak/Temporer
+                            - generic [ref=f1e2350]: Cakung, Jakarta Raya
+                      - generic [ref=f1e2351]: 10 hari yang lalu
+                    - generic [ref=f1e2354]:
+                      - button "Sembunyikan" [ref=f1e2358]
+                      - button "Simpan" [ref=f1e2365]
+                - listitem [ref=f1e2370]:
+                  - generic [ref=f1e2372] [cursor=pointer]:
+                    - link "Java & Angular Fullstack Developer" [ref=f1e2373]:
+                      - /url: /id/job/94434075?ref=recom-homepage&pos=46#sol=5e90aafe2f82741d22e4bf9c8cbf724bb62d4c1b
+                    - generic [ref=f1e2374]:
+                      - generic [ref=f1e2382]:
+                        - generic [ref=f1e2383]:
+                          - heading "Java & Angular Fullstack Developer" [level=3] [ref=f1e2384]
+                          - generic [ref=f1e2385]: Eterna Indonesia
+                        - generic [ref=f1e2386]:
+                          - generic [ref=f1e2387]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2388]:
+                            - generic [ref=f1e2389]: Full time
+                            - generic [ref=f1e2390]: Jakarta Raya(Jarak jauh)
+                            - generic [ref=f1e2391]: Rp 11.000.000 – Rp 16.000.000 per month
+                        - list [ref=f1e2392]:
+                          - listitem [ref=f1e2393]:
+                            - generic [ref=f1e2397]: Remote Work
+                          - listitem [ref=f1e2399]:
+                            - generic [ref=f1e2403]: U.S. Based Clients
+                          - listitem [ref=f1e2405]:
+                            - generic [ref=f1e2409]: Competitive Salary
+                      - generic [ref=f1e2411]: 19 hari yang lalu
+                    - generic [ref=f1e2414]:
+                      - button "Sembunyikan" [ref=f1e2418]
+                      - button "Simpan" [ref=f1e2425]
+                - listitem [ref=f1e2430]:
+                  - generic [ref=f1e2432] [cursor=pointer]:
+                    - link "Product Manager, Custom ERP & AI Solutions" [ref=f1e2433]:
+                      - /url: /id/job/94375498?ref=recom-homepage&pos=47#sol=e09c9f863e0f3c2d6c818dde0c889e3b266a439c
+                    - generic [ref=f1e2434]:
+                      - generic [ref=f1e2442]:
+                        - generic [ref=f1e2443]:
+                          - heading "Product Manager, Custom ERP & AI Solutions" [level=3] [ref=f1e2444]
+                          - generic [ref=f1e2445]: Neuron Teknologi Indonesia
+                        - generic [ref=f1e2446]:
+                          - generic [ref=f1e2447]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2448]:
+                            - generic [ref=f1e2449]: Full time
+                            - generic [ref=f1e2450]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e2451]:
+                          - listitem [ref=f1e2452]:
+                            - generic [ref=f1e2456]: Pegang product lifecycle penuh, dari discovery sampai go-live
+                          - listitem [ref=f1e2458]:
+                            - generic [ref=f1e2462]: "Perusahaan AI-native: proses kerja modern"
+                          - listitem [ref=f1e2464]:
+                            - generic [ref=f1e2468]: Benefit lengkap dan anggaran pengembangan diri
+                      - generic [ref=f1e2470]: 21 hari yang lalu
+                    - generic [ref=f1e2473]:
+                      - button "Sembunyikan" [ref=f1e2477]
+                      - button "Simpan" [ref=f1e2484]
+                - listitem [ref=f1e2489]:
+                  - generic [ref=f1e2491] [cursor=pointer]:
+                    - link "Full Stack Web Developer" [ref=f1e2492]:
+                      - /url: /id/job/94625401?ref=recom-homepage&pos=48#sol=0ed873be369b140bbd56625f20544ab898ac8048
+                    - generic [ref=f1e2493]:
+                      - generic [ref=f1e2501]:
+                        - generic [ref=f1e2502]:
+                          - heading "Full Stack Web Developer" [level=3] [ref=f1e2503]
+                          - generic [ref=f1e2504]: Jual Emas Indonesia
+                        - generic [ref=f1e2505]:
+                          - generic [ref=f1e2506]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2507]:
+                            - generic [ref=f1e2508]: Full time
+                            - generic [ref=f1e2509]: Jakarta Selatan, Jakarta Raya
+                            - generic [ref=f1e2510]: Rp 7.000.000 – Rp 8.000.000 per month
+                        - list [ref=f1e2511]:
+                          - listitem [ref=f1e2512]:
+                            - generic [ref=f1e2516]: Gaji Kompetitif
+                          - listitem [ref=f1e2518]:
+                            - generic [ref=f1e2522]: THR & Bonus
+                          - listitem [ref=f1e2524]:
+                            - generic [ref=f1e2528]: BPJS
+                      - generic [ref=f1e2530]: 9 hari yang lalu
+                    - generic [ref=f1e2533]:
+                      - button "Sembunyikan" [ref=f1e2537]
+                      - button "Simpan" [ref=f1e2544]
+                - listitem [ref=f1e2549]:
+                  - generic [ref=f1e2551] [cursor=pointer]:
+                    - link "Full Stack Developer" [ref=f1e2552]:
+                      - /url: /id/job/94764228?ref=recom-homepage&pos=49#sol=c7b80f1a35ce44932b0ca553cf21c16f27d3ba2a
+                    - generic [ref=f1e2553]:
+                      - generic [ref=f1e2561]:
+                        - generic [ref=f1e2562]:
+                          - heading "Full Stack Developer" [level=3] [ref=f1e2563]
+                          - generic [ref=f1e2564]: PT Prisma Harapan
+                        - generic [ref=f1e2565]:
+                          - generic [ref=f1e2566]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2567]:
+                            - generic [ref=f1e2568]: Full time
+                            - generic [ref=f1e2569]: Jakarta Barat, Jakarta Raya
+                        - list [ref=f1e2570]:
+                          - listitem [ref=f1e2571]:
+                            - generic [ref=f1e2575]: Medical Coverage (BPJS, Medical Reimbursement, Private Insurance)
+                          - listitem [ref=f1e2577]:
+                            - generic [ref=f1e2581]: Performance-Based Annual Bonus
+                          - listitem [ref=f1e2583]:
+                            - generic [ref=f1e2587]: Career Opportunity
+                      - generic [ref=f1e2589]: 3 hari yang lalu
+                    - generic [ref=f1e2592]:
+                      - button "Sembunyikan" [ref=f1e2596]
+                      - button "Simpan" [ref=f1e2603]
+                - listitem [ref=f1e2608]:
+                  - generic [ref=f1e2610] [cursor=pointer]:
+                    - link "Middle .NET Developer / Backend Engineer - Outsource" [ref=f1e2611]:
+                      - /url: /id/job/94617354?ref=recom-homepage&pos=50#sol=a9bec3d1c302d789c83a6ac5cb017d6c12c35d4d
+                    - generic [ref=f1e2612]:
+                      - generic [ref=f1e2620]:
+                        - generic [ref=f1e2621]:
+                          - heading "Middle .NET Developer / Backend Engineer - Outsource" [level=3] [ref=f1e2622]
+                          - generic [ref=f1e2623]: PT Serasi Autoraya (Member of Astra)
+                        - generic [ref=f1e2624]:
+                          - generic [ref=f1e2625]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2626]:
+                            - generic [ref=f1e2627]: Kontrak/Temporer
+                            - generic [ref=f1e2628]: Jakarta Raya
+                            - generic [ref=f1e2629]: Rp 8.500.000 – Rp 10.000.000 per month
+                        - list [ref=f1e2630]:
+                          - listitem [ref=f1e2631]:
+                            - generic [ref=f1e2635]: Member of Astra
+                      - generic [ref=f1e2637]: 10 hari yang lalu
+                    - generic [ref=f1e2640]:
+                      - button "Sembunyikan" [ref=f1e2644]
+                      - button "Simpan" [ref=f1e2651]
+                - listitem [ref=f1e2656]:
+                  - generic [ref=f1e2658] [cursor=pointer]:
+                    - link ".Net Developer" [ref=f1e2659]:
+                      - /url: /id/job/94370532?ref=recom-homepage&pos=51#sol=f0f019fea53b019a2b64c591394b868e2fe05443
+                    - generic [ref=f1e2660]:
+                      - generic [ref=f1e2668]:
+                        - generic [ref=f1e2669]:
+                          - heading ".Net Developer" [level=3] [ref=f1e2670]
+                          - generic [ref=f1e2671]: PT Pandawa Karir Citra
+                        - generic [ref=f1e2672]:
+                          - generic [ref=f1e2673]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2674]:
+                            - generic [ref=f1e2675]: Full time
+                            - generic [ref=f1e2676]: Jakarta Raya
+                      - generic [ref=f1e2677]: 22 hari yang lalu
+                    - generic [ref=f1e2680]:
+                      - button "Sembunyikan" [ref=f1e2684]
+                      - button "Simpan" [ref=f1e2691]
+                - listitem [ref=f1e2696]:
+                  - generic [ref=f1e2698] [cursor=pointer]:
+                    - link "Odoo 18/19 Senior Developer (Remote, Travel)" [ref=f1e2699]:
+                      - /url: /id/job/94574091?ref=recom-homepage&pos=52#sol=9b61d263d4ee0b691920277e1c5437cae10dd8b3
+                    - generic [ref=f1e2700]:
+                      - generic [ref=f1e2708]:
+                        - generic [ref=f1e2709]:
+                          - heading "Odoo 18/19 Senior Developer (Remote, Travel)" [level=3] [ref=f1e2710]
+                          - generic [ref=f1e2711]: PT UNRAVEL CONSULTING INDONESIA
+                        - generic [ref=f1e2712]:
+                          - generic [ref=f1e2713]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2714]:
+                            - generic [ref=f1e2715]: Full time
+                            - generic [ref=f1e2716]: Jakarta Selatan, Jakarta Raya(Jarak jauh)
+                        - list [ref=f1e2717]:
+                          - listitem [ref=f1e2718]:
+                            - generic [ref=f1e2722]: "Lead AI Innovation: Build custom AI flows and experiment with new tech"
+                          - listitem [ref=f1e2724]:
+                            - generic [ref=f1e2728]: "Remote + Travel: Work from anywhere + paid trips to Bali, Lombok, Java"
+                          - listitem [ref=f1e2730]:
+                            - generic [ref=f1e2734]: "Funded Growth: We cover your training & official Odoo certifications"
+                      - generic [ref=f1e2736]: 13 hari yang lalu
+                    - generic [ref=f1e2739]:
+                      - button "Sembunyikan" [ref=f1e2743]
+                      - button "Simpan" [ref=f1e2750]
+                - listitem [ref=f1e2755]:
+                  - generic [ref=f1e2757] [cursor=pointer]:
+                    - link "IT Manager (Fintech P2P)" [ref=f1e2758]:
+                      - /url: /id/job/94371328?ref=recom-homepage&pos=53#sol=9b955026bd567af2a799d5ba7adc457d9002edaa
+                    - generic [ref=f1e2759]:
+                      - generic [ref=f1e2767]:
+                        - generic [ref=f1e2768]:
+                          - heading "IT Manager (Fintech P2P)" [level=3] [ref=f1e2769]
+                          - generic [ref=f1e2770]: PT KREDIT PLUS TEKNOLOGI
+                        - generic [ref=f1e2771]:
+                          - generic [ref=f1e2772]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2773]:
+                            - generic [ref=f1e2774]: Full time
+                            - generic [ref=f1e2775]: Tangerang, Banten
+                            - generic [ref=f1e2776]: Rp 15.000.000 – Rp 20.000.000 per month
+                        - list [ref=f1e2777]:
+                          - listitem [ref=f1e2778]:
+                            - generic [ref=f1e2782]: BPJS TK DAN KES
+                          - listitem [ref=f1e2784]:
+                            - generic [ref=f1e2788]: ASURANSI
+                          - listitem [ref=f1e2790]:
+                            - generic [ref=f1e2794]: WORK LIFE BALANCE
+                      - generic [ref=f1e2796]: 22 hari yang lalu
+                    - generic [ref=f1e2799]:
+                      - button "Sembunyikan" [ref=f1e2803]
+                      - button "Simpan" [ref=f1e2810]
+                - listitem [ref=f1e2815]:
+                  - generic [ref=f1e2817] [cursor=pointer]:
+                    - link "Full Stack Developer" [ref=f1e2818]:
+                      - /url: /id/job/94338824?ref=recom-homepage&pos=54#sol=237917e6578c1fceaa56378b3e7e92d3e31443be
+                    - generic [ref=f1e2819]:
+                      - generic [ref=f1e2827]:
+                        - generic [ref=f1e2828]:
+                          - heading "Full Stack Developer" [level=3] [ref=f1e2829]
+                          - generic [ref=f1e2830]: PT Reasuransi Maipark Indonesia
+                        - generic [ref=f1e2831]:
+                          - generic [ref=f1e2832]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e2833]:
+                            - generic [ref=f1e2834]: Kontrak/Temporer
+                            - generic [ref=f1e2835]: Jakarta Selatan, Jakarta Raya
+                      - generic [ref=f1e2836]: 23 hari yang lalu
+                    - generic [ref=f1e2839]:
+                      - button "Sembunyikan" [ref=f1e2843]
+                      - button "Simpan" [ref=f1e2850]
+                - listitem [ref=f1e2855]:
+                  - generic [ref=f1e2857] [cursor=pointer]:
+                    - link "Odoo Technical Developer" [ref=f1e2858]:
+                      - /url: /id/job/94359346?ref=recom-homepage&pos=55#sol=51be6ea7f50799ce5b3cd245085f0082a4722e8f
+                    - generic [ref=f1e2859]:
+                      - generic [ref=f1e2867]:
+                        - generic [ref=f1e2868]:
+                          - heading "Odoo Technical Developer" [level=3] [ref=f1e2869]
+                          - generic [ref=f1e2870]: PT Sinar Aplikasi Jaya Laksana
+                        - generic [ref=f1e2871]:
+                          - generic [ref=f1e2872]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2873]:
+                            - generic [ref=f1e2874]: Full time
+                            - generic [ref=f1e2875]: Jakarta Barat, Jakarta Raya
+                            - generic [ref=f1e2876]: Rp 7.000.000 – Rp 8.000.000 per month
+                      - generic [ref=f1e2877]: 16 hari yang lalu
+                    - generic [ref=f1e2880]:
+                      - button "Sembunyikan" [ref=f1e2884]
+                      - button "Simpan" [ref=f1e2891]
+                - listitem [ref=f1e2896]:
+                  - generic [ref=f1e2898] [cursor=pointer]:
+                    - link "MIDDLE–SENIOR FRONTEND ENGINEER" [ref=f1e2899]:
+                      - /url: /id/job/94277775?ref=recom-homepage&pos=56#sol=39c863beb637af30f1acc8e475be0dde066ebf99
+                    - generic [ref=f1e2900]:
+                      - generic [ref=f1e2908]:
+                        - generic [ref=f1e2909]:
+                          - heading "MIDDLE–SENIOR FRONTEND ENGINEER" [level=3] [ref=f1e2910]
+                          - generic [ref=f1e2911]: PT Tera Data Indonusa, Tbk
+                        - generic [ref=f1e2912]:
+                          - generic [ref=f1e2913]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e2914]:
+                            - generic [ref=f1e2915]: Full time
+                            - generic [ref=f1e2916]: Cakung, Jakarta Raya
+                      - generic [ref=f1e2917]: 27 hari yang lalu
+                    - generic [ref=f1e2920]:
+                      - button "Sembunyikan" [ref=f1e2924]
+                      - button "Simpan" [ref=f1e2931]
+                - listitem [ref=f1e2936]:
+                  - generic [ref=f1e2938] [cursor=pointer]:
+                    - link "Fullstack Developer (JAVA)" [ref=f1e2939]:
+                      - /url: /id/job/94603212?ref=recom-homepage&pos=57#sol=fefc6e2f940d18666db4642b4eec170240d21962
+                    - generic [ref=f1e2940]:
+                      - generic [ref=f1e2948]:
+                        - generic [ref=f1e2949]:
+                          - heading "Fullstack Developer (JAVA)" [level=3] [ref=f1e2950]
+                          - generic [ref=f1e2951]: PT Hitachi eBworx Indonesia
+                        - generic [ref=f1e2952]:
+                          - generic [ref=f1e2953]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e2954]:
+                            - generic [ref=f1e2955]: Full time
+                            - generic [ref=f1e2956]: Jakarta Pusat, Jakarta Raya
+                        - list [ref=f1e2957]:
+                          - listitem [ref=f1e2958]:
+                            - generic [ref=f1e2962]: One of Well-known Multinational Company
+                          - listitem [ref=f1e2964]:
+                            - generic [ref=f1e2968]: Annual Leave Max 21 day, additional Paternity leave, additional child care leave
+                          - listitem [ref=f1e2970]:
+                            - generic [ref=f1e2974]: Big Opportunity for training/placement abroad, Career path and advanced benefit
+                      - generic [ref=f1e2976]: 10 hari yang lalu
+                    - generic [ref=f1e2979]:
+                      - button "Sembunyikan" [ref=f1e2983]
+                      - button "Simpan" [ref=f1e2990]
+                - listitem [ref=f1e2995]:
+                  - generic [ref=f1e2997] [cursor=pointer]:
+                    - link "IT DevOps" [ref=f1e2998]:
+                      - /url: /id/job/94515535?ref=recom-homepage&pos=58#sol=4a77233f6fa544c5effa5798977943afc2ff3eb4
+                    - generic [ref=f1e2999]:
+                      - generic [ref=f1e3007]:
+                        - generic [ref=f1e3008]:
+                          - heading "IT DevOps" [level=3] [ref=f1e3009]
+                          - generic [ref=f1e3010]: PT Bimasakti Multi Sinergi
+                        - generic [ref=f1e3011]:
+                          - generic [ref=f1e3012]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3013]:
+                            - generic [ref=f1e3014]: Kontrak/Temporer
+                            - generic [ref=f1e3015]: Sidoarjo, Jawa Timur
+                            - generic [ref=f1e3016]: Rp 5.000.000 – Rp 6.000.000 per month
+                      - generic [ref=f1e3017]: 15 hari yang lalu
+                    - generic [ref=f1e3020]:
+                      - button "Sembunyikan" [ref=f1e3024]
+                      - button "Simpan" [ref=f1e3031]
+                - listitem [ref=f1e3036]:
+                  - generic [ref=f1e3038] [cursor=pointer]:
+                    - link "Data Engineer" [ref=f1e3039]:
+                      - /url: /id/job/94293446?ref=recom-homepage&pos=59#sol=64889f6ad9221a1582c988ef66a107ad53937815
+                    - generic [ref=f1e3040]:
+                      - generic [ref=f1e3048]:
+                        - generic [ref=f1e3049]:
+                          - heading "Data Engineer" [level=3] [ref=f1e3050]
+                          - generic [ref=f1e3051]: PT Sigma Cipta Utama
+                        - generic [ref=f1e3052]:
+                          - generic [ref=f1e3053]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e3054]:
+                            - generic [ref=f1e3055]: Kontrak/Temporer
+                            - generic [ref=f1e3056]: Jakarta Raya
+                      - generic [ref=f1e3057]: 25 hari yang lalu
+                    - generic [ref=f1e3060]:
+                      - button "Sembunyikan" [ref=f1e3064]
+                      - button "Simpan" [ref=f1e3071]
+                - listitem [ref=f1e3076]:
+                  - generic [ref=f1e3078] [cursor=pointer]:
+                    - link "Java Frontend Engineer" [ref=f1e3079]:
+                      - /url: /id/job/94611396?ref=recom-homepage&pos=60#sol=5524aa132b1b33fccf676bf8295c047665aef211
+                    - generic [ref=f1e3080]:
+                      - generic [ref=f1e3088]:
+                        - generic [ref=f1e3089]:
+                          - heading "Java Frontend Engineer" [level=3] [ref=f1e3090]
+                          - generic [ref=f1e3091]: PT. HAND Solutions Indonesia
+                        - generic [ref=f1e3092]:
+                          - generic [ref=f1e3093]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3094]:
+                            - generic [ref=f1e3095]: Full time
+                            - generic [ref=f1e3096]: Jakarta Pusat, Jakarta Raya
+                        - list [ref=f1e3097]:
+                          - listitem [ref=f1e3098]:
+                            - generic [ref=f1e3102]: Global Experience
+                          - listitem [ref=f1e3104]:
+                            - generic [ref=f1e3108]: International Exposure
+                          - listitem [ref=f1e3110]:
+                            - generic [ref=f1e3114]: Business & Career Growth
+                      - generic [ref=f1e3116]: 10 hari yang lalu
+                    - generic [ref=f1e3119]:
+                      - button "Sembunyikan" [ref=f1e3123]
+                      - button "Simpan" [ref=f1e3130]
+                - listitem [ref=f1e3135]:
+                  - generic [ref=f1e3137] [cursor=pointer]:
+                    - link "Lead Bridge Engineer (Java/Spring & Team Lead)" [ref=f1e3138]:
+                      - /url: /id/job/94496567?ref=recom-homepage&pos=61#sol=fc281b0291c47d3bd9ee69212c13e456426ffc53
+                    - generic [ref=f1e3139]:
+                      - generic [ref=f1e3147]:
+                        - generic [ref=f1e3148]:
+                          - heading "Lead Bridge Engineer (Java/Spring & Team Lead)" [level=3] [ref=f1e3149]
+                          - generic [ref=f1e3150]: FinShot, Inc.
+                        - generic [ref=f1e3151]:
+                          - generic [ref=f1e3152]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e3153]:
+                            - generic [ref=f1e3154]: Full time
+                            - generic [ref=f1e3155]: Jakarta Pusat, Jakarta Raya
+                            - generic [ref=f1e3156]: Rp 14.000.000 – Rp 18.000.000 per month
+                      - generic [ref=f1e3157]: 16 hari yang lalu
+                    - generic [ref=f1e3160]:
+                      - button "Sembunyikan" [ref=f1e3164]
+                      - button "Simpan" [ref=f1e3171]
+                - listitem [ref=f1e3176]:
+                  - generic [ref=f1e3178] [cursor=pointer]:
+                    - link "Backend Engineer (Java/Golang) - Financial Service" [ref=f1e3179]:
+                      - /url: /id/job/94591082?ref=recom-homepage&pos=62#sol=e1ff5b11fa09211049af02e4a036d9e00a1ec088
+                    - generic [ref=f1e3180]:
+                      - generic [ref=f1e3188]:
+                        - generic [ref=f1e3189]:
+                          - heading "Backend Engineer (Java/Golang) - Financial Service" [level=3] [ref=f1e3190]
+                          - generic [ref=f1e3191]: PT Adecco Personnel Indonesia
+                        - generic [ref=f1e3192]:
+                          - generic [ref=f1e3193]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3194]:
+                            - generic [ref=f1e3195]: Full time
+                            - generic [ref=f1e3196]: Tangerang, Banten
+                      - generic [ref=f1e3197]: 12 hari yang lalu
+                    - generic [ref=f1e3200]:
+                      - button "Sembunyikan" [ref=f1e3204]
+                      - button "Simpan" [ref=f1e3211]
+                - listitem [ref=f1e3216]:
+                  - generic [ref=f1e3218] [cursor=pointer]:
+                    - link "Data Quality Engineer" [ref=f1e3219]:
+                      - /url: /id/job/94619513?ref=recom-homepage&pos=63#sol=3eead93ede630cb70f922d279009f5b82d779524
+                    - generic [ref=f1e3220]:
+                      - generic [ref=f1e3228]:
+                        - generic [ref=f1e3229]:
+                          - heading "Data Quality Engineer" [level=3] [ref=f1e3230]
+                          - generic [ref=f1e3231]: PT Mitra Teleinformatika Perkasa
+                        - generic [ref=f1e3232]:
+                          - generic [ref=f1e3233]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3234]:
+                            - generic [ref=f1e3235]: Kontrak/Temporer
+                            - generic [ref=f1e3236]: Jakarta Pusat, Jakarta Raya
+                      - generic [ref=f1e3237]: 10 hari yang lalu
+                    - generic [ref=f1e3240]:
+                      - button "Sembunyikan" [ref=f1e3244]
+                      - button "Simpan" [ref=f1e3251]
+                - listitem [ref=f1e3256]:
+                  - generic [ref=f1e3258] [cursor=pointer]:
+                    - link "Backend Developer (Golang)" [ref=f1e3259]:
+                      - /url: /id/job/94619291?ref=recom-homepage&pos=64#sol=34c003bd079f2444f73c343733bf103974275fa1
+                    - generic [ref=f1e3260]:
+                      - generic [ref=f1e3268]:
+                        - generic [ref=f1e3269]:
+                          - heading "Backend Developer (Golang)" [level=3] [ref=f1e3270]
+                          - generic [ref=f1e3271]: PT Ako Media Asia
+                        - generic [ref=f1e3272]:
+                          - generic [ref=f1e3273]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3274]:
+                            - generic [ref=f1e3275]: Kontrak/Temporer
+                            - generic [ref=f1e3276]: Jakarta Barat, Jakarta Raya(Hibrid)
+                      - generic [ref=f1e3277]: 10 hari yang lalu
+                    - generic [ref=f1e3280]:
+                      - button "Sembunyikan" [ref=f1e3284]
+                      - button "Simpan" [ref=f1e3291]
+                - listitem [ref=f1e3296]:
+                  - generic [ref=f1e3298] [cursor=pointer]:
+                    - link "Senior IT Delivery Lead" [ref=f1e3299]:
+                      - /url: /id/job/94486057?ref=recom-homepage&pos=65#sol=06d811e4864d15a90d4606263bfeac3b5e636f8d
+                    - generic [ref=f1e3300]:
+                      - generic [ref=f1e3304]:
+                        - generic [ref=f1e3305]:
+                          - heading "Senior IT Delivery Lead" [level=3] [ref=f1e3306]
+                          - generic [ref=f1e3307]: Pengiklan Anonim
+                        - generic [ref=f1e3308]:
+                          - generic [ref=f1e3309]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3310]:
+                            - generic [ref=f1e3311]: Kontrak/Temporer
+                            - generic [ref=f1e3312]: Jakarta Utara, Jakarta Raya
+                      - generic [ref=f1e3313]: 16 hari yang lalu
+                    - generic [ref=f1e3316]:
+                      - button "Sembunyikan" [ref=f1e3320]
+                      - button "Simpan" [ref=f1e3327]
+                - listitem [ref=f1e3332]:
+                  - generic [ref=f1e3334] [cursor=pointer]:
+                    - link "DevOps Engineer" [ref=f1e3335]:
+                      - /url: /id/job/94639473?ref=recom-homepage&pos=66#sol=71fe090342d48478c5cd73b14c7b64f518b221a5
+                    - generic [ref=f1e3336]:
+                      - generic [ref=f1e3344]:
+                        - generic [ref=f1e3345]:
+                          - heading "DevOps Engineer" [level=3] [ref=f1e3346]
+                          - generic [ref=f1e3347]: PT Lawencon Internasional
+                        - generic [ref=f1e3348]:
+                          - generic [ref=f1e3349]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3350]:
+                            - generic [ref=f1e3351]: Full time
+                            - generic [ref=f1e3352]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e3353]:
+                          - listitem [ref=f1e3354]:
+                            - generic [ref=f1e3358]: Competitive salary
+                          - listitem [ref=f1e3360]:
+                            - generic [ref=f1e3364]: Comprehensive health and wellness benefits
+                          - listitem [ref=f1e3366]:
+                            - generic [ref=f1e3370]: Collaborative and inclusive work environment
+                      - generic [ref=f1e3372]: 9 hari yang lalu
+                    - generic [ref=f1e3375]:
+                      - button "Sembunyikan" [ref=f1e3379]
+                      - button "Simpan" [ref=f1e3386]
+                - listitem [ref=f1e3391]:
+                  - generic [ref=f1e3393] [cursor=pointer]:
+                    - link "DBMS Technical Support Engineer" [ref=f1e3394]:
+                      - /url: /id/job/94527335?ref=recom-homepage&pos=67#sol=51d280a222fa80066c16c672276d34ac2c672052
+                    - generic [ref=f1e3395]:
+                      - generic [ref=f1e3403]:
+                        - generic [ref=f1e3404]:
+                          - heading "DBMS Technical Support Engineer" [level=3] [ref=f1e3405]
+                          - generic [ref=f1e3406]: Korea Trade Investment Promotion Agency
+                        - generic [ref=f1e3407]:
+                          - generic [ref=f1e3408]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3409]:
+                            - generic [ref=f1e3410]: Kontrak/Temporer
+                            - generic [ref=f1e3411]: Jakarta Raya
+                            - generic [ref=f1e3412]: $10.000 – $15.000 per year (USD)
+                        - list [ref=f1e3413]:
+                          - listitem [ref=f1e3414]:
+                            - generic [ref=f1e3418]: Work with an enterprise-grade DBMS platform
+                          - listitem [ref=f1e3420]:
+                            - generic [ref=f1e3424]: Hands-on technical growth in database engineering
+                          - listitem [ref=f1e3426]:
+                            - generic [ref=f1e3430]: Customer-facing role with strong industry exposure
+                      - generic [ref=f1e3432]: 15 hari yang lalu
+                    - generic [ref=f1e3435]:
+                      - button "Sembunyikan" [ref=f1e3439]
+                      - button "Simpan" [ref=f1e3446]
+                - listitem [ref=f1e3451]:
+                  - generic [ref=f1e3453] [cursor=pointer]:
+                    - link "Full Stack Developer" [ref=f1e3454]:
+                      - /url: /id/job/94548689?ref=recom-homepage&pos=68#sol=c627d72a6091b16ab8bd125869fa73e7113be93f
+                    - generic [ref=f1e3455]:
+                      - generic [ref=f1e3463]:
+                        - generic [ref=f1e3464]:
+                          - heading "Full Stack Developer" [level=3] [ref=f1e3465]
+                          - generic [ref=f1e3466]: Invishield Protective Indonesia
+                        - generic [ref=f1e3467]:
+                          - generic [ref=f1e3468]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3469]:
+                            - generic [ref=f1e3470]: Full time
+                            - generic [ref=f1e3471]: Serpong, Banten
+                            - generic [ref=f1e3472]: Rp 6.000.000 – Rp 7.500.000 per month
+                      - generic [ref=f1e3473]: 14 hari yang lalu
+                    - generic [ref=f1e3476]:
+                      - button "Sembunyikan" [ref=f1e3480]
+                      - button "Simpan" [ref=f1e3487]
+                - listitem [ref=f1e3492]:
+                  - generic [ref=f1e3494] [cursor=pointer]:
+                    - link "ERP Business Analyst" [ref=f1e3495]:
+                      - /url: /id/job/94546310?ref=recom-homepage&pos=69#sol=6520d90fdcfa83a9dda4f11665d63545bf18d538
+                    - generic [ref=f1e3496]:
+                      - generic [ref=f1e3504]:
+                        - generic [ref=f1e3505]:
+                          - heading "ERP Business Analyst" [level=3] [ref=f1e3506]
+                          - generic [ref=f1e3507]: PT Lattice Teknologi Mandiri
+                        - generic [ref=f1e3508]:
+                          - generic [ref=f1e3509]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3510]:
+                            - generic [ref=f1e3511]: Full time
+                            - generic [ref=f1e3512]: Bandung, Jawa Barat
+                            - generic [ref=f1e3513]: Rp 5.400.000 – Rp 6.400.000 per month
+                      - generic [ref=f1e3514]: 14 hari yang lalu
+                    - generic [ref=f1e3517]:
+                      - button "Sembunyikan" [ref=f1e3521]
+                      - button "Simpan" [ref=f1e3528]
+                - listitem [ref=f1e3533]:
+                  - generic [ref=f1e3535] [cursor=pointer]:
+                    - link "Mobile Application Developer Leader" [ref=f1e3536]:
+                      - /url: /id/job/94643298?ref=recom-homepage&pos=70#sol=8c9d445759a79c5ea350a100e81e1d75750b59ea
+                    - generic [ref=f1e3537]:
+                      - generic [ref=f1e3545]:
+                        - generic [ref=f1e3546]:
+                          - heading "Mobile Application Developer Leader" [level=3] [ref=f1e3547]
+                          - generic [ref=f1e3548]: PT Sushi Tei Indonesia
+                        - generic [ref=f1e3549]:
+                          - generic [ref=f1e3550]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3551]:
+                            - generic [ref=f1e3552]: Full time
+                            - generic [ref=f1e3553]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e3554]:
+                          - listitem [ref=f1e3555]:
+                            - generic [ref=f1e3559]: Asuransi Kesehatan
+                          - listitem [ref=f1e3561]:
+                            - generic [ref=f1e3565]: Peluang Karyawan Tetap
+                      - generic [ref=f1e3567]: 9 hari yang lalu
+                    - generic [ref=f1e3570]:
+                      - button "Sembunyikan" [ref=f1e3574]
+                      - button "Simpan" [ref=f1e3581]
+                - listitem [ref=f1e3586]:
+                  - generic [ref=f1e3588] [cursor=pointer]:
+                    - link "RAN Solution & Strategic Manager" [ref=f1e3589]:
+                      - /url: /id/job/94702345?ref=recom-homepage&pos=71#sol=ea765054a396dca03b34a76a969403d726a114e6
+                    - generic [ref=f1e3590]:
+                      - generic [ref=f1e3598]:
+                        - generic [ref=f1e3599]:
+                          - heading "RAN Solution & Strategic Manager" [level=3] [ref=f1e3600]
+                          - generic [ref=f1e3601]: PT ZTE Indonesia
+                        - generic [ref=f1e3602]:
+                          - generic [ref=f1e3603]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3604]:
+                            - generic [ref=f1e3605]: Full time
+                            - generic [ref=f1e3606]: Jakarta Selatan, Jakarta Raya
+                      - generic [ref=f1e3607]: 7 hari yang lalu
+                    - generic [ref=f1e3610]:
+                      - button "Sembunyikan" [ref=f1e3614]
+                      - button "Simpan" [ref=f1e3621]
+                - listitem [ref=f1e3626]:
+                  - generic [ref=f1e3628] [cursor=pointer]:
+                    - link "Fullstack Developer" [ref=f1e3629]:
+                      - /url: /id/job/94420407?ref=recom-homepage&pos=72#sol=8a0248b08e9f69e2887d5819710aff3c487c4998
+                    - generic [ref=f1e3630]:
+                      - generic [ref=f1e3638]:
+                        - generic [ref=f1e3639]:
+                          - heading "Fullstack Developer" [level=3] [ref=f1e3640]
+                          - generic [ref=f1e3641]: PT Bimasakti Multi Sinergi
+                        - generic [ref=f1e3642]:
+                          - generic [ref=f1e3643]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3644]:
+                            - generic [ref=f1e3645]: Kontrak/Temporer
+                            - generic [ref=f1e3646]: Sidoarjo, Jawa Timur
+                            - generic [ref=f1e3647]: Rp 5.000.000 – Rp 6.000.000 per month
+                        - list [ref=f1e3648]:
+                          - listitem [ref=f1e3649]:
+                            - generic [ref=f1e3653]: Lunch Allowance (Catering)
+                          - listitem [ref=f1e3655]:
+                            - generic [ref=f1e3659]: Status kepegawaian Karyawan Tetap (Permanent Employee)
+                          - listitem [ref=f1e3661]:
+                            - generic [ref=f1e3665]: Five Working Days
+                      - generic [ref=f1e3667]: 20 hari yang lalu
+                    - generic [ref=f1e3670]:
+                      - button "Sembunyikan" [ref=f1e3674]
+                      - button "Simpan" [ref=f1e3681]
+                - listitem [ref=f1e3686]:
+                  - generic [ref=f1e3688] [cursor=pointer]:
+                    - link "Java Backend Engineer (Junior Level)" [ref=f1e3689]:
+                      - /url: /id/job/94618738?ref=recom-homepage&pos=73#sol=8e22b882edaa07862bf51ac639ca8884bd381a0a
+                    - generic [ref=f1e3690]:
+                      - generic [ref=f1e3698]:
+                        - generic [ref=f1e3699]:
+                          - heading "Java Backend Engineer (Junior Level)" [level=3] [ref=f1e3700]
+                          - generic [ref=f1e3701]: Nostra Solution
+                        - generic [ref=f1e3702]:
+                          - generic [ref=f1e3703]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3704]:
+                            - generic [ref=f1e3705]: Full time
+                            - generic [ref=f1e3706]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e3707]:
+                          - listitem [ref=f1e3708]:
+                            - generic [ref=f1e3712]: Benefit BPJS Kesehatan
+                          - listitem [ref=f1e3714]:
+                            - generic [ref=f1e3718]: BPJS Ketenagakerjaan
+                          - listitem [ref=f1e3720]:
+                            - generic [ref=f1e3724]: Asuransi Rawat Inap (Permanent Employee)
+                      - generic [ref=f1e3726]: 10 hari yang lalu
+                    - generic [ref=f1e3729]:
+                      - button "Sembunyikan" [ref=f1e3733]
+                      - button "Simpan" [ref=f1e3740]
+                - listitem [ref=f1e3745]:
+                  - generic [ref=f1e3747] [cursor=pointer]:
+                    - link "Sales Engineer (Entry Level)" [ref=f1e3748]:
+                      - /url: /id/job/94600577?ref=recom-homepage&pos=74#sol=67eb949fa5a3da071e72486f297060c10f2e60e1
+                    - generic [ref=f1e3749]:
+                      - generic [ref=f1e3757]:
+                        - generic [ref=f1e3758]:
+                          - heading "Sales Engineer (Entry Level)" [level=3] [ref=f1e3759]
+                          - generic [ref=f1e3760]: PT Trust Recruit Indonesia
+                        - generic [ref=f1e3761]:
+                          - generic [ref=f1e3762]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3763]:
+                            - generic [ref=f1e3764]: Full time
+                            - generic [ref=f1e3765]: Depok, Jawa Barat
+                            - generic [ref=f1e3766]: Rp 5.000.000 – Rp 7.500.000 per month
+                      - generic [ref=f1e3767]: 10 hari yang lalu
+                    - generic [ref=f1e3770]:
+                      - button "Sembunyikan" [ref=f1e3774]
+                      - button "Simpan" [ref=f1e3781]
+                - listitem [ref=f1e3786]:
+                  - generic [ref=f1e3788] [cursor=pointer]:
+                    - link "Infrastructure & DevOps Engineer (AI-Native)" [ref=f1e3789]:
+                      - /url: /id/job/94219099?ref=recom-homepage&pos=75#sol=6fb024e02809f384e07523b175ef0ea330ce23e4
+                    - generic [ref=f1e3790]:
+                      - generic [ref=f1e3798]:
+                        - generic [ref=f1e3799]:
+                          - heading "Infrastructure & DevOps Engineer (AI-Native)" [level=3] [ref=f1e3800]
+                          - generic [ref=f1e3801]: PT Monica HijauLestari
+                        - generic [ref=f1e3802]:
+                          - generic [ref=f1e3803]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e3804]:
+                            - generic [ref=f1e3805]: Full time
+                            - generic [ref=f1e3806]: South Tangerang, Banten(Hibrid)
+                      - generic [ref=f1e3807]: 29 hari yang lalu
+                    - generic [ref=f1e3810]:
+                      - button "Sembunyikan" [ref=f1e3814]
+                      - button "Simpan" [ref=f1e3821]
+                - listitem [ref=f1e3826]:
+                  - generic [ref=f1e3828] [cursor=pointer]:
+                    - link "Software QA Automation Lead (Technical Automation Lead)" [ref=f1e3829]:
+                      - /url: /id/job/94425839?ref=recom-homepage&pos=76#sol=eb17da80242ee587813a52f24f3982c1a15c5c2a
+                    - generic [ref=f1e3830]:
+                      - generic [ref=f1e3838]:
+                        - generic [ref=f1e3839]:
+                          - heading "Software QA Automation Lead (Technical Automation Lead)" [level=3] [ref=f1e3840]
+                          - generic [ref=f1e3841]: PT Fleischhacker Solutions Indonesia
+                        - generic [ref=f1e3842]:
+                          - generic [ref=f1e3843]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3844]:
+                            - generic [ref=f1e3845]: Full time
+                            - generic [ref=f1e3846]: Jakarta Utara, Jakarta Raya
+                        - list [ref=f1e3847]:
+                          - listitem [ref=f1e3848]:
+                            - generic [ref=f1e3852]: Passionate & Energetic Work Culture
+                          - listitem [ref=f1e3854]:
+                            - generic [ref=f1e3858]: Employee Development Opportunities
+                          - listitem [ref=f1e3860]:
+                            - generic [ref=f1e3864]: Good and friendly working environment
+                      - generic [ref=f1e3866]: 20 hari yang lalu
+                    - generic [ref=f1e3869]:
+                      - button "Sembunyikan" [ref=f1e3873]
+                      - button "Simpan" [ref=f1e3880]
+                - listitem [ref=f1e3885]:
+                  - generic [ref=f1e3887] [cursor=pointer]:
+                    - link "Google & Facebook/Meta Ads Specialist" [ref=f1e3888]:
+                      - /url: /id/job/94528337?ref=recom-homepage&pos=77#sol=1524169b3f05e86a408a9b5781cbd1713d11b6ce
+                    - generic [ref=f1e3889]:
+                      - generic [ref=f1e3897]:
+                        - generic [ref=f1e3898]:
+                          - heading "Google & Facebook/Meta Ads Specialist" [level=3] [ref=f1e3899]
+                          - generic [ref=f1e3900]: Process Flow SRL
+                        - generic [ref=f1e3901]:
+                          - generic [ref=f1e3902]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e3903]:
+                            - generic [ref=f1e3904]: Full time
+                            - generic [ref=f1e3905]: Bali(Jarak jauh)
+                            - generic [ref=f1e3906]: Rp 11,000,000 – Rp 16,000,000 per month
+                        - list [ref=f1e3907]:
+                          - listitem [ref=f1e3908]:
+                            - generic [ref=f1e3912]: Above average pay for Indonesia
+                          - listitem [ref=f1e3914]:
+                            - generic [ref=f1e3918]: Performance bonuses
+                          - listitem [ref=f1e3920]:
+                            - generic [ref=f1e3924]: High standards + growth environment
+                      - generic [ref=f1e3926]: 15 hari yang lalu
+                    - generic [ref=f1e3929]:
+                      - button "Sembunyikan" [ref=f1e3933]
+                      - button "Simpan" [ref=f1e3940]
+                - listitem [ref=f1e3945]:
+                  - generic [ref=f1e3947] [cursor=pointer]:
+                    - link "Full Stack Developer" [ref=f1e3948]:
+                      - /url: /id/job/94241819?ref=recom-homepage&pos=78#sol=fe614143c3196ca1509d8fbd242ac4ce79700dcc
+                    - generic [ref=f1e3949]:
+                      - generic [ref=f1e3953]:
+                        - generic [ref=f1e3954]:
+                          - heading "Full Stack Developer" [level=3] [ref=f1e3955]
+                          - generic [ref=f1e3956]: Pengiklan Anonim
+                        - generic [ref=f1e3957]:
+                          - generic [ref=f1e3958]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e3959]:
+                            - generic [ref=f1e3960]: Full time
+                            - generic [ref=f1e3961]: Jakarta Barat, Jakarta Raya
+                        - list [ref=f1e3962]:
+                          - listitem [ref=f1e3963]:
+                            - generic [ref=f1e3967]: Terlibat Langsung dalam Proyek Digital Transformation
+                          - listitem [ref=f1e3969]:
+                            - generic [ref=f1e3973]: Exposure Teknologi End-to-End
+                          - listitem [ref=f1e3975]:
+                            - generic [ref=f1e3979]: Stabilitas Bisnis dengan Tantangan Inovasi
+                      - generic [ref=f1e3981]: 28 hari yang lalu
+                    - generic [ref=f1e3984]:
+                      - button "Sembunyikan" [ref=f1e3988]
+                      - button "Simpan" [ref=f1e3995]
+                - listitem [ref=f1e4000]:
+                  - generic [ref=f1e4002] [cursor=pointer]:
+                    - link "Data Engineer Spark" [ref=f1e4003]:
+                      - /url: /id/job/94499371?ref=recom-homepage&pos=79#sol=853cd1655237b0eb36ae0fdeb90a8173c50cc176
+                    - generic [ref=f1e4004]:
+                      - generic [ref=f1e4012]:
+                        - generic [ref=f1e4013]:
+                          - heading "Data Engineer Spark" [level=3] [ref=f1e4014]
+                          - generic [ref=f1e4015]: PT Sharing Vision Indonesia
+                        - generic [ref=f1e4016]:
+                          - generic [ref=f1e4017]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4018]:
+                            - generic [ref=f1e4019]: Kontrak/Temporer
+                            - generic [ref=f1e4020]: Jakarta Raya
+                      - generic [ref=f1e4021]: 16 hari yang lalu
+                    - generic [ref=f1e4024]:
+                      - button "Sembunyikan" [ref=f1e4028]
+                      - button "Simpan" [ref=f1e4035]
+                - listitem [ref=f1e4040]:
+                  - generic [ref=f1e4042] [cursor=pointer]:
+                    - link "Microsoft Security Consultant - Jakarta - Global IT Solutions Company" [ref=f1e4043]:
+                      - /url: /id/job/94526816?ref=recom-homepage&pos=80#sol=93de020df1153158a32ebdcdee36094150a55d5f
+                    - generic [ref=f1e4044]:
+                      - generic [ref=f1e4052]:
+                        - generic [ref=f1e4053]:
+                          - heading "Microsoft Security Consultant - Jakarta - Global IT Solutions Company" [level=3] [ref=f1e4054]
+                          - generic [ref=f1e4055]: PT Adecco Personnel Indonesia
+                        - generic [ref=f1e4056]:
+                          - generic [ref=f1e4057]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4058]:
+                            - generic [ref=f1e4059]: Kontrak/Temporer
+                            - generic [ref=f1e4060]: Jakarta Raya
+                      - generic [ref=f1e4061]: 15 hari yang lalu
+                    - generic [ref=f1e4064]:
+                      - button "Sembunyikan" [ref=f1e4068]
+                      - button "Simpan" [ref=f1e4075]
+                - listitem [ref=f1e4080]:
+                  - generic [ref=f1e4082] [cursor=pointer]:
+                    - link "Senior Web & Digital Marketing" [ref=f1e4083]:
+                      - /url: /id/job/94325342?ref=recom-homepage&pos=81#sol=5f54dcf988e55879b912376182698df6d1f3a6b8
+                    - generic [ref=f1e4084]:
+                      - generic [ref=f1e4092]:
+                        - generic [ref=f1e4093]:
+                          - heading "Senior Web & Digital Marketing" [level=3] [ref=f1e4094]
+                          - generic [ref=f1e4095]: PT Indodev Niaga Internet
+                        - generic [ref=f1e4096]:
+                          - generic [ref=f1e4097]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e4098]:
+                            - generic [ref=f1e4099]: Full time
+                            - generic [ref=f1e4100]: South Tangerang, Banten
+                        - list [ref=f1e4101]:
+                          - listitem [ref=f1e4102]:
+                            - generic [ref=f1e4106]: Free lunch
+                          - listitem [ref=f1e4108]:
+                            - generic [ref=f1e4112]: DPLK
+                      - generic [ref=f1e4114]: 23 hari yang lalu
+                    - generic [ref=f1e4117]:
+                      - button "Sembunyikan" [ref=f1e4121]
+                      - button "Simpan" [ref=f1e4128]
+                - listitem [ref=f1e4133]:
+                  - generic [ref=f1e4135] [cursor=pointer]:
+                    - link "Biosystems Engineering Specialist" [ref=f1e4136]:
+                      - /url: /id/job/94337293?ref=recom-homepage&pos=82#sol=2eaa4fd78176abcc9530d4d0a52de7ffcd593dcd
+                    - generic [ref=f1e4137]:
+                      - generic [ref=f1e4145]:
+                        - generic [ref=f1e4146]:
+                          - heading "Biosystems Engineering Specialist" [level=3] [ref=f1e4147]
+                          - generic [ref=f1e4148]: PT East West Seed Indonesia
+                        - generic [ref=f1e4149]:
+                          - generic [ref=f1e4150]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Akan segera berakhir"
+                          - generic [ref=f1e4151]:
+                            - generic [ref=f1e4152]: Full time
+                            - generic [ref=f1e4153]: Purwakarta, Jawa Barat
+                        - list [ref=f1e4154]:
+                          - listitem [ref=f1e4155]:
+                            - generic [ref=f1e4159]: Annual Bonus
+                          - listitem [ref=f1e4161]:
+                            - generic [ref=f1e4165]: Insurance
+                          - listitem [ref=f1e4167]:
+                            - generic [ref=f1e4171]: Meal allowance
+                      - generic [ref=f1e4173]: 23 hari yang lalu
+                    - generic [ref=f1e4176]:
+                      - button "Sembunyikan" [ref=f1e4180]
+                      - button "Simpan" [ref=f1e4187]
+                - listitem [ref=f1e4192]:
+                  - generic [ref=f1e4194] [cursor=pointer]:
+                    - link "IT Arsitektur (Solution Architect)" [ref=f1e4195]:
+                      - /url: /id/job/94517778?ref=recom-homepage&pos=83#sol=84d1877519743ef372d2c88d0efbd1ceb7be5af0
+                    - generic [ref=f1e4196]:
+                      - generic [ref=f1e4204]:
+                        - generic [ref=f1e4205]:
+                          - heading "IT Arsitektur (Solution Architect)" [level=3] [ref=f1e4206]
+                          - generic [ref=f1e4207]: PT PESONNA OPTIMA JASA
+                        - generic [ref=f1e4208]:
+                          - generic [ref=f1e4209]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e4210]:
+                            - generic [ref=f1e4211]: Kontrak/Temporer
+                            - generic [ref=f1e4212]: Jakarta Pusat, Jakarta Raya
+                            - generic [ref=f1e4213]: Rp 10.000.000 – Rp 11.000.000 per month
+                      - generic [ref=f1e4214]: 15 hari yang lalu
+                    - generic [ref=f1e4217]:
+                      - button "Sembunyikan" [ref=f1e4221]
+                      - button "Simpan" [ref=f1e4228]
+                - listitem [ref=f1e4233]:
+                  - generic [ref=f1e4235] [cursor=pointer]:
+                    - link "CIPTA IT Developer" [ref=f1e4236]:
+                      - /url: /id/job/94795898?ref=recom-homepage&pos=84#sol=e8a72d4347ac7808a794702f0152604ecd040611
+                    - generic [ref=f1e4237]:
+                      - generic [ref=f1e4245]:
+                        - generic [ref=f1e4246]:
+                          - heading "CIPTA IT Developer" [level=3] [ref=f1e4247]
+                          - generic [ref=f1e4248]: PT CIMB Niaga Tbk
+                        - generic [ref=f1e4249]:
+                          - generic [ref=f1e4250]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4251]:
+                            - generic [ref=f1e4252]: Kontrak/Temporer
+                            - generic [ref=f1e4253]: Tangerang, Banten
+                      - generic [ref=f1e4254]: 2 hari yang lalu
+                    - generic [ref=f1e4257]:
+                      - button "Sembunyikan" [ref=f1e4261]
+                      - button "Simpan" [ref=f1e4268]
+                - listitem [ref=f1e4273]:
+                  - generic [ref=f1e4275] [cursor=pointer]:
+                    - link "Technical Support Engineer (Electrical) - Jakarta" [ref=f1e4276]:
+                      - /url: /id/job/94648476?ref=recom-homepage&pos=85#sol=0ffd39eda68524e695827d19a5e2067856bc7513
+                    - generic [ref=f1e4277]:
+                      - generic [ref=f1e4285]:
+                        - generic [ref=f1e4286]:
+                          - heading "Technical Support Engineer (Electrical) - Jakarta" [level=3] [ref=f1e4287]
+                          - generic [ref=f1e4288]: PT Arianto Darmawan
+                        - generic [ref=f1e4289]:
+                          - generic [ref=f1e4290]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4291]:
+                            - generic [ref=f1e4292]: Full time
+                            - generic [ref=f1e4293]: Jakarta Barat, Jakarta Raya
+                        - list [ref=f1e4294]:
+                          - listitem [ref=f1e4295]:
+                            - generic [ref=f1e4299]: Traveling opportunities across Indonesia
+                          - listitem [ref=f1e4301]:
+                            - generic [ref=f1e4305]: Career flexibility / mobility across roles based on your strengths
+                          - listitem [ref=f1e4307]:
+                            - generic [ref=f1e4311]: Work life balance - 40-hour week, no overtime
+                      - generic [ref=f1e4313]: 9 hari yang lalu
+                    - generic [ref=f1e4316]:
+                      - button "Sembunyikan" [ref=f1e4320]
+                      - button "Simpan" [ref=f1e4327]
+                - listitem [ref=f1e4332]:
+                  - generic [ref=f1e4334] [cursor=pointer]:
+                    - link "Frontend Engineer (React.js/Next.js) - Financial Service" [ref=f1e4335]:
+                      - /url: /id/job/94591136?ref=recom-homepage&pos=86#sol=18c29c2fb4b1fb3b694bb580dc331aec2bbddc2f
+                    - generic [ref=f1e4336]:
+                      - generic [ref=f1e4344]:
+                        - generic [ref=f1e4345]:
+                          - heading "Frontend Engineer (React.js/Next.js) - Financial Service" [level=3] [ref=f1e4346]
+                          - generic [ref=f1e4347]: PT Adecco Personnel Indonesia
+                        - generic [ref=f1e4348]:
+                          - generic [ref=f1e4349]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4350]:
+                            - generic [ref=f1e4351]: Full time
+                            - generic [ref=f1e4352]: Tangerang, Banten
+                      - generic [ref=f1e4353]: 12 hari yang lalu
+                    - generic [ref=f1e4356]:
+                      - button "Sembunyikan" [ref=f1e4360]
+                      - button "Simpan" [ref=f1e4367]
+                - listitem [ref=f1e4372]:
+                  - generic [ref=f1e4374] [cursor=pointer]:
+                    - link "IT Programmer/Fullstack Programmer" [ref=f1e4375]:
+                      - /url: /id/job/94646335?ref=recom-homepage&pos=87#sol=0943454ed7c4d0a44cdbbabddf547ebff3176d20
+                    - generic [ref=f1e4376]:
+                      - generic [ref=f1e4384]:
+                        - generic [ref=f1e4385]:
+                          - heading "IT Programmer/Fullstack Programmer" [level=3] [ref=f1e4386]
+                          - generic [ref=f1e4387]: PT Microvac Indonesia
+                        - generic [ref=f1e4388]:
+                          - generic [ref=f1e4389]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4390]:
+                            - generic [ref=f1e4391]: Full time
+                            - generic [ref=f1e4392]: Duren Sawit, Jakarta Raya
+                            - generic [ref=f1e4393]: Rp 6.500.000 – Rp 9.500.000 per month
+                        - list [ref=f1e4394]:
+                          - listitem [ref=f1e4395]:
+                            - generic [ref=f1e4399]: Gaji kompetitif
+                          - listitem [ref=f1e4401]:
+                            - generic [ref=f1e4405]: Kesempatan berkembang & training
+                          - listitem [ref=f1e4407]:
+                            - generic [ref=f1e4411]: Terlibat dalam proyek teknologi skala besar
+                      - generic [ref=f1e4413]: 9 hari yang lalu
+                    - generic [ref=f1e4416]:
+                      - button "Sembunyikan" [ref=f1e4420]
+                      - button "Simpan" [ref=f1e4427]
+                - listitem [ref=f1e4432]:
+                  - generic [ref=f1e4434] [cursor=pointer]:
+                    - link "Senior Developer / Senior Consultant" [ref=f1e4435]:
+                      - /url: /id/job/94759460?ref=recom-homepage&pos=88#sol=b4ff969b297d9d971026d20c2f1df2b8f0cf9b8f
+                    - generic [ref=f1e4436]:
+                      - generic [ref=f1e4444]:
+                        - generic [ref=f1e4445]:
+                          - heading "Senior Developer / Senior Consultant" [level=3] [ref=f1e4446]
+                          - generic [ref=f1e4447]: PT Implementasi Solusi Indonesia
+                        - generic [ref=f1e4448]:
+                          - generic [ref=f1e4449]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4450]:
+                            - generic [ref=f1e4451]: Full time
+                            - generic [ref=f1e4452]: Serpong, Banten(Hibrid)
+                        - list [ref=f1e4453]:
+                          - listitem [ref=f1e4454]:
+                            - generic [ref=f1e4458]: Work with some of the brightest minds in IT and digital transformation.
+                          - listitem [ref=f1e4460]:
+                            - generic [ref=f1e4464]: Use the latest cutting edge technology and AI-assisted development.
+                          - listitem [ref=f1e4466]:
+                            - generic [ref=f1e4470]: Global exposure with our presence across Asia Pacific and the United Kingdom.
+                      - generic [ref=f1e4472]: 3 hari yang lalu
+                    - generic [ref=f1e4475]:
+                      - button "Sembunyikan" [ref=f1e4479]
+                      - button "Simpan" [ref=f1e4486]
+                - listitem [ref=f1e4491]:
+                  - generic [ref=f1e4493] [cursor=pointer]:
+                    - link "IT-CPQ DEVELOPMENT & SUPPORT ENGINEER" [ref=f1e4494]:
+                      - /url: /id/job/94704136?ref=recom-homepage&pos=89#sol=83767548c9d06c7e3cffb1a907dc10b557456b80
+                    - generic [ref=f1e4495]:
+                      - generic [ref=f1e4503]:
+                        - generic [ref=f1e4504]:
+                          - heading "IT-CPQ DEVELOPMENT & SUPPORT ENGINEER" [level=3] [ref=f1e4505]
+                          - generic [ref=f1e4506]: PT Corinthian Industries Indonesia
+                        - generic [ref=f1e4507]:
+                          - generic [ref=f1e4508]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                          - generic [ref=f1e4509]:
+                            - generic [ref=f1e4510]: Full time
+                            - generic [ref=f1e4511]: Bekasi, Jawa Barat
+                      - generic [ref=f1e4512]: 7 hari yang lalu
+                    - generic [ref=f1e4515]:
+                      - button "Sembunyikan" [ref=f1e4519]
+                      - button "Simpan" [ref=f1e4526]
+                - listitem [ref=f1e4531]:
+                  - generic [ref=f1e4533] [cursor=pointer]:
+                    - link "IT/Programmer" [ref=f1e4534]:
+                      - /url: /id/job/94730325?ref=recom-homepage&pos=90#sol=55d2df9918d4188489784a2949f78ac68d55be07
+                    - generic [ref=f1e4535]:
+                      - generic [ref=f1e4543]:
+                        - generic [ref=f1e4544]:
+                          - heading "IT/Programmer" [level=3] [ref=f1e4545]
+                          - generic [ref=f1e4546]: Corrugated Packaging Industry
+                        - generic [ref=f1e4547]:
+                          - generic [ref=f1e4548]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4549]:
+                            - generic [ref=f1e4550]: Full time
+                            - generic [ref=f1e4551]: Pekanbaru, Riau
+                        - list [ref=f1e4552]:
+                          - listitem [ref=f1e4553]:
+                            - generic [ref=f1e4557]: Programmer & IT
+                          - listitem [ref=f1e4559]:
+                            - generic [ref=f1e4563]: fullstack development
+                      - generic [ref=f1e4565]: 6 hari yang lalu
+                    - generic [ref=f1e4568]:
+                      - button "Sembunyikan" [ref=f1e4572]
+                      - button "Simpan" [ref=f1e4579]
+                - listitem [ref=f1e4584]:
+                  - generic [ref=f1e4586] [cursor=pointer]:
+                    - link "Backend Engineer (Golang) Level Middle" [ref=f1e4587]:
+                      - /url: /id/job/94616627?ref=recom-homepage&pos=91#sol=8e3d06e748d950abb3bad1d2d5f11b02886ca28a
+                    - generic [ref=f1e4588]:
+                      - generic [ref=f1e4596]:
+                        - generic [ref=f1e4597]:
+                          - heading "Backend Engineer (Golang) Level Middle" [level=3] [ref=f1e4598]
+                          - generic [ref=f1e4599]: Nostra Solution
+                        - generic [ref=f1e4600]:
+                          - generic [ref=f1e4601]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4602]:
+                            - generic [ref=f1e4603]: Full time
+                            - generic [ref=f1e4604]: Jakarta Selatan, Jakarta Raya
+                        - list [ref=f1e4605]:
+                          - listitem [ref=f1e4606]:
+                            - generic [ref=f1e4610]: Benefit BPJS Kesehatan
+                          - listitem [ref=f1e4612]:
+                            - generic [ref=f1e4616]: BPJS Ketenagakerjaan
+                          - listitem [ref=f1e4618]:
+                            - generic [ref=f1e4622]: Asuransi Rawat Inap (Permanent Employee)
+                      - generic [ref=f1e4624]: 10 hari yang lalu
+                    - generic [ref=f1e4627]:
+                      - button "Sembunyikan" [ref=f1e4631]
+                      - button "Simpan" [ref=f1e4638]
+                - listitem [ref=f1e4643]:
+                  - generic [ref=f1e4645] [cursor=pointer]:
+                    - link "Software Developer" [ref=f1e4646]:
+                      - /url: /id/job/94777148?ref=recom-homepage&pos=92#sol=dbf1f640d117af032c6683ae277dcf5c1cf1de92
+                    - generic [ref=f1e4647]:
+                      - generic [ref=f1e4655]:
+                        - generic [ref=f1e4656]:
+                          - heading "Software Developer" [level=3] [ref=f1e4657]
+                          - generic [ref=f1e4658]: PT. Teralink Lintas Teknologi
+                        - generic [ref=f1e4659]:
+                          - generic [ref=f1e4660]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                          - generic [ref=f1e4661]:
+                            - generic [ref=f1e4662]: Full time
+                            - generic [ref=f1e4663]: Jakarta Timur, Jakarta Raya
+                            - generic [ref=f1e4664]: Rp 8.000.000 per month
+                        - list [ref=f1e4665]:
+                          - listitem [ref=f1e4666]:
+                            - generic [ref=f1e4670]: Komunikatif
+                          - listitem [ref=f1e4672]:
+                            - generic [ref=f1e4676]: Berkomunikasi dengan baik & bisa dihubungi diluar jam kerja
+                          - listitem [ref=f1e4678]:
+                            - generic [ref=f1e4682]: Learn and Listen
+                      - generic [ref=f1e4684]: 3 hari yang lalu
+                    - generic [ref=f1e4687]:
+                      - button "Sembunyikan" [ref=f1e4691]
+                      - button "Simpan" [ref=f1e4698]
+                - listitem [ref=f1e4703]:
+                  - generic [ref=f1e4705] [cursor=pointer]:
+                    - link "IT Application Support (Implementator)" [ref=f1e4706]:
+                      - /url: /id/job/94571751?ref=recom-homepage&pos=93#sol=28886a36a5f186f763a6a6e343d8fed6aadac639
+                    - generic [ref=f1e4707]:
+                      - generic [ref=f1e4715]:
+                        - generic [ref=f1e4716]:
+                          - heading "IT Application Support (Implementator)" [level=3] [ref=f1e4717]
+                          - generic [ref=f1e4718]: PT Data Integrasi Inovasi
+                        - generic [ref=f1e4719]:
+                          - generic [ref=f1e4720]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4721]:
+                            - generic [ref=f1e4722]: Full time
+                            - generic [ref=f1e4723]: Tangerang, Banten
+                            - generic [ref=f1e4724]: Rp 5.000.000 – Rp 6.000.000 per month
+                      - generic [ref=f1e4725]: 13 hari yang lalu
+                    - generic [ref=f1e4728]:
+                      - button "Sembunyikan" [ref=f1e4732]
+                      - button "Simpan" [ref=f1e4739]
+                - listitem [ref=f1e4744]:
+                  - generic [ref=f1e4746] [cursor=pointer]:
+                    - link "Business Development Executive" [ref=f1e4747]:
+                      - /url: /id/job/94497522?ref=recom-homepage&pos=94#sol=31b23d6b34c98e13963ceffcb026807c1cb8e355
+                    - generic [ref=f1e4748]:
+                      - generic [ref=f1e4756]:
+                        - generic [ref=f1e4757]:
+                          - heading "Business Development Executive" [level=3] [ref=f1e4758]
+                          - generic [ref=f1e4759]: MIKALINDO BAKTI CEMERLANG
+                        - generic [ref=f1e4760]:
+                          - generic [ref=f1e4761]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4762]:
+                            - generic [ref=f1e4763]: Full time
+                            - generic [ref=f1e4764]: Jakarta Raya
+                            - generic [ref=f1e4765]: Rp 6,000,000 – Rp 8,000,000 per month
+                        - list [ref=f1e4766]:
+                          - listitem [ref=f1e4767]:
+                            - generic [ref=f1e4771]: Gaji + Tunjangan Insentif
+                          - listitem [ref=f1e4773]:
+                            - generic [ref=f1e4777]: BPJS
+                          - listitem [ref=f1e4779]:
+                            - generic [ref=f1e4783]: THR
+                      - generic [ref=f1e4785]: 16 hari yang lalu
+                    - generic [ref=f1e4788]:
+                      - button "Sembunyikan" [ref=f1e4792]
+                      - button "Simpan" [ref=f1e4799]
+                - listitem [ref=f1e4804]:
+                  - generic [ref=f1e4806] [cursor=pointer]:
+                    - link "Staff Infra" [ref=f1e4807]:
+                      - /url: /id/job/94571275?ref=recom-homepage&pos=95#sol=a2fe31431b98cded8ad572055fc5af1e425fc157
+                    - generic [ref=f1e4808]:
+                      - generic [ref=f1e4816]:
+                        - generic [ref=f1e4817]:
+                          - heading "Staff Infra" [level=3] [ref=f1e4818]
+                          - generic [ref=f1e4819]: PT Agung Putra Niaga Mandiri
+                        - generic [ref=f1e4820]:
+                          - generic [ref=f1e4821]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4822]:
+                            - generic [ref=f1e4823]: Full time
+                            - generic [ref=f1e4824]: Bandar Lampung, Lampung
+                            - generic [ref=f1e4825]: Rp 4.000.000 – Rp 5.500.000 per month
+                        - list [ref=f1e4826]:
+                          - listitem [ref=f1e4827]:
+                            - generic [ref=f1e4831]: Gaji pokok & tunjangan jabatan
+                          - listitem [ref=f1e4833]:
+                            - generic [ref=f1e4837]: BPJS Kesehatan dan BPJS Ketenagakerjaan
+                          - listitem [ref=f1e4839]:
+                            - generic [ref=f1e4843]: 5-year company trip sesuai kinerja perusahaan
+                      - generic [ref=f1e4845]: 13 hari yang lalu
+                    - generic [ref=f1e4848]:
+                      - button "Sembunyikan" [ref=f1e4852]
+                      - button "Simpan" [ref=f1e4859]
+                - listitem [ref=f1e4864]:
+                  - generic [ref=f1e4866] [cursor=pointer]:
+                    - link ".NET Developer" [ref=f1e4867]:
+                      - /url: /id/job/94490882?ref=recom-homepage&pos=96#sol=53bdae58639f1adea874ff7428d6fd39df191ec7
+                    - generic [ref=f1e4868]:
+                      - generic [ref=f1e4876]:
+                        - generic [ref=f1e4877]:
+                          - heading ".NET Developer" [level=3] [ref=f1e4878]
+                          - generic [ref=f1e4879]: PT Astra Graphia Information Technology (AGIT)
+                        - generic [ref=f1e4880]:
+                          - generic [ref=f1e4881]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4882]:
+                            - generic [ref=f1e4883]: Kontrak/Temporer
+                            - generic [ref=f1e4884]: Jakarta Raya
+                      - generic [ref=f1e4885]: 16 hari yang lalu
+                    - generic [ref=f1e4888]:
+                      - button "Sembunyikan" [ref=f1e4892]
+                      - button "Simpan" [ref=f1e4899]
+                - listitem [ref=f1e4904]:
+                  - generic [ref=f1e4906] [cursor=pointer]:
+                    - link "IT Security" [ref=f1e4907]:
+                      - /url: /id/job/94382764?ref=recom-homepage&pos=97#sol=d4fd9105e7febf668efd5609bdad576cf1a52940
+                    - generic [ref=f1e4908]:
+                      - generic [ref=f1e4916]:
+                        - generic [ref=f1e4917]:
+                          - heading "IT Security" [level=3] [ref=f1e4918]
+                          - generic [ref=f1e4919]: PT Pandawa Karir Citra
+                        - generic [ref=f1e4920]:
+                          - generic [ref=f1e4921]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4922]:
+                            - generic [ref=f1e4923]: Kontrak/Temporer
+                            - generic [ref=f1e4924]: Jakarta Raya
+                      - generic [ref=f1e4925]: 21 hari yang lalu
+                    - generic [ref=f1e4928]:
+                      - button "Sembunyikan" [ref=f1e4932]
+                      - button "Simpan" [ref=f1e4939]
+                - listitem [ref=f1e4944]:
+                  - generic [ref=f1e4946] [cursor=pointer]:
+                    - link "HelpDesk ERP (Programmer & Developer)" [ref=f1e4947]:
+                      - /url: /id/job/94705408?ref=recom-homepage&pos=98#sol=b1d811da3f71fbb053a2863f81a83113f0fb4380
+                    - generic [ref=f1e4948]:
+                      - generic [ref=f1e4952]:
+                        - generic [ref=f1e4953]:
+                          - heading "HelpDesk ERP (Programmer & Developer)" [level=3] [ref=f1e4954]
+                          - generic [ref=f1e4955]: Pengiklan Anonim
+                        - generic [ref=f1e4956]:
+                          - generic [ref=f1e4957]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4958]:
+                            - generic [ref=f1e4959]: Full time
+                            - generic [ref=f1e4960]: Jakarta Selatan, Jakarta Raya
+                            - generic [ref=f1e4961]: Rp 7.000.000 – Rp 8.000.000 per month
+                      - generic [ref=f1e4962]: 7 hari yang lalu
+                    - generic [ref=f1e4965]:
+                      - button "Sembunyikan" [ref=f1e4969]
+                      - button "Simpan" [ref=f1e4976]
+                - listitem [ref=f1e4981]:
+                  - generic [ref=f1e4983] [cursor=pointer]:
+                    - link "IT Operational Engineer" [ref=f1e4984]:
+                      - /url: /id/job/94545601?ref=recom-homepage&pos=99#sol=3143cd217ab1d2c05a410569a15d7a0e61456329
+                    - generic [ref=f1e4985]:
+                      - generic [ref=f1e4993]:
+                        - generic [ref=f1e4994]:
+                          - heading "IT Operational Engineer" [level=3] [ref=f1e4995]
+                          - generic [ref=f1e4996]: PT Enjer Technology Indonesia
+                        - generic [ref=f1e4997]:
+                          - generic [ref=f1e4998]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e4999]:
+                            - generic [ref=f1e5000]: Full time
+                            - generic [ref=f1e5001]: Karawang, Jawa Barat
+                            - generic [ref=f1e5002]: Rp 7.500.000 – Rp 8.500.000 per month
+                      - generic [ref=f1e5003]: 14 hari yang lalu
+                    - generic [ref=f1e5006]:
+                      - button "Sembunyikan" [ref=f1e5010]
+                      - button "Simpan" [ref=f1e5017]
+                - listitem [ref=f1e5022]:
+                  - generic [ref=f1e5024] [cursor=pointer]:
+                    - link "React Native Developer (Junior)" [ref=f1e5025]:
+                      - /url: /id/job/94803448?ref=recom-homepage&pos=100#sol=da7cec21b92e498052b4296d4a12542aeb49aaa1
+                    - generic [ref=f1e5026]:
+                      - generic [ref=f1e5034]:
+                        - generic [ref=f1e5035]:
+                          - heading "React Native Developer (Junior)" [level=3] [ref=f1e5036]
+                          - generic [ref=f1e5037]: FinShot, Inc.
+                        - generic [ref=f1e5038]:
+                          - generic [ref=f1e5039]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                          - generic [ref=f1e5040]:
+                            - generic [ref=f1e5041]: Full time
+                            - generic [ref=f1e5042]: Jakarta Raya
+                            - generic [ref=f1e5043]: Rp 7.000.000 – Rp 9.000.000 per month
+                      - generic [ref=f1e5044]: 2 hari yang lalu
+                    - generic [ref=f1e5047]:
+                      - button "Sembunyikan" [ref=f1e5051]
+                      - button "Simpan" [ref=f1e5058]
+            - generic [ref=f1e5067]:
+              - heading "Lowongan kerja tersimpan" [level=4] [ref=f1e5068]
+              - generic [ref=f1e5069]: Gunakan tombol Simpan di setiap lowongan kerja guna menyimpannya untuk lain waktu. Kamu dapat mengaksesnya di semua perangkat di lain waktu.
+        - generic [ref=f1e5076]:
+          - generic [ref=f1e5081]:
+            - heading "\"Hello\" karir dan gaji lebih baik" [level=3] [ref=f1e5082]
+            - link "Dapetin tips & fiturnya" [ref=f1e5086] [cursor=pointer]:
+              - /url: /id/career-advice/?tracking=CTA-WEB-HomepageMarketingBanner-asia-4&utm_campaign=id&utm_content=homepage_banner_1&utm_medium=desktop&utm_source=seek
+          - generic [ref=f1e5094]:
+            - heading "Buat profil Jobstreet kamu lebih menarik di mata rekruter" [level=3] [ref=f1e5095]
+            - link "Lihat caranya di SEEK Pass" [ref=f1e5099] [cursor=pointer]:
+              - /url: /id/page/seek-pass?tracking=CTA-seekpasslanding-anz-1-profile
+        - generic [ref=f1e5106]:
+          - heading "Pencarian cepat" [level=1] [ref=f1e5107]
+          - generic [ref=f1e5108]:
+            - heading "Klasifikasi" [level=2] [ref=f1e5110]
+            - list [ref=f1e5112]:
+              - listitem [ref=f1e5113]:
+                - link "Lowongan di Akuntansi" [ref=f1e5114] [cursor=pointer]:
+                  - /url: /id/jobs-in-accounting
+                  - text: Akuntansi
+              - listitem [ref=f1e5115]:
+                - link "Lowongan di Pendidikan & Pelatihan" [ref=f1e5116] [cursor=pointer]:
+                  - /url: /id/jobs-in-education-training
+                  - text: Pendidikan & Pelatihan
+              - listitem [ref=f1e5117]:
+                - link "Lowongan di Pemerintahan & Pertahanan" [ref=f1e5118] [cursor=pointer]:
+                  - /url: /id/jobs-in-government-defence
+                  - text: Pemerintahan & Pertahanan
+              - listitem [ref=f1e5119]:
+                - link "Lowongan di Kesehatan & Medis" [ref=f1e5120] [cursor=pointer]:
+                  - /url: /id/jobs-in-healthcare-medical
+                  - text: Kesehatan & Medis
+              - listitem [ref=f1e5121]:
+                - link "Lowongan di Penjualan" [ref=f1e5122] [cursor=pointer]:
+                  - /url: /id/jobs-in-sales
+                  - text: Penjualan
+              - listitem [ref=f1e5123]:
+                - button "Lihat semua" [ref=f1e5124] [cursor=pointer]:
+                  - text: Lihat semua
+                  - generic [aria-hidden] [ref=f1e5125]: ⁠
+          - generic [ref=f1e5129]:
+            - heading "Kota besar" [level=2] [ref=f1e5131]
+            - list [ref=f1e5132]:
+              - listitem [ref=f1e5133]:
+                - link "Lowongan di Surabaya" [ref=f1e5134] [cursor=pointer]:
+                  - /url: /id/jobs/in-Surabaya-Jawa-Timur
+                  - text: Surabaya
+              - listitem [ref=f1e5135]:
+                - link "Lowongan di Bandung" [ref=f1e5136] [cursor=pointer]:
+                  - /url: /id/jobs/in-Bandung-Jawa-Barat
+                  - text: Bandung
+              - listitem [ref=f1e5137]:
+                - link "Lowongan di Medan" [ref=f1e5138] [cursor=pointer]:
+                  - /url: /id/jobs/in-Medan-Sumatera-Utara
+                  - text: Medan
+              - listitem [ref=f1e5139]:
+                - link "Lowongan di Jakarta" [ref=f1e5140] [cursor=pointer]:
+                  - /url: /id/jobs/in-Jakarta-Raya
+                  - text: Jakarta
+              - listitem [ref=f1e5141]:
+                - link "Lowongan di Semarang" [ref=f1e5142] [cursor=pointer]:
+                  - /url: /id/jobs/in-Semarang-Jawa-Tengah
+                  - text: Semarang
+              - listitem [ref=f1e5143]:
+                - link "Lowongan di Tangerang" [ref=f1e5144] [cursor=pointer]:
+                  - /url: /id/jobs/in-Tangerang-Banten
+                  - text: Tangerang
+              - listitem [ref=f1e5145]:
+                - link "Lowongan di Malang" [ref=f1e5146] [cursor=pointer]:
+                  - /url: /id/jobs/in-Malang-Jawa-Timur
+                  - text: Malang
+              - listitem [ref=f1e5147]:
+                - link "Lowongan di Bekasi" [ref=f1e5148] [cursor=pointer]:
+                  - /url: /id/jobs/in-Bekasi-Jawa-Barat
+                  - text: Bekasi
+          - generic [ref=f1e5149]:
+            - heading "Lainnya" [level=2] [ref=f1e5151]
+            - list [ref=f1e5153]:
+              - listitem [ref=f1e5154]:
+                - link "Semua Lowongan Kerja" [ref=f1e5155] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f1e5156]:
+                - link "Kerja Online" [ref=f1e5157] [cursor=pointer]:
+                  - /url: /id/online-jobs
+              - listitem [ref=f1e5158]:
+                - link "Kerja Freelance" [ref=f1e5159] [cursor=pointer]:
+                  - /url: /id/Freelance-jobs
+              - listitem [ref=f1e5160]:
+                - link "Kerja Tambang" [ref=f1e5161] [cursor=pointer]:
+                  - /url: /id/lambang-jobs
+              - listitem [ref=f1e5162]:
+                - link "Lowongan Lulusan Sma" [ref=f1e5163] [cursor=pointer]:
+                  - /url: /id/lulusan-sma-jobs
+  - contentinfo [ref=f1e5165]:
+    - generic [ref=f1e5167]:
+      - generic [ref=f1e5170]:
+        - generic [ref=f1e5172]:
+          - generic [ref=f1e5174]:
+            - generic [ref=f1e5175]: Pencari kerja
+            - list [ref=f1e5176]:
+              - listitem [ref=f1e5177]:
+                - link "Cari lowongan" [ref=f1e5178] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f1e5181]:
+                - link "Lihat profil" [ref=f1e5182] [cursor=pointer]:
+                  - /url: /id/profile/me
+              - listitem [ref=f1e5185]:
+                - link "Cari profil" [ref=f1e5186] [cursor=pointer]:
+                  - /url: /id/profiles/search?tracking=ILC-profile-search-footer
+              - listitem [ref=f1e5189]:
+                - link "Pencarian tersimpan" [ref=f1e5190] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-searches
+              - listitem [ref=f1e5193]:
+                - link "Lowongan tersimpan" [ref=f1e5194] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-jobs
+              - listitem [ref=f1e5197]:
+                - link "Lamaran kerja" [ref=f1e5198] [cursor=pointer]:
+                  - /url: /id/my-activity/applied-jobs
+              - listitem [ref=f1e5201]:
+                - link "Sumber daya karir" [ref=f1e5202] [cursor=pointer]:
+                  - /url: /id/career-advice
+              - listitem [ref=f1e5205]:
+                - link "Jelajahi karier" [ref=f1e5206] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-careers
+              - listitem [ref=f1e5209]:
+                - link "Jelajahi gaji" [ref=f1e5210] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-salaries
+              - listitem [ref=f1e5213]:
+                - link "Perusahaan" [ref=f1e5214] [cursor=pointer]:
+                  - /url: /id/companies
+              - listitem [ref=f1e5217]:
+                - button "Unduh aplikasi" [ref=f1e5222] [cursor=pointer]
+          - generic [ref=f1e5231]:
+            - generic [ref=f1e5232]: Perusahaan
+            - list [ref=f1e5233]:
+              - listitem [ref=f1e5234]:
+                - link "Daftar gratis" [ref=f1e5235] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f1e5238]:
+                - link "Pasang iklan lowongan kerja" [ref=f1e5239] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f1e5242]:
+                - link "Produk & harga" [ref=f1e5243] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/products/jobads
+              - listitem [ref=f1e5246]:
+                - link "Layanan pelanggan" [ref=f1e5247] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/contactus
+              - listitem [ref=f1e5250]:
+                - link "Saran perekrutan" [ref=f1e5251] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/hiring-advice
+              - listitem [ref=f1e5254]:
+                - link "Wawasan pasar" [ref=f1e5255] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/market-insights
+              - listitem [ref=f1e5258]:
+                - link "Mitra perangkat lunak perekrutan" [ref=f1e5259] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/partners/connect-with-seek
+        - generic [ref=f1e5264]:
+          - generic [ref=f1e5266]:
+            - generic [ref=f1e5267]: Tentang kami
+            - list [ref=f1e5268]:
+              - listitem [ref=f1e5269]:
+                - link "Tentang kami" [ref=f1e5270] [cursor=pointer]:
+                  - /url: /id/about
+              - listitem [ref=f1e5273]:
+                - link "Ruang berita" [ref=f1e5274] [cursor=pointer]:
+                  - /url: /id/about/news
+              - listitem [ref=f1e5277]:
+                - link "Investor" [ref=f1e5278] [cursor=pointer]:
+                  - /url: https://au.seek.com/about/investors
+              - listitem [ref=f1e5281]:
+                - link "Karir" [ref=f1e5282] [cursor=pointer]:
+                  - /url: /id/careers
+              - listitem [ref=f1e5285]:
+                - button "Mitra internasional" [ref=f1e5290] [cursor=pointer]
+              - listitem [ref=f1e5298]:
+                - button "Layanan mitra" [ref=f1e5303] [cursor=pointer]
+          - generic [ref=f1e5312]:
+            - generic [ref=f1e5313]: Kontak
+            - list [ref=f1e5314]:
+              - listitem [ref=f1e5315]:
+                - link "Pusat bantuan" [ref=f1e5316] [cursor=pointer]:
+                  - /url: https://help.id.jobstreet.com/id/s/?language=in
+              - listitem [ref=f1e5319]:
+                - link "Hubungi kami" [ref=f1e5320] [cursor=pointer]:
+                  - /url: /id/contact-us
+              - listitem [ref=f1e5323]:
+                - link "Blog produk & teknologi" [ref=f1e5324] [cursor=pointer]:
+                  - /url: https://medium.com/seek-blog
+              - listitem [ref=f1e5327]:
+                - button "Media sosial" [ref=f1e5332] [cursor=pointer]
+      - generic [ref=f1e5342]:
+        - button "Lokasi" [ref=f1e5346] [cursor=pointer]:
+          - generic [ref=f1e5347]: Indonesia
+        - generic [ref=f1e5360]:
+          - generic [ref=f1e5361]:
+            - link "Persyaratan & ketentuan" [ref=f1e5363] [cursor=pointer]:
+              - /url: /id/terms
+            - link "Keamanan" [ref=f1e5367] [cursor=pointer]:
+              - /url: /id/security-hub
+            - link "Privasi" [ref=f1e5371] [cursor=pointer]:
+              - /url: /id/my-privacy
+          - generic [ref=f1e5374]: Hak cipta © 2026 Jobstreet

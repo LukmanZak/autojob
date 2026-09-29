@@ -1,0 +1,306 @@
+- generic [ref=f69e3]:
+  - button "Lewati ke konten" [ref=f69e4] [cursor=pointer]
+  - generic [ref=f69e5]:
+    - status
+  - banner [ref=f69e7]:
+    - generic [ref=f69e11]:
+      - generic [ref=f69e12]:
+        - link "Jobstreet" [ref=f69e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f69e22]:
+          - link "Cari lowongan" [ref=f69e24] [cursor=pointer]:
+            - /url: /
+          - link "Cari profil" [ref=f69e29] [cursor=pointer]:
+            - /url: /id/profiles/search?tracking=ILC-profile-search-header
+          - link "Sumber daya karir" [ref=f69e34] [cursor=pointer]:
+            - /url: /id/career-advice
+          - link "Perusahaan" [ref=f69e39] [cursor=pointer]:
+            - /url: /id/companies
+      - generic [ref=f69e43]:
+        - button "Bahasa" [ref=f69e46] [cursor=pointer]
+        - button "Profile Avatar" [ref=f69e65] [cursor=pointer]
+        - link "Untuk perusahaan" [ref=f69e78] [cursor=pointer]:
+          - /url: https://id.employer.seek.com/id
+  - main [ref=f69e81]:
+    - generic [ref=f69e88]:
+      - generic [ref=f69e89]:
+        - generic [ref=f69e90]:
+          - generic [ref=f69e91]: Kandidat yang sangat kuat
+          - generic [ref=f69e95]:
+            - generic [ref=f69e97]:
+              - heading "AI Engineer" [level=1] [ref=f69e98]
+              - generic [ref=f69e99]:
+                - button "PT Graha Karya Informasi" [ref=f69e100] [cursor=pointer]
+                - generic [ref=f69e106]:
+                  - link [ref=f69e107] [cursor=pointer]:
+                    - /url: /id/companies/graha-karya-informasi-168554170946893/reviews?jobId=94337382
+                    - generic [ref=f69e108]:
+                      - img "3.6 out of 5" [ref=f69e109]
+                      - text: "3.6"
+                  - link "Lihat semua lowongan kerja" [ref=f69e114] [cursor=pointer]:
+                    - /url: /id/Graha-Karya-Informasi-jobs/at-this-company
+            - button "Bagikan atau laporkan iklan" [ref=f69e122] [cursor=pointer]
+        - generic [ref=f69e129]:
+          - generic [ref=f69e130]:
+            - generic [ref=f69e131]:
+              - img "Lokasi" [ref=f69e135]
+              - generic [ref=f69e139]:
+                - link "Jakarta Pusat, Jakarta Raya":
+                  - /url: /id/Artificial-Intelligence-Engineer-jobs/in-Central-Jakarta-Jakarta
+            - generic [ref=f69e140]:
+              - img "Industri" [ref=f69e144]
+              - generic [ref=f69e148]:
+                - link "Developer/Programmer (Teknologi Informasi & Komunikasi)":
+                  - /url: /id/jobs-in-information-communication-technology/developers-programmers
+            - generic [ref=f69e149]:
+              - img "Jenis pekerjaan" [ref=f69e153]
+              - generic [ref=f69e157]:
+                - link "Full time":
+                  - /url: /id/Artificial-Intelligence-Engineer-jobs/full-time
+            - generic [ref=f69e158]:
+              - img "Gaji" [ref=f69e162]
+              - generic [ref=f69e167]:
+                - generic [ref=f69e168]: Gaji tidak ditampilkan
+                - button "Gaji tidak ditampilkan" [ref=f69e172] [cursor=pointer]
+          - generic [ref=f69e178]:
+            - generic [ref=f69e179]: Diposting 21 hari yang lalu
+            - generic [ref=f69e180]: Pelamar sangat banyak
+        - generic [ref=f69e185]:
+          - link "Kirim lamaran sebagai AI Engineer di PT Graha Karya Informasi" [ref=f69e187] [cursor=pointer]:
+            - /url: /id/job/94337382/apply
+            - generic [ref=f69e188]: Lamaran Cepat
+          - button "Simpan AI Engineer di PT Graha Karya Informasi" [ref=f69e189] [cursor=pointer]:
+            - generic [ref=f69e190]: Simpan
+      - generic [ref=f69e191]:
+        - generic [ref=f69e193]:
+          - generic [ref=f69e194]:
+            - generic [ref=f69e195]: Bagaimana Anda cocok
+            - generic "Help" [ref=f69e196]
+          - generic [ref=f69e203]:
+            - generic [ref=f69e204]: 4 keterampilan dan kredensial cocok dengan profil Anda
+            - generic [ref=f69e205]:
+              - generic "PyTorch" [ref=f69e207]
+              - generic "Computer Vision" [ref=f69e214]
+              - generic "Large Language Models" [ref=f69e221]
+              - generic "Vector Databases" [ref=f69e228]
+              - button "Tampilkan semua" [ref=f69e236] [cursor=pointer]:
+                - text: Tampilkan semua
+                - generic [aria-hidden] [ref=f69e237]: ⁠
+        - paragraph [ref=f69e245]: "Min experience 3 years as EngineerTechnical Skills1. Strong proficiency in Python + ML ecosystem (PyTorch, TensorFlow, scikit learn, Hugging Face, LangChain).2. Proven experience deploying production-grade AI/ML systems, as reflected in organizational resumes (e.g., computer vision pipelines, real-time inference services).3. Hands-on experience with LLMs, RAG architecture, vector databases (FAISS, Qdrant, Azure AI Search).4. Solid understanding of software engineering fundamentals: API development, microservices, distributed systems.5. Experience with Docker and Kubernetes, widely used in production deployments across internal candidates.6. Proficiency with cloud platforms (GCP preferred; AWS/Azure also welcome).7. Strong grasp of CI/CD, automated testing, model lifecycle management, and observability.8. Familiarity with real-time processing (streaming, queues, event-driven architecture).Soft Skills1. Fast learner with ability to adopt new AI frameworks and technologies quickly.2. Strong problem-solving mindset with practical approach to converting POC into production systems.3. Clear communicator who can explain technical concepts to a variety of stakeholders."
+        - generic [ref=f69e247]:
+          - heading "Pertanyaan dari perusahaan" [level=2] [ref=f69e248]
+          - generic [ref=f69e249]:
+            - generic [ref=f69e250]: "Lamaran kamu akan mencakup pertanyaan-pertanyaan berikut:"
+            - list [ref=f69e251]:
+              - listitem [ref=f69e252]:
+                - generic [ref=f69e256]: How many years' experience do you have in a software development role?
+              - listitem [ref=f69e258]:
+                - generic [ref=f69e262]: How many years' experience do you have as an Artificial Intelligence Engineer?
+              - listitem [ref=f69e264]:
+                - generic [ref=f69e268]: Which of the following programming languages are you experienced in?
+              - listitem [ref=f69e270]:
+                - generic [ref=f69e274]: Which of the following languages are you fluent in?
+        - generic [ref=f69e279]:
+          - heading "Profil perusahaan" [level=3] [ref=f69e280]
+          - generic [ref=f69e281]:
+            - generic [ref=f69e282]:
+              - generic [ref=f69e286]:
+                - button [ref=f69e287] [cursor=pointer]:
+                  - heading [level=4] [ref=f69e288]
+                - generic [ref=f69e293]:
+                  - generic [ref=f69e294]:
+                    - img "3.6 out of 5" [ref=f69e295]
+                    - text: "3.6"
+                  - generic [ref=f69e299]: ·
+                  - link "28 ulasan" [ref=f69e301] [cursor=pointer]:
+                    - /url: /id/companies/graha-karya-informasi-168554170946893/reviews?jobId=94337382
+              - generic [ref=f69e303]:
+                - generic [ref=f69e304]: Consulting Services
+                - generic [ref=f69e312]: 101-1,000 employees
+              - generic [ref=f69e320]:
+                - generic [ref=f69e321]:
+                  - generic:
+                    - generic:
+                      - paragraph: Graha Karya Informasi established in 2010, which focuses its business in IT Services. Graha Karya Informasi has strong management support, and experienced and certified resources.
+                      - paragraph: Graha Karya Informasi is sure to be the best and will provide the best solution for the needs of the Information technology which continues to increase and become an important part in industry and business
+                      - paragraph: The Demand of IT Support service has arisen from the Increasingly business competition and the tighter budget allocated to IT divisions. By leveraging Graha Karya Informasi capabilities in delivering IT services, we are able to help our customers to achieve and maintain excellent IT operations through our Managed IT Services. These services help our customers derive maximum value from their IT investments at every stage of the technology lifecycle. Graha Karya Informasi offer flexible and custom services to accommodate rapid business changes and to help our customer manage complex systems.
+                  - generic [ref=f69e324]:
+                    - paragraph [ref=f69e325]: Graha Karya Informasi established in 2010, which focuses its business in IT Services. Graha Karya Informasi has strong management support, and experienced and certified resources.
+                    - paragraph [ref=f69e326]: Graha Karya Informasi is sure to be the best and will provide the best solution for the needs of the Information technology which continues to increase and become an important part in industry and business
+                    - paragraph [ref=f69e327]: The Demand of IT Support service has arisen from the Increasingly business competition and the tighter budget allocated to IT divisions. By leveraging Graha Karya Informasi capabilities in delivering IT services, we are able to help our customers to achieve and maintain excellent IT operations through our Managed IT Services. These services help our customers derive maximum value from their IT investments at every stage of the technology lifecycle. Graha Karya Informasi offer flexible and custom services to accommodate rapid business changes and to help our customer manage complex systems.
+                - button [ref=f69e330] [cursor=pointer]:
+                  - text: Tampilkan selengkapnya
+                  - generic [aria-hidden] [ref=f69e331]: ⁠
+            - generic [ref=f69e337]:
+              - generic [ref=f69e338]: Manfaat dan keuntungan
+              - generic [ref=f69e345]: • Medical
+            - link [ref=f69e350] [cursor=pointer]:
+              - /url: /id/companies/graha-karya-informasi-168554170946893
+              - generic [ref=f69e351]:
+                - generic:
+                  - generic:
+                    - text: Selengkapnya tentang perusahaan ini
+                    - generic [aria-hidden]: ⁠
+        - generic [ref=f69e354]:
+          - heading "Laporkan iklan lowongan ini" [level=2] [ref=f69e356]
+          - generic [ref=f69e357]:
+            - generic [ref=f69e358]: Hati-hati
+            - generic [ref=f69e359]: Jangan berikan detail bank atau kartu kredit kamu saat mengirimkan lamaran kerja.
+            - link "Pelajari cara melindungi diri kamu" [ref=f69e361] [cursor=pointer]:
+              - /url: /id/security-hub#protect-yourself-online
+            - button "Laporkan iklan lowongan ini" [ref=f69e367] [cursor=pointer]:
+              - text: Laporkan iklan lowongan ini
+              - generic [aria-hidden] [ref=f69e368]: ⁠
+        - generic [ref=f69e373]:
+          - heading "Lowongan pilihan" [level=4] [ref=f69e374]
+          - generic [ref=f69e377]:
+            - generic [ref=f69e380] [cursor=pointer]:
+              - link [ref=f69e381]:
+                - /url: /id/job/94386978?ref=cp-recs&origin=competitiveRecommendedJobs&pos=1#sol=43f77851abb4b6896e34aba5904ddcbcbfe8f8f9
+              - generic [ref=f69e383]: AI AUTOMATION & CRM SPECIALIST
+              - generic [ref=f69e386]: PT RACHMAT CAHAYASAKTI
+              - generic [ref=f69e389]: West Jakarta, Jakarta, ID
+              - generic [ref=f69e392]: 21 hari yang lalu
+              - button "Simpan" [ref=f69e398]
+            - generic [ref=f69e405] [cursor=pointer]:
+              - link [ref=f69e406]:
+                - /url: /id/job/94386972?ref=cp-recs&origin=competitiveRecommendedJobs&pos=2#sol=76d8c6b41489c91eb6e9d0b8e0c76822a900b630
+              - generic [ref=f69e408]: Data Science (Machine Learning) for Paques
+              - generic [ref=f69e411]: PT. Lintas Teknologi Indonesia
+              - generic [ref=f69e414]: Jakarta, ID
+              - generic [ref=f69e417]: 21 hari yang lalu
+              - button "Simpan" [ref=f69e423]
+            - generic [ref=f69e430] [cursor=pointer]:
+              - link [ref=f69e431]:
+                - /url: /id/job/94261469?ref=cp-recs&origin=competitiveRecommendedJobs&pos=3#sol=257e3dc38a4034e869498d1d46509ad318fdce62
+              - generic [ref=f69e433]: Applied AI / Full-Stack AI Engineer (Mandarin / English Speaker)
+              - generic [ref=f69e436]: HITHINK TECHNOLOGY INDONESIA
+              - generic [ref=f69e439]: South Jakarta, Jakarta, ID
+              - generic [ref=f69e442]: 27 hari yang lalu
+              - button "Simpan" [ref=f69e448]
+        - generic [ref=f69e458]:
+          - generic [ref=f69e459]: Temukan karier Anda di Saran Karier
+          - generic [ref=f69e460]: Bergabunglah dengan jutaan pencari kerja di seluruh dunia menggunakan alat dan wawasan pembentukan karier kami.
+          - list [ref=f69e461]:
+            - listitem [ref=f69e462]:
+              - text: •
+              - generic [ref=f69e463]: Lakukan riset terkait gaji dan tren pekerjaan
+            - listitem [ref=f69e464]:
+              - text: •
+              - generic [ref=f69e465]: Akses alat, templat, dan artikel gratis yang membantu Anda tampak lebih menonjol
+            - listitem [ref=f69e466]:
+              - text: •
+              - generic [ref=f69e467]: Temukan jalur menuju beragam pilihan karier
+          - link "Jelajahi Saran Karier arrow-right" [ref=f69e468] [cursor=pointer]:
+            - /url: https://id.jobstreet.com/id/career-advice?utm_campaign=LMIS_Web&utm_source=JobStreet&utm_medium=LMIS&utm_content=job-details
+            - generic [ref=f69e469]: Jelajahi Saran Karier
+            - img "arrow-right" [ref=f69e470]
+  - contentinfo [ref=f69e472]:
+    - generic [ref=f69e474]:
+      - generic [ref=f69e477]:
+        - generic [ref=f69e479]:
+          - generic [ref=f69e481]:
+            - generic [ref=f69e482]: Pencari kerja
+            - list [ref=f69e483]:
+              - listitem [ref=f69e484]:
+                - link "Cari lowongan" [ref=f69e485] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f69e488]:
+                - link "Lihat profil" [ref=f69e489] [cursor=pointer]:
+                  - /url: /id/profile/me
+              - listitem [ref=f69e492]:
+                - link "Cari profil" [ref=f69e493] [cursor=pointer]:
+                  - /url: /id/profiles/search?tracking=ILC-profile-search-footer
+              - listitem [ref=f69e496]:
+                - link "Pencarian tersimpan" [ref=f69e497] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-searches
+              - listitem [ref=f69e500]:
+                - link "Lowongan tersimpan" [ref=f69e501] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-jobs
+              - listitem [ref=f69e504]:
+                - link "Lamaran kerja" [ref=f69e505] [cursor=pointer]:
+                  - /url: /id/my-activity/applied-jobs
+              - listitem [ref=f69e508]:
+                - link "Sumber daya karir" [ref=f69e509] [cursor=pointer]:
+                  - /url: /id/career-advice
+              - listitem [ref=f69e512]:
+                - link "Jelajahi karier" [ref=f69e513] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-careers
+              - listitem [ref=f69e516]:
+                - link "Jelajahi gaji" [ref=f69e517] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-salaries
+              - listitem [ref=f69e520]:
+                - link "Perusahaan" [ref=f69e521] [cursor=pointer]:
+                  - /url: /id/companies
+              - listitem [ref=f69e524]:
+                - button "Unduh aplikasi" [ref=f69e529] [cursor=pointer]
+          - generic [ref=f69e538]:
+            - generic [ref=f69e539]: Perusahaan
+            - list [ref=f69e540]:
+              - listitem [ref=f69e541]:
+                - link "Daftar gratis" [ref=f69e542] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f69e545]:
+                - link "Pasang iklan lowongan kerja" [ref=f69e546] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f69e549]:
+                - link "Produk & harga" [ref=f69e550] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/products/jobads
+              - listitem [ref=f69e553]:
+                - link "Layanan pelanggan" [ref=f69e554] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/contactus
+              - listitem [ref=f69e557]:
+                - link "Saran perekrutan" [ref=f69e558] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/hiring-advice
+              - listitem [ref=f69e561]:
+                - link "Wawasan pasar" [ref=f69e562] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/market-insights
+              - listitem [ref=f69e565]:
+                - link "Mitra perangkat lunak perekrutan" [ref=f69e566] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/partners/connect-with-seek
+        - generic [ref=f69e571]:
+          - generic [ref=f69e573]:
+            - generic [ref=f69e574]: Tentang kami
+            - list [ref=f69e575]:
+              - listitem [ref=f69e576]:
+                - link "Tentang kami" [ref=f69e577] [cursor=pointer]:
+                  - /url: /id/about
+              - listitem [ref=f69e580]:
+                - link "Ruang berita" [ref=f69e581] [cursor=pointer]:
+                  - /url: /id/about/news
+              - listitem [ref=f69e584]:
+                - link "Investor" [ref=f69e585] [cursor=pointer]:
+                  - /url: https://au.seek.com/about/investors
+              - listitem [ref=f69e588]:
+                - link "Karir" [ref=f69e589] [cursor=pointer]:
+                  - /url: /id/careers
+              - listitem [ref=f69e592]:
+                - button "Mitra internasional" [ref=f69e597] [cursor=pointer]
+              - listitem [ref=f69e605]:
+                - button "Layanan mitra" [ref=f69e610] [cursor=pointer]
+          - generic [ref=f69e619]:
+            - generic [ref=f69e620]: Kontak
+            - list [ref=f69e621]:
+              - listitem [ref=f69e622]:
+                - link "Pusat bantuan" [ref=f69e623] [cursor=pointer]:
+                  - /url: https://help.id.jobstreet.com/id/s/?language=in
+              - listitem [ref=f69e626]:
+                - link "Hubungi kami" [ref=f69e627] [cursor=pointer]:
+                  - /url: /id/contact-us
+              - listitem [ref=f69e630]:
+                - link "Blog produk & teknologi" [ref=f69e631] [cursor=pointer]:
+                  - /url: https://medium.com/seek-blog
+              - listitem [ref=f69e634]:
+                - button "Media sosial" [ref=f69e639] [cursor=pointer]
+      - generic [ref=f69e649]:
+        - button "Lokasi" [ref=f69e653] [cursor=pointer]:
+          - generic [ref=f69e654]: Indonesia
+        - generic [ref=f69e667]:
+          - generic [ref=f69e668]:
+            - link "Persyaratan & ketentuan" [ref=f69e670] [cursor=pointer]:
+              - /url: /id/terms
+            - link "Keamanan" [ref=f69e674] [cursor=pointer]:
+              - /url: /id/security-hub
+            - link "Privasi" [ref=f69e678] [cursor=pointer]:
+              - /url: /id/my-privacy
+          - generic [ref=f69e681]: Hak cipta © 2026 Jobstreet

@@ -1,0 +1,15 @@
+{
+  "duration": 10,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#intro .intro-wordmark", "bySec": 0.9 },
+    { "kind": "appearsBy", "selector": "#automation .scene-title", "bySec": 1.9 },
+    { "kind": "appearsBy", "selector": "#everyday-ai .scene-title", "bySec": 3.7 },
+    { "kind": "appearsBy", "selector": "#business .scene-title", "bySec": 5.3 },
+    { "kind": "appearsBy", "selector": "#visuals .scene-title", "bySec": 6.9 },
+    { "kind": "before", "a": "#cta-lockup .cl-action", "b": "#cta-lockup .cl-button" },
+    { "kind": "appearsBy", "selector": "#cta-lockup .cl-microcopy", "bySec": 9.7 },
+    { "kind": "staysInFrame", "selector": "#cta-lockup .cl-button" },
+    { "kind": "staysInFrame", "selector": ".hf-simulated-cursor" },
+    { "kind": "keepsMoving", "withinSelector": "#stage", "maxStaticSec": 1.8 }
+  ]
+}

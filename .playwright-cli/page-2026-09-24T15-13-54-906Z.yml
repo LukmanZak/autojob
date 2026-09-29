@@ -1,0 +1,40 @@
+- generic [ref=f58e4]:
+  - link "Skip to Main Content":
+    - /url: "#skipContent"
+  - region "Career Navigation" [ref=f58e7]:
+    - generic [ref=f58e8]:
+      - generic:
+        - link "Sign In" [ref=f58e10] [cursor=pointer]:
+          - /url: /career?career_company=ptmetrodat&lang=en_US&company=ptmetrodat&site=&loginFlowRequired=true&career_os=job%5flisting&career_job_req_id=39711&_s.crb=Xlr0yfFeyvm5SQ5bpIz45pYIzPjd6oN94WKcoBtLTN8%3d
+        - generic [ref=f58e11]: Language
+        - generic [ref=f58e12]:
+          - combobox "Language" [ref=f58e13] [cursor=pointer]:
+            - text: English US ‎(English US)‎
+            - button ""
+          - generic [ref=f58e14]: Collapsed. To expand press enter
+          - generic [ref=f58e15]: Expanded. To collapse press enter
+  - generic "Region"
+  - generic [ref=f58e16]:
+    - region "Career Opportunities:Sign In" [ref=f58e18]:
+      - heading [level=1] [ref=f58e20]:
+        - text: "Career Opportunities:"
+        - emphasis [ref=f58e21]: Sign In
+      - generic [ref=f58e28]:
+        - heading "Already have an account?" [level=2] [ref=f58e29]
+        - paragraph [ref=f58e30]: Enter your email address and password (Credentials are case sensitive).
+        - generic [ref=f58e31]: Email Address:*
+        - textbox "Email Address:" [ref=f58e32]
+        - generic [ref=f58e33]: Password:*
+        - textbox "Password:" [ref=f58e34]
+        - button "Sign In" [ref=f58e37] [cursor=pointer]
+        - link "Forgot your password?" [ref=f58e39] [cursor=pointer]:
+          - /url: /career?company=ptmetrodat&site=&lang=en_US&requestParams=ic%2fTrHCCZPEW7QYr0yzrU54mF0V42oVV3XLbRBTeJDV1nZKQhmk7MB2uuDWSVquVhwuwk7g1uGmI%0am%2f4MF%2bpaWsfrrrTq7lqJ2xmeCB6C4QngkhdguOAdWPknkS0H5Blpvefsd36%2bc87%2b%2fA%2boKAn2RiQj%0a9bFmvP6EqOFTklZu%2f%2fnrb%2fff%2fL4FNtugxgWJ2iTUQnbAHT2UVA0Fjy7Tb74F%2bWNdVM07X3%2blwf2Q%0aSEplMBL9gKRpoGgYvKWTsQT7P3andjhJzus9LVly%2fvUvf7z46%2b9HHx5vAnCZGoANDYAGuzKMA8U0%0aDbgICafjd%2bAnsDUTV2gSnPU0eGgMcKZ0bqiZpnxySiMmaaiLyrukKKGR2RlxNY5jIidB%2biyjsqi9%0a8VqD2qA%2fIrnjnehalC8qGty7PquE1IFBvdLZnOtsWBrsTTEiyqmJIJJkoEtQd%2bZZStQ1ggbVPGmK%0aZFSD7XyZx2eypMGDQrA9Iy%2fHOsfdV%2bP%2bMclaRHZpRvkJkSQuKRUpkvTdFUULvS0NRo5rW65r%2b57X%0aQA230UA%2bbEDLRraPfNt2zIMdCD0bmw2EsO9iB%2flTueciH9sexOZn%2b47tQtvBFoK21cANiH0HQ2Qj%0ay7F8H5s30uCV52HHRS5ExiryvSMM3UNoQcd1MIIWwk7baXmHLoYexthDTQydltvGCHtu22tC44HB%0adMyea2RNz3abLsQYHs7j%2fWQeL40J48FY8nJGUkmzebEFEdG0LWRMyumt9iVJorM1CDtzG6GIU5JM%0aimVVS3VMtRQGd8brCUspZwktgXyR1zKnUh%2bIxBzgfEbSdOuYxOUDO8t0l%2bS3%2f8%2bdXaYec9Gnh1Kk%0akbhISggfBaoeyn4RoP6KS2syaNNJFqPeD6ifdt67KH3deX8yijxx3HBffh%2bKlu4%2bP%2fa%2fhKbnPlam%0aFfL2C%2fLWL7XMoqO3kzWRmFqsffesFfSOmqcHT6Yn5sc%2bzdnMS3ggGU2iGbsl%2f%2fdWap1FxYarwAa2%0a7etvNeQGS6%2fp%2fUf%2fQc0a9eqgT8KYBuWE7jM1HVcvmR52WfKWRp1kab4NCFdmANSYOrrUVCaEF8W3%0atBwb6Q5TpzSUY6aPMuPwOoC7kuqxTJ6LrhkcNw4gsTSAlqfO8j9jspPMHDpTxcE5R%2fx8MaNSck4N%0aKSKe3QF5hlY4X2Vw1pirs37RvcmN82ypNkxu8iujdH53YSWmShnXSgp3E3pxYNqa5Y1fkn62cheZ%0aDk8GTMZP1XlJd1uJkBE%2b5bdsJs10MDTX69KsXUqIoWxApSR8SeWm6ycUfO31s3NlKDO1Q2%2fI%2fWpY%0aA05WA7r8F%2bIVP5A%3d&login_ns=forgot_pwd&career_ns=job%5fsave&career_os=job%5flisting&career_job_req_id=39711&navBarLevel=JOB%5fSEARCH&_s.crb=Xlr0yfFeyvm5SQ5bpIz45pYIzPjd6oN94WKcoBtLTN8%3d
+        - paragraph
+        - heading "Not a registered user yet?" [level=2] [ref=f58e40]
+        - link "Create an account" [ref=f58e41] [cursor=pointer]:
+          - /url: /career?company=ptmetrodat&site=&lang=en_US&requestParams=ic%2fTrHCCZPEW7QYr0yzrU54mF0V42oVV3XLbRBTeJDV1nZKQhmk7MB2uuDWSVquVhwuwk7g1uGmI%0am%2f4MF%2bpaWsfrrrTq7lqJ2xmeCB6C4QngkhdguOAdWPknkS0H5Blpvefsd36%2bc87%2b%2fA%2boKAn2RiQj%0a9bFmvP6EqOFTklZu%2f%2fnrb%2fff%2fL4FNtugxgWJ2iTUQnbAHT2UVA0Fjy7Tb74F%2bWNdVM07X3%2blwf2Q%0aSEplMBL9gKRpoGgYvKWTsQT7P3andjhJzus9LVly%2fvUvf7z46%2b9HHx5vAnCZGoANDYAGuzKMA8U0%0aDbgICafjd%2bAnsDUTV2gSnPU0eGgMcKZ0bqiZpnxySiMmaaiLyrukKKGR2RlxNY5jIidB%2biyjsqi9%0a8VqD2qA%2fIrnjnehalC8qGty7PquE1IFBvdLZnOtsWBrsTTEiyqmJIJJkoEtQd%2bZZStQ1ggbVPGmK%0aZFSD7XyZx2eypMGDQrA9Iy%2fHOsfdV%2bP%2bMclaRHZpRvkJkSQuKRUpkvTdFUULvS0NRo5rW65r%2b57X%0aQA230UA%2bbEDLRraPfNt2zIMdCD0bmw2EsO9iB%2flTueciH9sexOZn%2b47tQtvBFoK21cANiH0HQ2Qj%0ay7F8H5s30uCV52HHRS5ExiryvSMM3UNoQcd1MIIWwk7baXmHLoYexthDTQydltvGCHtu22tC44HB%0adMyea2RNz3abLsQYHs7j%2fWQeL40J48FY8nJGUkmzebEFEdG0LWRMyumt9iVJorM1CDtzG6GIU5JM%0aimVVS3VMtRQGd8brCUspZwktgXyR1zKnUh%2bIxBzgfEbSdOuYxOUDO8t0l%2bS3%2f8%2bdXaYec9Gnh1Kk%0akbhISggfBaoeyn4RoP6KS2syaNNJFqPeD6ifdt67KH3deX8yijxx3HBffh%2bKlu4%2bP%2fa%2fhKbnPlam%0aFfL2C%2fLWL7XMoqO3kzWRmFqsffesFfSOmqcHT6Yn5sc%2bzdnMS3ggGU2iGbsl%2f%2fdWap1FxYarwAa2%0a7etvNeQGS6%2fp%2fUf%2fQc0a9eqgT8KYBuWE7jM1HVcvmR52WfKWRp1kab4NCFdmANSYOrrUVCaEF8W3%0atBwb6Q5TpzSUY6aPMuPwOoC7kuqxTJ6LrhkcNw4gsTSAlqfO8j9jspPMHDpTxcE5R%2fx8MaNSck4N%0aKSKe3QF5hlY4X2Vw1pirs37RvcmN82ypNkxu8iujdH53YSWmShnXSgp3E3pxYNqa5Y1fkn62cheZ%0aDk8GTMZP1XlJd1uJkBE%2b5bdsJs10MDTX69KsXUqIoWxApSR8SeWm6ycUfO31s3NlKDO1Q2%2fI%2fWpY%0aA05WA7r8F%2bIVP5A%3d&login_ns=register&career_ns=job%5fsave&career_os=job%5flisting&career_job_req_id=39711&navBarLevel=JOB%5fSEARCH&_s.crb=Xlr0yfFeyvm5SQ5bpIz45pYIzPjd6oN94WKcoBtLTN8%3d
+        - text: to apply for our career opportunities.
+        - paragraph
+        - button "Go Back" [ref=f58e46] [cursor=pointer]
+    - link "SuccessFactors home page" [ref=f58e50] [cursor=pointer]:
+      - /url: https://www.successfactors.com/

@@ -1,0 +1,219 @@
+- generic [ref=f103e3]:
+  - link "%%%Skip to content" [ref=f103e4] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f103e5]:
+    - banner [ref=f103e7]:
+      - generic [ref=f103e11]:
+        - generic [ref=f103e12]:
+          - link "Jobstreet" [ref=f103e14] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f103e22]:
+            - link "Cari lowongan" [ref=f103e24] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f103e29] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f103e34] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f103e39] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f103e43]:
+          - button "Bahasa" [ref=f103e46] [cursor=pointer]
+          - button "Profile Avatar" [ref=f103e66] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f103e79] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f103e83]:
+      - generic [ref=f103e87]:
+        - img "PT Karisma Zona Kreatifku" [ref=f103e89]
+        - generic [ref=f103e90]:
+          - generic [ref=f103e91]: Melamar untuk
+          - heading "AI Engineer" [level=1] [ref=f103e92]
+          - generic [ref=f103e93]: PT Karisma Zona Kreatifku
+          - button "Lihat deskripsi pekerjaan" [ref=f103e95] [cursor=pointer]
+      - navigation "Progress bar" [ref=f103e97]:
+        - list [ref=f103e98]:
+          - listitem [ref=f103e99]:
+            - button "Pilih dokumen"
+          - listitem [ref=f103e112]:
+            - button "Jawab pertanyaan perusahaan"
+          - listitem [ref=f103e113]:
+            - button "Perbarui Profil Jobstreet" [ref=f103e584]
+          - listitem [ref=f103e114]:
+            - button "Review dan kirim"
+        - progressbar
+      - generic [ref=f103e596]:
+        - alert [ref=f103e597]:
+          - generic [ref=f103e598]: Profil Jobstreet kamu adalah bagian dari lamaran kamu. Pastikan profil kamu sudah diperbarui.
+        - generic [ref=f103e608]:
+          - heading "Riwayat karir" [level=3] [ref=f103e609]
+          - generic [ref=f103e610]:
+            - list [ref=f103e612]:
+              - listitem [ref=f103e613]:
+                - generic [ref=f103e618]:
+                  - generic [ref=f103e620]:
+                    - generic [ref=f103e621]:
+                      - heading "Machine Learning Engineer" [level=4] [ref=f103e624]
+                      - button "Ubah Machine Learning Engineer" [ref=f103e629] [cursor=pointer]
+                    - generic [ref=f103e634]: PT. Aneka Search Indonesia
+                  - time [ref=f103e636]: Sep 2025 - Saat ini (1 tahun 1 bulan)
+                  - generic [ref=f103e637]:
+                    - generic [ref=f103e638]:
+                      - generic: Membuat model serta deploy FastAPI di Docker untuk Document Authentication dengan akurasi lebih dari 95% serta terintegrasi penuh untuk pipeline PostgreSQL, S3, dan automation n8n. Merancang sistem RAG Chatbot Enterprise berbasis Vector Database untuk klien dan assessor, dilengkapi guardrails keamanan anti-jailbreak, penyaringan toxic statement, dan mekanisme user feedback loop. Membangun API dan automated media processing pipeline untuk dokumentasi wawancara internal, mencakup video-to-audio conversion, speaker diarization, thumbnail creation, dan caption generation, sehingga bisa memotong waktu pemrosesan secara signifikan. Mendeploy platform video conferencing terintegrasi fitur real-time Speech-to-Text (STT) dan automated candidate scoring berbasis AI sesuai konteks jabatan untuk efisiensi kualifikasi HR. Mengimplementasikan AI Orchestration Chatbot berbasis Human-in-the-Loop (HITL) untuk Assessment Centre, yang berhasil memangkas beban kerja operasional HR dalam pembuatan asesmen hingga 80%.
+                      - generic [ref=f103e640]: Membuat model serta deploy FastAPI di Docker untuk Document Authentication dengan akurasi lebih dari 95% serta terintegrasi penuh untuk pipeline PostgreSQL, S3, dan automation n8n. Merancang sistem RAG Chatbot Enterprise berbasis Vector Database untuk klien dan assessor, dilengkapi guardrails keamanan anti-jailbreak, penyaringan toxic statement, dan mekanisme user feedback loop. Membangun API dan automated media processing pipeline untuk dokumentasi wawancara internal, mencakup video-to-audio conversion, speaker diarization, thumbnail creation, dan caption generation, sehingga bisa memotong waktu pemrosesan secara signifikan. Mendeploy platform video conferencing terintegrasi fitur real-time Speech-to-Text (STT) dan automated candidate scoring berbasis AI sesuai konteks jabatan untuk efisiensi kualifikasi HR. Mengimplementasikan AI Orchestration Chatbot berbasis Human-in-the-Loop (HITL) untuk Assessment Centre, yang berhasil memangkas beban kerja operasional HR dalam pembuatan asesmen hingga 80%.
+                    - button [ref=f103e644] [cursor=pointer]:
+                      - text: Lebih banyak
+                      - generic [aria-hidden] [ref=f103e645]: ⁠
+              - listitem [ref=f103e649]:
+                - generic [ref=f103e654]:
+                  - generic [ref=f103e656]:
+                    - generic [ref=f103e657]:
+                      - heading "Artificial Intelligence Engineer" [level=4] [ref=f103e660]
+                      - button "Ubah Artificial Intelligence Engineer" [ref=f103e665] [cursor=pointer]
+                    - generic [ref=f103e670]: Independent Project
+                  - time [ref=f103e672]: Sep 2023 - Saat ini (3 tahun 1 bulan)
+                  - generic [ref=f103e673]:
+                    - generic [ref=f103e674]:
+                      - generic: Menghasilkan akurasi 95% pada model ML perbankan untuk prediksi deposito (750K users) Membangun 30+ workflow n8n untuk otomasi (SQL, APIs, web scraping, chatbots) Mengurangi waktu pemrosesan 80% melalui pipeline ML otomatis
+                      - generic [ref=f103e676]: Menghasilkan akurasi 95% pada model ML perbankan untuk prediksi deposito (750K users) Membangun 30+ workflow n8n untuk otomasi (SQL, APIs, web scraping, chatbots) Mengurangi waktu pemrosesan 80% melalui pipeline ML otomatis
+                    - button [ref=f103e680] [cursor=pointer]:
+                      - text: Lebih banyak
+                      - generic [aria-hidden] [ref=f103e681]: ⁠
+              - listitem [ref=f103e685]:
+                - generic [ref=f103e690]:
+                  - generic [ref=f103e692]:
+                    - generic [ref=f103e693]:
+                      - heading "Guru Matematika" [level=4] [ref=f103e696]
+                      - button "Ubah Guru Matematika" [ref=f103e701] [cursor=pointer]
+                    - generic [ref=f103e706]: Muslim Cendekia
+                  - time [ref=f103e708]: Jun 2023 - Jul 2025 (2 tahun 2 bulan)
+                  - generic [ref=f103e709]:
+                    - generic [ref=f103e710]:
+                      - generic: Mengajar Matematika dan dasar pemrograman (Scratch & Python) dengan total 124 siswa dan lebih dari 10 project coding. Mengembangkan materi ajar terintegrasi antara numerasi dan literasi digital untuk memperkuat dasar logika, pemikiran komputasional, serta kemampuan menjelaskan konsep teknis secara efektif.
+                      - generic [ref=f103e712]: Mengajar Matematika dan dasar pemrograman (Scratch & Python) dengan total 124 siswa dan lebih dari 10 project coding. Mengembangkan materi ajar terintegrasi antara numerasi dan literasi digital untuk memperkuat dasar logika, pemikiran komputasional, serta kemampuan menjelaskan konsep teknis secara efektif.
+                    - button [ref=f103e716] [cursor=pointer]:
+                      - text: Lebih banyak
+                      - generic [aria-hidden] [ref=f103e717]: ⁠
+              - listitem [ref=f103e721]:
+                - generic [ref=f103e726]:
+                  - generic [ref=f103e728]:
+                    - generic [ref=f103e729]:
+                      - heading "Data Analytics Intern" [level=4] [ref=f103e732]
+                      - button "Ubah Data Analytics Intern" [ref=f103e737] [cursor=pointer]
+                    - generic [ref=f103e742]: Dinas Kominfo Kab. Malang
+                  - time [ref=f103e744]: Jun 2020 - Jul 2020 (2 bulan)
+                  - generic [ref=f103e745]:
+                    - generic [ref=f103e746]:
+                      - generic: Membantu pengumpulan, pengolahan, dan visualisasi data dari berbagai sektor layanan publik. Terlibat dalam analisis tren dan penyusunan laporan berbasis data untuk mendukung pengambilan kebijakan internal. Menggunakan alat seperti Microsoft Excel, Google Data Studio, dan dasar-dasar SQL untuk menyusun dashboard dan laporan yang mudah dipahami oleh pemangku kepentingan.
+                      - generic [ref=f103e748]: Membantu pengumpulan, pengolahan, dan visualisasi data dari berbagai sektor layanan publik. Terlibat dalam analisis tren dan penyusunan laporan berbasis data untuk mendukung pengambilan kebijakan internal. Menggunakan alat seperti Microsoft Excel, Google Data Studio, dan dasar-dasar SQL untuk menyusun dashboard dan laporan yang mudah dipahami oleh pemangku kepentingan.
+                    - button [ref=f103e752] [cursor=pointer]:
+                      - text: Lebih banyak
+                      - generic [aria-hidden] [ref=f103e753]: ⁠
+            - button "Tambah jabatan" [ref=f103e758] [cursor=pointer]
+        - generic [ref=f103e762]:
+          - heading "Pendidikan" [level=3] [ref=f103e763]
+          - list [ref=f103e764]:
+            - listitem [ref=f103e765]:
+              - generic [ref=f103e770]:
+                - generic [ref=f103e772]:
+                  - generic [ref=f103e773]:
+                    - heading "Sarjana Matematika (S1)" [level=4] [ref=f103e776]
+                    - button "Ubah Sarjana Matematika (S1)" [ref=f103e781] [cursor=pointer]
+                  - generic [ref=f103e786]: Universitas Brawijaya
+                - time [ref=f103e788]: Selesai 2022
+          - button "Tambah pendidikan" [ref=f103e790] [cursor=pointer]
+        - generic [ref=f103e793]:
+          - heading "Lisensi & sertifikasi" [level=3] [ref=f103e794]
+          - list [ref=f103e795]:
+            - listitem [ref=f103e796]:
+              - generic [ref=f103e801]:
+                - generic [ref=f103e803]:
+                  - generic [ref=f103e804]:
+                    - heading "Google Data Analytics" [level=4] [ref=f103e807]
+                    - button "Ubah Google Data Analytics" [ref=f103e812] [cursor=pointer]
+                  - generic [ref=f103e817]: Coursera - Google
+                - time [ref=f103e819]: Jul 2025 - Saat ini
+                - generic [ref=f103e820]:
+                  - generic [ref=f103e821]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - text: Those who earn the Google Data Analytics Professional Certificate have completed eight courses, developed by Google, that include hands-on, practice-based assessments and are designed to prepare them for introductory-level roles in Data Analytics. They are competent in tools and platforms including spreadsheets, SQL, Tableau, and R. They know how to prepare, process, analyze, and share data for thoughtful action.
+                          - button "https://www.coursera.org/account/accomplishments/professional-cert/ZYJZCAK09WCZ"
+                    - generic [ref=f103e825]:
+                      - text: Those who earn the Google Data Analytics Professional Certificate have completed eight courses, developed by Google, that include hands-on, practice-based assessments and are designed to prepare them for introductory-level roles in Data Analytics. They are competent in tools and platforms including spreadsheets, SQL, Tableau, and R. They know how to prepare, process, analyze, and share data for thoughtful action.
+                      - button [ref=f103e826] [cursor=pointer]: https://www.coursera.org/account/accomplishments/professional-cert/ZYJZCAK09WCZ
+                  - button [ref=f103e829] [cursor=pointer]:
+                    - text: Lebih banyak
+                    - generic [aria-hidden] [ref=f103e830]: ⁠
+            - listitem [ref=f103e834]:
+              - generic [ref=f103e839]:
+                - generic [ref=f103e841]:
+                  - generic [ref=f103e842]:
+                    - heading "Generative AI Engineering" [level=4] [ref=f103e845]
+                    - button "Ubah Generative AI Engineering" [ref=f103e850] [cursor=pointer]
+                  - generic [ref=f103e855]: Coursera - IBM
+                - time [ref=f103e857]: Agu 2025 - Saat ini
+                - generic [ref=f103e858]:
+                  - generic [ref=f103e859]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - text: In this Professional Certificate, learners developed essential knowledge and skills to perform tasks in an AI, gen AI, or NLP engineer role. The certificate holder has demonstrated a firm grasp, and has practical experience, of the various generative AI architectures and LLMs for developing NLP-based systems. They have demonstrated knowledge of tokenization, data loaders, transformers, attention mechanisms, and prompt engineering. They have gained experience in frameworks and LLMs, such as GPT and BERT. The certificate holder can use PyTorch and the Hugging Face Transformers library to develop RAG applications such as a question-and-answering system. They can also use document loaders in LangChain to bring in information from various sources and prepare it for processing.
+                          - button "https://www.coursera.org/account/accomplishments/professional-cert/YBKACUQ3CAWS"
+                    - generic [ref=f103e863]:
+                      - text: In this Professional Certificate, learners developed essential knowledge and skills to perform tasks in an AI, gen AI, or NLP engineer role. The certificate holder has demonstrated a firm grasp, and has practical experience, of the various generative AI architectures and LLMs for developing NLP-based systems. They have demonstrated knowledge of tokenization, data loaders, transformers, attention mechanisms, and prompt engineering. They have gained experience in frameworks and LLMs, such as GPT and BERT. The certificate holder can use PyTorch and the Hugging Face Transformers library to develop RAG applications such as a question-and-answering system. They can also use document loaders in LangChain to bring in information from various sources and prepare it for processing.
+                      - button [ref=f103e864] [cursor=pointer]: https://www.coursera.org/account/accomplishments/professional-cert/YBKACUQ3CAWS
+                  - button [ref=f103e867] [cursor=pointer]:
+                    - text: Lebih banyak
+                    - generic [aria-hidden] [ref=f103e868]: ⁠
+          - button "Tambah lisensi atau sertifikasi" [ref=f103e873] [cursor=pointer]
+        - generic [ref=f103e876]:
+          - heading "Keahlian" [level=3] [ref=f103e877]
+          - list [ref=f103e880]:
+            - listitem [ref=f103e881]:
+              - generic "SonarQube" [ref=f103e882]
+            - listitem [ref=f103e885]:
+              - generic "Amazon Web Services" [ref=f103e886]
+            - listitem [ref=f103e889]:
+              - generic "Vector Databases" [ref=f103e890]
+            - listitem [ref=f103e893]:
+              - generic "Production API" [ref=f103e894]
+            - listitem [ref=f103e897]:
+              - generic "Retrieve Augmented Generative" [ref=f103e898]
+            - listitem [ref=f103e901]:
+              - generic "AI Agents" [ref=f103e902]
+            - listitem [ref=f103e905]:
+              - generic "Large Language Models" [ref=f103e906]
+            - listitem [ref=f103e909]:
+              - generic "Computer Vision" [ref=f103e910]
+            - listitem [ref=f103e913]:
+              - generic "PyTorch" [ref=f103e914]
+            - listitem [ref=f103e917]:
+              - generic "Automation" [ref=f103e918]
+            - listitem [ref=f103e921]:
+              - generic "Kubernetes" [ref=f103e922]
+            - listitem [ref=f103e925]:
+              - generic "Docker Software" [ref=f103e926]
+            - listitem [ref=f103e929]:
+              - generic "FastAPI Framework" [ref=f103e930]
+            - listitem [ref=f103e933]:
+              - generic "Machine Learning" [ref=f103e934]
+            - listitem [ref=f103e937]:
+              - generic "Microsoft Excel" [ref=f103e938]
+          - button "Tambah keahlian" [ref=f103e942] [cursor=pointer]
+        - generic [ref=f103e944]:
+          - button [ref=f103e946] [cursor=pointer]:
+            - generic [ref=f103e947]:
+              - generic:
+                - generic:
+                  - text: Lanjut
+                  - generic [aria-hidden]: ⁠
+          - button [ref=f103e950] [cursor=pointer]:
+            - generic [ref=f103e951]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kembali
+  - contentinfo [ref=f103e393]:
+    - generic [ref=f103e397] [cursor=pointer]:
+      - generic [ref=f103e398]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f103e403]: Telusuri situs

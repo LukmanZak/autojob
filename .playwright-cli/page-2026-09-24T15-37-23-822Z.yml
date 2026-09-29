@@ -1,0 +1,357 @@
+- generic [ref=f88e3]:
+  - button "Lewati ke konten" [ref=f88e4] [cursor=pointer]
+  - generic [ref=f88e5]:
+    - status
+  - banner [ref=f88e7]:
+    - generic [ref=f88e11]:
+      - generic [ref=f88e12]:
+        - link "Jobstreet" [ref=f88e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f88e22]:
+          - link "Cari lowongan" [ref=f88e24] [cursor=pointer]:
+            - /url: /
+          - link "Cari profil" [ref=f88e29] [cursor=pointer]:
+            - /url: /id/profiles/search?tracking=ILC-profile-search-header
+          - link "Sumber daya karir" [ref=f88e34] [cursor=pointer]:
+            - /url: /id/career-advice
+          - link "Perusahaan" [ref=f88e39] [cursor=pointer]:
+            - /url: /id/companies
+      - generic [ref=f88e43]:
+        - button "Bahasa" [ref=f88e46] [cursor=pointer]
+        - button "Profile Avatar" [ref=f88e65] [cursor=pointer]
+        - link "Untuk perusahaan" [ref=f88e78] [cursor=pointer]:
+          - /url: https://id.employer.seek.com/id
+  - main [ref=f88e81]:
+    - generic [ref=f88e88]:
+      - generic [ref=f88e89]:
+        - generic [ref=f88e91]:
+          - img "PT Fata Organa Solusi logo" [ref=f88e97]
+          - button "Bagikan atau laporkan iklan" [ref=f88e105] [cursor=pointer]
+        - generic [ref=f88e113]:
+          - heading "Middle AI Engineer" [level=1] [ref=f88e114]
+          - generic [ref=f88e115]:
+            - button "PT Fata Organa Solusi" [ref=f88e116] [cursor=pointer]
+            - link "Lihat semua lowongan kerja" [ref=f88e124] [cursor=pointer]:
+              - /url: /id/Fata-Organa-Solutions-jobs/at-this-company
+        - generic [ref=f88e125]:
+          - generic [ref=f88e126]:
+            - generic [ref=f88e127]:
+              - img "Lokasi" [ref=f88e131]
+              - generic [ref=f88e135]:
+                - link "Banten":
+                  - /url: /id/Artificial-Intelligence-Engineer-jobs/in-Banten
+                - text: (Jarak jauh)
+            - generic [ref=f88e136]:
+              - img "Industri" [ref=f88e140]
+              - generic [ref=f88e144]:
+                - link "Developer/Programmer (Teknologi Informasi & Komunikasi)":
+                  - /url: /id/jobs-in-information-communication-technology/developers-programmers
+            - generic [ref=f88e145]:
+              - img "Jenis pekerjaan" [ref=f88e149]
+              - generic [ref=f88e153]:
+                - link "Full time":
+                  - /url: /id/Artificial-Intelligence-Engineer-jobs/full-time
+            - generic [ref=f88e154]:
+              - img "Gaji" [ref=f88e158]
+              - generic [ref=f88e163]:
+                - generic [ref=f88e164]: Rp 10.000.000 – Rp 15.000.000 per month
+                - generic [ref=f88e165]:
+                  - generic [ref=f88e166]: Gaji sesuai ekspektasi
+                  - button "Detail kecocokan gaji" [ref=f88e170] [cursor=pointer]
+          - generic [ref=f88e176]:
+            - generic [ref=f88e177]: Diposting 20 hari yang lalu
+            - generic [ref=f88e178]: Pelamar sangat banyak
+        - generic [ref=f88e183]:
+          - link "Kirim lamaran sebagai Middle AI Engineer di PT Fata Organa Solusi" [ref=f88e185] [cursor=pointer]:
+            - /url: /id/job/94429217/apply
+            - generic [ref=f88e186]: Lamaran Cepat
+          - button "Simpan Middle AI Engineer di PT Fata Organa Solusi" [ref=f88e187] [cursor=pointer]:
+            - generic [ref=f88e188]: Simpan
+      - generic [ref=f88e189]:
+        - generic [ref=f88e193]:
+          - paragraph [ref=f88e194]: "Here's the updated version with years of experience added:"
+          - separator [ref=f88e195]
+          - paragraph [ref=f88e196]:
+            - strong [ref=f88e197]: Role Description
+          - paragraph [ref=f88e198]:
+            - text: We are seeking a motivated and detail-oriented
+            - strong [ref=f88e199]: Middle AI Engineer
+            - text: to join our engineering team at
+            - strong [ref=f88e200]: PT Fata Organa Solusi
+            - text: . In this role, you will focus on designing, building, and deploying AI-powered solutions, integrating large language models (LLMs) into production systems, and developing machine learning pipelines that deliver real business value. You will collaborate closely with product, data, and software engineering teams to translate business problems into AI solutions, fine-tune and evaluate models, and ensure the reliability and scalability of AI services in production. This is an excellent opportunity for a highly responsible individual with a passion for artificial intelligence, applied machine learning, and emerging LLM technologies who is eager to grow within a supportive, innovation-focused environment. Your technical skills and commitment to good teamwork will be essential in delivering robust and impactful AI solutions.
+          - paragraph [ref=f88e201]:
+            - strong [ref=f88e202]: "Responsibilities:"
+          - list [ref=f88e203]:
+            - listitem [ref=f88e204]:
+              - paragraph [ref=f88e205]: You will design, implement, and maintain AI/ML pipelines covering data preparation, model training, evaluation, and deployment using frameworks such as PyTorch, TensorFlow, scikit-learn, or similar.
+            - listitem [ref=f88e206]:
+              - paragraph [ref=f88e207]: You will build and integrate LLM-based applications using APIs and frameworks such as OpenAI, Anthropic Claude, Azure OpenAI, LangChain, LlamaIndex, or similar, including prompt engineering, RAG (Retrieval-Augmented Generation), and agentic workflows.
+            - listitem [ref=f88e208]:
+              - paragraph [ref=f88e209]: You will develop and maintain vector databases and embedding pipelines (e.g., Pinecone, Weaviate, Qdrant, pgvector, FAISS) to support semantic search and retrieval use cases.
+            - listitem [ref=f88e210]:
+              - paragraph [ref=f88e211]: You will deploy AI models and services to production using containerization (Docker) and cloud platforms such as Azure, AWS, or Google Cloud Platform, ensuring scalability, latency, and cost efficiency.
+            - listitem [ref=f88e212]:
+              - paragraph [ref=f88e213]: You will implement evaluation frameworks, guardrails, and monitoring for AI systems to track model performance, hallucinations, drift, and safety in production.
+            - listitem [ref=f88e214]:
+              - paragraph [ref=f88e215]: You will collaborate with product and engineering teams to translate business requirements into AI solutions, define success metrics, and iterate based on feedback and data.
+            - listitem [ref=f88e216]:
+              - paragraph [ref=f88e217]: You will fine-tune, adapt, and optimize models (including small language models, embeddings, and classical ML models) when off-the-shelf solutions are insufficient.
+            - listitem [ref=f88e218]:
+              - paragraph [ref=f88e219]: You will manage version control workflows for code, prompts, datasets, and models, including reproducibility and experiment tracking using tools like Git, MLflow.
+            - listitem [ref=f88e220]:
+              - paragraph [ref=f88e221]: You will troubleshoot AI/ML system issues, applying strong problem-solving skills to diagnose problems across data, model, and infrastructure layers.
+            - listitem [ref=f88e222]:
+              - paragraph [ref=f88e223]: You will document model designs, prompt strategies, evaluation results, and operational runbooks to maintain knowledge across the team.
+            - listitem [ref=f88e224]:
+              - paragraph [ref=f88e225]: You will proactively engage in self-learning to keep up with the rapidly evolving AI landscape, and if necessary, be willing to unlearn and relearn methods to maintain industry best practices.
+          - paragraph [ref=f88e226]:
+            - strong [ref=f88e227]: "Requirements:"
+          - list [ref=f88e228]:
+            - listitem [ref=f88e229]:
+              - paragraph [ref=f88e230]: Minimum 3 years of professional experience in AI/ML engineering, data science, or a closely related software engineering role, with at least 1 year working on AI/LLM-based applications in production.
+            - listitem [ref=f88e231]:
+              - paragraph [ref=f88e232]: Solid understanding of machine learning fundamentals (supervised/unsupervised learning, evaluation metrics, overfitting, regularization, etc.).
+            - listitem [ref=f88e233]:
+              - paragraph [ref=f88e234]: Hands-on experience building applications with LLMs through APIs (OpenAI, Anthropic, Azure OpenAI, or similar) and/or open-source models (Llama, Mistral, Qwen, or similar).
+            - listitem [ref=f88e235]:
+              - paragraph [ref=f88e236]: Strong proficiency in Python, including common libraries such as NumPy, pandas, and at least one ML framework (PyTorch, TensorFlow, or scikit-learn).
+            - listitem [ref=f88e237]:
+              - paragraph [ref=f88e238]: "Experience with at least one cloud platform: Azure, AWS, or Google Cloud Platform, including their AI/ML services."
+            - listitem [ref=f88e239]:
+              - paragraph [ref=f88e240]: Experience with containerization technologies, particularly Docker.
+            - listitem [ref=f88e241]:
+              - paragraph [ref=f88e242]: Practical experience with prompt engineering, RAG architectures, embeddings, and vector search.
+            - listitem [ref=f88e243]:
+              - paragraph [ref=f88e244]: Experience building and consuming RESTful APIs, with familiarity in frameworks such as FastAPI or Flask.
+            - listitem [ref=f88e245]:
+              - paragraph [ref=f88e246]: "Experience with any RDBMS systems: SQL Server, PostgreSQL, MySQL, or similar, with solid SQL proficiency."
+            - listitem [ref=f88e247]:
+              - paragraph [ref=f88e248]: Strong understanding of Git concepts (branching, PR, commit, merge, tagging).
+            - listitem [ref=f88e249]:
+              - paragraph [ref=f88e250]: Strong sense of responsibility, good teamwork, and communication skills.
+            - listitem [ref=f88e251]:
+              - paragraph [ref=f88e252]: Strong problem-analyzing and problem-solving skills, with good debugging ability across data, code, and model layers.
+            - listitem [ref=f88e253]:
+              - paragraph [ref=f88e254]: Willingness to self-learn new things, and if necessary, unlearn and relearn methods, especially given the fast pace of AI advancement.
+            - listitem [ref=f88e255]:
+              - paragraph [ref=f88e256]: Fluent in English, proven by an interview in English (equivalent to at least 525 TOEFL PBT or 5.5 IELTS or 55 TOEFL iBT).
+          - paragraph [ref=f88e257]:
+            - strong [ref=f88e258]: "Advantageous if:"
+          - list [ref=f88e259]:
+            - listitem [ref=f88e260]:
+              - paragraph [ref=f88e261]: Have experience deploying AI/ML models to production at scale (model serving, batching, GPU optimization).
+            - listitem [ref=f88e262]:
+              - paragraph [ref=f88e263]: Experience with agentic frameworks and tool use (LangChain, LlamaIndex, LangGraph, AutoGen, or similar).
+            - listitem [ref=f88e264]:
+              - paragraph [ref=f88e265]: Experience fine-tuning models (LoRA/QLoRA, instruction tuning) or training custom embeddings.
+            - listitem [ref=f88e266]:
+              - paragraph [ref=f88e267]: Understanding of MLOps practices and tools (MLflow, Kubeflow, SageMaker, Vertex AI, Azure ML).
+            - listitem [ref=f88e268]:
+              - paragraph [ref=f88e269]: Experience with vector databases (Pinecone, Weaviate, Qdrant, pgvector, Milvus) at production scale.
+            - listitem [ref=f88e270]:
+              - paragraph [ref=f88e271]: Have experience implementing AI safety, evaluation, and observability practices (LangSmith, LangFuse, Arize, or similar).
+            - listitem [ref=f88e272]:
+              - paragraph [ref=f88e273]: Familiarity with multimodal models (vision, audio, OCR) and their integration into business workflows.
+            - listitem [ref=f88e274]:
+              - paragraph [ref=f88e275]: Understanding of data engineering concepts and pipeline tools (Airflow, Prefect, dbt).
+            - listitem [ref=f88e276]:
+              - paragraph [ref=f88e277]: Have N5 or higher Japanese Proficiency.
+            - listitem [ref=f88e278]:
+              - paragraph [ref=f88e279]: Experience contributing to or maintaining open-source AI/ML projects.
+            - listitem [ref=f88e280]:
+              - paragraph [ref=f88e281]: Able to write good and concise technical documentation and runbooks.
+            - listitem [ref=f88e282]:
+              - paragraph [ref=f88e283]: Have relevant certifications (Azure AI Engineer, AWS Machine Learning, Google Cloud ML Engineer, or similar).
+          - paragraph [ref=f88e284]:
+            - strong [ref=f88e285]: Benefits
+          - list [ref=f88e286]:
+            - listitem [ref=f88e287]:
+              - paragraph [ref=f88e288]: Tax and BPJS + BPJSTK fully paid by company, including full BPJSTK Coverage (4 items)
+            - listitem [ref=f88e289]:
+              - paragraph [ref=f88e290]: Yearly bonus based on performance (up to 2x)
+          - paragraph [ref=f88e291]:
+            - strong [ref=f88e292]: About us
+          - paragraph [ref=f88e293]: PT Fata Organa Solusi subsidiaries of CAC Holding Japan is a forward-thinking organization specializing in innovative business solutions. We are committed to leveraging the latest technologies in data science to drive decision-making and enhance our product offerings.
+          - paragraph [ref=f88e294]:
+            - strong [ref=f88e295]: What we offer
+          - paragraph [ref=f88e296]: At PT Fata Organa Solusi, we are committed to fostering a dynamic and supportive work environment that enables our employees to thrive. We offer competitive salaries, opportunities for career advancement, and a range of benefits to support your well-being. Our team members enjoy a collaborative culture, flexible work arrangements, and access to continuous learning and development initiatives.
+          - paragraph [ref=f88e297]: If you're ready to embark on an exciting journey and contribute to our thriving team, we encourage you to apply now!
+        - generic [ref=f88e299]:
+          - heading "Pertanyaan dari perusahaan" [level=2] [ref=f88e300]
+          - generic [ref=f88e301]:
+            - generic [ref=f88e302]: "Lamaran kamu akan mencakup pertanyaan-pertanyaan berikut:"
+            - list [ref=f88e303]:
+              - listitem [ref=f88e304]:
+                - generic [ref=f88e308]: Which of the following types of qualifications do you have?
+              - listitem [ref=f88e310]:
+                - generic [ref=f88e314]: What's your expected monthly basic salary?
+              - listitem [ref=f88e316]:
+                - generic [ref=f88e320]: How many years' experience do you have as an Artificial Intelligence Engineer?
+              - listitem [ref=f88e322]:
+                - generic [ref=f88e326]: Which of the following programming languages are you experienced in?
+              - listitem [ref=f88e328]:
+                - generic [ref=f88e332]: Which of the following Relational Database Management Systems (RDBMS) are you experienced with?
+              - listitem [ref=f88e334]:
+                - generic [ref=f88e338]: How would you rate your English language skills?
+              - listitem [ref=f88e340]:
+                - generic [ref=f88e344]: How much notice are you required to give your current employer?
+        - generic [ref=f88e349]:
+          - heading "Profil perusahaan" [level=3] [ref=f88e350]
+          - generic [ref=f88e351]:
+            - generic [ref=f88e352]:
+              - generic [ref=f88e355]:
+                - img "Company Logo for Fata Organa Solutions" [ref=f88e357]
+                - button [ref=f88e359] [cursor=pointer]:
+                  - heading [level=4] [ref=f88e360]
+              - generic [ref=f88e366]:
+                - generic [ref=f88e367]: Information Technology Services
+                - generic [ref=f88e375]: 51-100 employees
+              - generic [ref=f88e384]:
+                - generic:
+                  - generic:
+                    - paragraph: PT Fata Organa Solusi subsidiaries of CAC Holding Japan is a forward-thinking organization specializing in innovative business solutions. We are committed to leveraging the latest technologies in data science to drive decision-making and enhance our product offerings.
+                - paragraph [ref=f88e388]: PT Fata Organa Solusi subsidiaries of CAC Holding Japan is a forward-thinking organization specializing in innovative business solutions. We are committed to leveraging the latest technologies in data science to drive decision-making and enhance our product offerings.
+            - link [ref=f88e391] [cursor=pointer]:
+              - /url: /id/companies/fata-organa-solutions-168550800645347
+              - generic [ref=f88e392]:
+                - generic:
+                  - generic:
+                    - text: Selengkapnya tentang perusahaan ini
+                    - generic [aria-hidden]: ⁠
+        - generic [ref=f88e395]:
+          - heading "Laporkan iklan lowongan ini" [level=2] [ref=f88e397]
+          - generic [ref=f88e398]:
+            - generic [ref=f88e399]: Hati-hati
+            - generic [ref=f88e400]: Jangan berikan detail bank atau kartu kredit kamu saat mengirimkan lamaran kerja.
+            - link "Pelajari cara melindungi diri kamu" [ref=f88e402] [cursor=pointer]:
+              - /url: /id/security-hub#protect-yourself-online
+            - button "Laporkan iklan lowongan ini" [ref=f88e408] [cursor=pointer]:
+              - text: Laporkan iklan lowongan ini
+              - generic [aria-hidden] [ref=f88e409]: ⁠
+        - generic [ref=f88e419] [cursor=pointer]
+        - generic [ref=f88e440]:
+          - generic [ref=f88e441]: Temukan karier Anda di Saran Karier
+          - generic [ref=f88e442]: Bergabunglah dengan jutaan pencari kerja di seluruh dunia menggunakan alat dan wawasan pembentukan karier kami.
+          - list [ref=f88e443]:
+            - listitem [ref=f88e444]:
+              - text: •
+              - generic [ref=f88e445]: Lakukan riset terkait gaji dan tren pekerjaan
+            - listitem [ref=f88e446]:
+              - text: •
+              - generic [ref=f88e447]: Akses alat, templat, dan artikel gratis yang membantu Anda tampak lebih menonjol
+            - listitem [ref=f88e448]:
+              - text: •
+              - generic [ref=f88e449]: Temukan jalur menuju beragam pilihan karier
+          - link "Jelajahi Saran Karier arrow-right" [ref=f88e450] [cursor=pointer]:
+            - /url: https://id.jobstreet.com/id/career-advice?utm_campaign=LMIS_Web&utm_source=JobStreet&utm_medium=LMIS&utm_content=job-details
+            - generic [ref=f88e451]: Jelajahi Saran Karier
+            - img "arrow-right" [ref=f88e452]
+  - contentinfo [ref=f88e454]:
+    - generic [ref=f88e456]:
+      - generic [ref=f88e459]:
+        - generic [ref=f88e461]:
+          - generic [ref=f88e463]:
+            - generic [ref=f88e464]: Pencari kerja
+            - list [ref=f88e465]:
+              - listitem [ref=f88e466]:
+                - link "Cari lowongan" [ref=f88e467] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f88e470]:
+                - link "Lihat profil" [ref=f88e471] [cursor=pointer]:
+                  - /url: /id/profile/me
+              - listitem [ref=f88e474]:
+                - link "Cari profil" [ref=f88e475] [cursor=pointer]:
+                  - /url: /id/profiles/search?tracking=ILC-profile-search-footer
+              - listitem [ref=f88e478]:
+                - link "Pencarian tersimpan" [ref=f88e479] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-searches
+              - listitem [ref=f88e482]:
+                - link "Lowongan tersimpan" [ref=f88e483] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-jobs
+              - listitem [ref=f88e486]:
+                - link "Lamaran kerja" [ref=f88e487] [cursor=pointer]:
+                  - /url: /id/my-activity/applied-jobs
+              - listitem [ref=f88e490]:
+                - link "Sumber daya karir" [ref=f88e491] [cursor=pointer]:
+                  - /url: /id/career-advice
+              - listitem [ref=f88e494]:
+                - link "Jelajahi karier" [ref=f88e495] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-careers
+              - listitem [ref=f88e498]:
+                - link "Jelajahi gaji" [ref=f88e499] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-salaries
+              - listitem [ref=f88e502]:
+                - link "Perusahaan" [ref=f88e503] [cursor=pointer]:
+                  - /url: /id/companies
+              - listitem [ref=f88e506]:
+                - button "Unduh aplikasi" [ref=f88e511] [cursor=pointer]
+          - generic [ref=f88e520]:
+            - generic [ref=f88e521]: Perusahaan
+            - list [ref=f88e522]:
+              - listitem [ref=f88e523]:
+                - link "Daftar gratis" [ref=f88e524] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f88e527]:
+                - link "Pasang iklan lowongan kerja" [ref=f88e528] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f88e531]:
+                - link "Produk & harga" [ref=f88e532] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/products/jobads
+              - listitem [ref=f88e535]:
+                - link "Layanan pelanggan" [ref=f88e536] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/contactus
+              - listitem [ref=f88e539]:
+                - link "Saran perekrutan" [ref=f88e540] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/hiring-advice
+              - listitem [ref=f88e543]:
+                - link "Wawasan pasar" [ref=f88e544] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/market-insights
+              - listitem [ref=f88e547]:
+                - link "Mitra perangkat lunak perekrutan" [ref=f88e548] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/partners/connect-with-seek
+        - generic [ref=f88e553]:
+          - generic [ref=f88e555]:
+            - generic [ref=f88e556]: Tentang kami
+            - list [ref=f88e557]:
+              - listitem [ref=f88e558]:
+                - link "Tentang kami" [ref=f88e559] [cursor=pointer]:
+                  - /url: /id/about
+              - listitem [ref=f88e562]:
+                - link "Ruang berita" [ref=f88e563] [cursor=pointer]:
+                  - /url: /id/about/news
+              - listitem [ref=f88e566]:
+                - link "Investor" [ref=f88e567] [cursor=pointer]:
+                  - /url: https://au.seek.com/about/investors
+              - listitem [ref=f88e570]:
+                - link "Karir" [ref=f88e571] [cursor=pointer]:
+                  - /url: /id/careers
+              - listitem [ref=f88e574]:
+                - button "Mitra internasional" [ref=f88e579] [cursor=pointer]
+              - listitem [ref=f88e587]:
+                - button "Layanan mitra" [ref=f88e592] [cursor=pointer]
+          - generic [ref=f88e601]:
+            - generic [ref=f88e602]: Kontak
+            - list [ref=f88e603]:
+              - listitem [ref=f88e604]:
+                - link "Pusat bantuan" [ref=f88e605] [cursor=pointer]:
+                  - /url: https://help.id.jobstreet.com/id/s/?language=in
+              - listitem [ref=f88e608]:
+                - link "Hubungi kami" [ref=f88e609] [cursor=pointer]:
+                  - /url: /id/contact-us
+              - listitem [ref=f88e612]:
+                - link "Blog produk & teknologi" [ref=f88e613] [cursor=pointer]:
+                  - /url: https://medium.com/seek-blog
+              - listitem [ref=f88e616]:
+                - button "Media sosial" [ref=f88e621] [cursor=pointer]
+      - generic [ref=f88e631]:
+        - button "Lokasi" [ref=f88e635] [cursor=pointer]:
+          - generic [ref=f88e636]: Indonesia
+        - generic [ref=f88e649]:
+          - generic [ref=f88e650]:
+            - link "Persyaratan & ketentuan" [ref=f88e652] [cursor=pointer]:
+              - /url: /id/terms
+            - link "Keamanan" [ref=f88e656] [cursor=pointer]:
+              - /url: /id/security-hub
+            - link "Privasi" [ref=f88e660] [cursor=pointer]:
+              - /url: /id/my-privacy
+          - generic [ref=f88e663]: Hak cipta © 2026 Jobstreet

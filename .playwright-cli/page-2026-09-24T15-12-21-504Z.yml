@@ -1,0 +1,458 @@
+- generic [ref=f50e18]:
+  - link "%%%Skip to content" [ref=f50e19] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f50e20]:
+    - banner [ref=f50e22]:
+      - generic [ref=f50e26]:
+        - generic [ref=f50e27]:
+          - link "Jobstreet" [ref=f50e29] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f50e37]:
+            - link "Cari lowongan" [ref=f50e39] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f50e44] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f50e49] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f50e54] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f50e58]:
+          - button "Bahasa" [ref=f50e61] [cursor=pointer]
+          - button "Profile Avatar" [ref=f50e81] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f50e94] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f50e1035]:
+      - generic [ref=f50e1041]:
+        - heading "Langkah yang tepat, Lukman" [level=1] [ref=f50e1061]
+        - generic [ref=f50e1062]: Lamaranmu telah dikirim ke PT Datra Internusa
+      - generic [ref=f50e1065]:
+        - generic [ref=f50e1067]:
+          - heading "Kamu mungkin juga suka..." [level=3] [ref=f50e1068]
+          - generic [ref=f50e1069]:
+            - generic [ref=f50e1073]:
+              - generic [ref=f50e1074]:
+                - heading [level=4] [ref=f50e1075]:
+                  - link "AI Engineer" [ref=f50e1077] [cursor=pointer]:
+                    - /url: /id/job/94337382?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                - generic [ref=f50e1078]: PT Graha Karya Informasi
+              - generic "Kandidat yang sangat kuat" [ref=f50e1079]
+              - generic [ref=f50e1082]:
+                - generic [ref=f50e1083]: Jakarta Pusat, Jakarta Raya
+                - generic [ref=f50e1084]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+              - generic [ref=f50e1086]: Design, build, and maintain data pipelines from multiple data sources. Document data architecture, AI models, and development processes
+              - generic [ref=f50e1087]: 21 hari yang lalu
+            - generic [ref=f50e1090]:
+              - img "advertiser logo" [ref=f50e1091]
+              - generic [ref=f50e1092]:
+                - generic [ref=f50e1093]:
+                  - heading [level=4] [ref=f50e1094]:
+                    - link "AI Engineer" [ref=f50e1096] [cursor=pointer]:
+                      - /url: /id/job/94338686?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1097]: PT Kolink Network Solutions
+                - generic "Kandidat yang sangat kuat" [ref=f50e1098]
+                - generic [ref=f50e1101]:
+                  - generic [ref=f50e1102]: Jakarta Utara, Jakarta Raya
+                  - generic [ref=f50e1103]: Teknik Sistem (Teknik)
+                - generic [ref=f50e1105]: We are looking for an *AI Engineer* who is passionate about building and implementing AI solutions into real-world products and business processes.
+                - generic [ref=f50e1106]: 23 hari yang lalu
+            - generic [ref=f50e1109]:
+              - img "advertiser logo" [ref=f50e1110]
+              - generic [ref=f50e1111]:
+                - generic [ref=f50e1112]:
+                  - heading [level=4] [ref=f50e1113]:
+                    - link "AI AUTOMATION & CRM SPECIALIST" [ref=f50e1115] [cursor=pointer]:
+                      - /url: /id/job/94386978?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1116]: PT RACHMAT CAHAYASAKTI
+                - generic [ref=f50e1117]:
+                  - generic [ref=f50e1118]: Jakarta Barat, Jakarta Raya
+                  - generic [ref=f50e1119]: Rp 6.000.000 – Rp 8.000.000 per month
+                  - generic [ref=f50e1121]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - list [ref=f50e1123]:
+                  - listitem [ref=f50e1124]:
+                    - generic [ref=f50e1128]: Competitive remuneration packages commensurate with experience & qualifications
+                  - listitem [ref=f50e1130]:
+                    - generic [ref=f50e1134]: Collaborative and inclusive work environment
+                  - listitem [ref=f50e1136]:
+                    - generic [ref=f50e1140]: Provide a comprehensive benefits package designed to support you
+                - generic [ref=f50e1142]: Transform businesses with AI automation & CRM solutions. Competitive pay, professional development & flexible work.
+                - generic [ref=f50e1143]: 21 hari yang lalu
+            - generic [ref=f50e1146]:
+              - img "advertiser logo" [ref=f50e1147]
+              - generic [ref=f50e1148]:
+                - generic [ref=f50e1149]:
+                  - heading [level=4] [ref=f50e1150]:
+                    - link "Applied AI / Full-Stack AI Engineer (Mandarin / English Speaker)" [ref=f50e1152] [cursor=pointer]:
+                      - /url: /id/job/94261469?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1153]: HITHINK TECHNOLOGY INDONESIA
+                - generic "Kandidat yang sangat kuat" [ref=f50e1154]
+                - generic [ref=f50e1157]:
+                  - generic [ref=f50e1158]: Jakarta Selatan, Jakarta Raya
+                  - generic [ref=f50e1159]: Rp 8.000.000 – Rp 12.000.000 per month
+                  - generic [ref=f50e1161]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - list [ref=f50e1163]:
+                  - listitem [ref=f50e1164]:
+                    - generic [ref=f50e1168]: New opportunities in Indonesia market with potential career path goal.
+                  - listitem [ref=f50e1170]:
+                    - generic [ref=f50e1174]: South Jakarta CBD area
+                  - listitem [ref=f50e1176]:
+                    - generic [ref=f50e1180]: Multinational Company (PMA)
+                - generic [ref=f50e1182]: Fullstack AI Engineer in dynamic tech firm - gain valuable experience, collaborate with cross-functional teams.
+                - generic [ref=f50e1183]: 27 hari yang lalu
+            - generic [ref=f50e1186]:
+              - img "advertiser logo" [ref=f50e1187]
+              - generic [ref=f50e1188]:
+                - generic [ref=f50e1189]:
+                  - heading [level=4] [ref=f50e1190]:
+                    - link "AI IMPLEMENTATION SPECIALIST" [ref=f50e1192] [cursor=pointer]:
+                      - /url: /id/job/94583595?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1193]: PT Trimitra Putra Mandiri
+                - generic "Kandidat yang sangat kuat" [ref=f50e1194]
+                - generic [ref=f50e1197]:
+                  - generic [ref=f50e1198]: Jakarta Selatan, Jakarta Raya
+                  - generic [ref=f50e1199]: Arsitek (Teknologi Informasi & Komunikasi)
+                - list [ref=f50e1201]:
+                  - listitem [ref=f50e1202]:
+                    - generic [ref=f50e1206]: AI Expertise & Innovation
+                  - listitem [ref=f50e1208]:
+                    - generic [ref=f50e1212]: Business Process Optimization
+                  - listitem [ref=f50e1214]:
+                    - generic [ref=f50e1218]: AI-Driven Productivity
+                - generic [ref=f50e1220]: Identify, implement, and optimize AI solutions and workflows to improve business efficiency, productivity, and work quality
+                - generic [ref=f50e1221]: 13 hari yang lalu
+            - generic [ref=f50e1224]:
+              - img "advertiser logo" [ref=f50e1225]
+              - generic [ref=f50e1226]:
+                - generic [ref=f50e1227]:
+                  - heading [level=4] [ref=f50e1228]:
+                    - link "Ai Specialist (Dept. Marketing & Operational)" [ref=f50e1230] [cursor=pointer]:
+                      - /url: /id/job/94456896?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1231]: ZAP Clinic (PT. Zulu Alpha Papa)
+                - generic [ref=f50e1232]:
+                  - generic [ref=f50e1233]: Jakarta Selatan, Jakarta Raya
+                  - generic [ref=f50e1234]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - list [ref=f50e1236]:
+                  - listitem [ref=f50e1237]:
+                    - generic [ref=f50e1241]: Competitive salary and attractive incentive scheme.
+                  - listitem [ref=f50e1243]:
+                    - generic [ref=f50e1247]: Professional training and career development opportunities.
+                  - listitem [ref=f50e1249]:
+                    - generic [ref=f50e1253]: Employee Gathering
+                - generic [ref=f50e1255]: Drive AI adoption and implementation across Marketing and Operations at ZAP Group.
+                - generic [ref=f50e1256]: 17 hari yang lalu
+            - generic [ref=f50e1259]:
+              - img "advertiser logo" [ref=f50e1260]
+              - generic [ref=f50e1261]:
+                - generic [ref=f50e1262]:
+                  - heading [level=4] [ref=f50e1263]:
+                    - link "Middle AI Engineer" [ref=f50e1265] [cursor=pointer]:
+                      - /url: /id/job/94429217?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1266]: PT Fata Organa Solusi
+                - generic "Kandidat yang sangat kuat" [ref=f50e1267]
+                - generic [ref=f50e1270]:
+                  - generic [ref=f50e1271]: Banten
+                  - generic [ref=f50e1272]: Rp 10.000.000 – Rp 15.000.000 per month
+                  - generic [ref=f50e1274]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1276]: Build production LLM apps and ML pipelines at a CAC Holding Japan subsidiary. 3+ yrs exp, English fluency, hands-on with modern AI stack.
+                - generic [ref=f50e1277]: 20 hari yang lalu
+            - generic [ref=f50e1280]:
+              - img "advertiser logo" [ref=f50e1281]
+              - generic [ref=f50e1282]:
+                - generic [ref=f50e1283]:
+                  - heading [level=4] [ref=f50e1284]:
+                    - link "Data Science (Machine Learning) for Paques" [ref=f50e1286] [cursor=pointer]:
+                      - /url: /id/job/94386972?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1287]: PT. Lintas Teknologi Indonesia
+                - generic "Anda kandidat kuat" [ref=f50e1288]
+                - generic [ref=f50e1291]:
+                  - generic [ref=f50e1292]: Jakarta Raya
+                  - generic [ref=f50e1293]: Pengembangan & Administrasi Database (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1295]: Design and deploy scalable machine learning models supporting executive decision-making.
+                - generic [ref=f50e1296]: 21 hari yang lalu
+            - generic [ref=f50e1299]:
+              - img "advertiser logo" [ref=f50e1300]
+              - generic [ref=f50e1301]:
+                - generic [ref=f50e1302]:
+                  - heading [level=4] [ref=f50e1303]:
+                    - link "AI Engineer Lead" [ref=f50e1305] [cursor=pointer]:
+                      - /url: /id/job/94423663?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1306]: AGRO BOGA UTAMA GROUP
+                - generic "Anda kandidat kuat" [ref=f50e1307]
+                - generic [ref=f50e1310]:
+                  - generic [ref=f50e1311]: Jakarta Selatan, Jakarta Raya
+                  - generic [ref=f50e1312]: Teknik – Perangkat Lunak (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1314]: Posisi ini akan memimpin pengembangan solusi AI untuk meningkatkan efisiensi dan produktivitas. Berkolaborasi dengan tim ERP dan berbagai divisi.
+                - generic [ref=f50e1315]: 20 hari yang lalu
+            - generic [ref=f50e1319]:
+              - generic [ref=f50e1320]:
+                - heading [level=4] [ref=f50e1321]:
+                  - link "AI Implementation Engineer" [ref=f50e1323] [cursor=pointer]:
+                    - /url: /id/job/94339530?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                - generic [ref=f50e1324]: Private Advertiser
+              - generic "Kandidat yang sangat kuat" [ref=f50e1325]
+              - generic [ref=f50e1328]:
+                - generic [ref=f50e1329]: Jakarta Timur, Jakarta Raya
+                - generic [ref=f50e1330]: Teknik – Perangkat Lunak (Teknologi Informasi & Komunikasi)
+              - generic [ref=f50e1332]: Transforming how organizations deploy artificial intelligence to solve complex operational and business challenges.
+              - generic [ref=f50e1333]: 23 hari yang lalu
+            - generic [ref=f50e1336]:
+              - img "advertiser logo" [ref=f50e1337]
+              - generic [ref=f50e1338]:
+                - generic [ref=f50e1339]:
+                  - heading [level=4] [ref=f50e1340]:
+                    - link "Specialist, AI Automation Transformation & System" [ref=f50e1342] [cursor=pointer]:
+                      - /url: /id/job/94394027?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1343]: ASIA PULP AND PAPER
+                - generic [ref=f50e1344]:
+                  - generic [ref=f50e1345]: Karawang, Jawa Barat
+                  - generic [ref=f50e1346]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1348]: Seeking a highly skilled AI Automation & Systems Specialist to design and implement automation to our Digital Transformation within our organization.
+                - generic [ref=f50e1349]: 21 hari yang lalu
+            - generic [ref=f50e1352]:
+              - img "advertiser logo" [ref=f50e1353]
+              - generic [ref=f50e1354]:
+                - generic [ref=f50e1355]:
+                  - heading [level=4] [ref=f50e1356]:
+                    - link "System Engineer (AI/ML)" [ref=f50e1358] [cursor=pointer]:
+                      - /url: /id/job/94773423?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1359]: Sibernetik Integra Data
+                - generic "Kandidat yang sangat kuat" [ref=f50e1360]
+                - generic [ref=f50e1363]:
+                  - generic [ref=f50e1364]: Jakarta Raya
+                  - generic [ref=f50e1365]: Administrasi Jaringan & Sistem (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1367]: "Drive IT/Data Ops: infra, DB, API, CI/CD, Kubernetes. Innovate, optimize & automate systems. Fresh grads welcome, 24/7 shift."
+                - generic [ref=f50e1368]: 3 hari yang lalu
+            - generic [ref=f50e1371]:
+              - img "advertiser logo" [ref=f50e1372]
+              - generic [ref=f50e1373]:
+                - generic [ref=f50e1374]:
+                  - heading [level=4] [ref=f50e1375]:
+                    - link "AI & Backend Developer" [ref=f50e1377] [cursor=pointer]:
+                      - /url: /id/job/94294308?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1378]: Rintisan Teknologi Waralaba
+                - generic "Kandidat yang sangat kuat" [ref=f50e1379]
+                - generic [ref=f50e1382]:
+                  - generic [ref=f50e1383]: Jakarta Raya
+                  - generic [ref=f50e1384]: Rp 7.000.000 – Rp 10.000.000 per month
+                  - generic [ref=f50e1386]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1388]: Backend engineer to design and maintain scalable systems and integrate AI-driven features across Rintisan platforms.
+                - generic [ref=f50e1389]: 25 hari yang lalu
+            - generic [ref=f50e1392]:
+              - img "advertiser logo" [ref=f50e1393]
+              - generic [ref=f50e1394]:
+                - generic [ref=f50e1395]:
+                  - heading [level=4] [ref=f50e1396]:
+                    - link "AI Productivity & Enablement Specialist" [ref=f50e1398] [cursor=pointer]:
+                      - /url: /id/job/94600458?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1399]: PT Organik Sehat Alami
+                - generic "Kandidat yang sangat kuat" [ref=f50e1400]
+                - generic [ref=f50e1403]:
+                  - generic [ref=f50e1404]: Jakarta Selatan, Jakarta Raya
+                  - generic [ref=f50e1405]: Manajemen Program & Proyek (Teknologi Informasi & Komunikasi)
+                - list [ref=f50e1407]:
+                  - listitem [ref=f50e1408]:
+                    - generic [ref=f50e1412]: Punya ruang besar untuk eksperimen, prototype, dan implementasi AI.
+                  - listitem [ref=f50e1414]:
+                    - generic [ref=f50e1418]: Learning curve tinggi untuk berkembang di bidang AI & digital transformation.
+                  - listitem [ref=f50e1420]:
+                    - generic [ref=f50e1424]: Exposure langsung ke decision maker dan prioritas strategis perusahaan.
+                - generic [ref=f50e1426]: Pimpin transformasi digital dengan AI. Gaji kompetitif, career growth, dan lingkungan inovatif menanti Anda.
+                - generic [ref=f50e1427]: 10 hari yang lalu
+            - generic [ref=f50e1430]:
+              - img "advertiser logo" [ref=f50e1431]
+              - generic [ref=f50e1432]:
+                - generic [ref=f50e1433]:
+                  - heading [level=4] [ref=f50e1434]:
+                    - link "Artificial Intelligence (AI) Technical Lead" [ref=f50e1436] [cursor=pointer]:
+                      - /url: /id/job/94635059?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1437]: PT DSSE Energi Mas Utama
+                - generic "Anda kandidat kuat" [ref=f50e1438]
+                - generic [ref=f50e1441]:
+                  - generic [ref=f50e1442]: Jakarta Pusat, Jakarta Raya
+                  - generic [ref=f50e1443]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1445]: AI Technical Lead to design, develop, and implement AI/ML solutions including Generative AI and LLM-based applications.
+                - generic [ref=f50e1446]: 9 hari yang lalu
+            - generic [ref=f50e1449]:
+              - img "advertiser logo" [ref=f50e1450]
+              - generic [ref=f50e1451]:
+                - generic [ref=f50e1452]:
+                  - heading [level=4] [ref=f50e1453]:
+                    - link "Data Scientist" [ref=f50e1455] [cursor=pointer]:
+                      - /url: /id/job/94210180?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1456]: PT Sepulsa Teknologi Indonesia (Jakarta)
+                - generic "Anda kandidat kuat" [ref=f50e1457]
+                - generic [ref=f50e1460]:
+                  - generic [ref=f50e1461]: Jakarta Selatan, Jakarta Raya
+                  - generic [ref=f50e1462]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1464]: We are looking for a proactive, curious, and business-oriented Data Scientist to join our Alternative Credit Scoring team.
+                - generic [ref=f50e1465]: 29 hari yang lalu
+            - generic [ref=f50e1468]:
+              - img "advertiser logo" [ref=f50e1469]
+              - generic [ref=f50e1470]:
+                - generic [ref=f50e1471]:
+                  - heading [level=4] [ref=f50e1472]:
+                    - link "Fullstack Engineer" [ref=f50e1474] [cursor=pointer]:
+                      - /url: /id/job/94399749?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1475]: MEDITAP
+                - generic [ref=f50e1476]:
+                  - generic [ref=f50e1477]: Tangerang, Banten
+                  - generic [ref=f50e1478]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1480]: KUALIFIKASI Bachelor's Degree in Computer Science / Computer Engineering or equivalent work min. 2 years active software development excellent...
+                - generic [ref=f50e1481]: 21 hari yang lalu
+            - generic [ref=f50e1484]:
+              - img "advertiser logo" [ref=f50e1485]
+              - generic [ref=f50e1486]:
+                - generic [ref=f50e1487]:
+                  - heading [level=4] [ref=f50e1488]:
+                    - link "Full Stack Developer" [ref=f50e1490] [cursor=pointer]:
+                      - /url: /id/job/94467674?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1491]: PT TSM Technologies
+                - generic [ref=f50e1492]:
+                  - generic [ref=f50e1493]: Jakarta Barat, Jakarta Raya
+                  - generic [ref=f50e1494]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1496]: for existing products and support the development of future products, ensuring project continuity, timely delivery, and stable software dev activities
+                - generic [ref=f50e1497]: 17 hari yang lalu
+            - generic [ref=f50e1500]:
+              - img "advertiser logo" [ref=f50e1501]
+              - generic [ref=f50e1502]:
+                - generic [ref=f50e1503]:
+                  - heading [level=4] [ref=f50e1504]:
+                    - link "Programmer (NextJS & Python)" [ref=f50e1506] [cursor=pointer]:
+                      - /url: /id/job/94383741?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1507]: PT Injani Systems
+                - generic [ref=f50e1508]:
+                  - generic [ref=f50e1509]: Jakarta Pusat, Jakarta Raya
+                  - generic [ref=f50e1510]: Rp 10.000.000 – Rp 12.000.000 per month
+                  - generic [ref=f50e1512]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - list [ref=f50e1514]:
+                  - listitem [ref=f50e1515]:
+                    - generic [ref=f50e1519]: Competitive Salary & Benefits
+                  - listitem [ref=f50e1521]:
+                    - generic [ref=f50e1525]: Bonus Annually
+                - generic [ref=f50e1527]: Programmer Berpengalaman (NextJS & Python)
+                - generic [ref=f50e1528]: 21 hari yang lalu
+            - generic [ref=f50e1531]:
+              - img "advertiser logo" [ref=f50e1532]
+              - generic [ref=f50e1533]:
+                - generic [ref=f50e1534]:
+                  - heading [level=4] [ref=f50e1535]:
+                    - link "Senior Software Engineer" [ref=f50e1537] [cursor=pointer]:
+                      - /url: /id/job/94515219?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1538]: PT Fundo Sukses Bersama
+                - generic "Anda kandidat kuat" [ref=f50e1539]
+                - generic [ref=f50e1542]:
+                  - generic [ref=f50e1543]: Jakarta Barat, Jakarta Raya
+                  - generic [ref=f50e1544]: Rp 8.000.000 – Rp 12.000.000 per month
+                  - generic [ref=f50e1546]: Teknik – Perangkat Lunak (Teknologi Informasi & Komunikasi)
+                - list [ref=f50e1548]:
+                  - listitem [ref=f50e1549]:
+                    - generic [ref=f50e1553]: Own High-Impact Systems — Lead scalable, reliable backend architecture.
+                  - listitem [ref=f50e1555]:
+                    - generic [ref=f50e1559]: AI-Powered Engineering — Leverage cutting-edge AI tools to build faster.
+                  - listitem [ref=f50e1561]:
+                    - generic [ref=f50e1565]: Lead & Mentor — Shape engineering practices and grow the next generation.
+                - generic [ref=f50e1567]: Own scalable backend systems, solve complex architecture challenges, and use AI-assisted tools to build high-quality production software.
+                - generic [ref=f50e1568]: 15 hari yang lalu
+            - generic [ref=f50e1571]:
+              - img "advertiser logo" [ref=f50e1572]
+              - generic [ref=f50e1573]:
+                - generic [ref=f50e1574]:
+                  - heading [level=4] [ref=f50e1575]:
+                    - link "Fullstack Developer" [ref=f50e1577] [cursor=pointer]:
+                      - /url: /id/job/94396738?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1578]: PT Cashlez Worldwide Indonesia
+                - generic [ref=f50e1579]:
+                  - generic [ref=f50e1580]: Jakarta Pusat, Jakarta Raya
+                  - generic [ref=f50e1581]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1583]: Senior Full Stack Engineer building mission-critical payment systems with Spring Boot, Kotlin, TypeScript, and Express.
+                - generic [ref=f50e1584]: 21 hari yang lalu
+            - generic [ref=f50e1587]:
+              - img "advertiser logo" [ref=f50e1588]
+              - generic [ref=f50e1589]:
+                - generic [ref=f50e1590]:
+                  - heading [level=4] [ref=f50e1591]:
+                    - link "Software Developer" [ref=f50e1593] [cursor=pointer]:
+                      - /url: /id/job/94243134?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1594]: PT Swadharma Duta Data
+                - generic [ref=f50e1595]:
+                  - generic [ref=f50e1596]: Jakarta Raya
+                  - generic [ref=f50e1597]: Rp 6.500.000 – Rp 9.500.000 per month
+                  - generic [ref=f50e1599]: Developer/Programmer (Teknologi Informasi & Komunikasi)
+                - list [ref=f50e1601]:
+                  - listitem [ref=f50e1602]:
+                    - generic [ref=f50e1606]: Pengembangan Skill & Pendampingan Karier yang Berkelanjutan
+                  - listitem [ref=f50e1608]:
+                    - generic [ref=f50e1612]: Lingkungan kerja supportif dalam pengembangan SDM
+                  - listitem [ref=f50e1614]:
+                    - generic [ref=f50e1618]: Stabilitas dan reputasi perusahaan yang terpercaya
+                - generic [ref=f50e1620]: Software Developer untuk pengembangan solusi digital di sektor perbankan, .NET, Java Springboot, SQL, Oracle
+                - generic [ref=f50e1621]: 28 hari yang lalu
+            - generic [ref=f50e1624]:
+              - img "advertiser logo" [ref=f50e1625]
+              - generic [ref=f50e1626]:
+                - generic [ref=f50e1627]:
+                  - heading [level=4] [ref=f50e1628]:
+                    - link "Junior Data Engineer" [ref=f50e1630] [cursor=pointer]:
+                      - /url: /id/job/94228752?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1631]: PT Anggana Catur Prima
+                - generic [ref=f50e1632]:
+                  - generic [ref=f50e1633]: Jakarta Utara, Jakarta Raya
+                  - generic [ref=f50e1634]: Matematika, Statistik & Teknik Informasi (Sains & Teknologi)
+                - list [ref=f50e1636]:
+                  - listitem [ref=f50e1637]:
+                    - generic [ref=f50e1641]: Free Parking
+                  - listitem [ref=f50e1643]:
+                    - generic [ref=f50e1647]: Supportive & Collaborative Culture
+                  - listitem [ref=f50e1649]:
+                    - generic [ref=f50e1653]: Supportive Leadership & Mentorship
+                - generic [ref=f50e1655]: Jika Anda memiliki pengalaman SQL, Python, data lake, data warehouse, data mart. Mmeiliki pengalaman di FMCG atau distributor ayok bergabung.
+                - generic [ref=f50e1656]: 28 hari yang lalu
+            - generic [ref=f50e1659]:
+              - img "advertiser logo" [ref=f50e1660]
+              - generic [ref=f50e1661]:
+                - generic [ref=f50e1662]:
+                  - heading [level=4] [ref=f50e1663]:
+                    - link "Data Scientist" [ref=f50e1665] [cursor=pointer]:
+                      - /url: /id/job/94618702?token=1~8e8da970-ec1a-4944-8a46-53b9127092a0&ref=post-apply-recs
+                  - generic [ref=f50e1666]: PT Tera Data Indonusa, Tbk
+                - generic "Anda kandidat kuat" [ref=f50e1667]
+                - generic [ref=f50e1670]:
+                  - generic [ref=f50e1671]: Cakung, Jakarta Raya
+                  - generic [ref=f50e1672]: Analis Bisnis/Sistem (Teknologi Informasi & Komunikasi)
+                - generic [ref=f50e1674]: .
+                - generic [ref=f50e1675]: 10 hari yang lalu
+        - generic [ref=f50e1676]:
+          - heading "Jelajahi tautan ini" [level=4] [ref=f50e1677]
+          - generic [ref=f50e1678]:
+            - generic [ref=f50e1679]:
+              - text: Jangan sampai ketinggalan dengan
+              - link "Lowongan yang telah disimpan" [ref=f50e1680] [cursor=pointer]:
+                - /url: /id/my-activity/saved-jobs
+              - text: kamu
+            - generic [ref=f50e1681]:
+              - text: Kembali ke
+              - button "Hasil Pencarian" [ref=f50e1682] [cursor=pointer]
+            - generic [ref=f50e1683]:
+              - text: Lacak status di
+              - link "Pekerjaan Dilamar" [ref=f50e1684] [cursor=pointer]:
+                - /url: /id/my-activity/applied-jobs
+        - generic [ref=f50e1687]:
+          - generic [ref=f50e1688]: Temukan karier Anda di Saran Karier
+          - generic [ref=f50e1689]: Bergabunglah dengan jutaan pencari kerja di seluruh dunia menggunakan alat dan wawasan pembentukan karier kami.
+          - list [ref=f50e1690]:
+            - listitem [ref=f50e1691]:
+              - text: •
+              - generic [ref=f50e1692]: Lakukan riset terkait gaji dan tren pekerjaan
+            - listitem [ref=f50e1693]:
+              - text: •
+              - generic [ref=f50e1694]: Akses alat, templat, dan artikel gratis yang membantu Anda tampak lebih menonjol
+            - listitem [ref=f50e1695]:
+              - text: •
+              - generic [ref=f50e1696]: Temukan jalur menuju beragam pilihan karier
+          - link "Jelajahi Saran Karier arrow-right" [ref=f50e1697] [cursor=pointer]:
+            - /url: https://id.jobstreet.com/id/career-advice?utm_campaign=LMIS_Web&utm_source=JobStreet&utm_medium=LMIS&utm_content=job-apply-success
+            - generic [ref=f50e1698]: Jelajahi Saran Karier
+            - img "arrow-right" [ref=f50e1699]
+  - contentinfo [ref=f50e105]:
+    - generic [ref=f50e109] [cursor=pointer]:
+      - generic [ref=f50e110]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f50e115]: Telusuri situs

@@ -1,0 +1,145 @@
+- generic [ref=f103e3]:
+  - link "%%%Skip to content" [ref=f103e4] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f103e5]:
+    - banner [ref=f103e7]:
+      - generic [ref=f103e11]:
+        - generic [ref=f103e12]:
+          - link "Jobstreet" [ref=f103e14] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f103e22]:
+            - link "Cari lowongan" [ref=f103e24] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f103e29] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f103e34] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f103e39] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f103e43]:
+          - button "Bahasa" [ref=f103e46] [cursor=pointer]
+          - button "Profile Avatar" [ref=f103e66] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f103e79] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f103e83]:
+      - generic [ref=f103e87]:
+        - img "PT Karisma Zona Kreatifku" [ref=f103e89]
+        - generic [ref=f103e90]:
+          - generic [ref=f103e91]: Melamar untuk
+          - heading "AI Engineer" [level=1] [ref=f103e92]
+          - generic [ref=f103e93]: PT Karisma Zona Kreatifku
+          - button "Lihat deskripsi pekerjaan" [ref=f103e95] [cursor=pointer]
+      - navigation "Progress bar" [ref=f103e97]:
+        - list [ref=f103e98]:
+          - listitem [ref=f103e99]:
+            - button "Pilih dokumen" [ref=f103e100]
+          - listitem [ref=f103e112]:
+            - button "Jawab pertanyaan perusahaan"
+          - listitem [ref=f103e113]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f103e114]:
+            - button "Review dan kirim"
+        - progressbar
+      - generic [ref=f103e116]:
+        - generic [ref=f103e120]:
+          - generic [ref=f103e122]:
+            - button "Profile photo options" [ref=f103e127] [cursor=pointer]:
+              - generic [ref=f103e129]:
+                - generic:
+                  - heading [level=3]
+            - generic [ref=f103e133]:
+              - heading [level=4] [ref=f103e135]:
+                - text: Lukman Zakaria
+                - generic "Identitas terverifikasi" [ref=f103e136]
+              - generic [ref=f103e139]:
+                - generic [ref=f103e140]: Jakarta Selatan, Jakarta Raya
+                - generic [ref=f103e148]: +62 85785255577
+                - generic [ref=f103e155]: lukmanzakaria04@gmail.com
+          - button "Edit detail pribadi" [ref=f103e164] [cursor=pointer]
+        - generic [ref=f103e169]:
+          - generic [ref=f103e171]:
+            - heading "Resumé" [level=3] [ref=f103e172]
+            - generic [ref=f103e174]:
+              - generic [ref=f103e176]:
+                - generic "Utama" [ref=f103e178]
+                - generic [ref=f103e181]:
+                  - radiogroup "Resumé" [ref=f103e183]:
+                    - generic [ref=f103e188]:
+                      - radio "CV_Eng.pdf" [checked] [ref=f103e189] [cursor=pointer]
+                      - strong [ref=f103e195] [cursor=pointer]: CV_Eng.pdf
+                  - button "Options" [ref=f103e201] [cursor=pointer]
+                - generic [ref=f103e208]:
+                  - generic [ref=f103e209]: 12/8/26
+                  - generic [ref=f103e212]:
+                    - generic [ref=f103e214]:
+                      - checkbox "Jadikan CV utama" [checked] [disabled] [ref=f103e215]
+                      - generic [ref=f103e217]: Jadikan CV utama
+                    - generic "Help" [ref=f103e221]
+              - generic [ref=f103e226]:
+                - generic [ref=f103e227]:
+                  - radiogroup "Resumé" [ref=f103e229]:
+                    - generic [ref=f103e234]:
+                      - radio "CV.pdf" [ref=f103e235] [cursor=pointer]
+                      - strong [ref=f103e241] [cursor=pointer]: CV.pdf
+                  - button "Options" [ref=f103e247] [cursor=pointer]
+                - generic [ref=f103e254]: 10/8/26
+              - generic [ref=f103e258]:
+                - generic [ref=f103e259]:
+                  - radiogroup "Resumé" [ref=f103e261]:
+                    - generic [ref=f103e266]:
+                      - radio "CV.pdf" [ref=f103e267] [cursor=pointer]
+                      - strong [ref=f103e273] [cursor=pointer]: CV.pdf
+                  - button "Options" [ref=f103e279] [cursor=pointer]
+                - generic [ref=f103e286]: 7/5/26
+              - generic [ref=f103e290]:
+                - generic [ref=f103e291]:
+                  - radiogroup "Resumé" [ref=f103e293]:
+                    - generic [ref=f103e298]:
+                      - radio "Lukman Zakaria - Data Science - CV.pdf" [ref=f103e299] [cursor=pointer]
+                      - strong [ref=f103e305] [cursor=pointer]: Lukman Zakaria - Data Science - CV.pdf
+                  - button "Options" [ref=f103e311] [cursor=pointer]
+                - generic [ref=f103e318]: 14/8/25
+              - radiogroup "Resumé" [ref=f103e322]:
+                - generic [ref=f103e327]:
+                  - radio "Jangan sertakan resume" [ref=f103e328] [cursor=pointer]
+                  - generic [ref=f103e330]: Jangan sertakan resume
+          - generic [ref=f103e335]:
+            - button [ref=f103e337] [cursor=pointer]:
+              - generic [ref=f103e338]:
+                - generic:
+                  - generic:
+                    - generic [aria-hidden]: ⁠
+                    - text: Unggah
+            - generic [ref=f103e339]: "Jenis file yang diterima: .doc, .docx, .pdf, .txt, dan .rtf (batas 5MB)."
+        - generic [ref=f103e340]:
+          - heading "Surat lamaran" [level=3] [ref=f103e341]
+          - radiogroup "Surat lamaran" [ref=f103e342]:
+            - generic [ref=f103e345]:
+              - generic [ref=f103e347]:
+                - radio "Unggah surat lamaran" [ref=f103e348] [cursor=pointer]
+                - generic [ref=f103e350]: Unggah surat lamaran
+              - generic [ref=f103e355]:
+                - radio "Tulis surat lamaran" [checked] [ref=f103e356] [cursor=pointer]
+                - generic [ref=f103e358]:
+                  - generic [ref=f103e359]: Tulis surat lamaran
+                  - generic [ref=f103e363]:
+                    - generic [ref=f103e364]: Perkenalkan diri kamu dan jelaskan secara singkat mengapa kamu cocok untuk jabatan ini. Pertimbangkan keahlian, kualifikasi, dan pengalaman terkait kamu yang relevan.
+                    - textbox "Tulis surat lamaran" [ref=f103e369]: Dear Hiring Manager, I am applying for the Middle AI Engineer position at PT Fata Organa Solusi. I have three years of AI engineering experience across machine learning projects and production AI systems, including my current Machine Learning Engineer role at PT. Aneka Search Indonesia. My work includes developing a document-authentication model with more than 95% accuracy and deploying it through FastAPI, Docker, PostgreSQL and S3; building an enterprise RAG chatbot with a vector database, safety guardrails and a feedback loop; and creating AI-supported media processing and candidate-scoring services. I also implemented an AI orchestration chatbot that reduced HR assessment-preparation workload by 80%. In independent projects, I achieved 95% accuracy on a banking prediction model for 750,000 users and built more than 30 n8n workflows. This experience has given me practical work across model development, evaluation, API integration, deployment and operational improvement. I would be glad to bring my Python, PyTorch, LLM, RAG and automation experience to your team and help deliver reliable AI solutions with measurable business value. Best regards, Lukman Zakaria
+              - generic [ref=f103e371]:
+                - radio "Jangan sertakan surat lamaran" [ref=f103e372] [cursor=pointer]
+                - generic [ref=f103e374]: Jangan sertakan surat lamaran
+        - generic [ref=f103e379]:
+          - paragraph [ref=f103e380]: Jaga diri Anda. Jangan sertakan informasi sensitif dalam dokumen Anda.
+          - button "Selengkapnya tentang privasi dan penggunaan data" [ref=f103e383] [cursor=pointer]:
+            - text: Selengkapnya tentang privasi dan penggunaan data
+            - generic [aria-hidden] [ref=f103e384]: ⁠
+        - button [ref=f103e390] [cursor=pointer]:
+          - generic [ref=f103e391]:
+            - generic:
+              - generic:
+                - text: Lanjut
+                - generic [aria-hidden]: ⁠
+  - contentinfo [ref=f103e393]:
+    - generic [ref=f103e397] [cursor=pointer]:
+      - generic [ref=f103e398]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f103e403]: Telusuri situs

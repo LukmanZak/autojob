@@ -1,8 +1,10 @@
-"""Vision advisor - kirim screenshot ke AI (muse-spark) biar tau sesi & harus klik apa."""
+"""Vision advisor - simpan screenshot dan langkah Flow untuk pemeriksaan."""
 import pathlib, json, datetime, base64
 
+from src.config import PROJECT_ROOT
+
 def ensure_flow_session():
-    base = pathlib.Path("F:/alpha/images/flow")
+    base = PROJECT_ROOT / "images" / "flow"
     base.mkdir(parents=True, exist_ok=True)
     sess = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
     folder = base / sess

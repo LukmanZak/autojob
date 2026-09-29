@@ -1,0 +1,191 @@
+- generic [ref=f24e18]:
+  - link "%%%Skip to content" [ref=f24e19] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f24e20]:
+    - banner [ref=f24e22]:
+      - generic [ref=f24e26]:
+        - generic [ref=f24e27]:
+          - link "Jobstreet" [ref=f24e29] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f24e37]:
+            - link "Cari lowongan" [ref=f24e39] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f24e44] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f24e49] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f24e54] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f24e58]:
+          - button "Bahasa" [ref=f24e61] [cursor=pointer]
+          - button "Profile Avatar" [ref=f24e81] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f24e94] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f24e126]:
+      - generic [ref=f24e130]:
+        - img "PT Mitra Distribusi Utama" [ref=f24e132]
+        - generic [ref=f24e133]:
+          - generic [ref=f24e134]: Melamar untuk
+          - heading "AI Agent Developer / AI Automation Engineer" [level=1] [ref=f24e135]
+          - generic [ref=f24e136]: PT Mitra Distribusi Utama
+          - button "Lihat deskripsi pekerjaan" [ref=f24e138] [cursor=pointer]
+      - navigation "Progress bar" [ref=f24e140]:
+        - list [ref=f24e141]:
+          - listitem [ref=f24e142]:
+            - button "Pilih dokumen"
+          - listitem [ref=f24e155]:
+            - button "Jawab pertanyaan perusahaan" [ref=f24e451]
+          - listitem [ref=f24e156]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f24e157]:
+            - button "Review dan kirim"
+        - progressbar
+      - generic [ref=f24e465]:
+        - generic [ref=f24e466]:
+          - strong [ref=f24e471]: What's your expected monthly basic salary?
+          - combobox "What's your expected monthly basic salary?" [ref=f24e474]:
+            - option "Rp 1 million"
+            - option "Rp 1.5 million"
+            - option "Rp 2 million"
+            - option "Rp 2.5 million"
+            - option "Rp 3 million"
+            - option "Rp 3.5 million"
+            - option "Rp 4 million"
+            - option "Rp 4.5 million"
+            - option "Rp 5 million"
+            - option "Rp 5.5 million"
+            - option "Rp 6 million"
+            - option "Rp 7 million"
+            - option "Rp 8 million"
+            - option "Rp 9 million"
+            - option "Rp 10 million" [selected]
+            - option "Rp 15 million"
+            - option "Rp 20 million"
+            - option "Rp 25 million"
+            - option "Rp 30 million"
+            - option "Rp 40 million"
+            - option "Rp 60 million"
+            - option "Rp 80 million"
+            - option "Rp 100 million or more"
+        - generic [ref=f24e475]:
+          - strong [ref=f24e480]: Which of the following types of qualifications do you have?
+          - combobox "Which of the following types of qualifications do you have?" [ref=f24e483]:
+            - option "Elementary school (SD) or equivalent"
+            - option "SMP or equivalent"
+            - option "SMA/SMK or equivalent"
+            - option "Diploma 1"
+            - option "Diploma 2"
+            - option "Diploma 3"
+            - option "Diploma 4"
+            - option "Bachelor Degree (S1)" [selected]
+            - option "Professional Education Program"
+            - option "Masters Degree (S2)"
+            - option "Doctoral Degree (S3)"
+            - option "I have a qualification that is not listed here"
+        - generic [ref=f24e484]:
+          - strong [ref=f24e489]: How many years' experience do you have as an Automation Engineer?
+          - combobox "How many years' experience do you have as an Automation Engineer?" [ref=f24e492]:
+            - option "No experience"
+            - option "Less than 1 year"
+            - option "1 year"
+            - option "2 years"
+            - option "3 years" [selected]
+            - option "4 years"
+            - option "5 years"
+            - option "More than 5 years"
+        - generic [ref=f24e493]:
+          - strong [ref=f24e497]: Which of the following programming languages are you experienced in?
+          - generic [ref=f24e499]:
+            - checkbox ".NET" [ref=f24e500] [cursor=pointer]
+            - generic [ref=f24e502]: .NET
+          - generic [ref=f24e507]:
+            - checkbox "C" [ref=f24e508] [cursor=pointer]
+            - generic [ref=f24e510]: C
+          - generic [ref=f24e515]:
+            - checkbox "C#" [ref=f24e516] [cursor=pointer]
+            - generic [ref=f24e518]: C#
+          - generic [ref=f24e523]:
+            - checkbox "C++" [ref=f24e524] [cursor=pointer]
+            - generic [ref=f24e526]: C++
+          - generic [ref=f24e531]:
+            - checkbox "CSS" [ref=f24e532] [cursor=pointer]
+            - generic [ref=f24e534]: CSS
+          - generic [ref=f24e539]:
+            - checkbox "HTML" [ref=f24e540] [cursor=pointer]
+            - generic [ref=f24e542]: HTML
+          - generic [ref=f24e547]:
+            - checkbox "Java" [ref=f24e548] [cursor=pointer]
+            - generic [ref=f24e550]: Java
+          - generic [ref=f24e555]:
+            - checkbox "JavaScript" [ref=f24e556] [cursor=pointer]
+            - generic [ref=f24e558]: JavaScript
+          - generic [ref=f24e563]:
+            - checkbox "Objective-C" [ref=f24e564] [cursor=pointer]
+            - generic [ref=f24e566]: Objective-C
+          - generic [ref=f24e571]:
+            - checkbox "PHP" [ref=f24e572] [cursor=pointer]
+            - generic [ref=f24e574]: PHP
+          - generic [ref=f24e579]:
+            - checkbox "Python" [checked] [ref=f24e580] [cursor=pointer]
+            - generic [ref=f24e582]: Python
+          - generic [ref=f24e587]:
+            - checkbox "Ruby" [ref=f24e588] [cursor=pointer]
+            - generic [ref=f24e590]: Ruby
+          - generic [ref=f24e595]:
+            - checkbox "Swift" [ref=f24e596] [cursor=pointer]
+            - generic [ref=f24e598]: Swift
+          - generic [ref=f24e603]:
+            - checkbox "Visual Basic" [ref=f24e604] [cursor=pointer]
+            - generic [ref=f24e606]: Visual Basic
+          - generic [ref=f24e611]:
+            - checkbox "None of these" [ref=f24e612] [cursor=pointer]
+            - generic [ref=f24e614]: None of these
+        - generic [ref=f24e618]:
+          - strong [ref=f24e622]: Which of the following Relational Database Management Systems (RDBMS) are you experienced with?
+          - generic [ref=f24e624]:
+            - checkbox "PostgreSQL" [checked] [ref=f24e625] [cursor=pointer]
+            - generic [ref=f24e627]: PostgreSQL
+          - generic [ref=f24e632]:
+            - checkbox "Oracle" [ref=f24e633] [cursor=pointer]
+            - generic [ref=f24e635]: Oracle
+          - generic [ref=f24e640]:
+            - checkbox "DB2" [ref=f24e641] [cursor=pointer]
+            - generic [ref=f24e643]: DB2
+          - generic [ref=f24e648]:
+            - checkbox "SQLite" [ref=f24e649] [cursor=pointer]
+            - generic [ref=f24e651]: SQLite
+          - generic [ref=f24e656]:
+            - checkbox "Microsoft SQL" [ref=f24e657] [cursor=pointer]
+            - generic [ref=f24e659]: Microsoft SQL
+          - generic [ref=f24e664]:
+            - checkbox "MySQL" [ref=f24e665] [cursor=pointer]
+            - generic [ref=f24e667]: MySQL
+          - generic [ref=f24e672]:
+            - checkbox "Informix" [ref=f24e673] [cursor=pointer]
+            - generic [ref=f24e675]: Informix
+          - generic [ref=f24e680]:
+            - checkbox "Teradata" [ref=f24e681] [cursor=pointer]
+            - generic [ref=f24e683]: Teradata
+          - generic [ref=f24e688]:
+            - checkbox "Sybase" [ref=f24e689] [cursor=pointer]
+            - generic [ref=f24e691]: Sybase
+          - generic [ref=f24e696]:
+            - checkbox "None of these" [ref=f24e697] [cursor=pointer]
+            - generic [ref=f24e699]: None of these
+        - generic [ref=f24e703]:
+          - button [ref=f24e705] [cursor=pointer]:
+            - generic [ref=f24e706]:
+              - generic:
+                - generic:
+                  - text: Lanjut
+                  - generic [aria-hidden]: ⁠
+          - button [ref=f24e709] [cursor=pointer]:
+            - generic [ref=f24e710]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kembali
+  - contentinfo [ref=f24e105]:
+    - generic [ref=f24e109] [cursor=pointer]:
+      - generic [ref=f24e110]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f24e115]: Telusuri situs

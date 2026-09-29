@@ -1,0 +1,185 @@
+- generic [ref=f103e3]:
+  - link "%%%Skip to content" [ref=f103e4] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f103e5]:
+    - banner [ref=f103e7]:
+      - generic [ref=f103e11]:
+        - generic [ref=f103e12]:
+          - link "Jobstreet" [ref=f103e14] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f103e22]:
+            - link "Cari lowongan" [ref=f103e24] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f103e29] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f103e34] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f103e39] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f103e43]:
+          - button "Bahasa" [ref=f103e46] [cursor=pointer]
+          - button "Profile Avatar" [ref=f103e66] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f103e79] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f103e83]:
+      - generic [ref=f103e87]:
+        - img "PT Karisma Zona Kreatifku" [ref=f103e89]
+        - generic [ref=f103e90]:
+          - generic [ref=f103e91]: Melamar untuk
+          - heading "AI Engineer" [level=1] [ref=f103e92]
+          - generic [ref=f103e93]: PT Karisma Zona Kreatifku
+          - button "Lihat deskripsi pekerjaan" [ref=f103e95] [cursor=pointer]
+      - navigation "Progress bar" [ref=f103e97]:
+        - list [ref=f103e98]:
+          - listitem [ref=f103e99]:
+            - button "Pilih dokumen"
+          - listitem [ref=f103e112]:
+            - button "Jawab pertanyaan perusahaan" [ref=f103e420]
+          - listitem [ref=f103e113]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f103e114]:
+            - button "Review dan kirim"
+        - progressbar
+      - generic [ref=f103e434]:
+        - generic [ref=f103e435]:
+          - strong [ref=f103e440]: Pernyataan mana di bawah ini yang paling mendeskripsikan hakmu bekerja di Indonesia?
+          - combobox "Pernyataan mana di bawah ini yang paling mendeskripsikan hakmu bekerja di Indonesia?" [ref=f103e443]:
+            - option "Saya adalah warga negara Indonesia" [selected]
+            - option "Saya memiliki izin Ketenagakerjaan/Kerja"
+            - option "Saya memiliki izin tinggal Indonesia (KITAS/KITAP)"
+            - option "Saya memiliki Visa Bisnis"
+            - option "Saya memiliki ABTC (APEC Business Travel Card)"
+            - option "Saya membutuhkan sponsor untuk bekerja pada perusahaan baru di Indonesia"
+        - generic [ref=f103e444]:
+          - strong [ref=f103e449]: Berapa gaji bulanan yang kamu inginkan?
+          - combobox "Berapa gaji bulanan yang kamu inginkan?" [ref=f103e452]:
+            - option "Rp 1 Jt"
+            - option "Rp 1.5 Jt"
+            - option "Rp 2 Jt"
+            - option "Rp 2.5 Jt"
+            - option "Rp 3 Jt"
+            - option "Rp 3.5 Jt"
+            - option "Rp 4 Jt"
+            - option "Rp 4.5 Jt"
+            - option "Rp 5 Jt"
+            - option "Rp 5.5 Jt"
+            - option "Rp 6 Jt"
+            - option "Rp 7 Jt"
+            - option "Rp 8 Jt"
+            - option "Rp 9 Jt"
+            - option "Rp 10 Jt" [selected]
+            - option "Rp 15 Jt"
+            - option "Rp 20 Jt"
+            - option "Rp 25 Jt"
+            - option "Rp 30 Jt"
+            - option "Rp 40 Jt"
+            - option "Rp 60 Jt"
+            - option "Rp 80 Jt"
+            - option "Rp 100 Jt atau lebih"
+        - generic [ref=f103e453]:
+          - strong [ref=f103e458]: How many years' experience do you have as an Artificial Intelligence Engineer?
+          - combobox "How many years' experience do you have as an Artificial Intelligence Engineer?" [ref=f103e461]:
+            - option "No experience"
+            - option "Less than 1 year"
+            - option "1 year"
+            - option "2 years"
+            - option "3 years" [selected]
+            - option "4 years"
+            - option "5 years"
+            - option "More than 5 years"
+        - generic [ref=f103e462]:
+          - strong [ref=f103e467]: Kualifikasi mana yang kamu miliki?
+          - combobox "Kualifikasi mana yang kamu miliki?" [ref=f103e470]:
+            - option "Sekolah Dasar atau sederajat"
+            - option "SMP atau sederajat"
+            - option "SMA/SMK atau sederajat"
+            - option "Diploma 1"
+            - option "Diploma 2"
+            - option "Diploma 3"
+            - option "Diploma 4"
+            - option "Sarjana (S1)" [selected]
+            - option "Program Pendidikan Profesi"
+            - option "Magister (S2)"
+            - option "Doktor (S3)"
+            - option "Saya memiliki kualifikasi yang tidak ada dalam daftar"
+        - radiogroup [ref=f103e471]:
+          - generic [ref=f103e472]:
+            - strong [ref=f103e477]: Berapa lama waktu yang kamu butuhkan untuk memberi tahu perusahaanmu saat ini?
+            - generic [ref=f103e479]:
+              - generic [ref=f103e481]:
+                - radio "Tidak ada, saya siap bekerja segera" [ref=f103e482] [cursor=pointer]
+                - generic [ref=f103e484]: Tidak ada, saya siap bekerja segera
+              - generic [ref=f103e489]:
+                - radio "Kurang dari 1 bulan" [ref=f103e490] [cursor=pointer]
+                - generic [ref=f103e492]: Kurang dari 1 bulan
+              - generic [ref=f103e497]:
+                - radio "1 bulan" [checked] [ref=f103e498] [cursor=pointer]
+                - generic [ref=f103e500]: 1 bulan
+              - generic [ref=f103e505]:
+                - radio "2 bulan" [ref=f103e506] [cursor=pointer]
+                - generic [ref=f103e508]: 2 bulan
+              - generic [ref=f103e513]:
+                - radio "Lebih dari 2 bulan" [ref=f103e514] [cursor=pointer]
+                - generic [ref=f103e516]: Lebih dari 2 bulan
+        - generic [ref=f103e520]:
+          - strong [ref=f103e525]: How many years' experience do you have as a Python Engineer?
+          - combobox "How many years' experience do you have as a Python Engineer?" [ref=f103e528]:
+            - option "No experience"
+            - option "Less than 1 year"
+            - option "1 year"
+            - option "2 years"
+            - option "3 years" [selected]
+            - option "4 years"
+            - option "5 years"
+            - option "More than 5 years"
+        - generic [ref=f103e529]:
+          - strong [ref=f103e534]: Berapa tahun pengalaman kerjamu di Industri Perbankan?
+          - combobox "Berapa tahun pengalaman kerjamu di Industri Perbankan?" [ref=f103e537]:
+            - option [disabled] [selected]
+            - option "Tidak ada pengalaman"
+            - option "Kurang dari 1 tahun"
+            - option "1 tahun"
+            - option "2 tahun"
+            - option "3 tahun"
+            - option "4 tahun"
+            - option "5 tahun"
+            - option "Lebih dari 5 tahun"
+        - generic [ref=f103e538]:
+          - strong [ref=f103e542]: Bagaimana kamu menilai kemampuan bahasa Inggrismu?
+          - generic [ref=f103e544]:
+            - checkbox "Berbicara dengan mahir dalam situasi profesional" [ref=f103e545] [cursor=pointer]
+            - generic [ref=f103e547]: Berbicara dengan mahir dalam situasi profesional
+          - generic [ref=f103e552]:
+            - checkbox "Menulis dengan mahir dalam situasi profesional" [checked] [ref=f103e553] [cursor=pointer]
+            - generic [ref=f103e555]: Menulis dengan mahir dalam situasi profesional
+          - generic [ref=f103e560]:
+            - checkbox "Kemahiran terbatas" [ref=f103e561] [cursor=pointer]
+            - generic [ref=f103e563]: Kemahiran terbatas
+        - generic [ref=f103e567]:
+          - strong [ref=f103e572]: How many years of AI Engineering experience do you have?
+          - combobox "How many years of AI Engineering experience do you have?" [ref=f103e575]:
+            - option "Tidak ada pengalaman"
+            - option "Kurang dari 1 tahun"
+            - option "1 tahun" [selected]
+            - option "2 tahun"
+            - option "3 tahun"
+            - option "4 tahun"
+            - option "5 tahun"
+            - option "Lebih dari 5 tahun"
+        - generic [ref=f103e576]:
+          - button [ref=f103e578] [cursor=pointer]:
+            - generic [ref=f103e579]:
+              - generic:
+                - generic:
+                  - text: Lanjut
+                  - generic [aria-hidden]: ⁠
+          - button [ref=f103e582] [cursor=pointer]:
+            - generic [ref=f103e583]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kembali
+  - contentinfo [ref=f103e393]:
+    - generic [ref=f103e397] [cursor=pointer]:
+      - generic [ref=f103e398]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f103e403]: Telusuri situs

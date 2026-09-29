@@ -1,0 +1,1712 @@
+- generic [ref=f34e3]:
+  - heading "1,335 lowongan kerja automation engineer di Indonesia" [level=1] [ref=f34e5]
+  - button "Lewati ke konten" [ref=f34e6] [cursor=pointer]
+  - generic [ref=f34e7]:
+    - status
+  - banner [ref=f34e9]:
+    - generic [ref=f34e13]:
+      - generic [ref=f34e14]:
+        - link "Jobstreet" [ref=f34e16] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f34e24]:
+          - link "Cari lowongan" [ref=f34e26] [cursor=pointer]:
+            - /url: /
+          - link "Cari profil" [ref=f34e31] [cursor=pointer]:
+            - /url: /id/profiles/search?tracking=ILC-profile-search-header
+          - link "Sumber daya karir" [ref=f34e36] [cursor=pointer]:
+            - /url: /id/career-advice
+          - link "Perusahaan" [ref=f34e41] [cursor=pointer]:
+            - /url: /id/companies
+      - generic [ref=f34e45]:
+        - button "Bahasa" [ref=f34e48] [cursor=pointer]
+        - button "Profile Avatar" [ref=f34e67] [cursor=pointer]
+        - link "Untuk perusahaan" [ref=f34e80] [cursor=pointer]:
+          - /url: https://id.employer.seek.com/id
+  - main [ref=f34e82]:
+    - generic [ref=f34e83]:
+      - search [ref=f34e85]:
+        - heading "Lakukan pencarian lowongan" [level=2] [ref=f34e87]
+        - generic [ref=f34e96]:
+          - generic [ref=f34e97]:
+            - region "Masukkan kata kunci" [ref=f34e100]:
+              - generic [ref=f34e101]:
+                - generic [ref=f34e106]:
+                  - combobox "Jelaskan posisi yang kamu cari (jabatan, industri, skill…)" [ref=f34e107]: Automation Engineer
+                  - button "Clear" [ref=f34e112] [cursor=pointer]
+                - generic [ref=f34e117]: Suggestions will appear below the field as you type
+            - region "Masukkan lokasi" [ref=f34e121]:
+              - generic [ref=f34e122]:
+                - generic [ref=f34e127]:
+                  - combobox "Masukkan kota atau wilayah" [ref=f34e128]
+                  - generic [ref=f34e129]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - button "Clear"
+                - generic [ref=f34e130]: Suggestions will appear below the field as you type
+            - button "Kirim pencarian" [ref=f34e134] [cursor=pointer]:
+              - generic [ref=f34e135]: Cari
+          - navigation "Filter pencarian kamu" [ref=f34e140]:
+            - heading "Filter pencarian kamu" [level=2] [ref=f34e142]
+            - generic [ref=f34e143]:
+              - generic [ref=f34e144]:
+                - button "filter berdasarkan salary range" [expanded] [ref=f34e145] [cursor=pointer]
+                - generic [ref=f34e146] [cursor=pointer]:
+                  - generic [ref=f34e147]: Tampilkan filter salary range.
+                  - generic [ref=f34e148]: Gaji
+              - generic [ref=f34e158]:
+                - button "filter berdasarkan jenis pekerjaan" [expanded] [ref=f34e159] [cursor=pointer]
+                - generic [ref=f34e160] [cursor=pointer]:
+                  - generic [ref=f34e161]: Tampilkan filter jenis pekerjaan.
+                  - generic [ref=f34e162]: Jenis
+              - generic [ref=f34e172]:
+                - button "filter berdasarkan work arrangement" [expanded] [ref=f34e173] [cursor=pointer]
+                - generic [ref=f34e174] [cursor=pointer]:
+                  - generic [ref=f34e175]: Tampilkan filter work arrangement.
+                  - generic [ref=f34e176]: Tempat kerja
+              - generic [ref=f34e186]:
+                - button "filter berdasarkan Klasifikasi" [expanded] [ref=f34e187] [cursor=pointer]
+                - generic [ref=f34e188] [cursor=pointer]:
+                  - generic [ref=f34e189]: Tampilkan filter Klasifikasi.
+                  - link [aria-hidden] [ref=f34e191]:
+                    - /url: /id/Automation-Engineer-jobs
+                    - text: Clear classifications
+                  - generic [ref=f34e192]: Bidang
+              - generic [ref=f34e202]:
+                - button "filter berdasarkan tanggal terdaftar" [expanded] [ref=f34e203] [cursor=pointer]
+                - generic [ref=f34e204] [cursor=pointer]:
+                  - generic [ref=f34e205]: Tampilkan filter tanggal terdaftar.
+                  - generic [ref=f34e206]: Diposting
+            - radio
+      - region "Hasil Pencarian" [ref=f34e218]:
+        - generic [ref=f34e223]:
+          - generic [ref=f34e224]:
+            - generic [ref=f34e225]: Filter berdasarkan lokasi
+            - list [ref=f34e228]:
+              - listitem [ref=f34e229]:
+                - link "Lowongan di Batam Kepulauan Riau" [ref=f34e230] [cursor=pointer]:
+                  - /url: /id/Automation-Engineer-jobs/in-Batam-Kepulauan-Riau
+                  - text: Batam Kepulauan Riau
+              - listitem [ref=f34e231]:
+                - link "Lowongan di Jakarta Barat Jakarta Raya" [ref=f34e232] [cursor=pointer]:
+                  - /url: /id/Automation-Engineer-jobs/in-Jakarta-Barat-Jakarta-Raya
+                  - text: Jakarta Barat Jakarta Raya
+              - listitem [ref=f34e233]:
+                - link "Lowongan di Kabupaten Tangerang Banten" [ref=f34e234] [cursor=pointer]:
+                  - /url: /id/Automation-Engineer-jobs/in-Kabupaten-Tangerang-Banten
+                  - text: Kabupaten Tangerang Banten
+              - listitem [ref=f34e235]:
+                - link "Lowongan di Jakarta Selatan Jakarta Raya" [ref=f34e236] [cursor=pointer]:
+                  - /url: /id/Automation-Engineer-jobs/in-Jakarta-Selatan-Jakarta-Raya
+                  - text: Jakarta Selatan Jakarta Raya
+              - listitem [ref=f34e237]:
+                - link "Lowongan di Jakarta Raya" [ref=f34e238] [cursor=pointer]:
+                  - /url: /id/Automation-Engineer-jobs/in-Jakarta-Raya
+                  - text: Jakarta Raya
+              - listitem [ref=f34e239]:
+                - link "Lowongan di Bandung Jawa Barat" [ref=f34e240] [cursor=pointer]:
+                  - /url: /id/Automation-Engineer-jobs/in-Bandung-Jawa-Barat
+                  - text: Bandung Jawa Barat
+          - button "Baca Selengkapnya" [ref=f34e244] [cursor=pointer]:
+            - text: Baca Selengkapnya
+            - generic [aria-hidden] [ref=f34e245]: ⁠
+        - generic [ref=f34e256]:
+          - generic [ref=f34e258]:
+            - generic [ref=f34e260]:
+              - heading "Pencarian terkait" [level=4] [ref=f34e261]
+              - list [ref=f34e262]:
+                - listitem [ref=f34e263]:
+                  - link [ref=f34e264] [cursor=pointer]:
+                    - /url: /id/automation-jobs
+                    - generic [ref=f34e265]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: automation pekerjaan
+                - listitem [ref=f34e266]:
+                  - link [ref=f34e267] [cursor=pointer]:
+                    - /url: /id/electrical-engineer-jobs
+                    - generic [ref=f34e268]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: electrical engineer pekerjaan
+                - listitem [ref=f34e269]:
+                  - link [ref=f34e270] [cursor=pointer]:
+                    - /url: /id/power-plant-jobs
+                    - generic [ref=f34e271]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: power plant pekerjaan
+                - listitem [ref=f34e272]:
+                  - link [ref=f34e273] [cursor=pointer]:
+                    - /url: /id/plc-jobs
+                    - generic [ref=f34e274]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: plc pekerjaan
+                - listitem [ref=f34e275]:
+                  - link [ref=f34e276] [cursor=pointer]:
+                    - /url: /id/it-support-jobs
+                    - generic [ref=f34e277]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: it support pekerjaan
+                - listitem [ref=f34e278]:
+                  - link [ref=f34e279] [cursor=pointer]:
+                    - /url: /id/engineer-jobs
+                    - generic [ref=f34e280]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: engineer pekerjaan
+                - listitem [ref=f34e281]:
+                  - link [ref=f34e282] [cursor=pointer]:
+                    - /url: /id/plc-engineer-jobs
+                    - generic [ref=f34e283]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: plc engineer pekerjaan
+                - listitem [ref=f34e284]:
+                  - link [ref=f34e285] [cursor=pointer]:
+                    - /url: /id/teknik-elektro-jobs
+                    - generic [ref=f34e286]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: teknik elektro pekerjaan
+                - listitem [ref=f34e287]:
+                  - link [ref=f34e288] [cursor=pointer]:
+                    - /url: /id/jobs-in-engineering
+                    - generic [ref=f34e289]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: engineering pekerjaan
+                - listitem [ref=f34e290]:
+                  - link [ref=f34e291] [cursor=pointer]:
+                    - /url: /id/instrument-engineer-jobs
+                    - generic [ref=f34e292]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: instrument engineer pekerjaan
+                - listitem [ref=f34e293]:
+                  - link [ref=f34e294] [cursor=pointer]:
+                    - /url: /id/project-manager-jobs
+                    - generic [ref=f34e295]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: project manager pekerjaan
+                - listitem [ref=f34e296]:
+                  - link [ref=f34e297] [cursor=pointer]:
+                    - /url: /id/dcs-engineer-jobs
+                    - generic [ref=f34e298]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: dcs engineer pekerjaan
+            - generic [ref=f34e299]:
+              - generic [ref=f34e301]:
+                - contentinfo [ref=f34e304]:
+                  - generic [ref=f34e306]:
+                    - generic [ref=f34e307]: 1,335 pekerjaan
+                    - generic [ref=f34e312] [cursor=pointer]:
+                      - generic [ref=f34e313]: Baru untuk kamu
+                      - generic "99+" [ref=f34e316]
+                  - contentinfo [ref=f34e319]:
+                    - button "Urut bedasarkan" [ref=f34e324] [cursor=pointer]
+                - generic [ref=f34e332]:
+                  - checkbox "Lowongan Kandidat Kuat" [ref=f34e334] [cursor=pointer]
+                  - generic [ref=f34e339] [cursor=pointer]: Lowongan Kandidat Kuat
+              - generic [ref=f34e347]:
+                - button "Ubah pencarian saya" [ref=f34e350] [cursor=pointer]
+                - generic [ref=f34e351]:
+                  - article "Automation Engineer" [ref=f34e353] [cursor=pointer]:
+                    - link [ref=f34e354]:
+                      - /url: /id/job/94762247?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e355]: Listed more than three days ago
+                    - generic [ref=f34e356]:
+                      - generic [ref=f34e363]:
+                        - generic [ref=f34e364]:
+                          - heading [level=3] [ref=f34e365]:
+                            - link "Automation Engineer" [ref=f34e367]:
+                              - /url: /id/job/94762247?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e369]:
+                            - generic [ref=f34e370]: di
+                            - link "Lowongan di Ennovi Integrated Engineering Services Batam" [ref=f34e371]:
+                              - /url: /id/Ennovi-Integrated-Engineering-Services-Batam-jobs
+                              - text: ENNOVI INTEGRATED ENGINEERING SERVICES BATAM
+                          - generic [ref=f34e372]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f34e374]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e377]:
+                          - link "Limit results to Batam, Kepulauan Riau":
+                            - /url: /id/Automation-Engineer-jobs/in-Batam,-Kepulauan-Riau
+                            - text: Batam, Kepulauan Riau
+                      - generic [ref=f34e378]:
+                        - generic [ref=f34e379]: Responsible for manufacturing equipment maintenance, OEE, continuous improvement and reliability. The candidate must collaborate with process engineer
+                        - generic [ref=f34e380]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Lainnya"
+                                - text: Lainnya
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e381]:
+                            - generic [ref=f34e382]: 3 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e388]
+                            - button "Simpan" [ref=f34e397]
+                  - article "Automation Engineer" [ref=f34e403] [cursor=pointer]:
+                    - link [ref=f34e404]:
+                      - /url: /id/job/94793664?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e405]: Listed more than two days ago
+                    - generic [ref=f34e406]:
+                      - generic [ref=f34e413]:
+                        - generic [ref=f34e414]:
+                          - heading [level=3] [ref=f34e415]:
+                            - link "Automation Engineer" [ref=f34e417]:
+                              - /url: /id/job/94793664?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e419]:
+                            - generic [ref=f34e420]: di
+                            - link "Lowongan di Innovergy Engineering" [ref=f34e421]:
+                              - /url: /id/Innovergy-Engineering-jobs
+                              - text: PT INNOVERGY ENGINEERING INDONESIA
+                          - generic [ref=f34e422]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f34e424]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e425]:
+                          - generic [ref=f34e427]:
+                            - link "Limit results to Jakarta Barat, Jakarta Raya":
+                              - /url: /id/Automation-Engineer-jobs/in-Jakarta-Barat,-Jakarta-Raya
+                              - text: Jakarta Barat, Jakarta Raya
+                          - 'generic "Salary: Rp 11.000.000 – Rp 16.000.000 per month" [ref=f34e428]': Rp 11.000.000 – Rp 16.000.000 per month
+                      - generic [ref=f34e431]:
+                        - generic [ref=f34e432]: Apabila Anda adalah seorang Automation Engineer yang berbakat dan siap berkontribusi dalam proyek-proyek inovatif, kami ingin mengenal Anda.
+                        - generic [ref=f34e433]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e434]:
+                            - generic [ref=f34e435]: 2 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e441]
+                            - button "Simpan" [ref=f34e450]
+                  - article "AI Agent Developer / AI Automation Engineer" [ref=f34e456] [cursor=pointer]:
+                    - link [ref=f34e457]:
+                      - /url: /id/job/94743147?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e458]: Listed more than five days ago
+                    - generic [ref=f34e459]:
+                      - generic [ref=f34e460]:
+                        - generic [ref=f34e461]:
+                          - link:
+                            - /url: /id/companies/key-distribution-partners-168554786866127
+                        - generic [ref=f34e463]:
+                          - generic [ref=f34e464]:
+                            - heading [level=3] [ref=f34e465]:
+                              - link "AI Agent Developer / AI Automation Engineer" [ref=f34e467]:
+                                - /url: /id/job/94743147?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e469]:
+                              - generic [ref=f34e470]: di
+                              - link "Lowongan di Key Distribution Partners" [ref=f34e471]:
+                                - /url: /id/Key-Distribution-Partners-jobs
+                                - text: PT Mitra Distribusi Utama
+                            - generic [ref=f34e472]:
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                              - generic:
+                                - generic "Dibutuhkan segera"
+                          - paragraph [ref=f34e474]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e477]:
+                            - link "Limit results to Kabupaten Tangerang, Banten":
+                              - /url: /id/Automation-Engineer-jobs/in-Kabupaten-Tangerang,-Banten
+                              - text: Kabupaten Tangerang, Banten
+                      - list [ref=f34e478]:
+                        - listitem [ref=f34e479]:
+                          - generic [ref=f34e483]: Real AI Implementation, Not Toy Projects
+                        - listitem [ref=f34e485]:
+                          - generic [ref=f34e489]: Direct Access to Owner + Fast Decision Making
+                        - listitem [ref=f34e491]:
+                          - generic [ref=f34e495]: Opportunity to Build a Future AI Product
+                      - generic [ref=f34e497]:
+                        - generic [ref=f34e498]: We are looking for a technical AI Agent Developer/Automation Engineer to help develop and implement AI agents, and business automation systems
+                        - generic [ref=f34e499]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e500]:
+                            - generic [ref=f34e502]:
+                              - generic [ref=f34e503]: 5 hari yang lalu
+                              - generic [ref=f34e504]: •
+                              - generic [ref=f34e506]: Dilamar
+                            - button "Lebih banyak" [ref=f34e510]
+                  - article "AI Engineer" [ref=f34e524] [cursor=pointer]:
+                    - link [ref=f34e525]:
+                      - /url: /id/job/94823702?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e526]: Listed more than one day ago
+                    - generic [ref=f34e527]:
+                      - generic [ref=f34e528]:
+                        - generic [ref=f34e529]:
+                          - link:
+                            - /url: /id/companies/daya-solutions-innovations-168554945719270
+                        - generic [ref=f34e531]:
+                          - generic [ref=f34e532]:
+                            - heading [level=3] [ref=f34e533]:
+                              - link "AI Engineer" [ref=f34e535]:
+                                - /url: /id/job/94823702?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e537]:
+                              - generic [ref=f34e538]: di
+                              - link "Lowongan di Daya Solutions Innovations" [ref=f34e539]:
+                                - /url: /id/Daya-Solutions-Innovations-jobs
+                                - text: PT Inovasi Daya Solusi
+                            - generic [ref=f34e540]:
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                          - paragraph [ref=f34e542]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e545]:
+                            - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                              - /url: /id/Automation-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                              - text: Jakarta Selatan, Jakarta Raya
+                      - list [ref=f34e546]:
+                        - listitem [ref=f34e547]:
+                          - generic [ref=f34e551]: Experience real technology transformation
+                        - listitem [ref=f34e553]:
+                          - generic [ref=f34e557]: Always provide high integrity in every aspect company development
+                        - listitem [ref=f34e559]:
+                          - generic [ref=f34e563]: Fun, Passionate and Innovative
+                      - generic [ref=f34e565]:
+                        - generic [ref=f34e566]: Join us as AI Engineer!
+                        - generic [ref=f34e567]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e568]:
+                            - generic [ref=f34e570]:
+                              - generic [ref=f34e571]: 1 hari yang lalu
+                              - generic [ref=f34e572]: •
+                              - generic [ref=f34e574]: Dilamar
+                            - button "Lebih banyak" [ref=f34e578]
+                  - article "Application Engineer" [ref=f34e592] [cursor=pointer]:
+                    - link [ref=f34e593]:
+                      - /url: /id/job/94661953?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e594]: Listed more than eight days ago
+                    - generic [ref=f34e595]:
+                      - generic [ref=f34e596]:
+                        - generic [ref=f34e597]:
+                          - link:
+                            - /url: /id/companies/autojaya-idetech-168557936978946
+                        - generic [ref=f34e599]:
+                          - generic [ref=f34e600]:
+                            - heading [level=3] [ref=f34e601]:
+                              - link "Application Engineer" [ref=f34e603]:
+                                - /url: /id/job/94661953?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e605]:
+                              - generic [ref=f34e606]: di
+                              - link "Lowongan di Autojaya Idetech" [ref=f34e607]:
+                                - /url: /id/Autojaya-Idetech-jobs
+                                - text: PT Autojaya Idetech
+                            - generic [ref=f34e608]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e610]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e613]:
+                            - link "Limit results to Jakarta Raya":
+                              - /url: /id/Automation-Engineer-jobs/in-Jakarta-Raya
+                              - text: Jakarta Raya
+                      - list [ref=f34e614]:
+                        - listitem [ref=f34e615]:
+                          - generic [ref=f34e619]: Hands-on experience in Machine Vision & Industrial Automation
+                        - listitem [ref=f34e621]:
+                          - generic [ref=f34e625]: Work with Sales & technical teams on real customer projects
+                        - listitem [ref=f34e627]:
+                          - generic [ref=f34e631]: Learning & development opportunities in advanced technology
+                      - generic [ref=f34e633]:
+                        - generic [ref=f34e634]: Develop smart Machine Vision & Industrial Automation solutions, solve technical challenges, and create real impact for customers.
+                        - generic [ref=f34e635]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e636]:
+                            - generic [ref=f34e637]: 8 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e643]
+                            - button "Simpan" [ref=f34e652]
+                  - article "Senior Software Engineer" [ref=f34e658] [cursor=pointer]:
+                    - link [ref=f34e659]:
+                      - /url: /id/job/94776439?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e660]: Listed more than three days ago
+                    - generic [ref=f34e661]:
+                      - generic [ref=f34e667]:
+                        - generic [ref=f34e668]:
+                          - heading [level=3] [ref=f34e669]:
+                            - link "Senior Software Engineer" [ref=f34e671]:
+                              - /url: /id/job/94776439?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e673]:
+                            - generic [ref=f34e674]: di
+                            - link "Lowongan di PT Indo Online Mitra Usaha (Vox Asia)" [ref=f34e675]:
+                              - /url: /id/jobs?advertiserid=60901674
+                              - text: PT Indo Online Mitra Usaha (Vox Asia)
+                          - generic [ref=f34e676]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f34e678]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e680]:
+                          - generic [ref=f34e681]:
+                            - link "Limit results to Bandung, Jawa Barat":
+                              - /url: /id/Automation-Engineer-jobs/in-Bandung,-Jawa-Barat
+                              - text: Bandung, Jawa Barat
+                          - generic [ref=f34e682]: (Hibrid)
+                      - list [ref=f34e683]:
+                        - listitem [ref=f34e684]:
+                          - generic [ref=f34e688]: Global Company (Base in Belgium)
+                        - listitem [ref=f34e690]:
+                          - generic [ref=f34e694]: Health insurance
+                        - listitem [ref=f34e696]:
+                          - generic [ref=f34e700]: Inclusive Culture & Work-Life Balance
+                      - generic [ref=f34e702]:
+                        - generic [ref=f34e703]: Experienced software engineer to design and build scalable applications using C#, ASP.NET Core and Python with AI and LLM integration.
+                        - generic [ref=f34e704]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e705]:
+                            - generic [ref=f34e706]: 3 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e712]
+                            - button "Simpan" [ref=f34e721]
+                  - article "Robotic Engineer" [ref=f34e727] [cursor=pointer]:
+                    - link [ref=f34e728]:
+                      - /url: /id/job/94795774?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e729]: Listed more than two days ago
+                    - generic [ref=f34e730]:
+                      - generic [ref=f34e731]:
+                        - generic [ref=f34e732]:
+                          - link:
+                            - /url: /id/companies/pt-mitrainti-sejahtera-eletrindo-168554826694529
+                        - generic [ref=f34e734]:
+                          - generic [ref=f34e735]:
+                            - heading [level=3] [ref=f34e736]:
+                              - link "Robotic Engineer" [ref=f34e738]:
+                                - /url: /id/job/94795774?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e740]:
+                              - generic [ref=f34e741]: di
+                              - link "Lowongan di PT Mitrainti Sejahtera Eletrindo" [ref=f34e742]:
+                                - /url: /id/PT-Mitrainti-Sejahtera-Eletrindo-jobs
+                                - text: PT Mitrainti Sejahtera Eletrindo
+                            - generic [ref=f34e743]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e745]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e748]:
+                            - link "Limit results to Surabaya, Jawa Timur":
+                              - /url: /id/Automation-Engineer-jobs/in-Surabaya,-Jawa-Timur
+                              - text: Surabaya, Jawa Timur
+                      - generic [ref=f34e749]:
+                        - generic [ref=f34e750]: Focus in handling and executing all robotics (Cobot & AMR) projects and support pre-sales teams Handle Camera Vision Project as well
+                        - generic [ref=f34e751]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e752]:
+                            - generic [ref=f34e753]: 2 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e759]
+                            - button "Simpan" [ref=f34e768]
+                  - article "Electrical Engineer" [ref=f34e774] [cursor=pointer]:
+                    - link [ref=f34e775]:
+                      - /url: /id/job/94848165?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e776]: Listed more than eleven days ago
+                    - generic [ref=f34e777]:
+                      - generic [ref=f34e778]:
+                        - generic [ref=f34e779]:
+                          - link:
+                            - /url: /id/companies/knauf-indonesia-168550124354634
+                        - generic [ref=f34e781]:
+                          - generic [ref=f34e782]:
+                            - heading [level=3] [ref=f34e783]:
+                              - link "Electrical Engineer" [ref=f34e785]:
+                                - /url: /id/job/94848165?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e787]:
+                              - generic [ref=f34e788]: di
+                              - link "Lowongan di Knauf Indonesia" [ref=f34e789]:
+                                - /url: /id/Knauf-Indonesia-jobs
+                                - text: PT Knauf Plasterboard Indonesia
+                            - generic [ref=f34e790]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e792]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e795]:
+                            - link "Limit results to Gresik, Jawa Timur":
+                              - /url: /id/Automation-Engineer-jobs/in-Gresik,-Jawa-Timur
+                              - text: Gresik, Jawa Timur
+                      - generic [ref=f34e796]:
+                        - generic [ref=f34e797]: "-"
+                        - generic [ref=f34e798]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e799]:
+                            - generic [ref=f34e800]: 11 jam yang lalu
+                            - button "Lebih banyak" [ref=f34e806]
+                            - button "Simpan" [ref=f34e815]
+                  - article "Lead Engineer" [ref=f34e821] [cursor=pointer]:
+                    - link [ref=f34e822]:
+                      - /url: /id/job/94663864?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e823]: Listed more than eight days ago
+                    - generic [ref=f34e824]:
+                      - generic [ref=f34e825]:
+                        - generic [ref=f34e826]:
+                          - link:
+                            - /url: /id/companies/digdaya-duta-digital-168558967155242
+                        - generic [ref=f34e828]:
+                          - generic [ref=f34e829]:
+                            - heading [level=3] [ref=f34e830]:
+                              - link "Lead Engineer" [ref=f34e832]:
+                                - /url: /id/job/94663864?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e834]:
+                              - generic [ref=f34e835]: di
+                              - link "Lowongan di Digdaya Duta Digital" [ref=f34e836]:
+                                - /url: /id/Digdaya-Duta-Digital-jobs
+                                - text: PT Digdaya Duta Digital
+                            - generic [ref=f34e837]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Anda kandidat kuat"
+                          - paragraph [ref=f34e839]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e842]:
+                            - link "Limit results to Setiabudi, Jakarta Raya":
+                              - /url: /id/Automation-Engineer-jobs/in-Setiabudi,-Jakarta-Raya
+                              - text: Setiabudi, Jakarta Raya
+                      - list [ref=f34e843]:
+                        - listitem [ref=f34e844]:
+                          - generic [ref=f34e848]: Competitive salary and comprehensive health benefits
+                        - listitem [ref=f34e850]:
+                          - generic [ref=f34e854]: Supportive and collaborative work environment
+                        - listitem [ref=f34e856]:
+                          - generic [ref=f34e860]: Career growth and mentoring opportunities
+                      - generic [ref=f34e862]:
+                        - generic [ref=f34e863]: Responsible to design AI architecture and lead the engineering team to deliver scalable, high-quality AI solutions.
+                        - generic [ref=f34e864]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e865]:
+                            - generic [ref=f34e866]: 8 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e872]
+                            - button "Simpan" [ref=f34e881]
+                  - article "Automation Engineer" [ref=f34e887] [cursor=pointer]:
+                    - link [ref=f34e888]:
+                      - /url: /id/job/94360264?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e889]: Listed more than twenty one days ago
+                    - generic [ref=f34e890]:
+                      - generic [ref=f34e893]:
+                        - generic [ref=f34e894]:
+                          - heading [level=3] [ref=f34e895]:
+                            - link "Automation Engineer" [ref=f34e897]:
+                              - /url: /id/job/94360264?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e899]:
+                            - generic [ref=f34e900]: di
+                            - link "Lowongan di PT Viktori Profindo Automation" [ref=f34e901]:
+                              - /url: /id/PT-Viktori-Profindo-Automation-jobs
+                              - text: PT Viktori Profindo Automation
+                          - generic [ref=f34e902]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f34e904]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e905]:
+                          - generic [ref=f34e907]:
+                            - link "Limit results to Surabaya, Jawa Timur":
+                              - /url: /id/Automation-Engineer-jobs/in-Surabaya,-Jawa-Timur
+                              - text: Surabaya, Jawa Timur
+                          - 'generic "Salary: Rp 6.500.000 – Rp 8.500.000 per month" [ref=f34e908]': Rp 6.500.000 – Rp 8.500.000 per month
+                      - generic [ref=f34e911]:
+                        - generic [ref=f34e912]: An automation work with clients to understand their needs and requirements, and then create solutions to perform specific tasks.
+                        - generic [ref=f34e913]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e914]:
+                            - generic [ref=f34e915]: 21 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e921]
+                            - button "Simpan" [ref=f34e930]
+                  - article "AI & Automation Engineer" [ref=f34e936] [cursor=pointer]:
+                    - link [ref=f34e937]:
+                      - /url: /id/job/94357791?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e938]: Listed more than twenty two days ago
+                    - generic [ref=f34e939]:
+                      - generic [ref=f34e940]:
+                        - generic [ref=f34e941]:
+                          - link:
+                            - /url: /id/companies/supermal-karawaci-168555177482351
+                        - generic [ref=f34e943]:
+                          - generic [ref=f34e944]:
+                            - heading [level=3] [ref=f34e945]:
+                              - link "AI & Automation Engineer" [ref=f34e947]:
+                                - /url: /id/job/94357791?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e949]:
+                              - generic [ref=f34e950]: di
+                              - link "Lowongan di Supermal Karawaci" [ref=f34e951]:
+                                - /url: /id/Supermal-Karawaci-jobs
+                                - text: PT. SUPERMAL KARAWACI
+                            - generic [ref=f34e952]:
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                          - paragraph [ref=f34e954]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f34e957]:
+                            - link "Limit results to Karawaci, Banten":
+                              - /url: /id/Automation-Engineer-jobs/in-Karawaci,-Banten
+                              - text: Karawaci, Banten
+                      - generic [ref=f34e958]:
+                        - generic [ref=f34e959]: Develop AI-powered automation solutions using n8n to improve operational efficiency and support digital transformation.
+                        - generic [ref=f34e960]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e961]:
+                            - generic [ref=f34e962]: 22 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e968]
+                            - button "Simpan" [ref=f34e977]
+                  - article "SOFTWARE ENGINEER PROGRAMMER" [ref=f34e983] [cursor=pointer]:
+                    - link [ref=f34e984]:
+                      - /url: /id/job/94821245?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e985]: Listed more than one day ago
+                    - generic [ref=f34e986]:
+                      - generic [ref=f34e992]:
+                        - generic [ref=f34e993]:
+                          - heading [level=3] [ref=f34e994]:
+                            - link "SOFTWARE ENGINEER PROGRAMMER" [ref=f34e996]:
+                              - /url: /id/job/94821245?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e998]:
+                            - generic [ref=f34e999]: di
+                            - link "Lowongan di PT Sahabat Inti Solusindo" [ref=f34e1000]:
+                              - /url: /id/PT-Sahabat-Inti-Solusindo-jobs
+                              - text: PT Sahabat Inti Solusindo
+                          - generic [ref=f34e1001]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f34e1003]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e1006]:
+                          - link "Limit results to Jakarta Raya":
+                            - /url: /id/Automation-Engineer-jobs/in-Jakarta-Raya
+                            - text: Jakarta Raya
+                      - list [ref=f34e1007]:
+                        - listitem [ref=f34e1008]:
+                          - generic [ref=f34e1012]: Experience with SCADA systems will be a strong advantage
+                        - listitem [ref=f34e1014]:
+                          - generic [ref=f34e1018]: Strong understanding and experience in SQL Server, MySQL, SQLite, and PostgreSQL
+                      - generic [ref=f34e1020]:
+                        - generic [ref=f34e1021]: Programmer / System Programmer to develop, maintain, and enhance software applications.
+                        - generic [ref=f34e1022]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e1023]:
+                            - generic [ref=f34e1024]: 1 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1030]
+                            - button "Simpan" [ref=f34e1039]
+                  - article "Application Engineer" [ref=f34e1045] [cursor=pointer]:
+                    - link [ref=f34e1046]:
+                      - /url: /id/job/94795265?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1047]: Listed more than two days ago
+                    - generic [ref=f34e1048]:
+                      - generic [ref=f34e1049]:
+                        - generic [ref=f34e1050]:
+                          - link:
+                            - /url: /id/companies/sew-eurodrive-168553625144630
+                        - generic [ref=f34e1052]:
+                          - generic [ref=f34e1053]:
+                            - heading [level=3] [ref=f34e1054]:
+                              - link "Application Engineer" [ref=f34e1056]:
+                                - /url: /id/job/94795265?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1058]:
+                              - generic [ref=f34e1059]: di
+                              - link "Lowongan di SEW-Eurodrive" [ref=f34e1060]:
+                                - /url: /id/SEW+Eurodrive-jobs
+                                - text: PT SEW Eurodrive Indonesia
+                            - generic [ref=f34e1061]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1063]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e1066]:
+                            - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                              - /url: /id/Automation-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                              - text: Jakarta Selatan, Jakarta Raya
+                      - list [ref=f34e1067]:
+                        - listitem [ref=f34e1068]:
+                          - generic [ref=f34e1072]: Good Salary
+                        - listitem [ref=f34e1074]:
+                          - generic [ref=f34e1078]: Medicals & Private Insurance
+                        - listitem [ref=f34e1080]:
+                          - generic [ref=f34e1084]: BPJS, Meal and Transport Allowance
+                      - generic [ref=f34e1086]:
+                        - generic [ref=f34e1087]: Application engineers are a bridge between customers & engineering teams & provide technical support & expertise to customers by testing applications.
+                        - generic [ref=f34e1088]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Mesin"
+                                - text: Teknik Mesin
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1089]:
+                            - generic [ref=f34e1090]: 2 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1096]
+                            - button "Simpan" [ref=f34e1105]
+                  - article "Control System Engineer" [ref=f34e1111] [cursor=pointer]:
+                    - link [ref=f34e1112]:
+                      - /url: /id/job/94487388?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1113]: Listed more than sixteen days ago
+                    - generic [ref=f34e1114]:
+                      - generic [ref=f34e1120]:
+                        - generic [ref=f34e1121]:
+                          - heading [level=3] [ref=f34e1122]:
+                            - link "Control System Engineer" [ref=f34e1124]:
+                              - /url: /id/job/94487388?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e1126]:
+                            - generic [ref=f34e1127]: di
+                            - link "Lowongan di PT Bajra Mandalasakti" [ref=f34e1128]:
+                              - /url: /id/PT-Bajra-Mandalasakti-jobs
+                              - text: PT Bajra Mandalasakti
+                          - generic [ref=f34e1129]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f34e1131]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e1134]:
+                          - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                            - /url: /id/Automation-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                            - text: Jakarta Selatan, Jakarta Raya
+                      - generic [ref=f34e1135]:
+                        - generic [ref=f34e1136]: Design, implement, and maintain critical control systems. Excellent benefits, training, and dynamic team culture.
+                        - generic [ref=f34e1137]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1138]:
+                            - generic [ref=f34e1139]: 16 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1145]
+                            - button "Simpan" [ref=f34e1154]
+                  - article "STAFF ROBOTICS & AUTOMATION" [ref=f34e1160] [cursor=pointer]:
+                    - link [ref=f34e1161]:
+                      - /url: /id/job/94564586?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1162]: Listed more than thirteen days ago
+                    - generic [ref=f34e1163]:
+                      - generic [ref=f34e1164]:
+                        - generic [ref=f34e1165]:
+                          - link:
+                            - /url: /id/companies/gistex-168551073615139
+                        - generic [ref=f34e1167]:
+                          - generic [ref=f34e1168]:
+                            - heading [level=3] [ref=f34e1169]:
+                              - link "STAFF ROBOTICS & AUTOMATION" [ref=f34e1171]:
+                                - /url: /id/job/94564586?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1173]:
+                              - generic [ref=f34e1174]: di
+                              - link "Lowongan di Gistex" [ref=f34e1175]:
+                                - /url: /id/Gistex-jobs
+                                - text: PT Gistex Garmen Indonesia
+                            - generic [ref=f34e1176]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1178]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e1181]:
+                            - link "Limit results to Majalengka, Jawa Barat":
+                              - /url: /id/Automation-Engineer-jobs/in-Majalengka,-Jawa-Barat
+                              - text: Majalengka, Jawa Barat
+                      - list [ref=f34e1182]:
+                        - listitem [ref=f34e1183]:
+                          - generic [ref=f34e1187]: Work with Robotics, IoT, PLC, AMR/AGV & Smart Manufacturing.
+                        - listitem [ref=f34e1189]:
+                          - generic [ref=f34e1193]: Hands-on involvement in real industrial automation projects.
+                        - listitem [ref=f34e1195]:
+                          - generic [ref=f34e1199]: Grow your skills in Industry 4.0 and advanced manufacturing.
+                      - generic [ref=f34e1201]:
+                        - generic [ref=f34e1202]: Support robotics and automation development, integration, and maintenance to improve manufacturing efficiency, reliability, and productivity.
+                        - generic [ref=f34e1203]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1204]:
+                            - generic [ref=f34e1205]: 13 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1211]
+                            - button "Simpan" [ref=f34e1220]
+                  - article "Electrical Engineer" [ref=f34e1226] [cursor=pointer]:
+                    - link [ref=f34e1227]:
+                      - /url: /id/job/94861188?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1228]: Listed more than five days ago
+                    - generic [ref=f34e1229]:
+                      - generic [ref=f34e1230]:
+                        - generic [ref=f34e1231]:
+                          - link:
+                            - /url: /id/companies/prima-sarana-makmur-168549834273374
+                        - generic [ref=f34e1233]:
+                          - generic [ref=f34e1234]:
+                            - heading [level=3] [ref=f34e1235]:
+                              - link "Electrical Engineer" [ref=f34e1237]:
+                                - /url: /id/job/94861188?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1239]:
+                              - generic [ref=f34e1240]: di
+                              - link "Lowongan di Prima Sarana Makmur" [ref=f34e1241]:
+                                - /url: /id/Prima-Sarana-Makmur-jobs
+                                - text: PT Prima Sarana Makmur
+                            - generic [ref=f34e1242]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1244]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e1245]:
+                            - generic [ref=f34e1247]:
+                              - link "Limit results to Cikarang Selatan, Jawa Barat":
+                                - /url: /id/Automation-Engineer-jobs/in-Cikarang-Selatan,-Jawa-Barat
+                                - text: Cikarang Selatan, Jawa Barat
+                            - 'generic "Salary: IDR 6,000,000 - 8,000,000" [ref=f34e1248]': IDR 6,000,000 - 8,000,000
+                      - generic [ref=f34e1251]:
+                        - generic [ref=f34e1252]: Desain sistem kelistrikan inovatif. Gaji kompetitif, tunjangan kesehatan lengkap, pelatihan berkelanjutan.
+                        - generic [ref=f34e1253]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1254]:
+                            - generic [ref=f34e1255]: 5 jam yang lalu
+                            - button "Lebih banyak" [ref=f34e1261]
+                            - button "Simpan" [ref=f34e1270]
+                  - article "Product Engineer" [ref=f34e1276] [cursor=pointer]:
+                    - link [ref=f34e1277]:
+                      - /url: /id/job/94764460?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1278]: Listed more than three days ago
+                    - generic [ref=f34e1279]:
+                      - generic [ref=f34e1285]:
+                        - generic [ref=f34e1286]:
+                          - heading [level=3] [ref=f34e1287]:
+                            - link "Product Engineer" [ref=f34e1289]:
+                              - /url: /id/job/94764460?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e1291]:
+                            - generic [ref=f34e1292]: di
+                            - link "Lowongan di Furutec Electrical Sdn Bhd" [ref=f34e1293]:
+                              - /url: /id/Furutec-Electrical-Sdn-Bhd-jobs
+                              - text: Furutec Electrical Sdn Bhd
+                          - generic [ref=f34e1294]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Dibutuhkan segera"
+                        - paragraph [ref=f34e1296]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e1297]:
+                          - generic [ref=f34e1299]:
+                            - link "Limit results to Jakarta Raya":
+                              - /url: /id/Automation-Engineer-jobs/in-Jakarta-Raya
+                              - text: Jakarta Raya
+                          - 'generic "Salary: Rp 7,000,000 – Rp 9,000,000 per month" [ref=f34e1300]': Rp 7,000,000 – Rp 9,000,000 per month
+                      - list [ref=f34e1303]:
+                        - listitem [ref=f34e1304]:
+                          - generic [ref=f34e1308]: Hands-on Technical Exposure
+                        - listitem [ref=f34e1310]:
+                          - generic [ref=f34e1314]: Career Growth in a Regional Group
+                        - listitem [ref=f34e1316]:
+                          - generic [ref=f34e1320]: Customer-Facing Engineering Role
+                      - generic [ref=f34e1322]:
+                        - generic [ref=f34e1323]: Drive project success in LV/MV applications by managing technical docs, customer training, and site execution for Furutec Electrical.
+                        - generic [ref=f34e1324]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1325]:
+                            - generic [ref=f34e1326]: 3 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1332]
+                            - button "Simpan" [ref=f34e1341]
+                  - article "ELECTRICAL DESIGN ENGINEER" [ref=f34e1347] [cursor=pointer]:
+                    - link [ref=f34e1348]:
+                      - /url: /id/job/94663770?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1349]: Listed more than eight days ago
+                    - generic [ref=f34e1350]:
+                      - generic [ref=f34e1351]:
+                        - generic [ref=f34e1352]:
+                          - link:
+                            - /url: /id/companies/gemabangun-pronaperkasa-168555428425053
+                        - generic [ref=f34e1354]:
+                          - generic [ref=f34e1355]:
+                            - heading [level=3] [ref=f34e1356]:
+                              - link "ELECTRICAL DESIGN ENGINEER" [ref=f34e1358]:
+                                - /url: /id/job/94663770?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1360]:
+                              - generic [ref=f34e1361]: di
+                              - link "Lowongan di Gemabangun Pronaperkasa" [ref=f34e1362]:
+                                - /url: /id/Gemabangun-Pronaperkasa-jobs
+                                - text: PT Gemabangun Pronaperkasa
+                            - generic [ref=f34e1363]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1365]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f34e1368]:
+                            - link "Limit results to Cikarang Selatan, Jawa Barat":
+                              - /url: /id/Automation-Engineer-jobs/in-Cikarang-Selatan,-Jawa-Barat
+                              - text: Cikarang Selatan, Jawa Barat
+                      - generic [ref=f34e1369]:
+                        - generic [ref=f34e1370]: Electrical Design Engineer for automation and robotics solutions from concept to installation.
+                        - generic [ref=f34e1371]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1372]:
+                            - generic [ref=f34e1373]: 8 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1379]
+                            - button "Simpan" [ref=f34e1388]
+                  - article "Field Automation Engineer" [ref=f34e1394] [cursor=pointer]:
+                    - link [ref=f34e1395]:
+                      - /url: /id/job/94695848?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1396]: Listed more than seven days ago
+                    - generic [ref=f34e1397]:
+                      - generic [ref=f34e1398]:
+                        - generic [ref=f34e1399]:
+                          - link:
+                            - /url: /id/companies/helix-electrindo-168556926851651
+                        - generic [ref=f34e1401]:
+                          - generic [ref=f34e1402]:
+                            - heading [level=3] [ref=f34e1403]:
+                              - link "Field Automation Engineer" [ref=f34e1405]:
+                                - /url: /id/job/94695848?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1407]:
+                              - generic [ref=f34e1408]: di
+                              - link "Lowongan di Helix Electrindo" [ref=f34e1409]:
+                                - /url: /id/Helix-Electrindo-jobs
+                                - text: PT Helix Elektrindo
+                            - generic [ref=f34e1410]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1412]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e1415]:
+                            - link "Limit results to Tangerang, Banten":
+                              - /url: /id/Automation-Engineer-jobs/in-Tangerang,-Banten
+                              - text: Tangerang, Banten
+                      - generic [ref=f34e1416]:
+                        - generic [ref=f34e1417]: Bertanggung jawab atas perancangan teknik, perakitan, serta pelaksanaan site survey, instalasi, dan commissioning produk otomasi & instrumentasi
+                        - generic [ref=f34e1418]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1419]:
+                            - generic [ref=f34e1420]: 7 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1426]
+                            - button "Simpan" [ref=f34e1435]
+                  - article "Chief Engineer - Data Center" [ref=f34e1441] [cursor=pointer]:
+                    - link [ref=f34e1442]:
+                      - /url: /id/job/94849170?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1443]: Listed more than eleven days ago
+                    - generic [ref=f34e1444]:
+                      - generic [ref=f34e1445]:
+                        - generic [ref=f34e1446]:
+                          - link:
+                            - /url: /id/companies/bawana-margatama-168558317367917
+                        - generic [ref=f34e1448]:
+                          - generic [ref=f34e1449]:
+                            - heading [level=3] [ref=f34e1450]:
+                              - link "Chief Engineer - Data Center" [ref=f34e1452]:
+                                - /url: /id/job/94849170?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1454]:
+                              - generic [ref=f34e1455]: di
+                              - link "Lowongan di Bawana Margatama" [ref=f34e1456]:
+                                - /url: /id/Bawana-Margatama-jobs
+                                - text: PT Bawana Margatama
+                            - generic [ref=f34e1457]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1459]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f34e1460]:
+                            - generic [ref=f34e1462]:
+                              - link "Limit results to Jakarta Raya":
+                                - /url: /id/Automation-Engineer-jobs/in-Jakarta-Raya
+                                - text: Jakarta Raya
+                            - 'generic "Salary: Rp 22.000.000 – Rp 27.000.000 per month" [ref=f34e1463]': Rp 22.000.000 – Rp 27.000.000 per month
+                      - list [ref=f34e1466]:
+                        - listitem [ref=f34e1467]:
+                          - generic [ref=f34e1471]: Strategic Engineering Leadership
+                        - listitem [ref=f34e1473]:
+                          - generic [ref=f34e1477]: End-to-End Facility Management
+                        - listitem [ref=f34e1479]:
+                          - generic [ref=f34e1483]: CDCP/CDFOM certification
+                      - generic [ref=f34e1485]:
+                        - generic [ref=f34e1486]: Responsible for overseeing data center engineering and facility operations, ensuring the reliability, safety, and efficiency of critical systems
+                        - generic [ref=f34e1487]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Manajemen"
+                                - text: Manajemen
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1488]:
+                            - generic [ref=f34e1489]: 11 jam yang lalu
+                            - button "Lebih banyak" [ref=f34e1495]
+                            - button "Simpan" [ref=f34e1504]
+                  - article "Controls & Automation Engineer (Freelance for 2 months)" [ref=f34e1510] [cursor=pointer]:
+                    - link [ref=f34e1511]:
+                      - /url: /id/job/94342457?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1512]: Listed more than twenty three days ago
+                    - generic [ref=f34e1513]:
+                      - generic [ref=f34e1514]:
+                        - generic [ref=f34e1515]:
+                          - link:
+                            - /url: /id/companies/giesecke-n-devrient-168555106035224
+                        - generic [ref=f34e1517]:
+                          - generic [ref=f34e1518]:
+                            - heading [level=3] [ref=f34e1519]:
+                              - link "Controls & Automation Engineer (Freelance for 2 months)" [ref=f34e1521]:
+                                - /url: /id/job/94342457?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1523]:
+                              - generic [ref=f34e1524]: di
+                              - link "Lowongan di Giesecke & Devrient" [ref=f34e1525]:
+                                - /url: /id/Giesecke-&-Devrient-jobs
+                                - text: PT Giesecke & Devrient Indonesia
+                            - generic [ref=f34e1526]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1528]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f34e1531]:
+                            - link "Limit results to Karawang, Jawa Barat":
+                              - /url: /id/Automation-Engineer-jobs/in-Karawang,-Jawa-Barat
+                              - text: Karawang, Jawa Barat
+                      - generic [ref=f34e1532]:
+                        - generic [ref=f34e1533]: Chinese speaking engineer with 3 years of experience in integration automation project
+                        - generic [ref=f34e1534]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1535]:
+                            - generic [ref=f34e1537]:
+                              - generic [ref=f34e1538]: 23 hari yang lalu
+                              - generic [ref=f34e1539]: •
+                              - generic [ref=f34e1541]: Segera ditutup
+                            - button "Lebih banyak" [ref=f34e1545]
+                            - button "Simpan" [ref=f34e1554]
+                  - article "Maintenance Planner" [ref=f34e1560] [cursor=pointer]:
+                    - link [ref=f34e1561]:
+                      - /url: /id/job/94834161?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1562]: Listed more than one day ago
+                    - generic [ref=f34e1563]:
+                      - generic [ref=f34e1564]:
+                        - generic [ref=f34e1565]:
+                          - link:
+                            - /url: /id/companies/dnx-indonesia-168554322356904
+                        - generic [ref=f34e1567]:
+                          - generic [ref=f34e1568]:
+                            - heading [level=3] [ref=f34e1569]:
+                              - link "Maintenance Planner" [ref=f34e1571]:
+                                - /url: /id/job/94834161?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1573]:
+                              - generic [ref=f34e1574]: di
+                              - link "Lowongan di DNX Indonesia" [ref=f34e1575]:
+                                - /url: /id/DNX-Indonesia-jobs
+                                - text: PT DNX Indonesia
+                            - generic [ref=f34e1576]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1578]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e1581]:
+                            - link "Limit results to Kalimantan Timur":
+                              - /url: /id/Automation-Engineer-jobs/in-Kalimantan-Timur
+                              - text: Kalimantan Timur
+                      - list [ref=f34e1582]:
+                        - listitem [ref=f34e1583]:
+                          - generic [ref=f34e1587]: Asuransi Kesehatan
+                        - listitem [ref=f34e1589]:
+                          - generic [ref=f34e1593]: Annual bonus
+                        - listitem [ref=f34e1595]:
+                          - generic [ref=f34e1599]: Career development
+                      - generic [ref=f34e1601]:
+                        - generic [ref=f34e1602]: Provide safe and effective maintenance work packages for DNX Indonesia emulsion plants and MPUs operations.
+                        - generic [ref=f34e1603]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Pertambangan – Teknik & Pemeliharaan"
+                                - text: Pertambangan – Teknik & Pemeliharaan
+                                - generic: "classification: Pertambangan, Sumber Daya Alam & Energi"
+                                - text: (Pertambangan, Sumber Daya Alam & Energi)
+                          - generic [ref=f34e1604]:
+                            - generic [ref=f34e1605]: 1 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1611]
+                            - button "Simpan" [ref=f34e1620]
+                  - article "Supervisor Solution Engineer" [ref=f34e1626] [cursor=pointer]:
+                    - link [ref=f34e1627]:
+                      - /url: /id/job/94852513?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1628]: Listed more than nine days ago
+                    - generic [ref=f34e1629]:
+                      - generic [ref=f34e1630]:
+                        - generic [ref=f34e1631]:
+                          - link:
+                            - /url: /id/companies/pt-indobot-teknologi-nusantara-176895912988874
+                        - generic [ref=f34e1633]:
+                          - generic [ref=f34e1634]:
+                            - heading [level=3] [ref=f34e1635]:
+                              - link "Supervisor Solution Engineer" [ref=f34e1637]:
+                                - /url: /id/job/94852513?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1639]:
+                              - generic [ref=f34e1640]: di
+                              - link "Lowongan di PT Indobot Teknologi Nusantara" [ref=f34e1641]:
+                                - /url: /id/PT-Indobot-Teknologi-Nusantara-jobs
+                                - text: PT Indobot Teknologi Nusantara
+                            - generic [ref=f34e1642]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1644]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f34e1647]:
+                            - link "Limit results to Cikarang Pusat, Jawa Barat":
+                              - /url: /id/Automation-Engineer-jobs/in-Cikarang-Pusat,-Jawa-Barat
+                              - text: Cikarang Pusat, Jawa Barat
+                      - list [ref=f34e1648]:
+                        - listitem [ref=f34e1649]:
+                          - generic [ref=f34e1653]: Ada kesempatan menjadi karyawan tetap
+                        - listitem [ref=f34e1655]:
+                          - generic [ref=f34e1659]: Ada kesempatan menjadi karyawan tetap
+                      - generic [ref=f34e1661]:
+                        - generic [ref=f34e1662]: Memimpin tim soulutin/field engineer dalam merancang, mengintegrasikan, dan memastikan implementasi sesuai kebutuhan klien
+                        - generic [ref=f34e1663]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Supervisor"
+                                - text: Supervisor
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1664]:
+                            - generic [ref=f34e1665]: 9 jam yang lalu
+                            - button "Lebih banyak" [ref=f34e1671]
+                            - button "Simpan" [ref=f34e1680]
+                  - article "QA Automation Engineer" [ref=f34e1686] [cursor=pointer]:
+                    - link [ref=f34e1687]:
+                      - /url: /id/job/94616703?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1688]: Listed more than ten days ago
+                    - generic [ref=f34e1689]:
+                      - generic [ref=f34e1695]:
+                        - generic [ref=f34e1696]:
+                          - heading [level=3] [ref=f34e1697]:
+                            - link "QA Automation Engineer" [ref=f34e1699]:
+                              - /url: /id/job/94616703?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e1701]:
+                            - generic [ref=f34e1702]: di
+                            - link "Lowongan di Coinut" [ref=f34e1703]:
+                              - /url: /id/Coinut-jobs
+                              - text: COINUT PTE LTD
+                          - generic [ref=f34e1704]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f34e1706]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e1707]:
+                          - generic [ref=f34e1708]:
+                            - generic [ref=f34e1709]:
+                              - link "Limit results to Jakarta Raya":
+                                - /url: /id/Automation-Engineer-jobs/in-Jakarta-Raya
+                                - text: Jakarta Raya
+                            - generic [ref=f34e1710]: (Jarak jauh)
+                          - 'generic "Salary: Rp 14,000,000 – Rp 18,000,000 per month" [ref=f34e1711]': Rp 14,000,000 – Rp 18,000,000 per month
+                      - generic [ref=f34e1714]:
+                        - generic [ref=f34e1715]: We are looking for a Remote Position QA Automation Engineer to establish, own, and scale the quality assurance practices for Coinut’s crypto exchange
+                        - generic [ref=f34e1716]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Uji Coba & Penjaminan Mutu"
+                                - text: Uji Coba & Penjaminan Mutu
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e1717]:
+                            - generic [ref=f34e1718]: 10 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1724]
+                            - button "Simpan" [ref=f34e1733]
+                  - article "QA Automation Engineer" [ref=f34e1739] [cursor=pointer]:
+                    - link [ref=f34e1740]:
+                      - /url: /id/job/94804148?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1741]: Listed more than two days ago
+                    - generic [ref=f34e1742]:
+                      - generic [ref=f34e1743]:
+                        - generic [ref=f34e1744]:
+                          - link:
+                            - /url: /id/companies/petrolink-services-indonesia-168552589027208
+                        - generic [ref=f34e1746]:
+                          - generic [ref=f34e1747]:
+                            - heading [level=3] [ref=f34e1748]:
+                              - link "QA Automation Engineer" [ref=f34e1750]:
+                                - /url: /id/job/94804148?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1752]:
+                              - generic [ref=f34e1753]: di
+                              - link "Lowongan di Petrolink Services Indonesia" [ref=f34e1754]:
+                                - /url: /id/Petrolink-Services-Indonesia-jobs
+                                - text: PT Petrolink Services Indonesia
+                            - generic [ref=f34e1755]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1757]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f34e1759]:
+                            - generic [ref=f34e1760]:
+                              - link "Limit results to Jakarta Raya":
+                                - /url: /id/Automation-Engineer-jobs/in-Jakarta-Raya
+                                - text: Jakarta Raya
+                            - generic [ref=f34e1761]: (Hibrid)
+                      - list [ref=f34e1762]:
+                        - listitem [ref=f34e1763]:
+                          - generic [ref=f34e1767]: Working globally with international talents
+                        - listitem [ref=f34e1769]:
+                          - generic [ref=f34e1773]: Develop cutting edge technology
+                        - listitem [ref=f34e1775]:
+                          - generic [ref=f34e1779]: Hybrid work arrangement
+                      - generic [ref=f34e1781]:
+                        - generic [ref=f34e1782]: Petrolink is a global company that specializes in user-driven technology for the Oil and Gas Industry and currently looking for a Test Engineer.
+                        - generic [ref=f34e1783]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Uji Coba & Penjaminan Mutu"
+                                - text: Uji Coba & Penjaminan Mutu
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e1784]:
+                            - generic [ref=f34e1785]: 2 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1791]
+                            - button "Simpan" [ref=f34e1800]
+                  - article "Automation Intern" [ref=f34e1806] [cursor=pointer]:
+                    - link [ref=f34e1807]:
+                      - /url: /id/job/94466786?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1808]: Listed more than seventeen days ago
+                    - generic [ref=f34e1809]:
+                      - generic [ref=f34e1810]:
+                        - generic [ref=f34e1811]:
+                          - link:
+                            - /url: /id/companies/agatos-multi-solutions-168555659845395
+                        - generic [ref=f34e1813]:
+                          - generic [ref=f34e1814]:
+                            - heading [level=3] [ref=f34e1815]:
+                              - link "Automation Intern" [ref=f34e1817]:
+                                - /url: /id/job/94466786?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1819]:
+                              - generic [ref=f34e1820]: di
+                              - link "Lowongan di Agatos Multi Solutions" [ref=f34e1821]:
+                                - /url: /id/Agatos-Multi-Solutions-jobs
+                                - text: PT Agatos Multi Solusi
+                            - generic [ref=f34e1822]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1824]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f34e1827]:
+                            - link "Limit results to Surabaya, Jawa Timur":
+                              - /url: /id/Automation-Engineer-jobs/in-Surabaya,-Jawa-Timur
+                              - text: Surabaya, Jawa Timur
+                      - generic [ref=f34e1828]:
+                        - generic [ref=f34e1829]: Automation Intern Surabaya. Final year Elec/Mechatronics/Physics Eng. PLC/HMI knowledge a plus. 3-6 months, paid. Good attitude.
+                        - generic [ref=f34e1830]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1831]:
+                            - generic [ref=f34e1832]: 17 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1838]
+                            - button "Simpan" [ref=f34e1847]
+                  - article "QA/Test Engineer" [ref=f34e1853] [cursor=pointer]:
+                    - link [ref=f34e1854]:
+                      - /url: /id/job/94789937?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1855]: Listed more than two days ago
+                    - generic [ref=f34e1856]:
+                      - generic [ref=f34e1857]:
+                        - generic [ref=f34e1858]:
+                          - link:
+                            - /url: /id/companies/pt-kredit-utama-fintech-indonesia-168542479955631
+                        - generic [ref=f34e1860]:
+                          - generic [ref=f34e1861]:
+                            - heading [level=3] [ref=f34e1862]:
+                              - link "QA/Test Engineer" [ref=f34e1864]:
+                                - /url: /id/job/94789937?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e1866]:
+                              - generic [ref=f34e1867]: di
+                              - link "Lowongan di PT. Kredit Utama Fintech Indonesia" [ref=f34e1868]:
+                                - /url: /id/PT.-Kredit-Utama-Fintech-Indonesia-jobs
+                                - text: PT. Kredit Utama Fintech Indonesia
+                            - generic [ref=f34e1869]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e1871]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f34e1874]:
+                            - link "Limit results to Jakarta Pusat, Jakarta Raya":
+                              - /url: /id/Automation-Engineer-jobs/in-Jakarta-Pusat,-Jakarta-Raya
+                              - text: Jakarta Pusat, Jakarta Raya
+                      - list [ref=f34e1875]:
+                        - listitem [ref=f34e1876]:
+                          - generic [ref=f34e1880]: Career Growth
+                        - listitem [ref=f34e1882]:
+                          - generic [ref=f34e1886]: Competitive Package
+                        - listitem [ref=f34e1888]:
+                          - generic [ref=f34e1892]: Free Lunch & Private Health Insurance
+                      - generic [ref=f34e1894]:
+                        - generic [ref=f34e1895]: Join Indonesia's leading fintech as QA/Test Engineer. Contribute to innovative digital finance solutions.
+                        - generic [ref=f34e1896]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Uji Coba & Penjaminan Mutu"
+                                - text: Uji Coba & Penjaminan Mutu
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e1897]:
+                            - generic [ref=f34e1898]: 2 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1904]
+                            - button "Simpan" [ref=f34e1913]
+                  - article "Control and Instrumentation Engineer" [ref=f34e1919] [cursor=pointer]:
+                    - link [ref=f34e1920]:
+                      - /url: /id/job/94706760?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1921]: Listed more than seven days ago
+                    - generic [ref=f34e1922]:
+                      - generic [ref=f34e1928]:
+                        - generic [ref=f34e1929]:
+                          - heading [level=3] [ref=f34e1930]:
+                            - link "Control and Instrumentation Engineer" [ref=f34e1932]:
+                              - /url: /id/job/94706760?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f34e1934]:
+                            - generic [ref=f34e1935]: di
+                            - link "Lowongan di PT. Biofactory Teknika Uama" [ref=f34e1936]:
+                              - /url: /id/PT.-Biofactory-Teknika-Uama-jobs
+                              - text: PT. Biofactory Teknika Uama
+                          - generic [ref=f34e1937]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f34e1939]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f34e1940]:
+                          - generic [ref=f34e1942]:
+                            - link "Limit results to Batam Kota, Kepulauan Riau":
+                              - /url: /id/Automation-Engineer-jobs/in-Batam-Kota,-Kepulauan-Riau
+                              - text: Batam Kota, Kepulauan Riau
+                          - 'generic "Salary: Rp 4.600.000 – Rp 6.000.000 per month" [ref=f34e1943]': Rp 4.600.000 – Rp 6.000.000 per month
+                      - list [ref=f34e1946]:
+                        - listitem [ref=f34e1947]:
+                          - generic [ref=f34e1951]: Innovative and Challenging Engineering Projects
+                        - listitem [ref=f34e1953]:
+                          - generic [ref=f34e1957]: Potential engagement with international customers
+                        - listitem [ref=f34e1959]:
+                          - generic [ref=f34e1963]: Rigorous Engineering Process
+                      - generic [ref=f34e1965]:
+                        - generic [ref=f34e1966]: Control and Instrumentation Engineer
+                        - generic [ref=f34e1967]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e1968]:
+                            - generic [ref=f34e1969]: 7 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e1975]
+                            - button "Simpan" [ref=f34e1984]
+                  - article "Electrical Enginering" [ref=f34e1990] [cursor=pointer]:
+                    - link [ref=f34e1991]:
+                      - /url: /id/job/94790035?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e1992]: Listed more than eight days ago
+                    - generic [ref=f34e1993]:
+                      - generic [ref=f34e1994]:
+                        - generic [ref=f34e1995]:
+                          - link:
+                            - /url: /id/companies/pt-yadea-manufaktur-kendaraan-listrik-174980971095686
+                        - generic [ref=f34e1997]:
+                          - generic [ref=f34e1998]:
+                            - heading [level=3] [ref=f34e1999]:
+                              - link "Electrical Enginering" [ref=f34e2001]:
+                                - /url: /id/job/94790035?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e2003]:
+                              - generic [ref=f34e2004]: di
+                              - link "Lowongan di PT Yadea Manufaktur Kendaraan Listrik" [ref=f34e2005]:
+                                - /url: /id/PT-Yadea-Manufaktur-Kendaraan-Listrik-jobs
+                                - text: PT Yadea Manufaktur Kendaraan Listrik
+                            - generic [ref=f34e2006]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e2008]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e2011]:
+                            - link "Limit results to Cikarang Pusat, Jawa Barat":
+                              - /url: /id/Automation-Engineer-jobs/in-Cikarang-Pusat,-Jawa-Barat
+                              - text: Cikarang Pusat, Jawa Barat
+                      - generic [ref=f34e2012]:
+                        - generic [ref=f34e2013]: Electrical Engineering
+                        - generic [ref=f34e2014]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Elektro/Elektronik"
+                                - text: Teknik Elektro/Elektronik
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f34e2015]:
+                            - generic [ref=f34e2016]: 8 jam yang lalu
+                            - button "Lebih banyak" [ref=f34e2022]
+                            - button "Simpan" [ref=f34e2031]
+                  - article "Fullstack Developer (JAVA)" [ref=f34e2037] [cursor=pointer]:
+                    - link [ref=f34e2038]:
+                      - /url: /id/job/94603212?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f34e2039]: Listed more than ten days ago
+                    - generic [ref=f34e2040]:
+                      - generic [ref=f34e2041]:
+                        - generic [ref=f34e2042]:
+                          - link:
+                            - /url: /id/companies/hitachi-ebworx-168556766410429
+                        - generic [ref=f34e2044]:
+                          - generic [ref=f34e2045]:
+                            - heading [level=3] [ref=f34e2046]:
+                              - link "Fullstack Developer (JAVA)" [ref=f34e2048]:
+                                - /url: /id/job/94603212?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f34e2050]:
+                              - generic [ref=f34e2051]: di
+                              - link "Lowongan di Hitachi eBworx" [ref=f34e2052]:
+                                - /url: /id/Hitachi-eBworx-jobs
+                                - text: PT Hitachi eBworx Indonesia
+                            - generic [ref=f34e2053]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f34e2055]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f34e2058]:
+                            - link "Limit results to Jakarta Pusat, Jakarta Raya":
+                              - /url: /id/Automation-Engineer-jobs/in-Jakarta-Pusat,-Jakarta-Raya
+                              - text: Jakarta Pusat, Jakarta Raya
+                      - list [ref=f34e2059]:
+                        - listitem [ref=f34e2060]:
+                          - generic [ref=f34e2064]: One of Well-known Multinational Company
+                        - listitem [ref=f34e2066]:
+                          - generic [ref=f34e2070]: Annual Leave Max 21 day, additional Paternity leave, additional child care leave
+                        - listitem [ref=f34e2072]:
+                          - generic [ref=f34e2076]: Big Opportunity for training/placement abroad, Career path and advanced benefit
+                      - generic [ref=f34e2078]:
+                        - generic [ref=f34e2079]: Participate in requirement, design, implementation, testing and support of custom banking solutions, which include features enhancements, new...
+                        - generic [ref=f34e2080]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f34e2081]:
+                            - generic [ref=f34e2082]: 10 hari yang lalu
+                            - button "Lebih banyak" [ref=f34e2088]
+                            - button "Simpan" [ref=f34e2097]
+                - button "Ubah pencarian saya" [ref=f34e2104] [cursor=pointer]
+            - generic [ref=f34e2108]:
+              - generic [ref=f34e2109]: Seberapa relevan hasil pencarian Anda?
+              - generic [ref=f34e2113]:
+                - button "Relevan" [ref=f34e2116] [cursor=pointer]
+                - button "Tidak relevan" [ref=f34e2123] [cursor=pointer]
+            - button [ref=f34e2130] [cursor=pointer]:
+              - generic [ref=f34e2131]:
+                - generic:
+                  - generic:
+                    - generic [aria-hidden]: ⁠
+                    - text: Simpan pencarian ini
+            - navigation "Penomoran halaman hasil" [ref=f34e2134]:
+              - list [ref=f34e2135]:
+                - listitem:
+                  - link [aria-hidden]:
+                    - /url: /id/Automation-Engineer-jobs
+                    - generic: Sebelumnya
+                - listitem [ref=f34e2136]:
+                  - link "Go to page 1" [ref=f34e2137] [cursor=pointer]:
+                    - /url: /id/Automation-Engineer-jobs
+                    - generic [ref=f34e2138]: "1"
+                - listitem [ref=f34e2141]:
+                  - link "Go to page 2" [ref=f34e2142] [cursor=pointer]:
+                    - /url: /id/Automation-Engineer-jobs?page=2
+                    - generic [ref=f34e2143]: "2"
+                - listitem [ref=f34e2146]:
+                  - link "Go to page 3" [ref=f34e2147] [cursor=pointer]:
+                    - /url: /id/Automation-Engineer-jobs?page=3
+                    - generic [ref=f34e2148]: "3"
+                - listitem [ref=f34e2151]:
+                  - link "Selanjutnya" [ref=f34e2152] [cursor=pointer]:
+                    - /url: /id/Automation-Engineer-jobs?page=2
+          - generic [ref=f34e2164]:
+            - button "Kembali ke hasil pencarian" [ref=f34e2167] [cursor=pointer]
+            - button "Ubah pencarian saya" [ref=f34e2170] [cursor=pointer]
+            - generic [ref=f34e2176]:
+              - heading "Pilih lowongan kerja" [level=3] [ref=f34e2177]
+              - generic [ref=f34e2178]: Tampilkan detail di sini
+  - contentinfo [ref=f34e2200]:
+    - generic [ref=f34e2202]:
+      - generic [ref=f34e2205]:
+        - generic [ref=f34e2207]:
+          - generic [ref=f34e2209]:
+            - generic [ref=f34e2210]: Pencari kerja
+            - list [ref=f34e2211]:
+              - listitem [ref=f34e2212]:
+                - link "Cari lowongan" [ref=f34e2213] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f34e2216]:
+                - link "Lihat profil" [ref=f34e2217] [cursor=pointer]:
+                  - /url: /id/profile/me
+              - listitem [ref=f34e2220]:
+                - link "Cari profil" [ref=f34e2221] [cursor=pointer]:
+                  - /url: /id/profiles/search?tracking=ILC-profile-search-footer
+              - listitem [ref=f34e2224]:
+                - link "Pencarian tersimpan" [ref=f34e2225] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-searches
+              - listitem [ref=f34e2228]:
+                - link "Lowongan tersimpan" [ref=f34e2229] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-jobs
+              - listitem [ref=f34e2232]:
+                - link "Lamaran kerja" [ref=f34e2233] [cursor=pointer]:
+                  - /url: /id/my-activity/applied-jobs
+              - listitem [ref=f34e2236]:
+                - link "Sumber daya karir" [ref=f34e2237] [cursor=pointer]:
+                  - /url: /id/career-advice
+              - listitem [ref=f34e2240]:
+                - link "Jelajahi karier" [ref=f34e2241] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-careers
+              - listitem [ref=f34e2244]:
+                - link "Jelajahi gaji" [ref=f34e2245] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-salaries
+              - listitem [ref=f34e2248]:
+                - link "Perusahaan" [ref=f34e2249] [cursor=pointer]:
+                  - /url: /id/companies
+              - listitem [ref=f34e2252]:
+                - button "Unduh aplikasi" [ref=f34e2257] [cursor=pointer]
+          - generic [ref=f34e2266]:
+            - generic [ref=f34e2267]: Perusahaan
+            - list [ref=f34e2268]:
+              - listitem [ref=f34e2269]:
+                - link "Daftar gratis" [ref=f34e2270] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f34e2273]:
+                - link "Pasang iklan lowongan kerja" [ref=f34e2274] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f34e2277]:
+                - link "Produk & harga" [ref=f34e2278] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/products/jobads
+              - listitem [ref=f34e2281]:
+                - link "Layanan pelanggan" [ref=f34e2282] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/contactus
+              - listitem [ref=f34e2285]:
+                - link "Saran perekrutan" [ref=f34e2286] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/hiring-advice
+              - listitem [ref=f34e2289]:
+                - link "Wawasan pasar" [ref=f34e2290] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/market-insights
+              - listitem [ref=f34e2293]:
+                - link "Mitra perangkat lunak perekrutan" [ref=f34e2294] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/partners/connect-with-seek
+        - generic [ref=f34e2299]:
+          - generic [ref=f34e2301]:
+            - generic [ref=f34e2302]: Tentang kami
+            - list [ref=f34e2303]:
+              - listitem [ref=f34e2304]:
+                - link "Tentang kami" [ref=f34e2305] [cursor=pointer]:
+                  - /url: /id/about
+              - listitem [ref=f34e2308]:
+                - link "Ruang berita" [ref=f34e2309] [cursor=pointer]:
+                  - /url: /id/about/news
+              - listitem [ref=f34e2312]:
+                - link "Investor" [ref=f34e2313] [cursor=pointer]:
+                  - /url: https://au.seek.com/about/investors
+              - listitem [ref=f34e2316]:
+                - link "Karir" [ref=f34e2317] [cursor=pointer]:
+                  - /url: /id/careers
+              - listitem [ref=f34e2320]:
+                - button "Mitra internasional" [ref=f34e2325] [cursor=pointer]
+              - listitem [ref=f34e2333]:
+                - button "Layanan mitra" [ref=f34e2338] [cursor=pointer]
+          - generic [ref=f34e2347]:
+            - generic [ref=f34e2348]: Kontak
+            - list [ref=f34e2349]:
+              - listitem [ref=f34e2350]:
+                - link "Pusat bantuan" [ref=f34e2351] [cursor=pointer]:
+                  - /url: https://help.id.jobstreet.com/id/s/?language=in
+              - listitem [ref=f34e2354]:
+                - link "Hubungi kami" [ref=f34e2355] [cursor=pointer]:
+                  - /url: /id/contact-us
+              - listitem [ref=f34e2358]:
+                - link "Blog produk & teknologi" [ref=f34e2359] [cursor=pointer]:
+                  - /url: https://medium.com/seek-blog
+              - listitem [ref=f34e2362]:
+                - button "Media sosial" [ref=f34e2367] [cursor=pointer]
+      - generic [ref=f34e2377]:
+        - button "Lokasi" [ref=f34e2381] [cursor=pointer]:
+          - generic [ref=f34e2382]: Indonesia
+        - generic [ref=f34e2395]:
+          - generic [ref=f34e2396]:
+            - link "Persyaratan & ketentuan" [ref=f34e2398] [cursor=pointer]:
+              - /url: /id/terms
+            - link "Keamanan" [ref=f34e2402] [cursor=pointer]:
+              - /url: /id/security-hub
+            - link "Privasi" [ref=f34e2406] [cursor=pointer]:
+              - /url: /id/my-privacy
+          - generic [ref=f34e2409]: Hak cipta © 2026 Jobstreet

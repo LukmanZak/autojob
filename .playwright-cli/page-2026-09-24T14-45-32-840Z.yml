@@ -1,0 +1,133 @@
+- generic [ref=f24e18]:
+  - link "%%%Skip to content" [ref=f24e19] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f24e20]:
+    - banner [ref=f24e22]:
+      - generic [ref=f24e26]:
+        - generic [ref=f24e27]:
+          - link "Jobstreet" [ref=f24e29] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f24e37]:
+            - link "Cari lowongan" [ref=f24e39] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f24e44] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f24e49] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f24e54] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f24e58]:
+          - button "Bahasa" [ref=f24e61] [cursor=pointer]
+          - button "Profile Avatar" [ref=f24e81] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f24e94] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f24e126]:
+      - generic [ref=f24e130]:
+        - img "PT Mitra Distribusi Utama" [ref=f24e132]
+        - generic [ref=f24e133]:
+          - generic [ref=f24e134]: Melamar untuk
+          - heading "AI Agent Developer / AI Automation Engineer" [level=1] [ref=f24e135]
+          - generic [ref=f24e136]: PT Mitra Distribusi Utama
+          - button "Lihat deskripsi pekerjaan" [ref=f24e138] [cursor=pointer]
+      - navigation "Progress bar" [ref=f24e140]:
+        - list [ref=f24e141]:
+          - listitem [ref=f24e142]:
+            - button "Pilih dokumen"
+          - listitem [ref=f24e155]:
+            - button "Jawab pertanyaan perusahaan"
+          - listitem [ref=f24e156]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f24e157]:
+            - button "Review dan kirim" [ref=f24e1135]
+        - progressbar
+      - generic [ref=f24e1145]:
+        - generic [ref=f24e1149]:
+          - generic [ref=f24e1151]:
+            - button "Profile photo options" [ref=f24e1156] [cursor=pointer]:
+              - generic [ref=f24e1158]:
+                - generic:
+                  - heading [level=3]
+            - generic [ref=f24e1162]:
+              - heading [level=4] [ref=f24e1164]:
+                - text: Lukman Zakaria
+                - generic "Identitas terverifikasi" [ref=f24e1165]
+              - generic [ref=f24e1168]:
+                - generic [ref=f24e1169]: Jakarta Selatan, Jakarta Raya
+                - generic [ref=f24e1177]: +62 85785255577
+                - generic [ref=f24e1184]: lukmanzakaria04@gmail.com
+          - button "Edit detail pribadi" [ref=f24e1193] [cursor=pointer]
+        - generic [ref=f24e1198]:
+          - heading "Dokumen yang disertakan" [level=3] [ref=f24e1199]
+          - generic [ref=f24e1200]:
+            - generic [ref=f24e1202]:
+              - generic [ref=f24e1203]:
+                - generic [ref=f24e1204]: Resume
+                - generic [ref=f24e1205]: CV_Eng.pdf
+              - button "Edit resume" [ref=f24e1208] [cursor=pointer]
+            - generic [ref=f24e1215]:
+              - generic [ref=f24e1216]:
+                - generic [ref=f24e1217]: Surat lamaran
+                - generic [ref=f24e1218]: Kamu menulis surat lamaran untuk lamaran ini
+              - button "Edit surat pengantar" [ref=f24e1221] [cursor=pointer]
+        - generic [ref=f24e1228]:
+          - heading "Pertanyaan perusahaan" [level=3] [ref=f24e1229]
+          - generic [ref=f24e1231]:
+            - generic [ref=f24e1232]:
+              - text: Anda menjawab
+              - strong [ref=f24e1233]: 5 dari 5
+            - button "Ubah pertanyaan pemberi kerja" [ref=f24e1236] [cursor=pointer]
+        - generic [ref=f24e1243]:
+          - heading "Profil Jobstreet kamu" [level=3] [ref=f24e1244]
+          - generic [ref=f24e1245]: Saat Anda melamar pekerjaan, Profil Jobstreet dan kredensial terverifikasi Anda akan diakses oleh PT Mitra Distribusi Utama sebagai bagian dari proses lamaran.
+          - generic [ref=f24e1246]:
+            - generic [ref=f24e1247]:
+              - generic [ref=f24e1248]:
+                - generic [ref=f24e1249]: Riwayat karir
+                - generic [ref=f24e1250]: 4 peran
+              - button "Ubah" [ref=f24e1253] [cursor=pointer]
+            - generic [ref=f24e1259]:
+              - generic [ref=f24e1260]:
+                - generic [ref=f24e1261]: Pendidikan
+                - generic [ref=f24e1262]: 1 qualifications
+              - button "Ubah" [ref=f24e1265] [cursor=pointer]
+            - generic [ref=f24e1271]:
+              - generic [ref=f24e1272]:
+                - generic [ref=f24e1273]: Lisensi & sertifikasi
+                - generic [ref=f24e1274]: 2 kredensial
+              - button "Ubah lisensi atau sertifikasi" [ref=f24e1277] [cursor=pointer]
+            - generic [ref=f24e1283]:
+              - generic [ref=f24e1284]:
+                - generic [ref=f24e1285]: Keahlian
+                - generic [ref=f24e1286]: 15 keterampilan
+              - button "Ubah keahlian" [ref=f24e1289] [cursor=pointer]
+        - generic [ref=f24e1298]:
+          - heading "Buat lamaranmu lebih berkesan" [level=3] [ref=f24e1299]
+          - generic [ref=f24e1300]:
+            - text: Tunjukkan bahwa kamu sangat berminat agar peluangmu dilirik rekruter lebih besar.
+            - link "Pelajari" [ref=f24e1301] [cursor=pointer]:
+              - /url: https://help.id.jobstreet.com/in/article/Show-strong-interest-in-the-jobs-you-really-want
+          - generic [ref=f24e1302]:
+            - generic [ref=f24e1303]: Saya sangat berminat
+            - generic [ref=f24e1309]:
+              - checkbox [ref=f24e1311] [cursor=pointer]
+              - generic [ref=f24e1316] [cursor=pointer]
+          - generic [ref=f24e1317]: Kamu bisa pakai fitur ini untuk 3 lamaran lagi (termasuk lamaran ini) hingga 1 Okt 2026.
+        - generic [ref=f24e1318]:
+          - generic [ref=f24e1319]:
+            - text: Dengan mendaftar, Anda menyetujui
+            - link "Pemberitahuan Pengumpulan" [ref=f24e1320] [cursor=pointer]:
+              - /url: /id/collection-notice
+            - text: dan
+            - link "Kebijakan Privasi" [ref=f24e1321] [cursor=pointer]:
+              - /url: /id/privacy
+            - text: .
+          - button [ref=f24e1323] [cursor=pointer]:
+            - generic [ref=f24e1324]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kirim lamaran
+  - contentinfo [ref=f24e105]:
+    - generic [ref=f24e109] [cursor=pointer]:
+      - generic [ref=f24e110]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f24e115]: Telusuri situs

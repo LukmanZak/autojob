@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080,height=1920">
+<title>SotoKu - HTML HyperFrames</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:Inter;src:local("Arial");}*{box-sizing:border-box}html,body{margin:0;background:#252a2d;color:#252a2d;font-family:Inter,Arial,sans-serif}#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#f6e8c8}.scene{position:absolute;inset:0;padding:110px 86px;opacity:0;display:flex;flex-direction:column;justify-content:center}.scene-content{width:100%;height:100%;display:flex;flex-direction:column;gap:34px}.cream{background:#f6e8c8}.charcoal{background:#252a2d;color:#fff7e6}.gold{color:#e9a91a}.eyebrow{font-size:30px;letter-spacing:7px;text-transform:uppercase;color:#b98925;font-weight:700}.headline{font-size:86px;line-height:1.02;letter-spacing:-3px;font-weight:800;max-width:850px}.body{font-size:34px;line-height:1.3;max-width:780px;color:#4d4031}.logo{width:370px;height:auto;object-fit:contain;align-self:flex-start;border-radius:18px}.logo-small{width:250px;height:auto;object-fit:contain;border-radius:12px}.hero-photo{width:100%;height:900px;object-fit:cover;object-position:center;border-radius:34px;box-shadow:0 30px 70px rgba(37,42,45,.2)}.ingredient-row{display:flex;gap:18px;align-items:center}.pill{border:2px solid #b98925;border-radius:40px;padding:18px 27px;font-size:26px;background:#fff7e6}.rule{width:130px;height:8px;background:#e9a91a;border-radius:8px}.footer{margin-top:auto;font-size:24px;letter-spacing:3px;color:#b98925}.copy-safe{padding-top:130px}.accent{position:absolute;width:360px;height:360px;border-radius:50%;background:#e9a91a;opacity:.16;right:-100px;top:-100px}.frame{border:2px solid rgba(185,137,37,.5);padding:26px;border-radius:28px}.photo-wrap{position:relative}.photo-wrap:after{content:"";position:absolute;inset:20px;border:2px solid rgba(255,247,230,.55);border-radius:25px;pointer-events:none}
+</style>
+</head>
+<body>
+<div id="stage" data-composition-id="sotoku-html" data-start="0" data-duration="10" data-width="1080" data-height="1920">
+<section id="s1" class="scene clip cream" data-start="0" data-duration="2.0" data-track-index="0"><div class="scene-content"><div class="accent"></div><img class="logo" src="assets/logo.jpg"><div class="eyebrow">Food Brand Indonesia</div><div class="headline">Rasa yang dekat.<br><span class="gold">Tampil berkelas.</span></div><div class="rule"></div><div class="footer">SOTO AYAM KUNING</div></div></section>
+<section id="s2" class="scene clip cream" data-start="2.0" data-duration="2.0" data-track-index="1"><div class="scene-content"><div class="eyebrow">Kenali SotoKu</div><div class="headline">Satu mangkuk,<br><span class="gold">langsung menggugah.</span></div><div class="photo-wrap"><img class="hero-photo" src="assets/product.jpg"></div><div class="body">Soto ayam kuning yang akrab, hadir dengan penyajian yang lebih rapi dan elegan.</div></div></section>
+<section id="s3" class="scene clip cream" data-start="4.0" data-duration="2.0" data-track-index="2"><div class="scene-content copy-safe"><div class="eyebrow">Detail yang terasa</div><div class="headline">Kuningnya menggoda.<br><span class="gold">Teksturnya mengundang.</span></div><div class="ingredient-row"><div class="pill">Ayam suwir</div><div class="pill">Daun bawang</div></div><div class="ingredient-row"><div class="pill">Bawang goreng</div><div class="pill">Jeruk nipis</div></div><div class="body">Nikmati visualnya. Bayangkan suapan pertamanya.</div><div class="footer">SOTOKU</div></div></section>
+<section id="s4" class="scene clip charcoal" data-start="6.0" data-duration="2.0" data-track-index="3"><div class="scene-content"><img class="logo-small" src="assets/logo.jpg"><div class="eyebrow">Untuk siapa saja</div><div class="headline">Ada momen yang terasa lebih lengkap dengan SotoKu.</div><div class="frame"><div class="body" style="color:#fff7e6">Kenali brand soto yang hangat secara personal, autentik dalam produk, dan profesional dalam penyajiannya.</div></div><div class="footer">FOLLOW THE STORY</div></div></section>
+<section id="s5" class="scene clip cream" data-start="8.0" data-duration="2.0" data-track-index="4"><div class="scene-content" style="align-items:center;text-align:center"><img class="logo" src="assets/logo.jpg" style="align-self:center"><div class="headline" style="font-size:74px">Hangatnya rasa,<br><span class="gold">berkelas penyajiannya.</span></div><div class="rule"></div><div class="body">Kenali SotoKu lebih dekat.</div><div class="footer">SOTO KU • SOCIAL BRAND FILM</div></div></section>
+</div>
+<script>
+window.__timelines=window.__timelines||{};
+const tl=gsap.timeline({paused:true});
+const scenes=['#s1','#s2','#s3','#s4','#s5'];
+scenes.forEach((sel,i)=>{const s=document.querySelector(sel);tl.to(s,{opacity:1,duration:.35,ease:'power2.out'},i*2+.15);tl.from(s.querySelectorAll('.scene-content>*'),{opacity:0,y:34,stagger:.12,duration:.5,ease:i%2?'back.out(1.2)':'power3.out'},i*2+.25);if(i<scenes.length-1)tl.to(s,{opacity:0,duration:.25,ease:'power1.in'},i*2+1.82)});
+window.__timelines['sotoku-html']=tl;
+</script>
+</body>
+</html>

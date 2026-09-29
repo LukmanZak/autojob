@@ -1,0 +1,140 @@
+- generic [ref=f39e18]:
+  - link "%%%Skip to content" [ref=f39e19] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f39e20]:
+    - banner [ref=f39e22]:
+      - generic [ref=f39e26]:
+        - generic [ref=f39e27]:
+          - link "Jobstreet" [ref=f39e29] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f39e37]:
+            - link "Cari lowongan" [ref=f39e39] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f39e44] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f39e49] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f39e54] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f39e58]:
+          - button "Bahasa" [ref=f39e61] [cursor=pointer]
+          - button "Profile Avatar" [ref=f39e81] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f39e94] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f39e98]:
+      - generic [ref=f39e102]:
+        - img "PT. SUPERMAL KARAWACI" [ref=f39e104]
+        - generic [ref=f39e105]:
+          - generic [ref=f39e106]: Melamar untuk
+          - heading "AI & Automation Engineer" [level=1] [ref=f39e107]
+          - generic [ref=f39e108]: PT. SUPERMAL KARAWACI
+          - button "Lihat deskripsi pekerjaan" [ref=f39e110] [cursor=pointer]
+      - navigation "Progress bar" [ref=f39e112]:
+        - list [ref=f39e113]:
+          - listitem [ref=f39e114]:
+            - button "Pilih dokumen"
+          - listitem [ref=f39e127]:
+            - button "Jawab pertanyaan perusahaan" [ref=f39e427]
+          - listitem [ref=f39e128]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f39e129]:
+            - button "Review dan kirim"
+        - progressbar
+      - generic [ref=f39e439]:
+        - alert [ref=f39e512]:
+          - generic [ref=f39e521]:
+            - generic [ref=f39e522]: "Sebelum kamu dapat melanjutkan proses lamaran, harap atasi hal-hal berikut:"
+            - list [ref=f39e523]:
+              - listitem [ref=f39e524]:
+                - generic [ref=f39e528]: Do you have Process Automation experience? - Silakan buat seleksi
+        - generic [ref=f39e441]:
+          - generic [ref=f39e442]:
+            - strong [ref=f39e447]: Which of the following statements best describes your right to work in Indonesia?
+            - combobox "Which of the following statements best describes your right to work in Indonesia?" [ref=f39e450]:
+              - option "I'm an Indonesian citizen" [selected]
+              - option "I have an Employment pass/Work permit"
+              - option "I have an Indonesian residence permit (KITAS/KITAP)"
+              - option "I have a Business Visa"
+              - option "I have an ABTC (APEC Business Travel Card)"
+              - option "I require sponsorship to work for a new employer in Indonesia"
+          - generic [ref=f39e451]:
+            - strong [ref=f39e456]: What's your expected monthly basic salary?
+            - combobox "What's your expected monthly basic salary?" [ref=f39e459]:
+              - option "Rp 1 million"
+              - option "Rp 1.5 million"
+              - option "Rp 2 million"
+              - option "Rp 2.5 million"
+              - option "Rp 3 million"
+              - option "Rp 3.5 million"
+              - option "Rp 4 million"
+              - option "Rp 4.5 million"
+              - option "Rp 5 million"
+              - option "Rp 5.5 million"
+              - option "Rp 6 million"
+              - option "Rp 7 million"
+              - option "Rp 8 million"
+              - option "Rp 9 million"
+              - option "Rp 10 million" [selected]
+              - option "Rp 15 million"
+              - option "Rp 20 million"
+              - option "Rp 25 million"
+              - option "Rp 30 million"
+              - option "Rp 40 million"
+              - option "Rp 60 million"
+              - option "Rp 80 million"
+              - option "Rp 100 million or more"
+          - generic [ref=f39e460]:
+            - strong [ref=f39e465]: How many years' experience do you have as an Automation Engineer?
+            - combobox "How many years' experience do you have as an Automation Engineer?" [ref=f39e468]:
+              - option "No experience"
+              - option "Less than 1 year"
+              - option "1 year"
+              - option "2 years"
+              - option "3 years" [selected]
+              - option "4 years"
+              - option "5 years"
+              - option "More than 5 years"
+          - generic [ref=f39e469]:
+            - strong [ref=f39e474]: Which of the following types of qualifications do you have?
+            - combobox "Which of the following types of qualifications do you have?" [ref=f39e477]:
+              - option "Elementary school (SD) or equivalent"
+              - option "SMP or equivalent"
+              - option "SMA/SMK or equivalent"
+              - option "Diploma 1"
+              - option "Diploma 2"
+              - option "Diploma 3"
+              - option "Diploma 4"
+              - option "Bachelor Degree (S1)" [selected]
+              - option "Professional Education Program"
+              - option "Masters Degree (S2)"
+              - option "Doctoral Degree (S3)"
+              - option "I have a qualification that is not listed here"
+          - radiogroup [ref=f39e478]:
+            - generic [ref=f39e479]:
+              - strong [ref=f39e484]: Do you have Process Automation experience?
+              - generic [ref=f39e485]:
+                - generic [ref=f39e486]:
+                  - generic [ref=f39e488]:
+                    - radio "Yes" [ref=f39e489] [cursor=pointer]
+                    - generic [ref=f39e491]: "Yes"
+                  - generic [ref=f39e496]:
+                    - radio "No" [ref=f39e497] [cursor=pointer]
+                    - generic [ref=f39e499]: "No"
+                - generic [ref=f39e530]: Silakan buat seleksi
+          - generic [ref=f39e503]:
+            - button [active] [ref=f39e505] [cursor=pointer]:
+              - generic [ref=f39e506]:
+                - generic:
+                  - generic:
+                    - text: Lanjut
+                    - generic [aria-hidden]: ⁠
+            - button [ref=f39e509] [cursor=pointer]:
+              - generic [ref=f39e510]:
+                - generic:
+                  - generic:
+                    - generic [aria-hidden]: ⁠
+                    - text: Kembali
+  - contentinfo [ref=f39e408]:
+    - generic [ref=f39e412] [cursor=pointer]:
+      - generic [ref=f39e413]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f39e418]: Telusuri situs

@@ -1,0 +1,157 @@
+- generic [ref=f74e3]:
+  - link "%%%Skip to content" [ref=f74e4] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f74e5]:
+    - banner [ref=f74e7]:
+      - generic [ref=f74e11]:
+        - generic [ref=f74e12]:
+          - link "Jobstreet" [ref=f74e14] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f74e22]:
+            - link "Cari lowongan" [ref=f74e24] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f74e29] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f74e34] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f74e39] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f74e43]:
+          - button "Bahasa" [ref=f74e46] [cursor=pointer]
+          - button "Profile Avatar" [ref=f74e66] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f74e79] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f74e111]:
+      - generic [ref=f74e116]:
+        - generic [ref=f74e117]: Melamar untuk
+        - heading "AI Engineer" [level=1] [ref=f74e118]
+        - generic [ref=f74e119]: PT Graha Karya Informasi
+        - button "Lihat deskripsi pekerjaan" [ref=f74e121] [cursor=pointer]
+      - navigation "Progress bar" [ref=f74e123]:
+        - list [ref=f74e124]:
+          - listitem [ref=f74e125]:
+            - button "Pilih dokumen"
+          - listitem [ref=f74e138]:
+            - button "Jawab pertanyaan perusahaan" [ref=f74e418]
+          - listitem [ref=f74e139]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f74e140]:
+            - button "Review dan kirim"
+        - progressbar
+      - generic [ref=f74e432]:
+        - generic [ref=f74e433]:
+          - strong [ref=f74e438]: How many years' experience do you have in a software development role?
+          - combobox "How many years' experience do you have in a software development role?" [ref=f74e441]:
+            - option [disabled] [selected]
+            - option "No experience"
+            - option "Less than 1 year"
+            - option "1 year"
+            - option "2 years"
+            - option "3 years"
+            - option "4 years"
+            - option "5 years"
+            - option "More than 5 years"
+        - generic [ref=f74e442]:
+          - strong [ref=f74e447]: How many years' experience do you have as an Artificial Intelligence Engineer?
+          - combobox "How many years' experience do you have as an Artificial Intelligence Engineer?" [ref=f74e450]:
+            - option "No experience"
+            - option "Less than 1 year"
+            - option "1 year"
+            - option "2 years"
+            - option "3 years" [selected]
+            - option "4 years"
+            - option "5 years"
+            - option "More than 5 years"
+        - generic [ref=f74e451]:
+          - strong [ref=f74e455]: Which of the following programming languages are you experienced in?
+          - generic [ref=f74e457]:
+            - checkbox ".NET" [ref=f74e458] [cursor=pointer]
+            - generic [ref=f74e460]: .NET
+          - generic [ref=f74e465]:
+            - checkbox "C" [ref=f74e466] [cursor=pointer]
+            - generic [ref=f74e468]: C
+          - generic [ref=f74e473]:
+            - checkbox "C#" [ref=f74e474] [cursor=pointer]
+            - generic [ref=f74e476]: C#
+          - generic [ref=f74e481]:
+            - checkbox "C++" [ref=f74e482] [cursor=pointer]
+            - generic [ref=f74e484]: C++
+          - generic [ref=f74e489]:
+            - checkbox "CSS" [ref=f74e490] [cursor=pointer]
+            - generic [ref=f74e492]: CSS
+          - generic [ref=f74e497]:
+            - checkbox "HTML" [ref=f74e498] [cursor=pointer]
+            - generic [ref=f74e500]: HTML
+          - generic [ref=f74e505]:
+            - checkbox "Java" [ref=f74e506] [cursor=pointer]
+            - generic [ref=f74e508]: Java
+          - generic [ref=f74e513]:
+            - checkbox "JavaScript" [ref=f74e514] [cursor=pointer]
+            - generic [ref=f74e516]: JavaScript
+          - generic [ref=f74e521]:
+            - checkbox "Objective-C" [ref=f74e522] [cursor=pointer]
+            - generic [ref=f74e524]: Objective-C
+          - generic [ref=f74e529]:
+            - checkbox "PHP" [ref=f74e530] [cursor=pointer]
+            - generic [ref=f74e532]: PHP
+          - generic [ref=f74e537]:
+            - checkbox "Python" [checked] [ref=f74e538] [cursor=pointer]
+            - generic [ref=f74e540]: Python
+          - generic [ref=f74e545]:
+            - checkbox "Ruby" [ref=f74e546] [cursor=pointer]
+            - generic [ref=f74e548]: Ruby
+          - generic [ref=f74e553]:
+            - checkbox "Swift" [ref=f74e554] [cursor=pointer]
+            - generic [ref=f74e556]: Swift
+          - generic [ref=f74e561]:
+            - checkbox "Visual Basic" [ref=f74e562] [cursor=pointer]
+            - generic [ref=f74e564]: Visual Basic
+          - generic [ref=f74e569]:
+            - checkbox "None of these" [ref=f74e570] [cursor=pointer]
+            - generic [ref=f74e572]: None of these
+        - generic [ref=f74e576]:
+          - strong [ref=f74e580]: Which of the following languages are you fluent in?
+          - generic [ref=f74e582]:
+            - checkbox "English" [checked] [ref=f74e583] [cursor=pointer]
+            - generic [ref=f74e585]: English
+          - generic [ref=f74e590]:
+            - checkbox "Indonesian" [checked] [ref=f74e591] [cursor=pointer]
+            - generic [ref=f74e593]: Indonesian
+          - generic [ref=f74e598]:
+            - checkbox "Mandarin" [ref=f74e599] [cursor=pointer]
+            - generic [ref=f74e601]: Mandarin
+          - generic [ref=f74e606]:
+            - checkbox "Japanese" [ref=f74e607] [cursor=pointer]
+            - generic [ref=f74e609]: Japanese
+          - generic [ref=f74e614]:
+            - checkbox "French" [ref=f74e615] [cursor=pointer]
+            - generic [ref=f74e617]: French
+          - generic [ref=f74e622]:
+            - checkbox "German" [ref=f74e623] [cursor=pointer]
+            - generic [ref=f74e625]: German
+          - generic [ref=f74e630]:
+            - checkbox "Korean" [ref=f74e631] [cursor=pointer]
+            - generic [ref=f74e633]: Korean
+          - generic [ref=f74e638]:
+            - checkbox "Malaysian" [ref=f74e639] [cursor=pointer]
+            - generic [ref=f74e641]: Malaysian
+          - generic [ref=f74e646]:
+            - checkbox "Other (language not listed)" [ref=f74e647] [cursor=pointer]
+            - generic [ref=f74e649]: Other (language not listed)
+        - generic [ref=f74e653]:
+          - button [ref=f74e655] [cursor=pointer]:
+            - generic [ref=f74e656]:
+              - generic:
+                - generic:
+                  - text: Lanjut
+                  - generic [aria-hidden]: ⁠
+          - button [ref=f74e659] [cursor=pointer]:
+            - generic [ref=f74e660]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kembali
+  - contentinfo [ref=f74e90]:
+    - generic [ref=f74e94] [cursor=pointer]:
+      - generic [ref=f74e95]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f74e100]: Telusuri situs

@@ -1,0 +1,47 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to main content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - main [ref=f1e4]:
+    - generic [ref=f1e6]:
+      - generic [ref=f1e8]:
+        - heading [level=1] [ref=f1e9]:
+          - link "Google Flow" [ref=f1e10] [cursor=pointer]:
+            - /url: /
+        - generic [ref=f1e11]:
+          - link "Flow Music" [ref=f1e12] [cursor=pointer]:
+            - /url: https://www.flowmusic.app/?utm_source=flow
+          - link "Flow TV" [ref=f1e17] [cursor=pointer]:
+            - /url: https://labs.google/flow/tv
+            - img [aria-hidden] [ref=f1e18]: tv
+          - generic [ref=f1e23]:
+            - link "Link to Google Labs Discord server" [ref=f1e24] [cursor=pointer]:
+              - /url: https://discord.com/invite/googlelabs
+            - link "Link to Flow on Instagram" [ref=f1e28] [cursor=pointer]:
+              - /url: https://www.instagram.com/googleflow
+            - link "Link to Flow on X (Twitter)" [ref=f1e32] [cursor=pointer]:
+              - /url: https://x.com/FlowbyGoogle
+            - button "Product help" [ref=f1e36] [cursor=pointer]:
+              - img [aria-hidden] [ref=f1e37]: help
+            - button "More options" [ref=f1e40] [cursor=pointer]:
+              - img [aria-hidden] [ref=f1e41]: more_vert
+          - button "Account details" [ref=f1e44] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - 'button "Google Account: Lukman Zakaria (lukmanzakaria04@gmail.com)"'
+      - status "Loading…" [ref=f1e45]:
+        - generic [ref=f1e46]:
+          - generic [ref=f1e47]: L
+          - generic [ref=f1e48]: o
+          - generic [ref=f1e49]: a
+          - generic [ref=f1e50]: d
+          - generic [ref=f1e51]: i
+          - generic [ref=f1e52]: "n"
+          - generic [ref=f1e53]: g
+          - generic [ref=f1e54]: …
+      - button "New project" [ref=f1e55] [cursor=pointer]:
+        - img [aria-hidden] [ref=f1e56]: add

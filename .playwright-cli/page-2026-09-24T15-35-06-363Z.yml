@@ -1,0 +1,229 @@
+- generic [ref=f79e3]:
+  - button "Lewati ke konten" [ref=f79e4] [cursor=pointer]
+  - generic [ref=f79e5]:
+    - status
+  - banner [ref=f79e7]:
+    - generic [ref=f79e11]:
+      - generic [ref=f79e12]:
+        - link "Jobstreet" [ref=f79e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f79e22]:
+          - link "Cari lowongan" [ref=f79e24] [cursor=pointer]:
+            - /url: /
+          - link "Cari profil" [ref=f79e29] [cursor=pointer]:
+            - /url: /id/profiles/search?tracking=ILC-profile-search-header
+          - link "Sumber daya karir" [ref=f79e34] [cursor=pointer]:
+            - /url: /id/career-advice
+          - link "Perusahaan" [ref=f79e39] [cursor=pointer]:
+            - /url: /id/companies
+      - generic [ref=f79e43]:
+        - button "Bahasa" [ref=f79e46] [cursor=pointer]
+        - button "Profile Avatar" [ref=f79e65] [cursor=pointer]
+        - link "Untuk perusahaan" [ref=f79e78] [cursor=pointer]:
+          - /url: https://id.employer.seek.com/id
+  - main [ref=f79e81]:
+    - generic [ref=f79e88]:
+      - generic [ref=f79e89]:
+        - generic [ref=f79e91]:
+          - generic [ref=f79e93]:
+            - heading "AI Implementation Engineer" [level=1] [ref=f79e94]
+            - button "Pengiklan Anonim" [ref=f79e96] [cursor=pointer]
+          - button "Bagikan atau laporkan iklan" [ref=f79e109] [cursor=pointer]
+        - generic [ref=f79e116]:
+          - generic [ref=f79e117]:
+            - generic [ref=f79e118]:
+              - img "Lokasi" [ref=f79e122]
+              - generic [ref=f79e126]:
+                - link "Jakarta Timur, Jakarta Raya":
+                  - /url: /id/Implementation-Engineer-jobs/in-East-Jakarta-Jakarta
+            - generic [ref=f79e127]:
+              - img "Industri" [ref=f79e131]
+              - generic [ref=f79e135]:
+                - link "Teknik – Perangkat Lunak (Teknologi Informasi & Komunikasi)":
+                  - /url: /id/jobs-in-information-communication-technology/engineering-software
+            - generic [ref=f79e136]:
+              - img "Jenis pekerjaan" [ref=f79e140]
+              - generic [ref=f79e144]:
+                - link "Paruh waktu":
+                  - /url: /id/Implementation-Engineer-jobs/part-time
+            - generic [ref=f79e145]:
+              - img "Gaji" [ref=f79e149]
+              - generic [ref=f79e154]:
+                - generic [ref=f79e155]: Gaji tidak ditampilkan
+                - button "Gaji tidak ditampilkan" [ref=f79e159] [cursor=pointer]
+          - generic [ref=f79e165]:
+            - generic [ref=f79e166]: Diposting 23 hari yang lalu
+            - generic [ref=f79e167]: Pelamar sangat banyak
+        - generic [ref=f79e172]:
+          - link "Kirim lamaran sebagai AI Implementation Engineer di Pengiklan Anonim" [ref=f79e174] [cursor=pointer]:
+            - /url: /id/job/94339530/apply
+            - generic [ref=f79e175]: Lamaran Cepat
+          - button "Simpan AI Implementation Engineer di Pengiklan Anonim" [ref=f79e176] [cursor=pointer]:
+            - generic [ref=f79e177]: Simpan
+      - generic [ref=f79e178]:
+        - generic [ref=f79e182]:
+          - paragraph [ref=f79e183]:
+            - strong [ref=f79e184]: Job Description ;
+          - paragraph [ref=f79e185]:
+            - strong [ref=f79e186]: AI Solution Deployment
+          - list [ref=f79e187]:
+            - listitem [ref=f79e188]:
+              - paragraph [ref=f79e189]: Lead end-to-end deployment of AI and data-driven solutions for enterprise customers
+            - listitem [ref=f79e190]:
+              - paragraph [ref=f79e191]: Translate business challenges into technical requirements and scalable architectures
+            - listitem [ref=f79e192]:
+              - paragraph [ref=f79e193]: Work alongside engineering and product teams to customize solutions for specific customer environments
+            - listitem [ref=f79e194]:
+              - paragraph [ref=f79e195]: Drive adoption of AI capabilities across operational and business functions
+            - listitem [ref=f79e196]:
+              - paragraph [ref=f79e197]: Identify opportunities where AI can improve efficiency, productivity, revenue, decision-making, or customer experience
+          - paragraph [ref=f79e198]:
+            - strong [ref=f79e199]: Project Execution
+          - list [ref=f79e200]:
+            - listitem [ref=f79e201]:
+              - paragraph [ref=f79e202]: Lead multiple high-priority implementation projects simultaneously
+            - listitem [ref=f79e203]:
+              - paragraph [ref=f79e204]: Coordinate across engineering, product, data, and customer teams
+            - listitem [ref=f79e205]:
+              - paragraph [ref=f79e206]: Remove execution blockers and drive projects to completion
+            - listitem [ref=f79e207]:
+              - paragraph [ref=f79e208]: Ensure deployments achieve measurable customer outcomes
+          - paragraph [ref=f79e209]
+          - paragraph [ref=f79e210]
+        - generic [ref=f79e212]:
+          - heading "Laporkan iklan lowongan ini" [level=2] [ref=f79e214]
+          - generic [ref=f79e215]:
+            - generic [ref=f79e216]: Hati-hati
+            - generic [ref=f79e217]: Jangan berikan detail bank atau kartu kredit kamu saat mengirimkan lamaran kerja.
+            - link "Pelajari cara melindungi diri kamu" [ref=f79e219] [cursor=pointer]:
+              - /url: /id/security-hub#protect-yourself-online
+            - button "Laporkan iklan lowongan ini" [ref=f79e225] [cursor=pointer]:
+              - text: Laporkan iklan lowongan ini
+              - generic [aria-hidden] [ref=f79e226]: ⁠
+        - generic [ref=f79e236] [cursor=pointer]
+        - generic [ref=f79e257]:
+          - generic [ref=f79e258]: Temukan karier Anda di Saran Karier
+          - generic [ref=f79e259]: Bergabunglah dengan jutaan pencari kerja di seluruh dunia menggunakan alat dan wawasan pembentukan karier kami.
+          - list [ref=f79e260]:
+            - listitem [ref=f79e261]:
+              - text: •
+              - generic [ref=f79e262]: Lakukan riset terkait gaji dan tren pekerjaan
+            - listitem [ref=f79e263]:
+              - text: •
+              - generic [ref=f79e264]: Akses alat, templat, dan artikel gratis yang membantu Anda tampak lebih menonjol
+            - listitem [ref=f79e265]:
+              - text: •
+              - generic [ref=f79e266]: Temukan jalur menuju beragam pilihan karier
+          - link "Jelajahi Saran Karier arrow-right" [ref=f79e267] [cursor=pointer]:
+            - /url: https://id.jobstreet.com/id/career-advice?utm_campaign=LMIS_Web&utm_source=JobStreet&utm_medium=LMIS&utm_content=job-details
+            - generic [ref=f79e268]: Jelajahi Saran Karier
+            - img "arrow-right" [ref=f79e269]
+  - contentinfo [ref=f79e271]:
+    - generic [ref=f79e273]:
+      - generic [ref=f79e276]:
+        - generic [ref=f79e278]:
+          - generic [ref=f79e280]:
+            - generic [ref=f79e281]: Pencari kerja
+            - list [ref=f79e282]:
+              - listitem [ref=f79e283]:
+                - link "Cari lowongan" [ref=f79e284] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f79e287]:
+                - link "Lihat profil" [ref=f79e288] [cursor=pointer]:
+                  - /url: /id/profile/me
+              - listitem [ref=f79e291]:
+                - link "Cari profil" [ref=f79e292] [cursor=pointer]:
+                  - /url: /id/profiles/search?tracking=ILC-profile-search-footer
+              - listitem [ref=f79e295]:
+                - link "Pencarian tersimpan" [ref=f79e296] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-searches
+              - listitem [ref=f79e299]:
+                - link "Lowongan tersimpan" [ref=f79e300] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-jobs
+              - listitem [ref=f79e303]:
+                - link "Lamaran kerja" [ref=f79e304] [cursor=pointer]:
+                  - /url: /id/my-activity/applied-jobs
+              - listitem [ref=f79e307]:
+                - link "Sumber daya karir" [ref=f79e308] [cursor=pointer]:
+                  - /url: /id/career-advice
+              - listitem [ref=f79e311]:
+                - link "Jelajahi karier" [ref=f79e312] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-careers
+              - listitem [ref=f79e315]:
+                - link "Jelajahi gaji" [ref=f79e316] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-salaries
+              - listitem [ref=f79e319]:
+                - link "Perusahaan" [ref=f79e320] [cursor=pointer]:
+                  - /url: /id/companies
+              - listitem [ref=f79e323]:
+                - button "Unduh aplikasi" [ref=f79e328] [cursor=pointer]
+          - generic [ref=f79e337]:
+            - generic [ref=f79e338]: Perusahaan
+            - list [ref=f79e339]:
+              - listitem [ref=f79e340]:
+                - link "Daftar gratis" [ref=f79e341] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f79e344]:
+                - link "Pasang iklan lowongan kerja" [ref=f79e345] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f79e348]:
+                - link "Produk & harga" [ref=f79e349] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/products/jobads
+              - listitem [ref=f79e352]:
+                - link "Layanan pelanggan" [ref=f79e353] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/contactus
+              - listitem [ref=f79e356]:
+                - link "Saran perekrutan" [ref=f79e357] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/hiring-advice
+              - listitem [ref=f79e360]:
+                - link "Wawasan pasar" [ref=f79e361] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/market-insights
+              - listitem [ref=f79e364]:
+                - link "Mitra perangkat lunak perekrutan" [ref=f79e365] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/partners/connect-with-seek
+        - generic [ref=f79e370]:
+          - generic [ref=f79e372]:
+            - generic [ref=f79e373]: Tentang kami
+            - list [ref=f79e374]:
+              - listitem [ref=f79e375]:
+                - link "Tentang kami" [ref=f79e376] [cursor=pointer]:
+                  - /url: /id/about
+              - listitem [ref=f79e379]:
+                - link "Ruang berita" [ref=f79e380] [cursor=pointer]:
+                  - /url: /id/about/news
+              - listitem [ref=f79e383]:
+                - link "Investor" [ref=f79e384] [cursor=pointer]:
+                  - /url: https://au.seek.com/about/investors
+              - listitem [ref=f79e387]:
+                - link "Karir" [ref=f79e388] [cursor=pointer]:
+                  - /url: /id/careers
+              - listitem [ref=f79e391]:
+                - button "Mitra internasional" [ref=f79e396] [cursor=pointer]
+              - listitem [ref=f79e404]:
+                - button "Layanan mitra" [ref=f79e409] [cursor=pointer]
+          - generic [ref=f79e418]:
+            - generic [ref=f79e419]: Kontak
+            - list [ref=f79e420]:
+              - listitem [ref=f79e421]:
+                - link "Pusat bantuan" [ref=f79e422] [cursor=pointer]:
+                  - /url: https://help.id.jobstreet.com/id/s/?language=in
+              - listitem [ref=f79e425]:
+                - link "Hubungi kami" [ref=f79e426] [cursor=pointer]:
+                  - /url: /id/contact-us
+              - listitem [ref=f79e429]:
+                - link "Blog produk & teknologi" [ref=f79e430] [cursor=pointer]:
+                  - /url: https://medium.com/seek-blog
+              - listitem [ref=f79e433]:
+                - button "Media sosial" [ref=f79e438] [cursor=pointer]
+      - generic [ref=f79e448]:
+        - button "Lokasi" [ref=f79e452] [cursor=pointer]:
+          - generic [ref=f79e453]: Indonesia
+        - generic [ref=f79e466]:
+          - generic [ref=f79e467]:
+            - link "Persyaratan & ketentuan" [ref=f79e469] [cursor=pointer]:
+              - /url: /id/terms
+            - link "Keamanan" [ref=f79e473] [cursor=pointer]:
+              - /url: /id/security-hub
+            - link "Privasi" [ref=f79e477] [cursor=pointer]:
+              - /url: /id/my-privacy
+          - generic [ref=f79e480]: Hak cipta © 2026 Jobstreet

@@ -1,0 +1,221 @@
+- generic [ref=f93e3]:
+  - link "%%%Skip to content" [ref=f93e4] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f93e5]:
+    - banner [ref=f93e7]:
+      - generic [ref=f93e11]:
+        - generic [ref=f93e12]:
+          - link "Jobstreet" [ref=f93e14] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f93e22]:
+            - link "Cari lowongan" [ref=f93e24] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f93e29] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f93e34] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f93e39] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f93e43]:
+          - button "Bahasa" [ref=f93e46] [cursor=pointer]
+          - button "Profile Avatar" [ref=f93e66] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f93e79] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f93e111]:
+      - generic [ref=f93e115]:
+        - img "PT Fata Organa Solusi" [ref=f93e117]
+        - generic [ref=f93e118]:
+          - generic [ref=f93e119]: Melamar untuk
+          - heading "Middle AI Engineer" [level=1] [ref=f93e120]
+          - generic [ref=f93e121]: PT Fata Organa Solusi
+          - button "Lihat deskripsi pekerjaan" [ref=f93e123] [cursor=pointer]
+      - navigation "Progress bar" [ref=f93e125]:
+        - list [ref=f93e126]:
+          - listitem [ref=f93e127]:
+            - button "Pilih dokumen"
+          - listitem [ref=f93e140]:
+            - button "Jawab pertanyaan perusahaan" [ref=f93e420]
+          - listitem [ref=f93e141]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f93e142]:
+            - button "Review dan kirim"
+        - progressbar
+      - generic [ref=f93e434]:
+        - generic [ref=f93e435]:
+          - strong [ref=f93e440]: Which of the following types of qualifications do you have?
+          - combobox "Which of the following types of qualifications do you have?" [ref=f93e443]:
+            - option "Elementary school (SD) or equivalent"
+            - option "SMP or equivalent"
+            - option "SMA/SMK or equivalent"
+            - option "Diploma 1"
+            - option "Diploma 2"
+            - option "Diploma 3"
+            - option "Diploma 4"
+            - option "Bachelor Degree (S1)" [selected]
+            - option "Professional Education Program"
+            - option "Masters Degree (S2)"
+            - option "Doctoral Degree (S3)"
+            - option "I have a qualification that is not listed here"
+        - generic [ref=f93e444]:
+          - strong [ref=f93e449]: What's your expected monthly basic salary?
+          - combobox "What's your expected monthly basic salary?" [ref=f93e452]:
+            - option "Rp 1 million"
+            - option "Rp 1.5 million"
+            - option "Rp 2 million"
+            - option "Rp 2.5 million"
+            - option "Rp 3 million"
+            - option "Rp 3.5 million"
+            - option "Rp 4 million"
+            - option "Rp 4.5 million"
+            - option "Rp 5 million"
+            - option "Rp 5.5 million"
+            - option "Rp 6 million"
+            - option "Rp 7 million"
+            - option "Rp 8 million"
+            - option "Rp 9 million"
+            - option "Rp 10 million" [selected]
+            - option "Rp 15 million"
+            - option "Rp 20 million"
+            - option "Rp 25 million"
+            - option "Rp 30 million"
+            - option "Rp 40 million"
+            - option "Rp 60 million"
+            - option "Rp 80 million"
+            - option "Rp 100 million or more"
+        - generic [ref=f93e453]:
+          - strong [ref=f93e458]: How many years' experience do you have as an Artificial Intelligence Engineer?
+          - combobox "How many years' experience do you have as an Artificial Intelligence Engineer?" [ref=f93e461]:
+            - option "No experience"
+            - option "Less than 1 year"
+            - option "1 year"
+            - option "2 years"
+            - option "3 years" [selected]
+            - option "4 years"
+            - option "5 years"
+            - option "More than 5 years"
+        - generic [ref=f93e462]:
+          - strong [ref=f93e466]: Which of the following programming languages are you experienced in?
+          - generic [ref=f93e468]:
+            - checkbox ".NET" [ref=f93e469] [cursor=pointer]
+            - generic [ref=f93e471]: .NET
+          - generic [ref=f93e476]:
+            - checkbox "C" [ref=f93e477] [cursor=pointer]
+            - generic [ref=f93e479]: C
+          - generic [ref=f93e484]:
+            - checkbox "C#" [ref=f93e485] [cursor=pointer]
+            - generic [ref=f93e487]: C#
+          - generic [ref=f93e492]:
+            - checkbox "C++" [ref=f93e493] [cursor=pointer]
+            - generic [ref=f93e495]: C++
+          - generic [ref=f93e500]:
+            - checkbox "CSS" [ref=f93e501] [cursor=pointer]
+            - generic [ref=f93e503]: CSS
+          - generic [ref=f93e508]:
+            - checkbox "HTML" [ref=f93e509] [cursor=pointer]
+            - generic [ref=f93e511]: HTML
+          - generic [ref=f93e516]:
+            - checkbox "Java" [ref=f93e517] [cursor=pointer]
+            - generic [ref=f93e519]: Java
+          - generic [ref=f93e524]:
+            - checkbox "JavaScript" [ref=f93e525] [cursor=pointer]
+            - generic [ref=f93e527]: JavaScript
+          - generic [ref=f93e532]:
+            - checkbox "Objective-C" [ref=f93e533] [cursor=pointer]
+            - generic [ref=f93e535]: Objective-C
+          - generic [ref=f93e540]:
+            - checkbox "PHP" [ref=f93e541] [cursor=pointer]
+            - generic [ref=f93e543]: PHP
+          - generic [ref=f93e548]:
+            - checkbox "Python" [checked] [ref=f93e549] [cursor=pointer]
+            - generic [ref=f93e551]: Python
+          - generic [ref=f93e556]:
+            - checkbox "Ruby" [ref=f93e557] [cursor=pointer]
+            - generic [ref=f93e559]: Ruby
+          - generic [ref=f93e564]:
+            - checkbox "Swift" [ref=f93e565] [cursor=pointer]
+            - generic [ref=f93e567]: Swift
+          - generic [ref=f93e572]:
+            - checkbox "Visual Basic" [ref=f93e573] [cursor=pointer]
+            - generic [ref=f93e575]: Visual Basic
+          - generic [ref=f93e580]:
+            - checkbox "None of these" [ref=f93e581] [cursor=pointer]
+            - generic [ref=f93e583]: None of these
+        - generic [ref=f93e587]:
+          - strong [ref=f93e591]: Which of the following Relational Database Management Systems (RDBMS) are you experienced with?
+          - generic [ref=f93e593]:
+            - checkbox "PostgreSQL" [checked] [ref=f93e594] [cursor=pointer]
+            - generic [ref=f93e596]: PostgreSQL
+          - generic [ref=f93e601]:
+            - checkbox "Oracle" [ref=f93e602] [cursor=pointer]
+            - generic [ref=f93e604]: Oracle
+          - generic [ref=f93e609]:
+            - checkbox "DB2" [ref=f93e610] [cursor=pointer]
+            - generic [ref=f93e612]: DB2
+          - generic [ref=f93e617]:
+            - checkbox "SQLite" [ref=f93e618] [cursor=pointer]
+            - generic [ref=f93e620]: SQLite
+          - generic [ref=f93e625]:
+            - checkbox "Microsoft SQL" [ref=f93e626] [cursor=pointer]
+            - generic [ref=f93e628]: Microsoft SQL
+          - generic [ref=f93e633]:
+            - checkbox "MySQL" [ref=f93e634] [cursor=pointer]
+            - generic [ref=f93e636]: MySQL
+          - generic [ref=f93e641]:
+            - checkbox "Informix" [ref=f93e642] [cursor=pointer]
+            - generic [ref=f93e644]: Informix
+          - generic [ref=f93e649]:
+            - checkbox "Teradata" [ref=f93e650] [cursor=pointer]
+            - generic [ref=f93e652]: Teradata
+          - generic [ref=f93e657]:
+            - checkbox "Sybase" [ref=f93e658] [cursor=pointer]
+            - generic [ref=f93e660]: Sybase
+          - generic [ref=f93e665]:
+            - checkbox "None of these" [ref=f93e666] [cursor=pointer]
+            - generic [ref=f93e668]: None of these
+        - generic [ref=f93e672]:
+          - strong [ref=f93e676]: How would you rate your English language skills?
+          - generic [ref=f93e678]:
+            - checkbox "Speaks proficiently in a professional setting" [ref=f93e679] [cursor=pointer]
+            - generic [ref=f93e681]: Speaks proficiently in a professional setting
+          - generic [ref=f93e686]:
+            - checkbox "Writes proficiently in a professional setting" [checked] [ref=f93e687] [cursor=pointer]
+            - generic [ref=f93e689]: Writes proficiently in a professional setting
+          - generic [ref=f93e694]:
+            - checkbox "Limited proficiency" [ref=f93e695] [cursor=pointer]
+            - generic [ref=f93e697]: Limited proficiency
+        - radiogroup [ref=f93e701]:
+          - generic [ref=f93e702]:
+            - strong [ref=f93e707]: How much notice are you required to give your current employer?
+            - generic [ref=f93e709]:
+              - generic [ref=f93e711]:
+                - radio "None, I'm ready to go now" [ref=f93e712] [cursor=pointer]
+                - generic [ref=f93e714]: None, I'm ready to go now
+              - generic [ref=f93e719]:
+                - radio "Less than 1 month" [ref=f93e720] [cursor=pointer]
+                - generic [ref=f93e722]: Less than 1 month
+              - generic [ref=f93e727]:
+                - radio "1 month" [checked] [ref=f93e728] [cursor=pointer]
+                - generic [ref=f93e730]: 1 month
+              - generic [ref=f93e735]:
+                - radio "2 months" [ref=f93e736] [cursor=pointer]
+                - generic [ref=f93e738]: 2 months
+              - generic [ref=f93e743]:
+                - radio "More than 2 months" [ref=f93e744] [cursor=pointer]
+                - generic [ref=f93e746]: More than 2 months
+        - generic [ref=f93e750]:
+          - button [ref=f93e752] [cursor=pointer]:
+            - generic [ref=f93e753]:
+              - generic:
+                - generic:
+                  - text: Lanjut
+                  - generic [aria-hidden]: ⁠
+          - button [ref=f93e756] [cursor=pointer]:
+            - generic [ref=f93e757]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kembali
+  - contentinfo [ref=f93e90]:
+    - generic [ref=f93e94] [cursor=pointer]:
+      - generic [ref=f93e95]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f93e100]: Telusuri situs

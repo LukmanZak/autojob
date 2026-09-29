@@ -5,7 +5,7 @@
     "cls": "",
     "aria": null,
     "role": null,
-    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "text": "home\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\ndashboard\nAll media\nimage\nImages\naccessibility_new\nChara",
     "rect": {
       "x": 0,
       "y": 0,
@@ -19,7 +19,7 @@
     "cls": "aisandbox-content",
     "aria": null,
     "role": null,
-    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "text": "home\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\ndashboard\nAll media\nimage\nImages\naccessibility_new\nChara",
     "rect": {
       "x": 0,
       "y": 0,
@@ -33,7 +33,7 @@
     "cls": "",
     "aria": null,
     "role": null,
-    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "text": "home\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\ndashboard\nAll media\nimage\nImages\naccessibility_new\nChara",
     "rect": {
       "x": 0,
       "y": 0,
@@ -47,7 +47,7 @@
     "cls": "",
     "aria": null,
     "role": null,
-    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "text": "home\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\ndashboard\nAll media\nimage\nImages\naccessibility_new\nChara",
     "rect": {
       "x": 0,
       "y": 0,
@@ -61,7 +61,7 @@
     "cls": "page-layout",
     "aria": null,
     "role": null,
-    "text": "arrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nPLUS\ndashboard\nAll media\nimage\nImages\naccessibilit",
+    "text": "home\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\ndashboard\nAll media\nimage\nImages\naccessibility_new\nChara",
     "rect": {
       "x": 0,
       "y": 0,
@@ -86,12 +86,12 @@
   {
     "i": 72,
     "tag": "BUTTON",
-    "cls": "mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-mdc-menu-trigger mat-mdc-tooltip-trigger mat-unthemed flow-icon-button-transparent flow-button-large",
+    "cls": "mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-mdc-menu-trigger mat-mdc-tooltip-trigger mat-unthemed flow-icon-button-transparent flow-button-large flow-icon-button-no",
     "aria": "More options",
     "role": null,
     "text": "more_vert",
     "rect": {
-      "x": 1084.359375,
+      "x": 1132,
       "y": 18,
       "w": 40,
       "h": 40
@@ -100,47 +100,33 @@
   {
     "i": 91,
     "tag": "IMG",
-    "cls": "gb_V",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 1198,
-      "y": 17,
-      "w": 42,
-      "h": 42
-    }
-  },
-  {
-    "i": 93,
-    "tag": "IMG",
     "cls": "gb_X gbii",
     "aria": null,
     "role": null,
     "text": "",
     "rect": {
-      "x": 1203,
+      "x": 1204,
       "y": 22,
       "w": 32,
       "h": 32
     }
   },
   {
-    "i": 99,
+    "i": 97,
     "tag": "DIV",
     "cls": "",
     "aria": null,
     "role": null,
     "text": "",
     "rect": {
-      "x": 798,
+      "x": 799,
       "y": 84,
       "w": 420,
       "h": 280
     }
   },
   {
-    "i": 100,
+    "i": 98,
     "tag": "FLOW-PROJECT-SIDENAV-CONTAINER",
     "cls": "has-header-offset",
     "aria": null,
@@ -154,7 +140,7 @@
     }
   },
   {
-    "i": 101,
+    "i": 99,
     "tag": "MAT-SIDENAV-CONTAINER",
     "cls": "mat-drawer-container mat-sidenav-container sidenav mat-drawer-transition",
     "aria": null,
@@ -168,12 +154,12 @@
     }
   },
   {
-    "i": 153,
+    "i": 151,
     "tag": "MAT-SIDENAV-CONTENT",
     "cls": "mat-drawer-content mat-sidenav-content",
     "aria": null,
     "role": null,
-    "text": "",
+    "text": "download\nundo\ndelete\nLogo minimalis edukasi warna biru kuning\nkeyboard_return\nCreated Sep 6, 2026\n\ud83c\udf4c Nano Banana Pro\ncro",
     "rect": {
       "x": 232,
       "y": 0,
@@ -182,12 +168,12 @@
     }
   },
   {
-    "i": 154,
+    "i": 152,
     "tag": "DIV",
     "cls": "cdk-virtual-scrollable page-container",
     "aria": null,
     "role": null,
-    "text": "",
+    "text": "download\nundo\ndelete\nLogo minimalis edukasi warna biru kuning\nkeyboard_return\nCreated Sep 6, 2026\n\ud83c\udf4c Nano Banana Pro\ncro",
     "rect": {
       "x": 232,
       "y": 0,
@@ -196,12 +182,12 @@
     }
   },
   {
-    "i": 155,
+    "i": 153,
     "tag": "DIV",
     "cls": "mat-context-menu-trigger content-container",
     "aria": null,
     "role": null,
-    "text": "",
+    "text": "download\nundo\ndelete\nLogo minimalis edukasi warna biru kuning\nkeyboard_return\nCreated Sep 6, 2026\n\ud83c\udf4c Nano Banana Pro\ncro",
     "rect": {
       "x": 232,
       "y": 76,
@@ -210,12 +196,12 @@
     }
   },
   {
-    "i": 157,
+    "i": 155,
     "tag": "CDK-VIRTUAL-SCROLL-VIEWPORT",
     "cls": "cdk-virtual-scroll-viewport tiles-container cdk-virtual-scroll-orientation-vertical",
     "aria": null,
     "role": null,
-    "text": "",
+    "text": "download\nundo\ndelete\nLogo minimalis edukasi warna biru kuning\nkeyboard_return\nCreated Sep 6, 2026\n\ud83c\udf4c Nano Banana Pro\ncro",
     "rect": {
       "x": 248,
       "y": 76,
@@ -224,115 +210,17 @@
     }
   },
   {
-    "i": 158,
+    "i": 156,
     "tag": "DIV",
     "cls": "cdk-virtual-scroll-content-wrapper",
     "aria": null,
     "role": null,
-    "text": "",
+    "text": "download\nundo\ndelete\nLogo minimalis edukasi warna biru kuning\nkeyboard_return\nCreated Sep 6, 2026\n\ud83c\udf4c Nano Banana Pro\ncro",
     "rect": {
       "x": 248,
       "y": 76,
       "w": 1000,
-      "h": 452
-    }
-  },
-  {
-    "i": 159,
-    "tag": "DIV",
-    "cls": "virtual-scroll-container",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 1000,
-      "h": 250
-    }
-  },
-  {
-    "i": 160,
-    "tag": "DIV",
-    "cls": "tile-row virtual-item-container",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 1000,
-      "h": 250
-    }
-  },
-  {
-    "i": 161,
-    "tag": "FLOW-GRID-TILE-CONTAINER",
-    "cls": "mat-context-menu-trigger",
-    "aria": "Blue yellow minimalist education\u2026",
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 162,
-    "tag": "FLOW-TILE-CONTAINER",
-    "cls": "",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 163,
-    "tag": "DIV",
-    "cls": "container",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 164,
-    "tag": "FLOW-IMAGE-TILE",
-    "cls": "",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 165,
-    "tag": "DIV",
-    "cls": "container",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
+      "h": 727.25
     }
   },
   {
@@ -345,50 +233,8 @@
     "rect": {
       "x": 248,
       "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 167,
-    "tag": "DIV",
-    "cls": "pre-hover-overlay",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 168,
-    "tag": "DIV",
-    "cls": "hover-overlay",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 169,
-    "tag": "DIV",
-    "cls": "hotbar-container",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
+      "w": 276,
+      "h": 155.25
     }
   },
   {
@@ -399,94 +245,10 @@
     "role": null,
     "text": "",
     "rect": {
-      "x": 652.4375,
+      "x": 484,
       "y": 88,
       "w": 28,
       "h": 28
-    }
-  },
-  {
-    "i": 180,
-    "tag": "DIV",
-    "cls": "footer-overlay",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 185,
-    "tag": "FLOW-GRID-TILE-CONTAINER",
-    "cls": "mat-context-menu-trigger",
-    "aria": "Minimalist educational blue yell\u2026",
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 186,
-    "tag": "FLOW-TILE-CONTAINER",
-    "cls": "",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 187,
-    "tag": "DIV",
-    "cls": "container",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 188,
-    "tag": "FLOW-IMAGE-TILE",
-    "cls": "",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 189,
-    "tag": "DIV",
-    "cls": "container",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
     }
   },
   {
@@ -497,52 +259,10 @@
     "role": null,
     "text": "",
     "rect": {
-      "x": 708.4375,
+      "x": 540,
       "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 191,
-    "tag": "DIV",
-    "cls": "pre-hover-overlay",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 192,
-    "tag": "DIV",
-    "cls": "hover-overlay",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 193,
-    "tag": "DIV",
-    "cls": "hotbar-container",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
+      "w": 276,
+      "h": 155.25
     }
   },
   {
@@ -553,28 +273,14 @@
     "role": null,
     "text": "",
     "rect": {
-      "x": 1112.875,
+      "x": 776,
       "y": 88,
       "w": 28,
       "h": 28
     }
   },
   {
-    "i": 204,
-    "tag": "DIV",
-    "cls": "footer-overlay",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 708.4375,
-      "y": 76,
-      "w": 444.4375,
-      "h": 250
-    }
-  },
-  {
-    "i": 209,
+    "i": 234,
     "tag": "DIV",
     "cls": "tile-view-footer",
     "aria": null,
@@ -582,27 +288,13 @@
     "text": "",
     "rect": {
       "x": 248,
-      "y": 326,
+      "y": 231.25,
       "w": 1000,
-      "h": 202
+      "h": 572
     }
   },
   {
-    "i": 210,
-    "tag": "DIV",
-    "cls": "cdk-virtual-scroll-spacer",
-    "aria": null,
-    "role": null,
-    "text": "",
-    "rect": {
-      "x": 248,
-      "y": 76,
-      "w": 1000,
-      "h": 250
-    }
-  },
-  {
-    "i": 261,
+    "i": 285,
     "tag": "DIV",
     "cls": "keep-alive-layer hidden",
     "aria": null,

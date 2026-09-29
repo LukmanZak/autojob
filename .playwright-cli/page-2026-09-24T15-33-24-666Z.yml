@@ -1,0 +1,131 @@
+- generic [ref=f74e3]:
+  - link "%%%Skip to content" [ref=f74e4] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f74e5]:
+    - banner [ref=f74e7]:
+      - generic [ref=f74e11]:
+        - generic [ref=f74e12]:
+          - link "Jobstreet" [ref=f74e14] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f74e22]:
+            - link "Cari lowongan" [ref=f74e24] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f74e29] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f74e34] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f74e39] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f74e43]:
+          - button "Bahasa" [ref=f74e46] [cursor=pointer]
+          - button "Profile Avatar" [ref=f74e66] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f74e79] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f74e111]:
+      - generic [ref=f74e116]:
+        - generic [ref=f74e117]: Melamar untuk
+        - heading "AI Engineer" [level=1] [ref=f74e118]
+        - generic [ref=f74e119]: PT Graha Karya Informasi
+        - button "Lihat deskripsi pekerjaan" [ref=f74e121] [cursor=pointer]
+      - navigation "Progress bar" [ref=f74e123]:
+        - list [ref=f74e124]:
+          - listitem [ref=f74e125]:
+            - button "Pilih dokumen"
+          - listitem [ref=f74e138]:
+            - button "Jawab pertanyaan perusahaan"
+          - listitem [ref=f74e139]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f74e140]:
+            - button "Review dan kirim" [ref=f74e1029]
+        - progressbar
+      - generic [ref=f74e1039]:
+        - generic [ref=f74e1043]:
+          - generic [ref=f74e1045]:
+            - button "Profile photo options" [ref=f74e1050] [cursor=pointer]:
+              - generic [ref=f74e1052]:
+                - generic:
+                  - heading [level=3]
+            - generic [ref=f74e1056]:
+              - heading [level=4] [ref=f74e1058]:
+                - text: Lukman Zakaria
+                - generic "Identitas terverifikasi" [ref=f74e1059]
+              - generic [ref=f74e1062]:
+                - generic [ref=f74e1063]: Jakarta Selatan, Jakarta Raya
+                - generic [ref=f74e1071]: +62 85785255577
+                - generic [ref=f74e1078]: lukmanzakaria04@gmail.com
+          - button "Edit detail pribadi" [ref=f74e1087] [cursor=pointer]
+        - generic [ref=f74e1092]:
+          - heading "Dokumen yang disertakan" [level=3] [ref=f74e1093]
+          - generic [ref=f74e1094]:
+            - generic [ref=f74e1096]:
+              - generic [ref=f74e1097]:
+                - generic [ref=f74e1098]: Resume
+                - generic [ref=f74e1099]: CV_Eng.pdf
+              - button "Edit resume" [ref=f74e1102] [cursor=pointer]
+            - generic [ref=f74e1109]:
+              - generic [ref=f74e1110]:
+                - generic [ref=f74e1111]: Surat lamaran
+                - generic [ref=f74e1112]: Kamu menulis surat lamaran untuk lamaran ini
+              - button "Edit surat pengantar" [ref=f74e1115] [cursor=pointer]
+        - generic [ref=f74e1122]:
+          - heading "Pertanyaan perusahaan" [level=3] [ref=f74e1123]
+          - generic [ref=f74e1125]:
+            - generic [ref=f74e1126]:
+              - text: Anda menjawab
+              - strong [ref=f74e1127]: 4 dari 4
+            - button "Ubah pertanyaan pemberi kerja" [ref=f74e1130] [cursor=pointer]
+        - generic [ref=f74e1137]:
+          - heading "Profil Jobstreet kamu" [level=3] [ref=f74e1138]
+          - generic [ref=f74e1139]: Saat Anda melamar pekerjaan, Profil Jobstreet dan kredensial terverifikasi Anda akan diakses oleh PT Graha Karya Informasi sebagai bagian dari proses lamaran.
+          - generic [ref=f74e1140]:
+            - generic [ref=f74e1141]:
+              - generic [ref=f74e1142]:
+                - generic [ref=f74e1143]: Riwayat karir
+                - generic [ref=f74e1144]: 4 peran
+              - button "Ubah" [ref=f74e1147] [cursor=pointer]
+            - generic [ref=f74e1153]:
+              - generic [ref=f74e1154]:
+                - generic [ref=f74e1155]: Pendidikan
+                - generic [ref=f74e1156]: 1 qualifications
+              - button "Ubah" [ref=f74e1159] [cursor=pointer]
+            - generic [ref=f74e1165]:
+              - generic [ref=f74e1166]:
+                - generic [ref=f74e1167]: Lisensi & sertifikasi
+                - generic [ref=f74e1168]: 2 kredensial
+              - button "Ubah lisensi atau sertifikasi" [ref=f74e1171] [cursor=pointer]
+            - generic [ref=f74e1177]:
+              - generic [ref=f74e1178]:
+                - generic [ref=f74e1179]: Keahlian
+                - generic [ref=f74e1180]: 15 keterampilan
+              - button "Ubah keahlian" [ref=f74e1183] [cursor=pointer]
+        - generic [ref=f74e1192]:
+          - heading "Buat lamaranmu lebih berkesan" [level=3] [ref=f74e1193]
+          - generic [ref=f74e1194]:
+            - text: Tunjukkan bahwa kamu sangat berminat agar peluangmu dilirik rekruter lebih besar.
+            - link "Pelajari" [ref=f74e1195] [cursor=pointer]:
+              - /url: https://help.id.jobstreet.com/in/article/Show-strong-interest-in-the-jobs-you-really-want
+          - generic [ref=f74e1196]:
+            - generic [ref=f74e1197]: Saya sangat berminat
+            - generic [ref=f74e1203]:
+              - checkbox [ref=f74e1205] [cursor=pointer]
+              - generic [ref=f74e1210] [cursor=pointer]
+          - generic [ref=f74e1211]: Kamu bisa pakai fitur ini untuk 3 lamaran lagi (termasuk lamaran ini) hingga 1 Okt 2026.
+        - generic [ref=f74e1212]:
+          - generic [ref=f74e1213]:
+            - text: Dengan mendaftar, Anda menyetujui
+            - link "Pemberitahuan Pengumpulan" [ref=f74e1214] [cursor=pointer]:
+              - /url: /id/collection-notice
+            - text: dan
+            - link "Kebijakan Privasi" [ref=f74e1215] [cursor=pointer]:
+              - /url: /id/privacy
+            - text: .
+          - button [ref=f74e1217] [cursor=pointer]:
+            - generic [ref=f74e1218]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kirim lamaran
+  - contentinfo [ref=f74e90]:
+    - generic [ref=f74e94] [cursor=pointer]:
+      - generic [ref=f74e95]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f74e100]: Telusuri situs

@@ -1,0 +1,434 @@
+- generic [ref=f1e16]:
+  - banner [ref=f1e17]:
+    - generic [ref=f1e18]:
+      - generic [ref=f1e20]:
+        - button "Chats" [pressed] [ref=f1e24] [cursor=pointer]
+        - generic [ref=f1e31]:
+          - button "Status" [ref=f1e32] [cursor=pointer]
+          - generic:
+            - status:
+              - generic: Updates in Status
+        - button "Channels" [ref=f1e40] [cursor=pointer]
+        - button "Communities" [ref=f1e48] [cursor=pointer]
+        - separator [ref=f1e53]
+        - button "Meta AI" [ref=f1e57] [cursor=pointer]
+      - generic [ref=f1e60]:
+        - button "Media" [ref=f1e64] [cursor=pointer]
+        - button "You" [ref=f1e72] [cursor=pointer]
+  - generic [ref=f1e75]:
+    - banner [ref=f1e76]:
+      - banner [ref=f1e77]:
+        - generic [ref=f1e78]:
+          - heading [level=2] [ref=f1e80]:
+            - generic "WhatsApp" [ref=f1e84]:
+              - img "wa-wordmark"
+          - generic [ref=f1e86]:
+            - button "Menu" [ref=f1e89] [cursor=pointer]
+            - button "New chat" [ref=f1e97] [cursor=pointer]
+    - generic [ref=f1e102]:
+      - generic [ref=f1e109]:
+        - textbox [ref=f1e655]: You
+        - button "End icon button" [ref=f1e658] [cursor=pointer]
+      - tablist "chat-list-filters" [ref=f1e114]:
+        - tab "All" [selected] [ref=f1e117] [cursor=pointer]:
+          - generic "All" [ref=f1e121]
+        - tab "Unread" [ref=f1e127] [cursor=pointer]:
+          - generic "Unread" [ref=f1e131]
+        - tab "Favourites" [ref=f1e137] [cursor=pointer]:
+          - generic "Favourites" [ref=f1e141]
+        - tab "Groups" [ref=f1e147] [cursor=pointer]:
+          - generic "Groups" [ref=f1e151]
+        - tab "New list" [ref=f1e157] [cursor=pointer]
+      - generic [ref=f1e162]:
+        - grid "Search results." [ref=f1e663]:
+          - row [ref=f1e664]:
+            - heading "Chats" [level=2] [ref=f1e668]
+          - row [ref=f1e524]:
+            - gridcell [ref=f1e525]:
+              - generic [ref=f1e533] [cursor=pointer]:
+                - gridcell "+62 857-8525-5577 (You) 06:05" [ref=f1e534]:
+                  - generic [ref=f1e537]:
+                    - generic "+62 857-8525-5577" [ref=f1e538]
+                    - generic [ref=f1e539]: (You)
+                  - generic [ref=f1e540]: 06:05
+                - generic [ref=f1e542]:
+                  - 'generic "‪☤ Hermes Agent ──────────── Cronjob Response: quiz-ai-ml-0630 (job_id: 1ea1ad00fb6d) ------------- ⚠️ Cron ''quiz-ai-ml-0630'' failed: the AI model service rejected the sign-in. Sign in again with /login (or hermes auth add opencode-zen in a terminal), or pin a working provider with hermes cron edit 1ea1ad00fb6d --provider <name>, then hermes cron run 1ea1ad00fb6d to retry. Run log: hermes cron runs 1ea1ad00fb6d. This job has failed 7 runs in a row — worth a review. Fix its prompt/config, or pause it with hermes cron pause quiz-ai-ml-0630 (resume/remove also available) to stop the noise. To stop or manage this job, send me a new message (e.g. \"stop reminder quiz-ai-ml-0630\").‬" [ref=f1e544]':
+                    - generic [ref=f1e547]:
+                      - text: "☤ Hermes Agent ──────────── Cronjob Response: quiz-ai-ml-0630 (job_id: 1ea1ad00fb6d) -------------"
+                      - img "⚠️" [ref=f1e548]
+                      - text: "Cron 'quiz-ai-ml-0630' failed: the AI model service rejected the sign-in. Sign in again with /login (or hermes auth add opencode-zen in a terminal), or pin a working provider with hermes cron edit 1ea1ad00fb6d --provider <name>, then hermes cron run 1ea1ad00fb6d to retry. Run log: hermes cron runs 1ea1ad00fb6d. This job has failed 7 runs in a row — worth a review. Fix its prompt/config, or pause it with hermes cron pause quiz-ai-ml-0630 (resume/remove also available) to stop the noise. To stop or manage this job, send me a new message (e.g. \"stop reminder quiz-ai-ml-0630\")."
+                  - gridcell
+          - row [ref=f1e670]:
+            - heading "Messages" [level=2] [ref=f1e674]
+          - row [ref=f1e676]:
+            - gridcell "Bu galuh sDMC Yesterday Mau coba uploud video di youtub" [ref=f1e677]:
+              - generic [ref=f1e680] [cursor=pointer]:
+                - gridcell "Bu galuh sDMC Yesterday" [ref=f1e681]:
+                  - generic "Bu galuh sDMC" [ref=f1e685]
+                  - generic [ref=f1e686]: Yesterday
+                - generic [ref=f1e688]:
+                  - generic "‪Mau coba uploud video di youtub‬" [ref=f1e690]: Mau coba uploud video di youtub
+                  - gridcell
+          - row [ref=f1e692]:
+            - 'gridcell "Peepl Tuesday +62 851-7971-0228 : THANK YOU SEMUAAAAA DITUNGGU YA BESOK DIMSUMNYA KITA CLOSE ORDER YAAAAAA 🩷 💛 💚 🩵 💙 💜" [ref=f1e693]':
+              - generic [ref=f1e696] [cursor=pointer]:
+                - gridcell "Peepl Tuesday" [ref=f1e697]:
+                  - generic "Peepl" [ref=f1e699]
+                  - generic [ref=f1e700]: Tuesday
+                - generic [ref=f1e702]:
+                  - generic "‪THANK YOU SEMUAAAAA DITUNGGU YA BESOK DIMSUMNYA KITA CLOSE ORDER YAAAAAA 🩷💛💚🩵💙💜‬" [ref=f1e704]:
+                    - generic [ref=f1e705]: +62 851-7971-0228
+                    - generic [ref=f1e708]: ":"
+                    - generic [ref=f1e709]:
+                      - text: THANK YOU SEMUAAAAA DITUNGGU YA BESOK DIMSUMNYA KITA CLOSE ORDER YAAAAAA
+                      - img "🩷" [ref=f1e710]
+                      - img "💛" [ref=f1e711]
+                      - img "💚" [ref=f1e712]
+                      - img "🩵" [ref=f1e713]
+                      - img "💙" [ref=f1e714]
+                      - img "💜" [ref=f1e715]
+                  - gridcell
+          - row [ref=f1e716]:
+            - 'gridcell "Sunda vs Jawa Tuesday +49 174 7097015 : ❌ Card not found. Did you mean: 1. A-Rowan, Scholar of Sparks // A-Will, Scholar of Frost 2. Rowan, Fearless Sparkmage 3. Rowan Kenrith 4. Rowan''s Battleguard 5. Rowan, Scholar of Sparks // Will, Scholar of Frost 6. Rowan, Scion of War 7. Rowan''s Grim Search 8. Rowan''s Stalwarts 9. Rowan''s Talent 🔎 More results: scryfall.com/search?q=rowan Reply with 1-9 to this message." [ref=f1e717]':
+              - generic [ref=f1e720] [cursor=pointer]:
+                - gridcell "Sunda vs Jawa Tuesday" [ref=f1e721]:
+                  - generic "Sunda vs Jawa" [ref=f1e723]
+                  - generic [ref=f1e724]: Tuesday
+                - generic [ref=f1e726]:
+                  - 'generic "‪❌ Card not found. Did you mean: 1. A-Rowan, Scholar of Sparks // A-Will, Scholar of Frost 2. Rowan, Fearless Sparkmage 3. Rowan Kenrith 4. Rowan''s Battleguard 5. Rowan, Scholar of Sparks // Will, Scholar of Frost 6. Rowan, Scion of War 7. Rowan''s Grim Search 8. Rowan''s Stalwarts 9. Rowan''s Talent 🔎 More results: scryfall.com/search?q=rowan Reply with 1-9 to this message.‬" [ref=f1e728]':
+                    - generic [ref=f1e729]: +49 174 7097015
+                    - generic [ref=f1e732]: ":"
+                    - generic [ref=f1e733]:
+                      - img "❌" [ref=f1e734]
+                      - text: "Card not found. Did you mean: 1. A-Rowan, Scholar of Sparks // A-Will, Scholar of Frost 2. Rowan, Fearless Sparkmage 3. Rowan Kenrith 4. Rowan's Battleguard 5. Rowan, Scholar of Sparks // Will, Scholar of Frost 6. Rowan, Scion of War 7. Rowan's Grim Search 8. Rowan's Stalwarts 9. Rowan's Talent"
+                      - img "🔎" [ref=f1e735]
+                      - text: "More results: scryfall.com/search?q=rowan Reply with 1-9 to this message."
+                  - gridcell
+          - row [ref=f1e736]:
+            - 'gridcell "Sunda vs Jawa Tuesday +49 174 7097015 : ❌ Card not found. Did you mean: 1. Eye of Ojer Taq // Apex Observatory 2. Ojer Taq, Deepest Foundation // Temple of Civilization Reply with 1-2 to this message." [ref=f1e737]':
+              - generic [ref=f1e740] [cursor=pointer]:
+                - gridcell "Sunda vs Jawa Tuesday" [ref=f1e741]:
+                  - generic "Sunda vs Jawa" [ref=f1e743]
+                  - generic [ref=f1e744]: Tuesday
+                - generic [ref=f1e746]:
+                  - 'generic "‪❌ Card not found. Did you mean: 1. Eye of Ojer Taq // Apex Observatory 2. Ojer Taq, Deepest Foundation // Temple of Civilization Reply with 1-2 to this message.‬" [ref=f1e748]':
+                    - generic [ref=f1e749]: +49 174 7097015
+                    - generic [ref=f1e752]: ":"
+                    - generic [ref=f1e753]:
+                      - img "❌" [ref=f1e754]
+                      - text: "Card not found. Did you mean: 1. Eye of Ojer Taq // Apex Observatory 2. Ojer Taq, Deepest Foundation // Temple of Civilization Reply with 1-2 to this message."
+                  - gridcell
+          - row [ref=f1e755]:
+            - 'gridcell "Sunda vs Jawa Tuesday +49 174 7097015 : ❌ Card not found. Did you mean: 1. Ashaya''s Enduring Bond 2. Ashaya, Soul of the Wild Reply with 1-2 to this message." [ref=f1e756]':
+              - generic [ref=f1e759] [cursor=pointer]:
+                - gridcell "Sunda vs Jawa Tuesday" [ref=f1e760]:
+                  - generic "Sunda vs Jawa" [ref=f1e762]
+                  - generic [ref=f1e763]: Tuesday
+                - generic [ref=f1e765]:
+                  - 'generic "‪❌ Card not found. Did you mean: 1. Ashaya''s Enduring Bond 2. Ashaya, Soul of the Wild Reply with 1-2 to this message.‬" [ref=f1e767]':
+                    - generic [ref=f1e768]: +49 174 7097015
+                    - generic [ref=f1e771]: ":"
+                    - generic [ref=f1e772]:
+                      - img "❌" [ref=f1e773]
+                      - text: "Card not found. Did you mean: 1. Ashaya's Enduring Bond 2. Ashaya, Soul of the Wild Reply with 1-2 to this message."
+                  - gridcell
+          - row [ref=f1e774]:
+            - 'gridcell "Sunda vs Jawa Tuesday +49 174 7097015 : ❌ Card not found. Did you mean: 1. Tannuk, Memorial Ensign 2. Tannuk, Steadfast Second Reply with 1-2 to this message." [ref=f1e775]':
+              - generic [ref=f1e778] [cursor=pointer]:
+                - gridcell "Sunda vs Jawa Tuesday" [ref=f1e779]:
+                  - generic "Sunda vs Jawa" [ref=f1e781]
+                  - generic [ref=f1e782]: Tuesday
+                - generic [ref=f1e784]:
+                  - 'generic "‪❌ Card not found. Did you mean: 1. Tannuk, Memorial Ensign 2. Tannuk, Steadfast Second Reply with 1-2 to this message.‬" [ref=f1e786]':
+                    - generic [ref=f1e787]: +49 174 7097015
+                    - generic [ref=f1e790]: ":"
+                    - generic [ref=f1e791]:
+                      - img "❌" [ref=f1e792]
+                      - text: "Card not found. Did you mean: 1. Tannuk, Memorial Ensign 2. Tannuk, Steadfast Second Reply with 1-2 to this message."
+                  - gridcell
+          - row [ref=f1e793]:
+            - 'gridcell "Sunda vs Jawa Tuesday +49 174 7097015 : ❌ Card not found. Did you mean: 1. Henrika Domnathi // Henrika, Infernal Seer 2. Omnath, Locus of All 3. Omnath, Locus of Creation 4. Omnath, Locus of Mana 5. Omnath, Locus of Rage 6. Omnath, Locus of the Roil 7. Omnath, Locus of the Void Reply with 1-7 to this message." [ref=f1e794]':
+              - generic [ref=f1e797] [cursor=pointer]:
+                - gridcell "Sunda vs Jawa Tuesday" [ref=f1e798]:
+                  - generic "Sunda vs Jawa" [ref=f1e800]
+                  - generic [ref=f1e801]: Tuesday
+                - generic [ref=f1e803]:
+                  - 'generic "‪❌ Card not found. Did you mean: 1. Henrika Domnathi // Henrika, Infernal Seer 2. Omnath, Locus of All 3. Omnath, Locus of Creation 4. Omnath, Locus of Mana 5. Omnath, Locus of Rage 6. Omnath, Locus of the Roil 7. Omnath, Locus of the Void Reply with 1-7 to this message.‬" [ref=f1e805]':
+                    - generic [ref=f1e806]: +49 174 7097015
+                    - generic [ref=f1e809]: ":"
+                    - generic [ref=f1e810]:
+                      - img "❌" [ref=f1e811]
+                      - text: "Card not found. Did you mean: 1. Henrika Domnathi // Henrika, Infernal Seer 2. Omnath, Locus of All 3. Omnath, Locus of Creation 4. Omnath, Locus of Mana 5. Omnath, Locus of Rage 6. Omnath, Locus of the Roil 7. Omnath, Locus of the Void Reply with 1-7 to this message."
+                  - gridcell
+          - row [ref=f1e812]:
+            - gridcell [ref=f1e813]:
+              - generic [ref=f1e816] [cursor=pointer]:
+                - gridcell "WhatsApp Tuesday" [ref=f1e817]:
+                  - generic "WhatsApp" [ref=f1e821]
+                  - generic [ref=f1e824]: Tuesday
+                - generic [ref=f1e826]:
+                  - 'generic "‪*New: Add a password for stronger account protection 🔐* Your security is important to us, so we’ve made it easy to set up an extra layer of protection for your WhatsApp account. Just head to Settings, tap Account, then Password.‬" [ref=f1e828]':
+                    - generic [ref=f1e829]:
+                      - strong [ref=f1e830]:
+                        - text: "New: Add a password for stronger account protection"
+                        - img "🔐" [ref=f1e831]
+                      - text: Your security is important to us, so we’ve made it easy to set up an extra layer of protection for your WhatsApp account. Just head to Settings, tap Account, then Password.
+                  - gridcell
+          - row [ref=f1e832]:
+            - 'gridcell "+62 857-8525-5577 Tuesday ☤ Hermes Agent ──────────── Berikut link YouTube tentang persamaan garis lurus SMP kelas 8: - Persamaan Garis Lurus SMP Kelas 8 (https://www.youtube.com/watch?v=aLdYlnXe-zU) - Persamaan Garis Lurus Part 1: Mengenal Persamaan Garis Lurus (https://www.youtube.com/watch?v=RA_IMgVitP0) - Hasil pencarian YouTube: Persamaan Garis Lurus SMP Kelas 8 (https://www.youtube.com/results?search_query=persamaan+garis+lurus+SMP+kelas+8) Video pertama membahas materi Bab 5 Persamaan Garis Lurus, sedangkan video kedua cocok untuk pengenalan konsep dasar." [ref=f1e833]':
+              - generic [ref=f1e836] [cursor=pointer]:
+                - gridcell "+62 857-8525-5577 Tuesday" [ref=f1e837]:
+                  - generic "+62 857-8525-5577" [ref=f1e841]
+                  - generic [ref=f1e842]: Tuesday
+                - generic [ref=f1e844]:
+                  - 'generic "‪☤ Hermes Agent ──────────── Berikut link YouTube tentang persamaan garis lurus SMP kelas 8: - Persamaan Garis Lurus SMP Kelas 8 (https://www.youtube.com/watch?v=aLdYlnXe-zU) - Persamaan Garis Lurus Part 1: Mengenal Persamaan Garis Lurus (https://www.youtube.com/watch?v=RA_IMgVitP0) - Hasil pencarian YouTube: Persamaan Garis Lurus SMP Kelas 8 (https://www.youtube.com/results?search_query=persamaan+garis+lurus+SMP+kelas+8) Video pertama membahas materi Bab 5 Persamaan Garis Lurus, sedangkan video kedua cocok untuk pengenalan konsep dasar.‬" [ref=f1e846]': "☤ Hermes Agent ──────────── Berikut link YouTube tentang persamaan garis lurus SMP kelas 8: - Persamaan Garis Lurus SMP Kelas 8 (https://www.youtube.com/watch?v=aLdYlnXe-zU) - Persamaan Garis Lurus Part 1: Mengenal Persamaan Garis Lurus (https://www.youtube.com/watch?v=RA_IMgVitP0) - Hasil pencarian YouTube: Persamaan Garis Lurus SMP Kelas 8 (https://www.youtube.com/results?search_query=persamaan+garis+lurus+SMP+kelas+8) Video pertama membahas materi Bab 5 Persamaan Garis Lurus, sedangkan video kedua cocok untuk pengenalan konsep dasar."
+                  - gridcell
+          - row [ref=f1e850]:
+            - gridcell [ref=f1e851]:
+              - generic [ref=f1e854] [cursor=pointer]:
+                - gridcell "+62 857-8525-5577 Tuesday" [ref=f1e855]:
+                  - generic "+62 857-8525-5577" [ref=f1e859]
+                  - generic [ref=f1e860]: Tuesday
+                - generic [ref=f1e862]:
+                  - 'generic "‪☤ Hermes Agent ──────────── 🔍 Searching the web for YouTube persamaan garis lurus SMP kel... 🌐 browser_exec: \"Search YouTube lessons on straight-li...\" 🌐 browser_exec: \"Search Indonesian variants for straig...\"‬" [ref=f1e864]':
+                    - generic [ref=f1e867]:
+                      - text: ☤ Hermes Agent ────────────
+                      - img "🔍" [ref=f1e868]
+                      - text: Searching the web for YouTube persamaan garis lurus SMP kel...
+                      - img "🌐" [ref=f1e869]
+                      - text: "browser_exec: \"Search YouTube lessons on straight-li...\""
+                      - img "🌐" [ref=f1e870]
+                      - text: "browser_exec: \"Search Indonesian variants for straig...\""
+                  - gridcell
+          - row [ref=f1e871]:
+            - gridcell "+62 857-8525-5577 Tuesday ☤ Hermes Agent ──────────── Aku cari beberapa video YouTube berbahasa Indonesia tentang persamaan garis lurus untuk tingkat SMP." [ref=f1e872]:
+              - generic [ref=f1e875] [cursor=pointer]:
+                - gridcell "+62 857-8525-5577 Tuesday" [ref=f1e876]:
+                  - generic "+62 857-8525-5577" [ref=f1e880]
+                  - generic [ref=f1e881]: Tuesday
+                - generic [ref=f1e883]:
+                  - generic "‪☤ Hermes Agent ──────────── Aku cari beberapa video YouTube berbahasa Indonesia tentang persamaan garis lurus untuk tingkat SMP.‬" [ref=f1e885]: ☤ Hermes Agent ──────────── Aku cari beberapa video YouTube berbahasa Indonesia tentang persamaan garis lurus untuk tingkat SMP.
+                  - gridcell
+          - row [ref=f1e889]:
+            - gridcell "+62 857-8525-5577 Tuesday Tolong cari link youtube untuk persamaan garis lurus SMP" [ref=f1e890]:
+              - generic [ref=f1e893] [cursor=pointer]:
+                - gridcell "+62 857-8525-5577 Tuesday" [ref=f1e894]:
+                  - generic "+62 857-8525-5577" [ref=f1e898]
+                  - generic [ref=f1e899]: Tuesday
+                - generic [ref=f1e901]:
+                  - generic "‪Tolong cari link youtube untuk persamaan garis lurus SMP‬" [ref=f1e903]: Tolong cari link youtube untuk persamaan garis lurus SMP
+                  - gridcell
+          - row [ref=f1e907]:
+            - 'gridcell "Peepl Monday +62 857-7234-4698 : thank youu buat kak adah & pak yogi yg sediain donut untuk break sore nantii 🙏" [ref=f1e908]':
+              - generic [ref=f1e911] [cursor=pointer]:
+                - gridcell "Peepl Monday" [ref=f1e912]:
+                  - generic "Peepl" [ref=f1e914]
+                  - generic [ref=f1e915]: Monday
+                - generic [ref=f1e917]:
+                  - generic "‪thank youu buat kak adah & pak yogi yg sediain donut untuk break sore nantii🙏‬" [ref=f1e919]:
+                    - generic [ref=f1e920]: +62 857-7234-4698
+                    - generic [ref=f1e923]: ":"
+                    - generic [ref=f1e924]:
+                      - text: thank youu buat kak adah & pak yogi yg sediain donut untuk break sore nantii
+                      - img "🙏" [ref=f1e925]
+                  - gridcell
+          - row [ref=f1e926]:
+            - 'gridcell "Peepl Monday Mas Rio IT INFRA : Happy Birthday Kak @~Siti Sa''adah dan Pak @~Yogipurda , Wish you all the Best, God Bless 🙏 🥳" [ref=f1e927]':
+              - generic [ref=f1e930] [cursor=pointer]:
+                - gridcell "Peepl Monday" [ref=f1e931]:
+                  - generic "Peepl" [ref=f1e933]
+                  - generic [ref=f1e934]: Monday
+                - generic [ref=f1e936]:
+                  - generic "‪Happy Birthday Kak @~Siti Sa'adah dan Pak @~Yogipurda , Wish you all the Best, God Bless 🙏🥳‬" [ref=f1e938]:
+                    - generic [ref=f1e939]: Mas Rio IT INFRA
+                    - generic [ref=f1e942]: ":"
+                    - generic [ref=f1e943]:
+                      - text: Happy Birthday Kak @~Siti Sa'adah dan Pak @~Yogipurda , Wish you all the Best, God Bless
+                      - img "🙏" [ref=f1e944]
+                      - img "🥳" [ref=f1e945]
+                  - gridcell
+          - row [ref=f1e946]:
+            - 'gridcell "Peepl Sunday Bu Halimah HR PEEPL : Thank you Adit..sukses selalu 🙏" [ref=f1e947]':
+              - generic [ref=f1e950] [cursor=pointer]:
+                - gridcell "Peepl Sunday" [ref=f1e951]:
+                  - generic "Peepl" [ref=f1e953]
+                  - generic [ref=f1e954]: Sunday
+                - generic [ref=f1e956]:
+                  - generic "‪Thank you Adit..sukses selalu 🙏‬" [ref=f1e958]:
+                    - generic [ref=f1e959]: Bu Halimah HR PEEPL
+                    - generic [ref=f1e962]: ":"
+                    - generic [ref=f1e963]:
+                      - text: Thank you Adit..sukses selalu
+                      - img "🙏" [ref=f1e964]
+                  - gridcell
+        - generic [ref=f1e597]:
+          - text: Your personal messages are
+          - button "end-to-end encrypted" [ref=f1e599] [cursor=pointer]
+      - button "See more chat history on the app Get WhatsApp for Windows":
+        - generic [ref=f1e968] [cursor=pointer]:
+          - generic [ref=f1e969]: See more chat history on the app
+          - generic [ref=f1e972]: Get WhatsApp for Windows
+  - generic [ref=f1e975]:
+    - banner [ref=f1e977]:
+      - generic [ref=f1e978]:
+        - button "Profile details" [ref=f1e979] [cursor=pointer]
+        - button "+62 857-8525-5577 (You) Message yourself" [ref=f1e982] [cursor=pointer]:
+          - generic [ref=f1e986]:
+            - generic [ref=f1e987]: +62 857-8525-5577
+            - generic [ref=f1e988]: (You)
+          - generic "Message yourself" [ref=f1e990]
+      - generic [ref=f1e992]:
+        - button "Search" [ref=f1e996] [cursor=pointer]
+        - button "Menu" [ref=f1e1004] [cursor=pointer]
+    - generic [ref=f1e1011]:
+      - generic: Today
+      - generic [ref=f1e1013]:
+        - button "Click here to get older messages from your phone." [ref=f1e1016] [cursor=pointer]
+        - generic [ref=f1e1019]:
+          - generic [ref=f1e1020]: Tuesday
+          - generic [ref=f1e1023]:
+            - row [ref=f1e1025]
+            - row [ref=f1e1029]
+            - row [ref=f1e1033]
+            - row [ref=f1e1037]
+            - row [ref=f1e1041]
+            - row [ref=f1e1045]
+            - row [ref=f1e1049]
+            - row [ref=f1e1053]
+            - row [ref=f1e1057]
+            - row [ref=f1e1061]
+            - row [ref=f1e1065]
+          - generic [ref=f1e1068]: Yesterday
+          - generic [ref=f1e1071]:
+            - 'row "You: Cronjob Response: scrape-jobstreet-0600 (job_id: 73fafcd81580) ------------- ⚠️ Cron ''scrape-jobstreet-0600'' failed: the AI model service rejected the sign-in. Sign in again with /login (or hermes auth add <provider> in a terminal), or pin a working provider with hermes cron edit 73fafcd81580 --provider <name>, then hermes cron run 73fafcd81580 to retry. Run log: hermes cron runs 73fafcd81580. This job has failed 6 runs in a row — worth a review. Fix its prompt/config, or pause it with hermes cron pause scrape-jobstreet-0600 (resume/remove also available) to stop the noise. To stop or manage this job, send me a new message (e.g. \"stop reminder scrape-jobstreet-0600\"). 06:00 Read" [ref=f1e1073]':
+              - generic [ref=f1e1081]:
+                - generic "You:"
+                - generic [ref=f1e1083]:
+                  - generic [ref=f1e1086]:
+                    - generic [ref=f1e1087]: "Cronjob Response: scrape-jobstreet-0600"
+                    - generic [ref=f1e1088]: "(job_id: 73fafcd81580)"
+                    - generic [ref=f1e1089]: "-------------"
+                    - generic [ref=f1e1091]:
+                      - img "⚠️" [ref=f1e1092]
+                      - text: "Cron 'scrape-jobstreet-0600' failed: the AI model service rejected the sign-in. Sign in again with /login (or"
+                      - code [ref=f1e1093]: hermes auth add <provider>
+                      - text: in a terminal), or pin a working provider with
+                      - code [ref=f1e1094]: hermes cron edit 73fafcd81580 --provider <name>
+                      - text: ", then"
+                      - code [ref=f1e1095]: hermes cron run 73fafcd81580
+                      - text: "to retry. Run log:"
+                      - code [ref=f1e1096]: hermes cron runs 73fafcd81580
+                      - text: .
+                    - generic [ref=f1e1097]:
+                      - text: This job has failed 6 runs in a row — worth a review. Fix its prompt/config, or pause it with
+                      - code [ref=f1e1098]: hermes cron pause scrape-jobstreet-0600
+                      - text: (resume/remove also available) to stop the noise.
+                    - text: To stop or manage this job, send me a new message (e.g. "stop reminder scrape-jobstreet-0600").
+                  - button "06:00 Read" [ref=f1e1102] [cursor=pointer]:
+                    - generic [ref=f1e1103]: 06:00
+                    - generic "Read" [ref=f1e1105]:
+                      - img "wds-ic-read"
+            - 'row "You: Cronjob Response: quiz-ai-ml-0630 (job_id: 1ea1ad00fb6d) ------------- ⚠️ Cron ''quiz-ai-ml-0630'' failed: the AI model service rejected the sign-in. Sign in again with /login (or hermes auth add <provider> in a terminal), or pin a working provider with hermes cron edit 1ea1ad00fb6d --provider <name>, then hermes cron run 1ea1ad00fb6d to retry. Run log: hermes cron runs 1ea1ad00fb6d. This job has failed 6 runs in a row — worth a review. Fix its prompt/config, or pause it with hermes cron pause quiz-ai-ml-0630 (resume/remove also available) to stop the noise. To stop or manage this job, send me a new message (e.g. \"stop reminder quiz-ai-ml-0630\"). 06:05 Read" [ref=f1e1107]':
+              - generic [ref=f1e1114]:
+                - generic "You:"
+                - generic [ref=f1e1116]:
+                  - generic [ref=f1e1119]:
+                    - generic [ref=f1e1120]: "Cronjob Response: quiz-ai-ml-0630"
+                    - generic [ref=f1e1121]: "(job_id: 1ea1ad00fb6d)"
+                    - generic [ref=f1e1122]: "-------------"
+                    - generic [ref=f1e1124]:
+                      - img "⚠️" [ref=f1e1125]
+                      - text: "Cron 'quiz-ai-ml-0630' failed: the AI model service rejected the sign-in. Sign in again with /login (or"
+                      - code [ref=f1e1126]: hermes auth add <provider>
+                      - text: in a terminal), or pin a working provider with
+                      - code [ref=f1e1127]: hermes cron edit 1ea1ad00fb6d --provider <name>
+                      - text: ", then"
+                      - code [ref=f1e1128]: hermes cron run 1ea1ad00fb6d
+                      - text: "to retry. Run log:"
+                      - code [ref=f1e1129]: hermes cron runs 1ea1ad00fb6d
+                      - text: .
+                    - generic [ref=f1e1130]:
+                      - text: This job has failed 6 runs in a row — worth a review. Fix its prompt/config, or pause it with
+                      - code [ref=f1e1131]: hermes cron pause quiz-ai-ml-0630
+                      - text: (resume/remove also available) to stop the noise.
+                    - text: To stop or manage this job, send me a new message (e.g. "stop reminder quiz-ai-ml-0630").
+                  - button "06:05 Read" [ref=f1e1135] [cursor=pointer]:
+                    - generic [ref=f1e1136]: 06:05
+                    - generic "Read" [ref=f1e1138]:
+                      - img "wds-ic-read"
+          - generic [ref=f1e1139]: Today
+          - generic [ref=f1e1142]:
+            - 'row "You: ☤ Hermes Agent ──────────── Cronjob Response: scrape-jobstreet-0600 (job_id: 73fafcd81580) ------------- ⚠️ Cron ''scrape-jobstreet-0600'' failed: the AI model service rejected the sign-in. Sign in again with /login (or hermes auth add opencode-zen in a terminal), or pin a working provider with hermes cron edit 73fafcd81580 --provider <name>, then hermes cron run 73fafcd81580 to retry. Run log: hermes cron runs 73fafcd81580. This job has failed 7 runs in a row — worth a review. Fix its prompt/config, or pause it with hermes cron pause scrape-jobstreet-0600 (resume/remove also available) to stop the noise. To stop or manage this job, send me a new message (e.g. \"stop reminder scrape-jobstreet-0600\"). 06:00 Read" [ref=f1e1144]':
+              - generic [ref=f1e1152]:
+                - generic "You:"
+                - generic [ref=f1e1154]:
+                  - generic [ref=f1e1157]:
+                    - generic [ref=f1e1158]:
+                      - text: ☤
+                      - strong [ref=f1e1159]: Hermes Agent
+                    - generic [ref=f1e1160]: ────────────
+                    - generic [ref=f1e1161]: "Cronjob Response: scrape-jobstreet-0600"
+                    - generic [ref=f1e1162]: "(job_id: 73fafcd81580)"
+                    - generic [ref=f1e1163]: "-------------"
+                    - generic [ref=f1e1165]:
+                      - img "⚠️" [ref=f1e1166]
+                      - text: "Cron 'scrape-jobstreet-0600' failed: the AI model service rejected the sign-in. Sign in again with /login (or"
+                      - code [ref=f1e1167]: hermes auth add opencode-zen
+                      - text: in a terminal), or pin a working provider with
+                      - code [ref=f1e1168]: hermes cron edit 73fafcd81580 --provider <name>
+                      - text: ", then"
+                      - code [ref=f1e1169]: hermes cron run 73fafcd81580
+                      - text: "to retry. Run log:"
+                      - code [ref=f1e1170]: hermes cron runs 73fafcd81580
+                      - text: .
+                    - generic [ref=f1e1171]:
+                      - text: This job has failed 7 runs in a row — worth a review. Fix its prompt/config, or pause it with
+                      - code [ref=f1e1172]: hermes cron pause scrape-jobstreet-0600
+                      - text: (resume/remove also available) to stop the noise.
+                    - text: To stop or manage this job, send me a new message (e.g. "stop reminder scrape-jobstreet-0600").
+                  - button "06:00 Read" [ref=f1e1176] [cursor=pointer]:
+                    - generic [ref=f1e1177]: 06:00
+                    - generic "Read" [ref=f1e1179]:
+                      - img "wds-ic-read"
+            - 'row "You: ☤ Hermes Agent ──────────── Cronjob Response: quiz-ai-ml-0630 (job_id: 1ea1ad00fb6d) ------------- ⚠️ Cron ''quiz-ai-ml-0630'' failed: the AI model service rejected the sign-in. Sign in again with /login (or hermes auth add opencode-zen in a terminal), or pin a working provider with hermes cron edit 1ea1ad00fb6d --provider <name>, then hermes cron run 1ea1ad00fb6d to retry. Run log: hermes cron runs 1ea1ad00fb6d. This job has failed 7 runs in a row — worth a review. Fix its prompt/config, or pause it with hermes cron pause quiz-ai-ml-0630 (resume/remove also available) to stop the noise. To stop or manage this job, send me a new message (e.g. \"stop reminder quiz-ai-ml-0630\"). 06:05 Read" [ref=f1e1181]':
+              - generic [ref=f1e1188]:
+                - generic "You:"
+                - generic [ref=f1e1190]:
+                  - generic [ref=f1e1193]:
+                    - generic [ref=f1e1194]:
+                      - text: ☤
+                      - strong [ref=f1e1195]: Hermes Agent
+                    - generic [ref=f1e1196]: ────────────
+                    - generic [ref=f1e1197]: "Cronjob Response: quiz-ai-ml-0630"
+                    - generic [ref=f1e1198]: "(job_id: 1ea1ad00fb6d)"
+                    - generic [ref=f1e1199]: "-------------"
+                    - generic [ref=f1e1201]:
+                      - img "⚠️" [ref=f1e1202]
+                      - text: "Cron 'quiz-ai-ml-0630' failed: the AI model service rejected the sign-in. Sign in again with /login (or"
+                      - code [ref=f1e1203]: hermes auth add opencode-zen
+                      - text: in a terminal), or pin a working provider with
+                      - code [ref=f1e1204]: hermes cron edit 1ea1ad00fb6d --provider <name>
+                      - text: ", then"
+                      - code [ref=f1e1205]: hermes cron run 1ea1ad00fb6d
+                      - text: "to retry. Run log:"
+                      - code [ref=f1e1206]: hermes cron runs 1ea1ad00fb6d
+                      - text: .
+                    - generic [ref=f1e1207]:
+                      - text: This job has failed 7 runs in a row — worth a review. Fix its prompt/config, or pause it with
+                      - code [ref=f1e1208]: hermes cron pause quiz-ai-ml-0630
+                      - text: (resume/remove also available) to stop the noise.
+                    - text: To stop or manage this job, send me a new message (e.g. "stop reminder quiz-ai-ml-0630").
+                  - button "06:05 Read" [ref=f1e1212] [cursor=pointer]:
+                    - generic [ref=f1e1213]: 06:05
+                    - generic "Read" [ref=f1e1215]:
+                      - img "wds-ic-read"
+    - contentinfo [ref=f1e1216]:
+      - generic [ref=f1e1222]:
+        - button "Attach" [ref=f1e1226] [cursor=pointer]
+        - button "Emojis, GIFs, Stickers" [ref=f1e1235] [cursor=pointer]
+        - generic [ref=f1e1240]:
+          - textbox "Type a message to +62 857-8525-5577" [active] [ref=f1e1241]:
+            - paragraph [ref=f1e1242]
+          - generic: Type a message
+        - button "Voice message" [ref=f1e1245] [cursor=pointer]:
+          - button "Voice message" [ref=f1e1249]

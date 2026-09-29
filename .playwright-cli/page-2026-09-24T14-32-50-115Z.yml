@@ -1,0 +1,307 @@
+- generic [ref=f20e3]:
+  - button "Lewati ke konten" [ref=f20e4] [cursor=pointer]
+  - generic [ref=f20e5]:
+    - status
+  - banner [ref=f20e7]:
+    - generic [ref=f20e11]:
+      - generic [ref=f20e12]:
+        - link "Jobstreet" [ref=f20e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f20e22]:
+          - link "Cari lowongan" [ref=f20e24] [cursor=pointer]:
+            - /url: /
+          - link "Cari profil" [ref=f20e29] [cursor=pointer]:
+            - /url: /id/profiles/search?tracking=ILC-profile-search-header
+          - link "Sumber daya karir" [ref=f20e34] [cursor=pointer]:
+            - /url: /id/career-advice
+          - link "Perusahaan" [ref=f20e39] [cursor=pointer]:
+            - /url: /id/companies
+      - generic [ref=f20e43]:
+        - button "Bahasa" [ref=f20e46] [cursor=pointer]
+        - button "Profile Avatar" [ref=f20e65] [cursor=pointer]
+        - link "Untuk perusahaan" [ref=f20e78] [cursor=pointer]:
+          - /url: https://id.employer.seek.com/id
+  - main [ref=f20e81]:
+    - generic [ref=f20e93]:
+      - generic [ref=f20e94]:
+        - button "Bagikan atau laporkan iklan" [ref=f20e109] [cursor=pointer]
+        - generic [ref=f20e117]:
+          - heading "AI Agent Developer / AI Automation Engineer" [level=1] [ref=f20e118]
+          - generic [ref=f20e119]:
+            - button "PT Mitra Distribusi Utama" [ref=f20e120] [cursor=pointer]
+            - link "Lihat semua lowongan kerja" [ref=f20e128] [cursor=pointer]:
+              - /url: /id/Key-Distribution-Partners-jobs/at-this-company
+        - generic [ref=f20e129]:
+          - generic [ref=f20e130]:
+            - generic [ref=f20e131]:
+              - img "Lokasi" [ref=f20e135]
+              - generic [ref=f20e139]:
+                - link "Tangerang Regency, Banten":
+                  - /url: /id/AI-Automation-Engineer-jobs/in-Tangerang-Regency-Banten
+            - generic [ref=f20e140]:
+              - img "Industri" [ref=f20e144]
+              - generic [ref=f20e148]:
+                - link "Developer/Programmer (Teknologi Informasi & Komunikasi)":
+                  - /url: /id/jobs-in-information-communication-technology/developers-programmers
+            - generic [ref=f20e149]:
+              - img "Jenis pekerjaan" [ref=f20e153]
+              - generic [ref=f20e157]:
+                - link "Full time":
+                  - /url: /id/AI-Automation-Engineer-jobs/full-time
+            - generic [ref=f20e158]:
+              - img "Gaji" [ref=f20e162]
+              - generic [ref=f20e167]:
+                - generic [ref=f20e168]: Gaji tidak ditampilkan
+                - button "Gaji tidak ditampilkan" [ref=f20e172] [cursor=pointer]
+          - generic [ref=f20e178]:
+            - generic [ref=f20e179]: Diposting 5 hari yang lalu
+            - generic [ref=f20e180]: Pelamar sangat banyak
+        - generic [ref=f20e185]:
+          - link "Kirim lamaran sebagai AI Agent Developer / AI Automation Engineer di PT Mitra Distribusi Utama" [ref=f20e187] [cursor=pointer]:
+            - /url: /id/job/94743147/apply
+            - generic [ref=f20e188]: Lamaran Cepat
+          - button "Simpan AI Agent Developer / AI Automation Engineer di PT Mitra Distribusi Utama" [ref=f20e189] [cursor=pointer]:
+            - generic [ref=f20e190]: Simpan
+      - generic [ref=f20e191]:
+        - generic [ref=f20e195]:
+          - heading "Responsibilities" [level=2] [ref=f20e196]
+          - list [ref=f20e197]:
+            - listitem [ref=f20e198]:
+              - paragraph [ref=f20e199]: Develop AI agents and AI-powered workflows for customer service, transaction checking, vendor monitoring, sales support, finance support, and scheduled reporting.
+            - listitem [ref=f20e200]:
+              - paragraph [ref=f20e201]: Build LLM-based applications using APIs such as OpenAI, Claude, Gemini, or other AI model providers.
+            - listitem [ref=f20e202]:
+              - paragraph [ref=f20e203]: Create reliable prompt systems, system instructions, structured outputs, JSON formats, validation logic, and AI guardrails.
+            - listitem [ref=f20e204]:
+              - paragraph [ref=f20e205]: Build automation workflows using n8n, Make, Zapier, Power Automate, Google Apps Script, or similar tools.
+            - listitem [ref=f20e206]:
+              - paragraph [ref=f20e207]: Integrate AI workflows with third-party applications using REST API, webhooks, JSON, OAuth, API keys, and HTTP requests.
+            - listitem [ref=f20e208]:
+              - paragraph [ref=f20e209]: Work with databases and structured data such as PostgreSQL, MySQL, Supabase, Google Sheets, CSV, Excel, or transaction logs.
+            - listitem [ref=f20e210]:
+              - paragraph [ref=f20e211]: Create scheduled reports, alerts, monitoring workflows, and automated notifications through email, WhatsApp, Telegram, Slack, or dashboard tools.
+            - listitem [ref=f20e212]:
+              - paragraph [ref=f20e213]: Build RAG / knowledge base AI systems using embeddings, vector databases, document retrieval, and SOP-based answering.
+            - listitem [ref=f20e214]:
+              - paragraph [ref=f20e215]: Test, debug, monitor, and improve AI workflows, including error handling, retry logic, cost optimization, and accuracy evaluation.
+            - listitem [ref=f20e216]:
+              - paragraph [ref=f20e217]: Maintain clear technical documentation for workflows, prompts, APIs, database structures, deployment steps, and testing results.
+          - heading "Qualifications" [level=2] [ref=f20e218]
+          - list [ref=f20e219]:
+            - listitem [ref=f20e220]:
+              - paragraph [ref=f20e221]: Proven experience building AI agents, AI workflows, copilots, chatbots, or automation systems.
+            - listitem [ref=f20e222]:
+              - paragraph [ref=f20e223]: Experience using LLM APIs such as OpenAI, Claude, Gemini or similar models.
+            - listitem [ref=f20e224]:
+              - paragraph [ref=f20e225]: Strong prompt engineering skills, especially for structured output, classification, extraction, summarization, and tool-calling workflows.
+            - listitem [ref=f20e226]:
+              - paragraph [ref=f20e227]: Strong experience with automation tools such as n8n, Make, Zapier, Power Automate, UiPath, or Google Apps Script.
+            - listitem [ref=f20e228]:
+              - paragraph [ref=f20e229]: Strong understanding of REST API, webhooks, JSON, authentication, rate limits, callback URLs, and error handling.
+            - listitem [ref=f20e230]:
+              - paragraph [ref=f20e231]: Programming ability in Python, JavaScript/Node.js, SQL, or similar languages.
+            - listitem [ref=f20e232]:
+              - paragraph [ref=f20e233]: Experience working with databases, Google Sheets automation, CSV/Excel processing, and transaction data.
+            - listitem [ref=f20e234]:
+              - paragraph [ref=f20e235]: Knowledge of RAG, embeddings, vector databases, LlamaIndex, LangChain, LangGraph, Pinecone, Chroma, Weaviate, or Supabase Vector is preferred.
+            - listitem [ref=f20e236]:
+              - paragraph [ref=f20e237]: Good understanding of security practices including API key protection, environment variables, data masking, access control, and audit logs.
+            - listitem [ref=f20e238]:
+              - paragraph [ref=f20e239]: Strong technical documentation and debugging skills.
+          - heading "Preferred Experience" [level=2] [ref=f20e240]
+          - list [ref=f20e241]:
+            - listitem [ref=f20e242]:
+              - paragraph [ref=f20e243]: Experience with n8n is highly preferred.
+            - listitem [ref=f20e244]:
+              - paragraph [ref=f20e245]: Experience integrating WhatsApp API, email API, CRM, helpdesk, payment systems, or internal business systems is a strong plus.
+            - listitem [ref=f20e246]:
+              - paragraph [ref=f20e247]: Experience building AI tools for customer service, operations, finance, e-commerce, fintech, PPOB, SaaS, POS, or B2B platforms is a plus.
+            - listitem [ref=f20e248]:
+              - paragraph [ref=f20e249]: Experience deploying workflows on VPS or cloud platforms is preferred.
+          - paragraph [ref=f20e250]
+        - generic [ref=f20e252]:
+          - heading "Pertanyaan dari perusahaan" [level=2] [ref=f20e253]
+          - generic [ref=f20e254]:
+            - generic [ref=f20e255]: "Lamaran kamu akan mencakup pertanyaan-pertanyaan berikut:"
+            - list [ref=f20e256]:
+              - listitem [ref=f20e257]:
+                - generic [ref=f20e261]: What's your expected monthly basic salary?
+              - listitem [ref=f20e263]:
+                - generic [ref=f20e267]: Which of the following types of qualifications do you have?
+              - listitem [ref=f20e269]:
+                - generic [ref=f20e273]: How many years' experience do you have as an Automation Engineer?
+              - listitem [ref=f20e275]:
+                - generic [ref=f20e279]: Which of the following programming languages are you experienced in?
+              - listitem [ref=f20e281]:
+                - generic [ref=f20e285]: Which of the following Relational Database Management Systems (RDBMS) are you experienced with?
+        - generic [ref=f20e290]:
+          - heading "Profil perusahaan" [level=3] [ref=f20e291]
+          - generic [ref=f20e292]:
+            - generic [ref=f20e293]:
+              - generic [ref=f20e296]:
+                - img "Company Logo for Key Distribution Partners" [ref=f20e298]
+                - button [ref=f20e300] [cursor=pointer]:
+                  - heading [level=4] [ref=f20e301]
+              - generic [ref=f20e307]:
+                - generic [ref=f20e308]: Telecommunications & Internet Service Providers
+                - generic [ref=f20e316]: 11-50 employees
+              - generic [ref=f20e324]:
+                - generic [ref=f20e325]:
+                  - generic:
+                    - generic:
+                      - paragraph: We are a fast growing digital product aggregator with vast network all over Indonesia. We offer 400++ different digital products and services such as games topup, airtime topup (pulsa), bill payments, discount vouchers, and money transfer services. Our team handle over 100++ millions annual transaction and growing. Please apply if you think you have the capacity, passion and resourcefullness to help us expand our business.
+                  - paragraph [ref=f20e329]: We are a fast growing digital product aggregator with vast network all over Indonesia. We offer 400++ different digital products and services such as games topup, airtime topup (pulsa), bill payments, discount vouchers, and money transfer services. Our team handle over 100++ millions annual transaction and growing. Please apply if you think you have the capacity, passion and resourcefullness to help us expand our business.
+                - button [ref=f20e332] [cursor=pointer]:
+                  - text: Tampilkan selengkapnya
+                  - generic [aria-hidden] [ref=f20e333]: ⁠
+            - generic [ref=f20e339]:
+              - generic [ref=f20e340]: Manfaat dan keuntungan
+              - generic [ref=f20e347]:
+                - generic [ref=f20e348]: • Medical
+                - generic [ref=f20e350]: • Miscellaneous allowance
+                - generic [ref=f20e352]: • Loans
+                - generic [ref=f20e354]: • Parking
+            - link [ref=f20e358] [cursor=pointer]:
+              - /url: /id/companies/key-distribution-partners-168554786866127
+              - generic [ref=f20e359]:
+                - generic:
+                  - generic:
+                    - text: Selengkapnya tentang perusahaan ini
+                    - generic [aria-hidden]: ⁠
+        - generic [ref=f20e362]:
+          - heading "Laporkan iklan lowongan ini" [level=2] [ref=f20e364]
+          - generic [ref=f20e365]:
+            - generic [ref=f20e366]: Hati-hati
+            - generic [ref=f20e367]: Jangan berikan detail bank atau kartu kredit kamu saat mengirimkan lamaran kerja.
+            - link "Pelajari cara melindungi diri kamu" [ref=f20e369] [cursor=pointer]:
+              - /url: /id/security-hub#protect-yourself-online
+            - button "Laporkan iklan lowongan ini" [ref=f20e375] [cursor=pointer]:
+              - text: Laporkan iklan lowongan ini
+              - generic [aria-hidden] [ref=f20e376]: ⁠
+        - generic [ref=f20e386] [cursor=pointer]
+        - generic [ref=f20e407]:
+          - generic [ref=f20e408]: Temukan karier Anda di Saran Karier
+          - generic [ref=f20e409]: Bergabunglah dengan jutaan pencari kerja di seluruh dunia menggunakan alat dan wawasan pembentukan karier kami.
+          - list [ref=f20e410]:
+            - listitem [ref=f20e411]:
+              - text: •
+              - generic [ref=f20e412]: Lakukan riset terkait gaji dan tren pekerjaan
+            - listitem [ref=f20e413]:
+              - text: •
+              - generic [ref=f20e414]: Akses alat, templat, dan artikel gratis yang membantu Anda tampak lebih menonjol
+            - listitem [ref=f20e415]:
+              - text: •
+              - generic [ref=f20e416]: Temukan jalur menuju beragam pilihan karier
+          - link "Jelajahi Saran Karier arrow-right" [ref=f20e417] [cursor=pointer]:
+            - /url: https://id.jobstreet.com/id/career-advice?utm_campaign=LMIS_Web&utm_source=JobStreet&utm_medium=LMIS&utm_content=job-details
+            - generic [ref=f20e418]: Jelajahi Saran Karier
+            - img "arrow-right" [ref=f20e419]
+  - contentinfo [ref=f20e421]:
+    - generic [ref=f20e423]:
+      - generic [ref=f20e426]:
+        - generic [ref=f20e428]:
+          - generic [ref=f20e430]:
+            - generic [ref=f20e431]: Pencari kerja
+            - list [ref=f20e432]:
+              - listitem [ref=f20e433]:
+                - link "Cari lowongan" [ref=f20e434] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f20e437]:
+                - link "Lihat profil" [ref=f20e438] [cursor=pointer]:
+                  - /url: /id/profile/me
+              - listitem [ref=f20e441]:
+                - link "Cari profil" [ref=f20e442] [cursor=pointer]:
+                  - /url: /id/profiles/search?tracking=ILC-profile-search-footer
+              - listitem [ref=f20e445]:
+                - link "Pencarian tersimpan" [ref=f20e446] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-searches
+              - listitem [ref=f20e449]:
+                - link "Lowongan tersimpan" [ref=f20e450] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-jobs
+              - listitem [ref=f20e453]:
+                - link "Lamaran kerja" [ref=f20e454] [cursor=pointer]:
+                  - /url: /id/my-activity/applied-jobs
+              - listitem [ref=f20e457]:
+                - link "Sumber daya karir" [ref=f20e458] [cursor=pointer]:
+                  - /url: /id/career-advice
+              - listitem [ref=f20e461]:
+                - link "Jelajahi karier" [ref=f20e462] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-careers
+              - listitem [ref=f20e465]:
+                - link "Jelajahi gaji" [ref=f20e466] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-salaries
+              - listitem [ref=f20e469]:
+                - link "Perusahaan" [ref=f20e470] [cursor=pointer]:
+                  - /url: /id/companies
+              - listitem [ref=f20e473]:
+                - button "Unduh aplikasi" [ref=f20e478] [cursor=pointer]
+          - generic [ref=f20e487]:
+            - generic [ref=f20e488]: Perusahaan
+            - list [ref=f20e489]:
+              - listitem [ref=f20e490]:
+                - link "Daftar gratis" [ref=f20e491] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f20e494]:
+                - link "Pasang iklan lowongan kerja" [ref=f20e495] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f20e498]:
+                - link "Produk & harga" [ref=f20e499] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/products/jobads
+              - listitem [ref=f20e502]:
+                - link "Layanan pelanggan" [ref=f20e503] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/contactus
+              - listitem [ref=f20e506]:
+                - link "Saran perekrutan" [ref=f20e507] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/hiring-advice
+              - listitem [ref=f20e510]:
+                - link "Wawasan pasar" [ref=f20e511] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/market-insights
+              - listitem [ref=f20e514]:
+                - link "Mitra perangkat lunak perekrutan" [ref=f20e515] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/partners/connect-with-seek
+        - generic [ref=f20e520]:
+          - generic [ref=f20e522]:
+            - generic [ref=f20e523]: Tentang kami
+            - list [ref=f20e524]:
+              - listitem [ref=f20e525]:
+                - link "Tentang kami" [ref=f20e526] [cursor=pointer]:
+                  - /url: /id/about
+              - listitem [ref=f20e529]:
+                - link "Ruang berita" [ref=f20e530] [cursor=pointer]:
+                  - /url: /id/about/news
+              - listitem [ref=f20e533]:
+                - link "Investor" [ref=f20e534] [cursor=pointer]:
+                  - /url: https://au.seek.com/about/investors
+              - listitem [ref=f20e537]:
+                - link "Karir" [ref=f20e538] [cursor=pointer]:
+                  - /url: /id/careers
+              - listitem [ref=f20e541]:
+                - button "Mitra internasional" [ref=f20e546] [cursor=pointer]
+              - listitem [ref=f20e554]:
+                - button "Layanan mitra" [ref=f20e559] [cursor=pointer]
+          - generic [ref=f20e568]:
+            - generic [ref=f20e569]: Kontak
+            - list [ref=f20e570]:
+              - listitem [ref=f20e571]:
+                - link "Pusat bantuan" [ref=f20e572] [cursor=pointer]:
+                  - /url: https://help.id.jobstreet.com/id/s/?language=in
+              - listitem [ref=f20e575]:
+                - link "Hubungi kami" [ref=f20e576] [cursor=pointer]:
+                  - /url: /id/contact-us
+              - listitem [ref=f20e579]:
+                - link "Blog produk & teknologi" [ref=f20e580] [cursor=pointer]:
+                  - /url: https://medium.com/seek-blog
+              - listitem [ref=f20e583]:
+                - button "Media sosial" [ref=f20e588] [cursor=pointer]
+      - generic [ref=f20e598]:
+        - button "Lokasi" [ref=f20e602] [cursor=pointer]:
+          - generic [ref=f20e603]: Indonesia
+        - generic [ref=f20e616]:
+          - generic [ref=f20e617]:
+            - link "Persyaratan & ketentuan" [ref=f20e619] [cursor=pointer]:
+              - /url: /id/terms
+            - link "Keamanan" [ref=f20e623] [cursor=pointer]:
+              - /url: /id/security-hub
+            - link "Privasi" [ref=f20e627] [cursor=pointer]:
+              - /url: /id/my-privacy
+          - generic [ref=f20e630]: Hak cipta © 2026 Jobstreet

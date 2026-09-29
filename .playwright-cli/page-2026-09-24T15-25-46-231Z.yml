@@ -1,0 +1,29 @@
+- generic [ref=f74e3]:
+  - link "%%%Skip to content" [ref=f74e4] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f74e5]:
+    - banner [ref=f74e7]:
+      - generic [ref=f74e11]:
+        - generic [ref=f74e12]:
+          - link "Jobstreet" [ref=f74e14] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f74e22]:
+            - link "Cari lowongan" [ref=f74e24] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f74e29] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f74e34] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f74e39] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f74e43]:
+          - button "Bahasa" [ref=f74e46] [cursor=pointer]
+          - button "Profile Avatar" [ref=f74e66] [cursor=pointer]:
+            - generic [ref=f74e67]: L
+          - link "Untuk perusahaan" [ref=f74e79] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - alert "Loading" [ref=f74e84]
+  - contentinfo [ref=f74e90]:
+    - generic [ref=f74e94] [cursor=pointer]:
+      - generic [ref=f74e95]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f74e100]: Telusuri situs

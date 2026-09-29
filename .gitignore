@@ -1,12 +1,57 @@
+﻿# Environment and local secrets
 .env
+.env.*
+!.env.example
+CV.pdf
+
+# Python cache, virtual environments, and test/tool caches
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Browser automation and local runtime output
+playwright/.cache/
+.playwright/
+test-results/
+logs/
+*.log
+.hermes/
+
+# Local/session data and generated application data
 data/sessions/
 data/cv_data.json
-CV.pdf
-__pycache__/
-*.pyc
+data/applied.json
+
+# Generated screenshots, image batches, and rendered media
+/images/flow/
+/result image/
+/videos/output/
+*.mp4
+*.zip
+
+# Frontend dependencies and build output (keep source, manifests, and assets)
+**/node_modules/
+**/dist/
+.vite/
+.next/
+
+# Debug captures (debug source scripts remain trackable)
 debug/*.png
 debug/*.html
-logs/
-.hermes/
-playwright/.cache
-data/applied.json
+
+# Temporary investigation/generation scripts and Windows artifact
+/tmp_*.py
+/NUL
+
+# OS/editor files
+.DS_Store
+Thumbs.db

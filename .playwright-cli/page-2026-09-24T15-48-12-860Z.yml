@@ -1,0 +1,133 @@
+- generic [ref=f103e3]:
+  - link "%%%Skip to content" [ref=f103e4] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f103e5]:
+    - banner [ref=f103e7]:
+      - generic [ref=f103e11]:
+        - generic [ref=f103e12]:
+          - link "Jobstreet" [ref=f103e14] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f103e22]:
+            - link "Cari lowongan" [ref=f103e24] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f103e29] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f103e34] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f103e39] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f103e43]:
+          - button "Bahasa" [ref=f103e46] [cursor=pointer]
+          - button "Profile Avatar" [ref=f103e66] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f103e79] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f103e83]:
+      - generic [ref=f103e87]:
+        - img "PT Karisma Zona Kreatifku" [ref=f103e89]
+        - generic [ref=f103e90]:
+          - generic [ref=f103e91]: Melamar untuk
+          - heading "AI Engineer" [level=1] [ref=f103e92]
+          - generic [ref=f103e93]: PT Karisma Zona Kreatifku
+          - button "Lihat deskripsi pekerjaan" [ref=f103e95] [cursor=pointer]
+      - navigation "Progress bar" [ref=f103e97]:
+        - list [ref=f103e98]:
+          - listitem [ref=f103e99]:
+            - button "Pilih dokumen"
+          - listitem [ref=f103e112]:
+            - button "Jawab pertanyaan perusahaan"
+          - listitem [ref=f103e113]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f103e114]:
+            - button "Review dan kirim" [ref=f103e952]
+        - progressbar
+      - generic [ref=f103e962]:
+        - generic [ref=f103e966]:
+          - generic [ref=f103e968]:
+            - button "Profile photo options" [ref=f103e973] [cursor=pointer]:
+              - generic [ref=f103e975]:
+                - generic:
+                  - heading [level=3]
+            - generic [ref=f103e979]:
+              - heading [level=4] [ref=f103e981]:
+                - text: Lukman Zakaria
+                - generic "Identitas terverifikasi" [ref=f103e982]
+              - generic [ref=f103e985]:
+                - generic [ref=f103e986]: Jakarta Selatan, Jakarta Raya
+                - generic [ref=f103e994]: +62 85785255577
+                - generic [ref=f103e1001]: lukmanzakaria04@gmail.com
+          - button "Edit detail pribadi" [ref=f103e1010] [cursor=pointer]
+        - generic [ref=f103e1015]:
+          - heading "Dokumen yang disertakan" [level=3] [ref=f103e1016]
+          - generic [ref=f103e1017]:
+            - generic [ref=f103e1019]:
+              - generic [ref=f103e1020]:
+                - generic [ref=f103e1021]: Resume
+                - generic [ref=f103e1022]: CV_Eng.pdf
+              - button "Edit resume" [ref=f103e1025] [cursor=pointer]
+            - generic [ref=f103e1032]:
+              - generic [ref=f103e1033]:
+                - generic [ref=f103e1034]: Surat lamaran
+                - generic [ref=f103e1035]: Kamu menulis surat lamaran untuk lamaran ini
+              - button "Edit surat pengantar" [ref=f103e1038] [cursor=pointer]
+        - generic [ref=f103e1045]:
+          - heading "Pertanyaan perusahaan" [level=3] [ref=f103e1046]
+          - generic [ref=f103e1048]:
+            - generic [ref=f103e1049]:
+              - text: Anda menjawab
+              - strong [ref=f103e1050]: 9 dari 9
+            - button "Ubah pertanyaan pemberi kerja" [ref=f103e1053] [cursor=pointer]
+        - generic [ref=f103e1060]:
+          - heading "Profil Jobstreet kamu" [level=3] [ref=f103e1061]
+          - generic [ref=f103e1062]: Saat Anda melamar pekerjaan, Profil Jobstreet dan kredensial terverifikasi Anda akan diakses oleh PT Karisma Zona Kreatifku sebagai bagian dari proses lamaran.
+          - generic [ref=f103e1063]:
+            - generic [ref=f103e1064]:
+              - generic [ref=f103e1065]:
+                - generic [ref=f103e1066]: Riwayat karir
+                - generic [ref=f103e1067]: 4 peran
+              - button "Ubah" [ref=f103e1070] [cursor=pointer]
+            - generic [ref=f103e1076]:
+              - generic [ref=f103e1077]:
+                - generic [ref=f103e1078]: Pendidikan
+                - generic [ref=f103e1079]: 1 qualifications
+              - button "Ubah" [ref=f103e1082] [cursor=pointer]
+            - generic [ref=f103e1088]:
+              - generic [ref=f103e1089]:
+                - generic [ref=f103e1090]: Lisensi & sertifikasi
+                - generic [ref=f103e1091]: 2 kredensial
+              - button "Ubah lisensi atau sertifikasi" [ref=f103e1094] [cursor=pointer]
+            - generic [ref=f103e1100]:
+              - generic [ref=f103e1101]:
+                - generic [ref=f103e1102]: Keahlian
+                - generic [ref=f103e1103]: 15 keterampilan
+              - button "Ubah keahlian" [ref=f103e1106] [cursor=pointer]
+        - generic [ref=f103e1115]:
+          - heading "Buat lamaranmu lebih berkesan" [level=3] [ref=f103e1116]
+          - generic [ref=f103e1117]:
+            - text: Tunjukkan bahwa kamu sangat berminat agar peluangmu dilirik rekruter lebih besar.
+            - link "Pelajari" [ref=f103e1118] [cursor=pointer]:
+              - /url: https://help.id.jobstreet.com/in/article/Show-strong-interest-in-the-jobs-you-really-want
+          - generic [ref=f103e1119]:
+            - generic [ref=f103e1120]: Saya sangat berminat
+            - generic [ref=f103e1126]:
+              - checkbox [ref=f103e1128] [cursor=pointer]
+              - generic [ref=f103e1133] [cursor=pointer]
+          - generic [ref=f103e1134]: Kamu bisa pakai fitur ini untuk 3 lamaran lagi (termasuk lamaran ini) hingga 1 Okt 2026.
+        - generic [ref=f103e1135]:
+          - generic [ref=f103e1136]:
+            - text: Dengan mendaftar, Anda menyetujui
+            - link "Pemberitahuan Pengumpulan" [ref=f103e1137] [cursor=pointer]:
+              - /url: /id/collection-notice
+            - text: dan
+            - link "Kebijakan Privasi" [ref=f103e1138] [cursor=pointer]:
+              - /url: /id/privacy
+            - text: .
+          - button [ref=f103e1140] [cursor=pointer]:
+            - generic [ref=f103e1141]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kirim lamaran
+  - contentinfo [ref=f103e393]:
+    - generic [ref=f103e397] [cursor=pointer]:
+      - generic [ref=f103e398]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f103e403]: Telusuri situs

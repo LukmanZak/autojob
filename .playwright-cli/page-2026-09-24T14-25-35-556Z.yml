@@ -1,0 +1,1693 @@
+- generic [ref=f1e3]:
+  - heading "429 lowongan kerja ai engineer di Indonesia" [level=1] [ref=f1e5491]
+  - button "Lewati ke konten" [ref=f1e6] [cursor=pointer]
+  - generic [ref=f1e7]:
+    - status
+  - banner [ref=f1e9]:
+    - generic [ref=f1e13]:
+      - generic [ref=f1e14]:
+        - link "Jobstreet" [ref=f1e16] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f1e24]:
+          - link "Cari lowongan" [ref=f1e26] [cursor=pointer]:
+            - /url: /
+          - link "Cari profil" [ref=f1e31] [cursor=pointer]:
+            - /url: /id/profiles/search?tracking=ILC-profile-search-header
+          - link "Sumber daya karir" [ref=f1e36] [cursor=pointer]:
+            - /url: /id/career-advice
+          - link "Perusahaan" [ref=f1e41] [cursor=pointer]:
+            - /url: /id/companies
+      - generic [ref=f1e45]:
+        - button "Bahasa" [ref=f1e48] [cursor=pointer]
+        - button "Profile Avatar" [ref=f1e67] [cursor=pointer]
+        - link "Untuk perusahaan" [ref=f1e80] [cursor=pointer]:
+          - /url: https://id.employer.seek.com/id
+  - main [ref=f1e82]:
+    - generic [ref=f1e83]:
+      - search [ref=f1e85]:
+        - heading "Lakukan pencarian lowongan" [level=2] [ref=f1e87]
+        - generic [ref=f1e96]:
+          - generic [ref=f1e97]:
+            - region "Masukkan kata kunci" [ref=f1e100]:
+              - generic [ref=f1e101]:
+                - generic [ref=f1e106]:
+                  - combobox "Jelaskan posisi yang kamu cari (jabatan, industri, skill…)" [ref=f1e5492]: AI Engineer
+                  - button "Clear" [ref=f1e5381] [cursor=pointer]
+                - generic [ref=f1e109]: Suggestions will appear below the field as you type
+            - region "Masukkan lokasi" [ref=f1e113]:
+              - generic [ref=f1e114]:
+                - generic [ref=f1e119]:
+                  - combobox "Masukkan kota atau wilayah" [ref=f1e120]
+                  - generic [ref=f1e121]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - button "Clear"
+                - generic [ref=f1e122]: Suggestions will appear below the field as you type
+            - button "Kirim pencarian" [ref=f1e126] [cursor=pointer]:
+              - generic [ref=f1e127]: Cari
+          - navigation "Filter pencarian kamu" [ref=f1e5390]:
+            - heading "Filter pencarian kamu" [level=2] [ref=f1e5392]
+            - generic [ref=f1e5393]:
+              - generic [ref=f1e5394]:
+                - button "filter berdasarkan salary range" [expanded] [ref=f1e5395] [cursor=pointer]
+                - generic [ref=f1e5396] [cursor=pointer]:
+                  - generic [ref=f1e5397]: Tampilkan filter salary range.
+                  - generic [ref=f1e5398]: Gaji
+              - generic [ref=f1e5408]:
+                - button "filter berdasarkan jenis pekerjaan" [expanded] [ref=f1e5409] [cursor=pointer]
+                - generic [ref=f1e5410] [cursor=pointer]:
+                  - generic [ref=f1e5411]: Tampilkan filter jenis pekerjaan.
+                  - generic [ref=f1e5412]: Jenis
+              - generic [ref=f1e5422]:
+                - button "filter berdasarkan work arrangement" [expanded] [ref=f1e5423] [cursor=pointer]
+                - generic [ref=f1e5424] [cursor=pointer]:
+                  - generic [ref=f1e5425]: Tampilkan filter work arrangement.
+                  - generic [ref=f1e5426]: Tempat kerja
+              - generic [ref=f1e5436]:
+                - button "filter berdasarkan Klasifikasi" [expanded] [ref=f1e5437] [cursor=pointer]
+                - generic [ref=f1e5438] [cursor=pointer]:
+                  - generic [ref=f1e5439]: Tampilkan filter Klasifikasi.
+                  - link [aria-hidden] [ref=f1e5441]:
+                    - /url: /id/AI-Engineer-jobs
+                    - text: Clear classifications
+                  - generic [ref=f1e5442]: Bidang
+              - generic [ref=f1e5452]:
+                - button "filter berdasarkan tanggal terdaftar" [expanded] [ref=f1e5453] [cursor=pointer]
+                - generic [ref=f1e5454] [cursor=pointer]:
+                  - generic [ref=f1e5455]: Tampilkan filter tanggal terdaftar.
+                  - generic [ref=f1e5456]: Diposting
+            - radio
+      - region "Hasil Pencarian" [ref=f1e5495]:
+        - generic [ref=f1e5500]:
+          - generic [ref=f1e5501]:
+            - generic [ref=f1e5502]: Filter berdasarkan lokasi
+            - list [ref=f1e5505]:
+              - listitem [ref=f1e5506]:
+                - link "Lowongan di Jakarta Raya" [ref=f1e5507] [cursor=pointer]:
+                  - /url: /id/AI-Engineer-jobs/in-Jakarta-Raya
+                  - text: Jakarta Raya
+              - listitem [ref=f1e5508]:
+                - link "Lowongan di Kalimantan Timur" [ref=f1e5509] [cursor=pointer]:
+                  - /url: /id/AI-Engineer-jobs/in-Kalimantan-Timur
+                  - text: Kalimantan Timur
+              - listitem [ref=f1e5510]:
+                - link "Lowongan di Jakarta Selatan Jakarta Raya" [ref=f1e5511] [cursor=pointer]:
+                  - /url: /id/AI-Engineer-jobs/in-Jakarta-Selatan-Jakarta-Raya
+                  - text: Jakarta Selatan Jakarta Raya
+              - listitem [ref=f1e5512]:
+                - link "Lowongan di Kabupaten Tangerang Banten" [ref=f1e5513] [cursor=pointer]:
+                  - /url: /id/AI-Engineer-jobs/in-Kabupaten-Tangerang-Banten
+                  - text: Kabupaten Tangerang Banten
+              - listitem [ref=f1e5514]:
+                - link "Lowongan di Semarang Jawa Tengah" [ref=f1e5515] [cursor=pointer]:
+                  - /url: /id/AI-Engineer-jobs/in-Semarang-Jawa-Tengah
+                  - text: Semarang Jawa Tengah
+              - listitem [ref=f1e5516]:
+                - link "Lowongan di Tangerang Selatan Banten" [ref=f1e5517] [cursor=pointer]:
+                  - /url: /id/AI-Engineer-jobs/in-Tangerang-Selatan-Banten
+                  - text: Tangerang Selatan Banten
+          - button "Baca Selengkapnya" [ref=f1e5521] [cursor=pointer]:
+            - text: Baca Selengkapnya
+            - generic [aria-hidden] [ref=f1e5522]: ⁠
+        - generic [ref=f1e5533]:
+          - generic [ref=f1e5535]:
+            - generic [ref=f1e5537]:
+              - heading "Pencarian terkait" [level=4] [ref=f1e5538]
+              - list [ref=f1e5539]:
+                - listitem [ref=f1e5540]:
+                  - link [ref=f1e5541] [cursor=pointer]:
+                    - /url: /id/machine-learning-jobs
+                    - generic [ref=f1e5542]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: machine learning pekerjaan
+                - listitem [ref=f1e5543]:
+                  - link [ref=f1e5544] [cursor=pointer]:
+                    - /url: /id/data-scientist-jobs
+                    - generic [ref=f1e5545]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: data scientist pekerjaan
+                - listitem [ref=f1e5546]:
+                  - link [ref=f1e5547] [cursor=pointer]:
+                    - /url: /id/project-engineer-jobs
+                    - generic [ref=f1e5548]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: project engineer pekerjaan
+                - listitem [ref=f1e5549]:
+                  - link [ref=f1e5550] [cursor=pointer]:
+                    - /url: /id/machine-learning-engineer-jobs
+                    - generic [ref=f1e5551]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: machine learning engineer pekerjaan
+                - listitem [ref=f1e5552]:
+                  - link [ref=f1e5553] [cursor=pointer]:
+                    - /url: /id/engineer-jobs
+                    - generic [ref=f1e5554]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: engineer pekerjaan
+                - listitem [ref=f1e5555]:
+                  - link [ref=f1e5556] [cursor=pointer]:
+                    - /url: /id/data-science-jobs
+                    - generic [ref=f1e5557]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: data science pekerjaan
+                - listitem [ref=f1e5558]:
+                  - link [ref=f1e5559] [cursor=pointer]:
+                    - /url: /id/it-jobs
+                    - generic [ref=f1e5560]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: it pekerjaan
+                - listitem [ref=f1e5561]:
+                  - link [ref=f1e5562] [cursor=pointer]:
+                    - /url: /id/flutter-developer-jobs
+                    - generic [ref=f1e5563]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: flutter developer pekerjaan
+                - listitem [ref=f1e5564]:
+                  - link [ref=f1e5565] [cursor=pointer]:
+                    - /url: /id/jobs-in-engineering
+                    - generic [ref=f1e5566]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: engineering pekerjaan
+                - listitem [ref=f1e5567]:
+                  - link [ref=f1e5568] [cursor=pointer]:
+                    - /url: /id/ml-engineer-jobs
+                    - generic [ref=f1e5569]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: ml engineer pekerjaan
+                - listitem [ref=f1e5570]:
+                  - link [ref=f1e5571] [cursor=pointer]:
+                    - /url: /id/data-center-jobs
+                    - generic [ref=f1e5572]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: data center pekerjaan
+                - listitem [ref=f1e5573]:
+                  - link [ref=f1e5574] [cursor=pointer]:
+                    - /url: /id/data-analyst-jobs
+                    - generic [ref=f1e5575]:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]: ⁠
+                          - text: data analyst pekerjaan
+            - generic [ref=f1e5576]:
+              - generic [ref=f1e5578]:
+                - contentinfo [ref=f1e5581]:
+                  - generic [ref=f1e5583]:
+                    - generic [ref=f1e5584]: 429 pekerjaan
+                    - generic [ref=f1e5589] [cursor=pointer]:
+                      - generic [ref=f1e5590]: Baru untuk kamu
+                      - generic "99+" [ref=f1e5593]
+                  - contentinfo [ref=f1e5596]:
+                    - button "Urut bedasarkan" [ref=f1e5601] [cursor=pointer]
+                - generic [ref=f1e5609]:
+                  - checkbox "Lowongan Kandidat Kuat" [ref=f1e5611] [cursor=pointer]
+                  - generic [ref=f1e5616] [cursor=pointer]: Lowongan Kandidat Kuat
+              - generic [ref=f1e5624]:
+                - button "Ubah pencarian saya" [ref=f1e5627] [cursor=pointer]
+                - generic [ref=f1e5628]:
+                  - article "System Engineer (AI/ML)" [ref=f1e5630] [cursor=pointer]:
+                    - link [ref=f1e5631]:
+                      - /url: /id/job/94773423?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e5632]: Listed more than three days ago
+                    - generic [ref=f1e5633]:
+                      - generic [ref=f1e5639]:
+                        - generic [ref=f1e5640]:
+                          - heading [level=3] [ref=f1e5641]:
+                            - link "System Engineer (AI/ML)" [ref=f1e5643]:
+                              - /url: /id/job/94773423?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e5645]:
+                            - generic [ref=f1e5646]: di
+                            - link "Lowongan di Sibernetik Integra Data" [ref=f1e5647]:
+                              - /url: /id/Sibernetik-Integra-Data-jobs
+                              - text: Sibernetik Integra Data
+                          - generic [ref=f1e5648]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                        - paragraph [ref=f1e5650]: Ini adalah lowongan kerja Kontrak/Temporer
+                        - generic [ref=f1e5653]:
+                          - link "Limit results to Jakarta Raya":
+                            - /url: /id/AI-Engineer-jobs/in-Jakarta-Raya
+                            - text: Jakarta Raya
+                      - generic [ref=f1e5654]:
+                        - generic [ref=f1e5655]: "Drive IT/Data Ops: infra, DB, API, CI/CD, Kubernetes. Innovate, optimize & automate systems. Fresh grads welcome, 24/7 shift."
+                        - generic [ref=f1e5656]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Administrasi Jaringan & Sistem"
+                                - text: Administrasi Jaringan & Sistem
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e5657]:
+                            - generic [ref=f1e5658]: 3 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e5664]
+                            - button "Simpan" [ref=f1e5673]
+                  - article "AI Engineer" [ref=f1e5679] [cursor=pointer]:
+                    - link [ref=f1e5680]:
+                      - /url: /id/job/94862978?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e5681]: Listed more than three days ago
+                    - generic [ref=f1e5682]:
+                      - generic [ref=f1e5685]:
+                        - generic [ref=f1e5686]:
+                          - heading [level=3] [ref=f1e5687]:
+                            - link "AI Engineer" [ref=f1e5689]:
+                              - /url: /id/job/94862978?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e5691]:
+                            - generic [ref=f1e5692]: di
+                            - link "Lowongan di Muhammadiyah University of East Kalimantan" [ref=f1e5693]:
+                              - /url: /id/Muhammadiyah-University-of-East-Kalimantan-jobs
+                              - text: Muhammadiyah University of East Kalimantan
+                          - generic [ref=f1e5694]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                        - paragraph [ref=f1e5696]: Ini adalah lowongan kerja Kontrak/Temporer
+                        - generic [ref=f1e5699]:
+                          - link "Limit results to Kalimantan Timur":
+                            - /url: /id/AI-Engineer-jobs/in-Kalimantan-Timur
+                            - text: Kalimantan Timur
+                      - generic [ref=f1e5700]:
+                        - generic [ref=f1e5701]: Memahami konsep Machine Learning, Deep Learning, dan Generative AI. Menguasai Python dan framework terkait (TensorFlow, PyTorch, LangChain,...
+                        - generic [ref=f1e5702]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e5703]:
+                            - generic [ref=f1e5704]: 3 jam yang lalu
+                            - button "Lebih banyak" [ref=f1e5710]
+                            - button "Simpan" [ref=f1e5719]
+                  - article "AI Engineer" [ref=f1e5725] [cursor=pointer]:
+                    - link [ref=f1e5726]:
+                      - /url: /id/job/94823702?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e5727]: Listed more than one day ago
+                    - generic [ref=f1e5728]:
+                      - generic [ref=f1e5729]:
+                        - generic [ref=f1e5730]:
+                          - link:
+                            - /url: /id/companies/daya-solutions-innovations-168554945719270
+                        - generic [ref=f1e5732]:
+                          - generic [ref=f1e5733]:
+                            - heading [level=3] [ref=f1e5734]:
+                              - link "AI Engineer" [ref=f1e5736]:
+                                - /url: /id/job/94823702?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e5738]:
+                              - generic [ref=f1e5739]: di
+                              - link "Lowongan di Daya Solutions Innovations" [ref=f1e5740]:
+                                - /url: /id/Daya-Solutions-Innovations-jobs
+                                - text: PT Inovasi Daya Solusi
+                            - generic [ref=f1e5741]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                          - paragraph [ref=f1e5743]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e5746]:
+                            - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                              - text: Jakarta Selatan, Jakarta Raya
+                      - list [ref=f1e5747]:
+                        - listitem [ref=f1e5748]:
+                          - generic [ref=f1e5752]: Experience real technology transformation
+                        - listitem [ref=f1e5754]:
+                          - generic [ref=f1e5758]: Always provide high integrity in every aspect company development
+                        - listitem [ref=f1e5760]:
+                          - generic [ref=f1e5764]: Fun, Passionate and Innovative
+                      - generic [ref=f1e5766]:
+                        - generic [ref=f1e5767]: Join us as AI Engineer!
+                        - generic [ref=f1e5768]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e5769]:
+                            - generic [ref=f1e5770]: 1 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e5776]
+                            - button "Simpan" [ref=f1e5785]
+                  - article "AI Agent Developer / AI Automation Engineer" [ref=f1e5791] [cursor=pointer]:
+                    - link [ref=f1e5792]:
+                      - /url: /id/job/94743147?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e5793]: Listed more than five days ago
+                    - generic [ref=f1e5794]:
+                      - generic [ref=f1e5795]:
+                        - generic [ref=f1e5796]:
+                          - link:
+                            - /url: /id/companies/key-distribution-partners-168554786866127
+                        - generic [ref=f1e5798]:
+                          - generic [ref=f1e5799]:
+                            - heading [level=3] [ref=f1e5800]:
+                              - link "AI Agent Developer / AI Automation Engineer" [ref=f1e5802]:
+                                - /url: /id/job/94743147?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e5804]:
+                              - generic [ref=f1e5805]: di
+                              - link "Lowongan di Key Distribution Partners" [ref=f1e5806]:
+                                - /url: /id/Key-Distribution-Partners-jobs
+                                - text: PT Mitra Distribusi Utama
+                            - generic [ref=f1e5807]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                              - generic:
+                                - generic "Dibutuhkan segera"
+                          - paragraph [ref=f1e5809]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e5812]:
+                            - link "Limit results to Kabupaten Tangerang, Banten":
+                              - /url: /id/AI-Engineer-jobs/in-Kabupaten-Tangerang,-Banten
+                              - text: Kabupaten Tangerang, Banten
+                      - list [ref=f1e5813]:
+                        - listitem [ref=f1e5814]:
+                          - generic [ref=f1e5818]: Real AI Implementation, Not Toy Projects
+                        - listitem [ref=f1e5820]:
+                          - generic [ref=f1e5824]: Direct Access to Owner + Fast Decision Making
+                        - listitem [ref=f1e5826]:
+                          - generic [ref=f1e5830]: Opportunity to Build a Future AI Product
+                      - generic [ref=f1e5832]:
+                        - generic [ref=f1e5833]: We are looking for a technical AI Agent Developer/Automation Engineer to help develop and implement AI agents, and business automation systems
+                        - generic [ref=f1e5834]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e5835]:
+                            - generic [ref=f1e5836]: 5 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e5842]
+                            - button "Simpan" [ref=f1e5851]
+                  - article "AI Engineer" [ref=f1e5857] [cursor=pointer]:
+                    - link [ref=f1e5858]:
+                      - /url: /id/job/94765485?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e5859]: Listed more than three days ago
+                    - generic [ref=f1e5860]:
+                      - generic [ref=f1e5861]:
+                        - generic [ref=f1e5862]:
+                          - link:
+                            - /url: /id/companies/kazokku-168551436316689
+                        - generic [ref=f1e5864]:
+                          - generic [ref=f1e5865]:
+                            - heading [level=3] [ref=f1e5866]:
+                              - link "AI Engineer" [ref=f1e5868]:
+                                - /url: /id/job/94765485?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e5870]:
+                              - generic [ref=f1e5871]: di
+                              - link "Lowongan di KAZOKKU" [ref=f1e5872]:
+                                - /url: /id/KAZOKKU-jobs
+                                - text: PT Karisma Zona Kreatifku
+                            - generic [ref=f1e5873]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Anda kandidat kuat"
+                          - paragraph [ref=f1e5875]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f1e5876]:
+                            - generic [ref=f1e5878]:
+                              - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                                - /url: /id/AI-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                                - text: Jakarta Selatan, Jakarta Raya
+                            - 'generic "Salary: Rp 10.000.000 – Rp 15.000.000 per month" [ref=f1e5879]': Rp 10.000.000 – Rp 15.000.000 per month
+                      - list [ref=f1e5882]:
+                        - listitem [ref=f1e5883]:
+                          - generic [ref=f1e5887]: Python-first role
+                        - listitem [ref=f1e5889]:
+                          - generic [ref=f1e5893]: Eksposur langsung ke proyek AI/ML dan GenAI/LLM terkini
+                        - listitem [ref=f1e5895]:
+                          - generic [ref=f1e5899]: Kesempatan berkembang end-to-end
+                      - generic [ref=f1e5901]:
+                        - generic [ref=f1e5902]: AI Engineer (Python) mid-level yang punya kemampuan coding Python yang kuat dan pengalaman 2-4 tahun membangun, melatih, hingga men-deploy model AI/ML
+                        - generic [ref=f1e5903]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e5904]:
+                            - generic [ref=f1e5905]: 3 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e5911]
+                            - button "Simpan" [ref=f1e5920]
+                  - article "Applied AI / Full-Stack AI Engineer (Mandarin / English Speaker)" [ref=f1e5926] [cursor=pointer]:
+                    - link [ref=f1e5927]:
+                      - /url: /id/job/94261469?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e5928]: Listed more than twenty seven days ago
+                    - generic [ref=f1e5929]:
+                      - generic [ref=f1e5935]:
+                        - generic [ref=f1e5936]:
+                          - heading [level=3] [ref=f1e5937]:
+                            - link "Applied AI / Full-Stack AI Engineer (Mandarin / English Speaker)" [ref=f1e5939]:
+                              - /url: /id/job/94261469?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e5941]:
+                            - generic [ref=f1e5942]: di
+                            - link "Lowongan di HiThink Technology Indonesia" [ref=f1e5943]:
+                              - /url: /id/HiThink-Technology-Indonesia-jobs
+                              - text: HITHINK TECHNOLOGY INDONESIA
+                          - generic [ref=f1e5944]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                        - paragraph [ref=f1e5946]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e5947]:
+                          - generic [ref=f1e5949]:
+                            - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                              - text: Jakarta Selatan, Jakarta Raya
+                          - 'generic "Salary: Rp 8.000.000 – Rp 12.000.000 per month" [ref=f1e5950]': Rp 8.000.000 – Rp 12.000.000 per month
+                      - list [ref=f1e5953]:
+                        - listitem [ref=f1e5954]:
+                          - generic [ref=f1e5958]: New opportunities in Indonesia market with potential career path goal.
+                        - listitem [ref=f1e5960]:
+                          - generic [ref=f1e5964]: South Jakarta CBD area
+                        - listitem [ref=f1e5966]:
+                          - generic [ref=f1e5970]: Multinational Company (PMA)
+                      - generic [ref=f1e5972]:
+                        - generic [ref=f1e5973]: Fullstack AI Engineer in dynamic tech firm - gain valuable experience, collaborate with cross-functional teams.
+                        - generic [ref=f1e5974]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e5975]:
+                            - generic [ref=f1e5977]:
+                              - generic [ref=f1e5978]: 27 hari yang lalu
+                              - generic [ref=f1e5979]: •
+                              - generic [ref=f1e5981]: Segera ditutup
+                            - button "Lebih banyak" [ref=f1e5985]
+                            - button "Simpan" [ref=f1e5994]
+                  - article "AI Developer" [ref=f1e6000] [cursor=pointer]:
+                    - link [ref=f1e6001]:
+                      - /url: /id/job/94727139?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6002]: Listed more than six days ago
+                    - generic [ref=f1e6003]:
+                      - generic [ref=f1e6009]:
+                        - generic [ref=f1e6010]:
+                          - heading [level=3] [ref=f1e6011]:
+                            - link "AI Developer" [ref=f1e6013]:
+                              - /url: /id/job/94727139?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6015]:
+                            - generic [ref=f1e6016]: di
+                            - link "Lowongan di PT. CLT TOOLBOX INDONESIA" [ref=f1e6017]:
+                              - /url: /id/PT.-CLT-TOOLBOX-INDONESIA-jobs
+                              - text: PT. CLT TOOLBOX INDONESIA
+                          - generic [ref=f1e6018]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                        - paragraph [ref=f1e6020]: Ini adalah lowongan kerja Kontrak/Temporer
+                        - generic [ref=f1e6021]:
+                          - generic [ref=f1e6023]:
+                            - link "Limit results to Semarang, Jawa Tengah":
+                              - /url: /id/AI-Engineer-jobs/in-Semarang,-Jawa-Tengah
+                              - text: Semarang, Jawa Tengah
+                          - 'generic "Salary: Rp 5.000.000 – Rp 6.000.000 per month" [ref=f1e6024]': Rp 5.000.000 – Rp 6.000.000 per month
+                      - list [ref=f1e6027]:
+                        - listitem [ref=f1e6028]:
+                          - generic [ref=f1e6032]: Innovative Construction Technology
+                        - listitem [ref=f1e6034]:
+                          - generic [ref=f1e6038]: Pure Computational Challenge
+                        - listitem [ref=f1e6040]:
+                          - generic [ref=f1e6044]: Competitive Benefits & Supportive Culture
+                      - generic [ref=f1e6046]:
+                        - generic [ref=f1e6047]: Work on cutting-edge AI projects. Collaborative team. Latest tech tools. Professional growth opportunities.
+                        - generic [ref=f1e6048]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6049]:
+                            - generic [ref=f1e6050]: 6 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6056]
+                            - button "Simpan" [ref=f1e6065]
+                  - article "Infrastructure & DevOps Engineer (AI-Native)" [ref=f1e6071] [cursor=pointer]:
+                    - link [ref=f1e6072]:
+                      - /url: /id/job/94219099?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6073]: Listed more than twenty nine days ago
+                    - generic [ref=f1e6074]:
+                      - generic [ref=f1e6075]:
+                        - generic [ref=f1e6076]:
+                          - link:
+                            - /url: /id/companies/monica-hijau-lestari-168550126397289
+                        - generic [ref=f1e6078]:
+                          - generic [ref=f1e6079]:
+                            - heading [level=3] [ref=f1e6080]:
+                              - link "Infrastructure & DevOps Engineer (AI-Native)" [ref=f1e6082]:
+                                - /url: /id/job/94219099?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6084]:
+                              - generic [ref=f1e6085]: di
+                              - link "Lowongan di Monica Hijau Lestari" [ref=f1e6086]:
+                                - /url: /id/Monica-Hijau-Lestari-jobs
+                                - text: PT Monica HijauLestari
+                            - generic [ref=f1e6087]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f1e6089]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e6091]:
+                            - generic [ref=f1e6092]:
+                              - link "Limit results to Tangerang Selatan, Banten":
+                                - /url: /id/AI-Engineer-jobs/in-Tangerang-Selatan,-Banten
+                                - text: Tangerang Selatan, Banten
+                            - generic [ref=f1e6093]: (Hibrid)
+                      - generic [ref=f1e6094]:
+                        - generic [ref=f1e6095]: Own hybrid infrastructure managing cloud-native and on-prem systems with AI-ops automation.
+                        - generic [ref=f1e6096]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Administrasi Jaringan & Sistem"
+                                - text: Administrasi Jaringan & Sistem
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6097]:
+                            - generic [ref=f1e6099]:
+                              - generic [ref=f1e6100]: 29 hari yang lalu
+                              - generic [ref=f1e6101]: •
+                              - generic [ref=f1e6103]: Segera ditutup
+                            - button "Lebih banyak" [ref=f1e6107]
+                            - button "Simpan" [ref=f1e6116]
+                  - article "Backend Engineer (Golang & AI)" [ref=f1e6122] [cursor=pointer]:
+                    - link [ref=f1e6123]:
+                      - /url: /id/job/94730704?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6124]: Listed more than six days ago
+                    - generic [ref=f1e6125]:
+                      - generic [ref=f1e6131]:
+                        - generic [ref=f1e6132]:
+                          - heading [level=3] [ref=f1e6133]:
+                            - link "Backend Engineer (Golang & AI)" [ref=f1e6135]:
+                              - /url: /id/job/94730704?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6137]:
+                            - generic [ref=f1e6138]: di
+                            - link "Lowongan di Appsku Aplikasi Indonesia" [ref=f1e6139]:
+                              - /url: /id/Appsku-Aplikasi-Indonesia-jobs
+                              - text: PT. APPSKU APLIKASI INDONESIA
+                          - generic [ref=f1e6140]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                        - paragraph [ref=f1e6142]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e6145]:
+                          - link "Limit results to Cibinong, Jawa Barat":
+                            - /url: /id/AI-Engineer-jobs/in-Cibinong,-Jawa-Barat
+                            - text: Cibinong, Jawa Barat
+                      - generic [ref=f1e6146]:
+                        - generic [ref=f1e6147]: PT APPSKU APLIKASI INDONESIA
+                        - generic [ref=f1e6148]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6149]:
+                            - generic [ref=f1e6150]: 6 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6156]
+                            - button "Simpan" [ref=f1e6165]
+                  - article "AI & Automation Engineer" [ref=f1e6171] [cursor=pointer]:
+                    - link [ref=f1e6172]:
+                      - /url: /id/job/94357791?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6173]: Listed more than twenty two days ago
+                    - generic [ref=f1e6174]:
+                      - generic [ref=f1e6175]:
+                        - generic [ref=f1e6176]:
+                          - link:
+                            - /url: /id/companies/supermal-karawaci-168555177482351
+                        - generic [ref=f1e6178]:
+                          - generic [ref=f1e6179]:
+                            - heading [level=3] [ref=f1e6180]:
+                              - link "AI & Automation Engineer" [ref=f1e6182]:
+                                - /url: /id/job/94357791?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6184]:
+                              - generic [ref=f1e6185]: di
+                              - link "Lowongan di Supermal Karawaci" [ref=f1e6186]:
+                                - /url: /id/Supermal-Karawaci-jobs
+                                - text: PT. SUPERMAL KARAWACI
+                            - generic [ref=f1e6187]:
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                          - paragraph [ref=f1e6189]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f1e6192]:
+                            - link "Limit results to Karawaci, Banten":
+                              - /url: /id/AI-Engineer-jobs/in-Karawaci,-Banten
+                              - text: Karawaci, Banten
+                      - generic [ref=f1e6193]:
+                        - generic [ref=f1e6194]: Develop AI-powered automation solutions using n8n to improve operational efficiency and support digital transformation.
+                        - generic [ref=f1e6195]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6196]:
+                            - generic [ref=f1e6197]: 22 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6203]
+                            - button "Simpan" [ref=f1e6212]
+                  - article "AI Engineer Lead" [ref=f1e6218] [cursor=pointer]:
+                    - link [ref=f1e6219]:
+                      - /url: /id/job/94423663?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6220]: Listed more than twenty days ago
+                    - generic [ref=f1e6221]:
+                      - generic [ref=f1e6222]:
+                        - generic [ref=f1e6223]:
+                          - link:
+                            - /url: /id/companies/agro-boga-utama-168558657827279
+                        - generic [ref=f1e6225]:
+                          - generic [ref=f1e6226]:
+                            - heading [level=3] [ref=f1e6227]:
+                              - link "AI Engineer Lead" [ref=f1e6229]:
+                                - /url: /id/job/94423663?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6231]:
+                              - generic [ref=f1e6232]: di
+                              - link "Lowongan di Agro Boga Utama" [ref=f1e6233]:
+                                - /url: /id/Agro-Boga-Utama-jobs
+                                - text: AGRO BOGA UTAMA GROUP
+                            - generic [ref=f1e6234]:
+                              - generic:
+                                - generic "Anda kandidat kuat"
+                          - paragraph [ref=f1e6236]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e6239]:
+                            - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                              - text: Jakarta Selatan, Jakarta Raya
+                      - generic [ref=f1e6240]:
+                        - generic [ref=f1e6241]: Posisi ini akan memimpin pengembangan solusi AI untuk meningkatkan efisiensi dan produktivitas. Berkolaborasi dengan tim ERP dan berbagai divisi.
+                        - generic [ref=f1e6242]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6243]:
+                            - generic [ref=f1e6244]: 20 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6250]
+                            - button "Simpan" [ref=f1e6259]
+                  - article "AI Engineer" [ref=f1e6265] [cursor=pointer]:
+                    - link [ref=f1e6266]:
+                      - /url: /id/job/94426556?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6267]: Listed more than twenty days ago
+                    - generic [ref=f1e6268]:
+                      - generic [ref=f1e6269]:
+                        - generic [ref=f1e6270]:
+                          - link:
+                            - /url: /id/companies/hanwha-life-insurance-indonesia-168555548944782
+                        - generic [ref=f1e6272]:
+                          - generic [ref=f1e6273]:
+                            - heading [level=3] [ref=f1e6274]:
+                              - link "AI Engineer" [ref=f1e6276]:
+                                - /url: /id/job/94426556?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6278]:
+                              - generic [ref=f1e6279]: di
+                              - link "Lowongan di Hanwha Life Insurance Indonesia" [ref=f1e6280]:
+                                - /url: /id/Hanwha-Life-Insurance-Indonesia-jobs
+                                - text: Hanwha Life Insurance Indonesia
+                            - generic [ref=f1e6281]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Anda kandidat kuat"
+                          - paragraph [ref=f1e6283]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e6286]:
+                            - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                              - text: Jakarta Selatan, Jakarta Raya
+                      - generic [ref=f1e6287]:
+                        - generic [ref=f1e6288]: AI Engineer to build production-ready LLM and AI solutions across an insurance organization.
+                        - generic [ref=f1e6289]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6290]:
+                            - generic [ref=f1e6291]: 20 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6297]
+                            - button "Simpan" [ref=f1e6306]
+                  - article "AI Implementation Engineer" [ref=f1e6312] [cursor=pointer]:
+                    - link [ref=f1e6313]:
+                      - /url: /id/job/94339530?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6314]: Listed more than twenty three days ago
+                    - generic [ref=f1e6315]:
+                      - generic [ref=f1e6318]:
+                        - generic [ref=f1e6319]:
+                          - heading [level=3] [ref=f1e6320]:
+                            - link "AI Implementation Engineer" [ref=f1e6322]:
+                              - /url: /id/job/94339530?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6324]:
+                            - generic [ref=f1e6325]: di
+                            - text: Pengiklan Anonim
+                          - generic [ref=f1e6326]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                        - paragraph [ref=f1e6328]: Ini adalah lowongan kerja Paruh waktu
+                        - generic [ref=f1e6331]:
+                          - link "Limit results to Jakarta Timur, Jakarta Raya":
+                            - /url: /id/AI-Engineer-jobs/in-Jakarta-Timur,-Jakarta-Raya
+                            - text: Jakarta Timur, Jakarta Raya
+                      - generic [ref=f1e6332]:
+                        - generic [ref=f1e6333]: Transforming how organizations deploy artificial intelligence to solve complex operational and business challenges.
+                        - generic [ref=f1e6334]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6335]:
+                            - generic [ref=f1e6337]:
+                              - generic [ref=f1e6338]: 23 hari yang lalu
+                              - generic [ref=f1e6339]: •
+                              - generic [ref=f1e6341]: Segera ditutup
+                            - button "Lebih banyak" [ref=f1e6345]
+                            - button "Simpan" [ref=f1e6354]
+                  - article "Middle AI Engineer" [ref=f1e6360] [cursor=pointer]:
+                    - link [ref=f1e6361]:
+                      - /url: /id/job/94429217?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6362]: Listed more than twenty days ago
+                    - generic [ref=f1e6363]:
+                      - generic [ref=f1e6364]:
+                        - generic [ref=f1e6365]:
+                          - link:
+                            - /url: /id/companies/fata-organa-solutions-168550800645347
+                        - generic [ref=f1e6367]:
+                          - generic [ref=f1e6368]:
+                            - heading [level=3] [ref=f1e6369]:
+                              - link "Middle AI Engineer" [ref=f1e6371]:
+                                - /url: /id/job/94429217?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6373]:
+                              - generic [ref=f1e6374]: di
+                              - link "Lowongan di Fata Organa Solutions" [ref=f1e6375]:
+                                - /url: /id/Fata-Organa-Solutions-jobs
+                                - text: PT Fata Organa Solusi
+                            - generic [ref=f1e6376]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                          - paragraph [ref=f1e6378]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e6379]:
+                            - generic [ref=f1e6380]:
+                              - generic [ref=f1e6381]:
+                                - link "Limit results to Banten":
+                                  - /url: /id/AI-Engineer-jobs/in-Banten
+                                  - text: Banten
+                              - generic [ref=f1e6382]: (Jarak jauh)
+                            - 'generic "Salary: Rp 10.000.000 – Rp 15.000.000 per month" [ref=f1e6383]': Rp 10.000.000 – Rp 15.000.000 per month
+                      - generic [ref=f1e6386]:
+                        - generic [ref=f1e6387]: Build production LLM apps and ML pipelines at a CAC Holding Japan subsidiary. 3+ yrs exp, English fluency, hands-on with modern AI stack.
+                        - generic [ref=f1e6388]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6389]:
+                            - generic [ref=f1e6390]: 20 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6396]
+                            - button "Simpan" [ref=f1e6405]
+                  - article "AI Engineer" [ref=f1e6411] [cursor=pointer]:
+                    - link [ref=f1e6412]:
+                      - /url: /id/job/94397829?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6413]: Listed more than twenty one days ago
+                    - generic [ref=f1e6414]:
+                      - generic [ref=f1e6415]:
+                        - generic [ref=f1e6416]:
+                          - link:
+                            - /url: /id/companies/datra-internusa-168551980769284
+                        - generic [ref=f1e6418]:
+                          - generic [ref=f1e6419]:
+                            - heading [level=3] [ref=f1e6420]:
+                              - link "AI Engineer" [ref=f1e6422]:
+                                - /url: /id/job/94397829?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6424]:
+                              - generic [ref=f1e6425]: di
+                              - link "Lowongan di Datra Internusa" [ref=f1e6426]:
+                                - /url: /id/Datra-Internusa-jobs
+                                - text: PT Datra Internusa
+                            - generic [ref=f1e6427]:
+                              - generic:
+                                - generic "Anda kandidat kuat"
+                          - paragraph [ref=f1e6429]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f1e6432]:
+                            - link "Limit results to Jakarta Barat, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Barat,-Jakarta-Raya
+                              - text: Jakarta Barat, Jakarta Raya
+                      - generic [ref=f1e6433]:
+                        - generic [ref=f1e6434]: Design, build, and deploy AI applications and automation systems for Datra's core business processes.
+                        - generic [ref=f1e6435]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6436]:
+                            - generic [ref=f1e6437]: 21 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6443]
+                            - button "Simpan" [ref=f1e6452]
+                  - article "Machine Learning Engineer" [ref=f1e6458] [cursor=pointer]:
+                    - link [ref=f1e6459]:
+                      - /url: /id/job/94804170?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6460]: Listed more than two days ago
+                    - generic [ref=f1e6461]:
+                      - generic [ref=f1e6464]:
+                        - generic [ref=f1e6465]:
+                          - heading [level=3] [ref=f1e6466]:
+                            - link "Machine Learning Engineer" [ref=f1e6468]:
+                              - /url: /id/job/94804170?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6470]:
+                            - generic [ref=f1e6471]: di
+                            - link "Lowongan di Metrodata" [ref=f1e6472]:
+                              - /url: /id/Metrodata-jobs
+                              - text: PT. Metrodata Electronics, Tbk
+                          - generic [ref=f1e6473]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                        - paragraph [ref=f1e6475]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e6478]:
+                          - link "Limit results to Jakarta Raya":
+                            - /url: /id/AI-Engineer-jobs/in-Jakarta-Raya
+                            - text: Jakarta Raya
+                      - generic [ref=f1e6479]:
+                        - generic [ref=f1e6480]: Diutamakan memiliki sertifikasi keahlian professional/pelatihan di bidang Machine Learning, AI, Cloud AI Services atau MLOps. Memiliki pengalaman...
+                        - generic [ref=f1e6481]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6482]:
+                            - generic [ref=f1e6483]: 2 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6489]
+                            - button "Simpan" [ref=f1e6498]
+                  - article "IT DEVELOPER" [ref=f1e6504] [cursor=pointer]:
+                    - link [ref=f1e6505]:
+                      - /url: /id/job/94552212?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6506]: Listed more than fourteen days ago
+                    - generic [ref=f1e6507]:
+                      - generic [ref=f1e6508]:
+                        - generic [ref=f1e6509]:
+                          - link:
+                            - /url: /id/companies/china-taiping-insurance-group-168553097265492
+                        - generic [ref=f1e6511]:
+                          - generic [ref=f1e6512]:
+                            - heading [level=3] [ref=f1e6513]:
+                              - link "IT DEVELOPER" [ref=f1e6515]:
+                                - /url: /id/job/94552212?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6517]:
+                              - generic [ref=f1e6518]: di
+                              - link "Lowongan di China Taiping Insurance Group" [ref=f1e6519]:
+                                - /url: /id/China-Taiping-Insurance-Group-jobs
+                                - text: PT China Taiping Insurance Indonesia
+                            - generic [ref=f1e6520]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f1e6522]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e6525]:
+                            - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                              - text: Jakarta Selatan, Jakarta Raya
+                      - list [ref=f1e6526]:
+                        - listitem [ref=f1e6527]:
+                          - generic [ref=f1e6531]: Develop Innovative Digital Solutions
+                        - listitem [ref=f1e6533]:
+                          - generic [ref=f1e6537]: Grow Your IT Career
+                        - listitem [ref=f1e6539]:
+                          - generic [ref=f1e6543]: Collaborate With Global Teams
+                      - generic [ref=f1e6545]:
+                        - generic [ref=f1e6546]: Develop and maintain internal applications and IT systems with strong technical and problem-solving skills.
+                        - generic [ref=f1e6547]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6548]:
+                            - generic [ref=f1e6549]: 14 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6555]
+                            - button "Simpan" [ref=f1e6564]
+                  - article "Artificial Intelligence (AI) Technical Lead" [ref=f1e6570] [cursor=pointer]:
+                    - link [ref=f1e6571]:
+                      - /url: /id/job/94635059?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6572]: Listed more than nine days ago
+                    - generic [ref=f1e6573]:
+                      - generic [ref=f1e6579]:
+                        - generic [ref=f1e6580]:
+                          - heading [level=3] [ref=f1e6581]:
+                            - link "Artificial Intelligence (AI) Technical Lead" [ref=f1e6583]:
+                              - /url: /id/job/94635059?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6585]:
+                            - generic [ref=f1e6586]: di
+                            - link "Lowongan di PT Dsse Energi Mas Utama" [ref=f1e6587]:
+                              - /url: /id/PT-Dsse-Energi-Mas-Utama-jobs
+                              - text: PT DSSE Energi Mas Utama
+                          - generic [ref=f1e6588]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                        - paragraph [ref=f1e6590]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e6593]:
+                          - link "Limit results to Jakarta Pusat, Jakarta Raya":
+                            - /url: /id/AI-Engineer-jobs/in-Jakarta-Pusat,-Jakarta-Raya
+                            - text: Jakarta Pusat, Jakarta Raya
+                      - generic [ref=f1e6594]:
+                        - generic [ref=f1e6595]: AI Technical Lead to design, develop, and implement AI/ML solutions including Generative AI and LLM-based applications.
+                        - generic [ref=f1e6596]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6597]:
+                            - generic [ref=f1e6598]: 9 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6604]
+                            - button "Simpan" [ref=f1e6613]
+                  - article "AI Engineer" [ref=f1e6619] [cursor=pointer]:
+                    - link [ref=f1e6620]:
+                      - /url: /id/job/94338686?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6621]: Listed more than twenty three days ago
+                    - generic [ref=f1e6622]:
+                      - generic [ref=f1e6623]:
+                        - generic [ref=f1e6624]:
+                          - link:
+                            - /url: /id/companies/kolink-network-solutions-168556859693086
+                        - generic [ref=f1e6626]:
+                          - generic [ref=f1e6627]:
+                            - heading [level=3] [ref=f1e6628]:
+                              - link "AI Engineer" [ref=f1e6630]:
+                                - /url: /id/job/94338686?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6632]:
+                              - generic [ref=f1e6633]: di
+                              - link "Lowongan di Kolink Network Solutions" [ref=f1e6634]:
+                                - /url: /id/Kolink-Network-Solutions-jobs
+                                - text: PT Kolink Network Solutions
+                            - generic [ref=f1e6635]:
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                          - paragraph [ref=f1e6637]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f1e6640]:
+                            - link "Limit results to Jakarta Utara, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Utara,-Jakarta-Raya
+                              - text: Jakarta Utara, Jakarta Raya
+                      - generic [ref=f1e6641]:
+                        - generic [ref=f1e6642]: We are looking for an *AI Engineer* who is passionate about building and implementing AI solutions into real-world products and business processes.
+                        - generic [ref=f1e6643]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik Sistem"
+                                - text: Teknik Sistem
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f1e6644]:
+                            - generic [ref=f1e6646]:
+                              - generic [ref=f1e6647]: 23 hari yang lalu
+                              - generic [ref=f1e6648]: •
+                              - generic [ref=f1e6650]: Segera ditutup
+                            - button "Lebih banyak" [ref=f1e6654]
+                            - button "Simpan" [ref=f1e6663]
+                  - article "AI Productivity & Enablement Specialist" [ref=f1e6669] [cursor=pointer]:
+                    - link [ref=f1e6670]:
+                      - /url: /id/job/94600458?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6671]: Listed more than ten days ago
+                    - generic [ref=f1e6672]:
+                      - generic [ref=f1e6673]:
+                        - generic [ref=f1e6674]:
+                          - link:
+                            - /url: /id/companies/organik-sehat-alami-168551434380752
+                        - generic [ref=f1e6676]:
+                          - generic [ref=f1e6677]:
+                            - heading [level=3] [ref=f1e6678]:
+                              - link "AI Productivity & Enablement Specialist" [ref=f1e6680]:
+                                - /url: /id/job/94600458?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6682]:
+                              - generic [ref=f1e6683]: di
+                              - link "Lowongan di Organik Sehat Alami" [ref=f1e6684]:
+                                - /url: /id/Organik-Sehat-Alami-jobs
+                                - text: PT Organik Sehat Alami
+                            - generic [ref=f1e6685]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                          - paragraph [ref=f1e6687]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e6690]:
+                            - link "Limit results to Jakarta Selatan, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Selatan,-Jakarta-Raya
+                              - text: Jakarta Selatan, Jakarta Raya
+                      - list [ref=f1e6691]:
+                        - listitem [ref=f1e6692]:
+                          - generic [ref=f1e6696]: Punya ruang besar untuk eksperimen, prototype, dan implementasi AI.
+                        - listitem [ref=f1e6698]:
+                          - generic [ref=f1e6702]: Learning curve tinggi untuk berkembang di bidang AI & digital transformation.
+                        - listitem [ref=f1e6704]:
+                          - generic [ref=f1e6708]: Exposure langsung ke decision maker dan prioritas strategis perusahaan.
+                      - generic [ref=f1e6710]:
+                        - generic [ref=f1e6711]: Pimpin transformasi digital dengan AI. Gaji kompetitif, career growth, dan lingkungan inovatif menanti Anda.
+                        - generic [ref=f1e6712]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Manajemen Program & Proyek"
+                                - text: Manajemen Program & Proyek
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6713]:
+                            - generic [ref=f1e6714]: 10 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6720]
+                            - button "Simpan" [ref=f1e6729]
+                  - article "Data Engineer" [ref=f1e6735] [cursor=pointer]:
+                    - link [ref=f1e6736]:
+                      - /url: /id/job/94643446?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6737]: Listed more than nine days ago
+                    - generic [ref=f1e6738]:
+                      - generic [ref=f1e6744]:
+                        - generic [ref=f1e6745]:
+                          - heading [level=3] [ref=f1e6746]:
+                            - link "Data Engineer" [ref=f1e6748]:
+                              - /url: /id/job/94643446?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6750]:
+                            - generic [ref=f1e6751]: di
+                            - link "Lowongan di Transnovasi" [ref=f1e6752]:
+                              - /url: /id/Transnovasi-jobs
+                              - text: PT. TRANSNOVASI BANGUN PERSADA
+                          - generic [ref=f1e6753]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f1e6755]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e6758]:
+                          - link "Limit results to Jakarta Timur, Jakarta Raya":
+                            - /url: /id/AI-Engineer-jobs/in-Jakarta-Timur,-Jakarta-Raya
+                            - text: Jakarta Timur, Jakarta Raya
+                      - generic [ref=f1e6759]:
+                        - generic [ref=f1e6760]: Data Engineer
+                        - generic [ref=f1e6761]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6762]:
+                            - generic [ref=f1e6763]: 9 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6769]
+                            - button "Simpan" [ref=f1e6778]
+                  - article "Senior Software Engineer" [ref=f1e6784] [cursor=pointer]:
+                    - link [ref=f1e6785]:
+                      - /url: /id/job/94776439?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6786]: Listed more than three days ago
+                    - generic [ref=f1e6787]:
+                      - generic [ref=f1e6793]:
+                        - generic [ref=f1e6794]:
+                          - heading [level=3] [ref=f1e6795]:
+                            - link "Senior Software Engineer" [ref=f1e6797]:
+                              - /url: /id/job/94776439?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6799]:
+                            - generic [ref=f1e6800]: di
+                            - link "Lowongan di PT Indo Online Mitra Usaha (Vox Asia)" [ref=f1e6801]:
+                              - /url: /id/jobs?advertiserid=60901674
+                              - text: PT Indo Online Mitra Usaha (Vox Asia)
+                          - generic [ref=f1e6802]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f1e6804]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e6806]:
+                          - generic [ref=f1e6807]:
+                            - link "Limit results to Bandung, Jawa Barat":
+                              - /url: /id/AI-Engineer-jobs/in-Bandung,-Jawa-Barat
+                              - text: Bandung, Jawa Barat
+                          - generic [ref=f1e6808]: (Hibrid)
+                      - list [ref=f1e6809]:
+                        - listitem [ref=f1e6810]:
+                          - generic [ref=f1e6814]: Global Company (Base in Belgium)
+                        - listitem [ref=f1e6816]:
+                          - generic [ref=f1e6820]: Health insurance
+                        - listitem [ref=f1e6822]:
+                          - generic [ref=f1e6826]: Inclusive Culture & Work-Life Balance
+                      - generic [ref=f1e6828]:
+                        - generic [ref=f1e6829]: Experienced software engineer to design and build scalable applications using C#, ASP.NET Core and Python with AI and LLM integration.
+                        - generic [ref=f1e6830]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6831]:
+                            - generic [ref=f1e6832]: 3 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6838]
+                            - button "Simpan" [ref=f1e6847]
+                  - article "AI Engineer" [ref=f1e6853] [cursor=pointer]:
+                    - link [ref=f1e6854]:
+                      - /url: /id/job/94337382?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6855]: Listed more than twenty one days ago
+                    - generic [ref=f1e6856]:
+                      - generic [ref=f1e6859]:
+                        - generic [ref=f1e6860]:
+                          - heading [level=3] [ref=f1e6861]:
+                            - link "AI Engineer" [ref=f1e6863]:
+                              - /url: /id/job/94337382?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6865]:
+                            - generic [ref=f1e6866]: di
+                            - link "Lowongan di Graha Karya Informasi" [ref=f1e6867]:
+                              - /url: /id/Graha-Karya-Informasi-jobs
+                              - text: PT Graha Karya Informasi
+                          - generic [ref=f1e6868]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Kandidat yang sangat kuat"
+                        - paragraph [ref=f1e6870]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e6873]:
+                          - link "Limit results to Jakarta Pusat, Jakarta Raya":
+                            - /url: /id/AI-Engineer-jobs/in-Jakarta-Pusat,-Jakarta-Raya
+                            - text: Jakarta Pusat, Jakarta Raya
+                      - generic [ref=f1e6874]:
+                        - generic [ref=f1e6875]: Design, build, and maintain data pipelines from multiple data sources. Document data architecture, AI models, and development processes
+                        - generic [ref=f1e6876]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6877]:
+                            - generic [ref=f1e6878]: 21 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6884]
+                            - button "Simpan" [ref=f1e6893]
+                  - article "AI AUTOMATION & CRM SPECIALIST" [ref=f1e6899] [cursor=pointer]:
+                    - link [ref=f1e6900]:
+                      - /url: /id/job/94386978?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6901]: Listed more than twenty one days ago
+                    - generic [ref=f1e6902]:
+                      - generic [ref=f1e6908]:
+                        - generic [ref=f1e6909]:
+                          - heading [level=3] [ref=f1e6910]:
+                            - link "AI AUTOMATION & CRM SPECIALIST" [ref=f1e6912]:
+                              - /url: /id/job/94386978?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e6914]:
+                            - generic [ref=f1e6915]: di
+                            - link "Lowongan di Rachmat Cahayasakti" [ref=f1e6916]:
+                              - /url: /id/Rachmat-Cahayasakti-jobs
+                              - text: PT RACHMAT CAHAYASAKTI
+                          - generic [ref=f1e6917]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f1e6919]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e6920]:
+                          - generic [ref=f1e6922]:
+                            - link "Limit results to Jakarta Barat, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Barat,-Jakarta-Raya
+                              - text: Jakarta Barat, Jakarta Raya
+                          - 'generic "Salary: Rp 6.000.000 – Rp 8.000.000 per month" [ref=f1e6923]': Rp 6.000.000 – Rp 8.000.000 per month
+                      - list [ref=f1e6926]:
+                        - listitem [ref=f1e6927]:
+                          - generic [ref=f1e6931]: Competitive remuneration packages commensurate with experience & qualifications
+                        - listitem [ref=f1e6933]:
+                          - generic [ref=f1e6937]: Collaborative and inclusive work environment
+                        - listitem [ref=f1e6939]:
+                          - generic [ref=f1e6943]: Provide a comprehensive benefits package designed to support you
+                      - generic [ref=f1e6945]:
+                        - generic [ref=f1e6946]: Transform businesses with AI automation & CRM solutions. Competitive pay, professional development & flexible work.
+                        - generic [ref=f1e6947]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6948]:
+                            - generic [ref=f1e6949]: 21 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e6955]
+                            - button "Simpan" [ref=f1e6964]
+                  - article "Data Engineer" [ref=f1e6970] [cursor=pointer]:
+                    - link [ref=f1e6971]:
+                      - /url: /id/job/94293446?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e6972]: Listed more than twenty five days ago
+                    - generic [ref=f1e6973]:
+                      - generic [ref=f1e6974]:
+                        - generic [ref=f1e6975]:
+                          - link:
+                            - /url: /id/companies/sigma-cipta-utama-168551599753870
+                        - generic [ref=f1e6977]:
+                          - generic [ref=f1e6978]:
+                            - heading [level=3] [ref=f1e6979]:
+                              - link "Data Engineer" [ref=f1e6981]:
+                                - /url: /id/job/94293446?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e6983]:
+                              - generic [ref=f1e6984]: di
+                              - link "Lowongan di Sigma Cipta Utama" [ref=f1e6985]:
+                                - /url: /id/Sigma-Cipta-Utama-jobs
+                                - text: PT Sigma Cipta Utama
+                            - generic [ref=f1e6986]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f1e6988]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f1e6991]:
+                            - link "Limit results to Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Raya
+                              - text: Jakarta Raya
+                      - generic [ref=f1e6992]:
+                        - generic [ref=f1e6993]: Build and optimize data pipelines using ETL/ELT and modern data technologies
+                        - generic [ref=f1e6994]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Analis Bisnis/Sistem"
+                                - text: Analis Bisnis/Sistem
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e6995]:
+                            - generic [ref=f1e6997]:
+                              - generic [ref=f1e6998]: 25 hari yang lalu
+                              - generic [ref=f1e6999]: •
+                              - generic [ref=f1e7001]: Segera ditutup
+                            - button "Lebih banyak" [ref=f1e7005]
+                            - button "Simpan" [ref=f1e7014]
+                  - article "Data Engineer" [ref=f1e7020] [cursor=pointer]:
+                    - link [ref=f1e7021]:
+                      - /url: /id/job/94490962?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e7022]: Listed more than sixteen days ago
+                    - generic [ref=f1e7023]:
+                      - generic [ref=f1e7024]:
+                        - generic [ref=f1e7025]:
+                          - link:
+                            - /url: /id/companies/astra-graphia-168551558880456
+                        - generic [ref=f1e7027]:
+                          - generic [ref=f1e7028]:
+                            - heading [level=3] [ref=f1e7029]:
+                              - link "Data Engineer" [ref=f1e7031]:
+                                - /url: /id/job/94490962?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e7033]:
+                              - generic [ref=f1e7034]: di
+                              - link "Lowongan di Astra Graphia" [ref=f1e7035]:
+                                - /url: /id/Astra-Graphia-jobs
+                                - text: PT Astra Graphia Information Technology (AGIT)
+                            - generic [ref=f1e7036]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                          - paragraph [ref=f1e7038]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f1e7041]:
+                            - link "Limit results to Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Raya
+                              - text: Jakarta Raya
+                      - generic [ref=f1e7042]:
+                        - generic [ref=f1e7043]: Innovative data engineering role at AGIT - design cutting-edge pipelines, optimise infrastructure, and unlock business insights.
+                        - generic [ref=f1e7044]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Developer/Programmer"
+                                - text: Developer/Programmer
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e7045]:
+                            - generic [ref=f1e7046]: 16 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e7052]
+                            - button "Simpan" [ref=f1e7061]
+                  - article "Automation Engineer" [ref=f1e7067] [cursor=pointer]:
+                    - link [ref=f1e7068]:
+                      - /url: /id/job/94762247?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e7069]: Listed more than three days ago
+                    - generic [ref=f1e7070]:
+                      - generic [ref=f1e7076]:
+                        - generic [ref=f1e7077]:
+                          - heading [level=3] [ref=f1e7078]:
+                            - link "Automation Engineer" [ref=f1e7080]:
+                              - /url: /id/job/94762247?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e7082]:
+                            - generic [ref=f1e7083]: di
+                            - link "Lowongan di Ennovi Integrated Engineering Services Batam" [ref=f1e7084]:
+                              - /url: /id/Ennovi-Integrated-Engineering-Services-Batam-jobs
+                              - text: ENNOVI INTEGRATED ENGINEERING SERVICES BATAM
+                          - generic [ref=f1e7085]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                        - paragraph [ref=f1e7087]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e7090]:
+                          - link "Limit results to Batam, Kepulauan Riau":
+                            - /url: /id/AI-Engineer-jobs/in-Batam,-Kepulauan-Riau
+                            - text: Batam, Kepulauan Riau
+                      - generic [ref=f1e7091]:
+                        - generic [ref=f1e7092]: Responsible for manufacturing equipment maintenance, OEE, continuous improvement and reliability. The candidate must collaborate with process engineer
+                        - generic [ref=f1e7093]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Lainnya"
+                                - text: Lainnya
+                                - generic: "classification: Teknik"
+                                - text: (Teknik)
+                          - generic [ref=f1e7094]:
+                            - generic [ref=f1e7095]: 3 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e7101]
+                            - button "Simpan" [ref=f1e7110]
+                  - article "Data Engineer" [ref=f1e7116] [cursor=pointer]:
+                    - link [ref=f1e7117]:
+                      - /url: /id/job/94739994?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e7118]: Listed more than six days ago
+                    - generic [ref=f1e7119]:
+                      - generic [ref=f1e7122]:
+                        - generic [ref=f1e7123]:
+                          - heading [level=3] [ref=f1e7124]:
+                            - link "Data Engineer" [ref=f1e7126]:
+                              - /url: /id/job/94739994?type=standard&ref=search-standalone&origin=cardTitle
+                          - generic [ref=f1e7128]:
+                            - generic [ref=f1e7129]: di
+                            - link "Lowongan di Kawan Lama" [ref=f1e7130]:
+                              - /url: /id/Kawan-Lama-jobs
+                              - text: Kawan Lama Group
+                          - generic [ref=f1e7131]:
+                            - generic:
+                              - generic "Baru untuk kamu"
+                            - generic:
+                              - generic "Anda kandidat kuat"
+                        - paragraph [ref=f1e7133]: Ini adalah lowongan kerja Full time
+                        - generic [ref=f1e7136]:
+                          - link "Limit results to Jakarta Raya":
+                            - /url: /id/AI-Engineer-jobs/in-Jakarta-Raya
+                            - text: Jakarta Raya
+                      - generic [ref=f1e7137]:
+                        - generic [ref=f1e7138]: "Infrastructure Management: Manage cloud-based data environments (AWS, GCP, or Azure) and orchestrate workflows using tools like Apache Airflow or..."
+                        - generic [ref=f1e7139]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Pengembangan & Administrasi Database"
+                                - text: Pengembangan & Administrasi Database
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e7140]:
+                            - generic [ref=f1e7141]: 6 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e7147]
+                            - button "Simpan" [ref=f1e7156]
+                  - article "Lead Engineer" [ref=f1e7162] [cursor=pointer]:
+                    - link [ref=f1e7163]:
+                      - /url: /id/job/94663864?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e7164]: Listed more than eight days ago
+                    - generic [ref=f1e7165]:
+                      - generic [ref=f1e7166]:
+                        - generic [ref=f1e7167]:
+                          - link:
+                            - /url: /id/companies/digdaya-duta-digital-168558967155242
+                        - generic [ref=f1e7169]:
+                          - generic [ref=f1e7170]:
+                            - heading [level=3] [ref=f1e7171]:
+                              - link "Lead Engineer" [ref=f1e7173]:
+                                - /url: /id/job/94663864?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e7175]:
+                              - generic [ref=f1e7176]: di
+                              - link "Lowongan di Digdaya Duta Digital" [ref=f1e7177]:
+                                - /url: /id/Digdaya-Duta-Digital-jobs
+                                - text: PT Digdaya Duta Digital
+                            - generic [ref=f1e7178]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Anda kandidat kuat"
+                          - paragraph [ref=f1e7180]: Ini adalah lowongan kerja Full time
+                          - generic [ref=f1e7183]:
+                            - link "Limit results to Setiabudi, Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Setiabudi,-Jakarta-Raya
+                              - text: Setiabudi, Jakarta Raya
+                      - list [ref=f1e7184]:
+                        - listitem [ref=f1e7185]:
+                          - generic [ref=f1e7189]: Competitive salary and comprehensive health benefits
+                        - listitem [ref=f1e7191]:
+                          - generic [ref=f1e7195]: Supportive and collaborative work environment
+                        - listitem [ref=f1e7197]:
+                          - generic [ref=f1e7201]: Career growth and mentoring opportunities
+                      - generic [ref=f1e7203]:
+                        - generic [ref=f1e7204]: Responsible to design AI architecture and lead the engineering team to deliver scalable, high-quality AI solutions.
+                        - generic [ref=f1e7205]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Teknik – Perangkat Lunak"
+                                - text: Teknik – Perangkat Lunak
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e7206]:
+                            - generic [ref=f1e7207]: 8 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e7213]
+                            - button "Simpan" [ref=f1e7222]
+                  - article "Database Administrator / Data Engineer / Data Scientist / Data Analyst" [ref=f1e7228] [cursor=pointer]:
+                    - link [ref=f1e7229]:
+                      - /url: /id/job/94413604?type=standard&ref=search-standalone&origin=jobCard
+                    - generic [ref=f1e7230]: Listed more than twenty days ago
+                    - generic [ref=f1e7231]:
+                      - generic [ref=f1e7232]:
+                        - generic [ref=f1e7233]:
+                          - link:
+                            - /url: /id/companies/evolution-technology-solution-168552532072278
+                        - generic [ref=f1e7235]:
+                          - generic [ref=f1e7236]:
+                            - heading [level=3] [ref=f1e7237]:
+                              - link "Database Administrator / Data Engineer / Data Scientist / Data Analyst" [ref=f1e7239]:
+                                - /url: /id/job/94413604?type=standard&ref=search-standalone&origin=cardTitle
+                            - generic [ref=f1e7241]:
+                              - generic [ref=f1e7242]: di
+                              - link "Lowongan di Evolution Technology Solution" [ref=f1e7243]:
+                                - /url: /id/Evolution-Technology-Solution-jobs
+                                - text: PT EVOLUSI TEKNOLOGI SOLUSI
+                            - generic [ref=f1e7244]:
+                              - generic:
+                                - generic "Baru untuk kamu"
+                              - generic:
+                                - generic "Kandidat yang sangat kuat"
+                          - paragraph [ref=f1e7246]: Ini adalah lowongan kerja Kontrak/Temporer
+                          - generic [ref=f1e7249]:
+                            - link "Limit results to Jakarta Raya":
+                              - /url: /id/AI-Engineer-jobs/in-Jakarta-Raya
+                              - text: Jakarta Raya
+                      - list [ref=f1e7250]:
+                        - listitem [ref=f1e7251]:
+                          - generic [ref=f1e7255]: Private Insurance
+                        - listitem [ref=f1e7257]:
+                          - generic [ref=f1e7261]: Soft Loan
+                      - generic [ref=f1e7263]:
+                        - generic [ref=f1e7264]: PT Evolusi Teknologi Solusi saat ini membuka peluang beberapa posisi untuk ditempatkan di klien banking kami di Jakarta (WFO)
+                        - generic [ref=f1e7265]:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "subClassification: Pengembangan & Administrasi Database"
+                                - text: Pengembangan & Administrasi Database
+                                - generic: "classification: Teknologi Informasi & Komunikasi"
+                                - text: (Teknologi Informasi & Komunikasi)
+                          - generic [ref=f1e7266]:
+                            - generic [ref=f1e7267]: 20 hari yang lalu
+                            - button "Lebih banyak" [ref=f1e7273]
+                            - button "Simpan" [ref=f1e7282]
+                - button "Ubah pencarian saya" [ref=f1e7289] [cursor=pointer]
+            - generic [ref=f1e7293]:
+              - generic [ref=f1e7294]: Seberapa relevan hasil pencarian Anda?
+              - generic [ref=f1e7298]:
+                - button "Relevan" [ref=f1e7301] [cursor=pointer]
+                - button "Tidak relevan" [ref=f1e7308] [cursor=pointer]
+            - button [ref=f1e7315] [cursor=pointer]:
+              - generic [ref=f1e7316]:
+                - generic:
+                  - generic:
+                    - generic [aria-hidden]: ⁠
+                    - text: Simpan pencarian ini
+            - navigation "Penomoran halaman hasil" [ref=f1e7319]:
+              - list [ref=f1e7320]:
+                - listitem:
+                  - link [aria-hidden]:
+                    - /url: /id/AI-Engineer-jobs
+                    - generic: Sebelumnya
+                - listitem [ref=f1e7321]:
+                  - link "Go to page 1" [ref=f1e7322] [cursor=pointer]:
+                    - /url: /id/AI-Engineer-jobs
+                    - generic [ref=f1e7323]: "1"
+                - listitem [ref=f1e7326]:
+                  - link "Go to page 2" [ref=f1e7327] [cursor=pointer]:
+                    - /url: /id/AI-Engineer-jobs?page=2
+                    - generic [ref=f1e7328]: "2"
+                - listitem [ref=f1e7331]:
+                  - link "Go to page 3" [ref=f1e7332] [cursor=pointer]:
+                    - /url: /id/AI-Engineer-jobs?page=3
+                    - generic [ref=f1e7333]: "3"
+                - listitem [ref=f1e7336]:
+                  - link "Selanjutnya" [ref=f1e7337] [cursor=pointer]:
+                    - /url: /id/AI-Engineer-jobs?page=2
+          - generic [ref=f1e7349]:
+            - button "Kembali ke hasil pencarian" [ref=f1e7352] [cursor=pointer]
+            - button "Ubah pencarian saya" [ref=f1e7355] [cursor=pointer]
+            - generic [ref=f1e7361]:
+              - heading "Pilih lowongan kerja" [level=3] [ref=f1e7362]
+              - generic [ref=f1e7363]: Tampilkan detail di sini
+  - contentinfo [ref=f1e5165]:
+    - generic [ref=f1e5167]:
+      - generic [ref=f1e5170]:
+        - generic [ref=f1e5172]:
+          - generic [ref=f1e5174]:
+            - generic [ref=f1e5175]: Pencari kerja
+            - list [ref=f1e5176]:
+              - listitem [ref=f1e5177]:
+                - link "Cari lowongan" [ref=f1e5178] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f1e5181]:
+                - link "Lihat profil" [ref=f1e5182] [cursor=pointer]:
+                  - /url: /id/profile/me
+              - listitem [ref=f1e5185]:
+                - link "Cari profil" [ref=f1e5186] [cursor=pointer]:
+                  - /url: /id/profiles/search?tracking=ILC-profile-search-footer
+              - listitem [ref=f1e5189]:
+                - link "Pencarian tersimpan" [ref=f1e5190] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-searches
+              - listitem [ref=f1e5193]:
+                - link "Lowongan tersimpan" [ref=f1e5194] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-jobs
+              - listitem [ref=f1e5197]:
+                - link "Lamaran kerja" [ref=f1e5198] [cursor=pointer]:
+                  - /url: /id/my-activity/applied-jobs
+              - listitem [ref=f1e5201]:
+                - link "Sumber daya karir" [ref=f1e5202] [cursor=pointer]:
+                  - /url: /id/career-advice
+              - listitem [ref=f1e5205]:
+                - link "Jelajahi karier" [ref=f1e5206] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-careers
+              - listitem [ref=f1e5209]:
+                - link "Jelajahi gaji" [ref=f1e5210] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-salaries
+              - listitem [ref=f1e5213]:
+                - link "Perusahaan" [ref=f1e5214] [cursor=pointer]:
+                  - /url: /id/companies
+              - listitem [ref=f1e5217]:
+                - button "Unduh aplikasi" [ref=f1e5222] [cursor=pointer]
+          - generic [ref=f1e5231]:
+            - generic [ref=f1e5232]: Perusahaan
+            - list [ref=f1e5233]:
+              - listitem [ref=f1e5234]:
+                - link "Daftar gratis" [ref=f1e5235] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f1e5238]:
+                - link "Pasang iklan lowongan kerja" [ref=f1e5239] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f1e5242]:
+                - link "Produk & harga" [ref=f1e5243] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/products/jobads
+              - listitem [ref=f1e5246]:
+                - link "Layanan pelanggan" [ref=f1e5247] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/contactus
+              - listitem [ref=f1e5250]:
+                - link "Saran perekrutan" [ref=f1e5251] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/hiring-advice
+              - listitem [ref=f1e5254]:
+                - link "Wawasan pasar" [ref=f1e5255] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/market-insights
+              - listitem [ref=f1e5258]:
+                - link "Mitra perangkat lunak perekrutan" [ref=f1e5259] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/partners/connect-with-seek
+        - generic [ref=f1e5264]:
+          - generic [ref=f1e5266]:
+            - generic [ref=f1e5267]: Tentang kami
+            - list [ref=f1e5268]:
+              - listitem [ref=f1e5269]:
+                - link "Tentang kami" [ref=f1e5270] [cursor=pointer]:
+                  - /url: /id/about
+              - listitem [ref=f1e5273]:
+                - link "Ruang berita" [ref=f1e5274] [cursor=pointer]:
+                  - /url: /id/about/news
+              - listitem [ref=f1e5277]:
+                - link "Investor" [ref=f1e5278] [cursor=pointer]:
+                  - /url: https://au.seek.com/about/investors
+              - listitem [ref=f1e5281]:
+                - link "Karir" [ref=f1e5282] [cursor=pointer]:
+                  - /url: /id/careers
+              - listitem [ref=f1e5285]:
+                - button "Mitra internasional" [ref=f1e5290] [cursor=pointer]
+              - listitem [ref=f1e5298]:
+                - button "Layanan mitra" [ref=f1e5303] [cursor=pointer]
+          - generic [ref=f1e5312]:
+            - generic [ref=f1e5313]: Kontak
+            - list [ref=f1e5314]:
+              - listitem [ref=f1e5315]:
+                - link "Pusat bantuan" [ref=f1e5316] [cursor=pointer]:
+                  - /url: https://help.id.jobstreet.com/id/s/?language=in
+              - listitem [ref=f1e5319]:
+                - link "Hubungi kami" [ref=f1e5320] [cursor=pointer]:
+                  - /url: /id/contact-us
+              - listitem [ref=f1e5323]:
+                - link "Blog produk & teknologi" [ref=f1e5324] [cursor=pointer]:
+                  - /url: https://medium.com/seek-blog
+              - listitem [ref=f1e5327]:
+                - button "Media sosial" [ref=f1e5332] [cursor=pointer]
+      - generic [ref=f1e7385]:
+        - button "Lokasi" [ref=f1e7389] [cursor=pointer]:
+          - generic [ref=f1e7390]: Indonesia
+        - generic [ref=f1e7403]:
+          - generic [ref=f1e7404]:
+            - link "Persyaratan & ketentuan" [ref=f1e7406] [cursor=pointer]:
+              - /url: /id/terms
+            - link "Keamanan" [ref=f1e7410] [cursor=pointer]:
+              - /url: /id/security-hub
+            - link "Privasi" [ref=f1e7414] [cursor=pointer]:
+              - /url: /id/my-privacy
+          - generic [ref=f1e7417]: Hak cipta © 2026 Jobstreet

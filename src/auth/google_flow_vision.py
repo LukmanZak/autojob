@@ -2,13 +2,30 @@
 import argparse, pathlib, sys, time
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent.parent))
 from playwright.sync_api import sync_playwright
-from src.config import get_launch_kwargs, SESSIONS_DIR, ensure_dirs
+from src.config import PROJECT_ROOT, get_launch_kwargs, SESSIONS_DIR, ensure_dirs
 from src.vision.flow_advisor import ensure_flow_session, save_step, advisor_click
 
-FLOW_URL = "https://labs.google/fx/tools/flow"
+FLOW_URL = "https://flow.google.com/?pli=1"
 # sanitize jika kepaste @url:`...`
 FLOW_URL = FLOW_URL.replace("@url:", "").replace("`", "").strip()
 SESSION_FILE = SESSIONS_DIR / "google_flow.json"
+def move_mouse(page, locator=None):
+    """Move the visible browser pointer before an important action."""
+    try:
+        box = locator.bounding_box() if locator is not None else None
+        viewport = page.viewport_size or {"width": 1280, "height": 720}
+        if box:
+            x = box["x"] + box["width"] / 2
+            y = box["y"] + box["height"] / 2
+        else:
+            x = viewport["width"] / 2
+            y = viewport["height"] / 2
+        page.mouse.move(max(1, x - 90), max(1, y - 45), steps=8)
+        page.mouse.move(x, y, steps=10)
+    except Exception:
+        # Pointer motion is cosmetic; it must never block the workflow.
+        pass
+
 
 def find_try_button(page):
     # ada 9 button yang sama di carousel, cuma 1 yang di viewport (x ~410)
@@ -64,6 +81,36 @@ def find_new_project(page):
                 return loc
         except: pass
     return None
+def has_prompt_composer(page):
+    """Return whether the Flow project editor is ready for a prompt."""
+    for sel in [
+        "flow-rich-text-editor .ProseMirror",
+        "div[contenteditable='true'].ProseMirror",
+        "text='What do you want to create?'",
+    ]:
+        try:
+            loc = page.locator(sel).first
+            if loc.count() > 0 and loc.is_visible():
+                return True
+        except Exception:
+            pass
+    return False
+
+
+def find_existing_project(page):
+    """Pick the first project card when New project cannot open."""
+    for sel in ["a[aria-label='Open project']", "a[href*='/project/']"]:
+        try:
+            links = page.locator(sel)
+            for index in range(links.count()):
+                loc = links.nth(index)
+                if loc.is_visible() and loc.bounding_box():
+                    print(f"[found] Existing project {sel} index={index}")
+                    return loc
+        except Exception:
+            pass
+    return None
+
 def find_get_started(page):
     # overlay <div class="click-blocker-overlay"> nutupin klik, tunggu hidden dulu
     for sel in ["button:has-text('Get started')","button:has-text('Get Started')"]:
@@ -278,7 +325,9 @@ def configure_image_settings(page, ratio: str = "16:9", count: int = 2, model: s
     if model_btn.count() == 0:
         raise RuntimeError("Select model family tidak ditemukan di Image settings")
     current_model = " ".join(model_btn.inner_text().split())
-    if model not in current_model:
+    # Do not use substring matching: "Nano Banana 2" is contained in
+    # "Nano Banana 2 Lite" and would silently leave the wrong model active.
+    if current_model != model:
         model_btn.click(force=True)
         page.wait_for_timeout(300)
         model_item = None
@@ -291,7 +340,37 @@ def configure_image_settings(page, ratio: str = "16:9", count: int = 2, model: s
             raise RuntimeError(f"model {model} tidak ditemukan di dropdown")
         model_item.click(force=True)
         page.wait_for_timeout(500)
+        # Material dropdown can remain visually open after selection; close it
+        # before interacting with count or the prompt submit button.
+        try:
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(300)
+        except Exception:
+            pass
         print(f"  selected model {model}")
+
+    # Selecting a model may close and recreate the settings overlay. Reopen it
+    # and reacquire ratio/count locators instead of using stale radio handles.
+    fresh_radios = []
+    for overlay_attempt in range(4):
+        fresh_radios = []
+        for item in page.locator("button[role='radio']").all():
+            try:
+                if item.is_visible():
+                    fresh_radios.append((item, " ".join(item.inner_text().split())))
+            except Exception:
+                pass
+        if any(text == f"x{count}" for _, text in fresh_radios):
+            break
+        try:
+            trigger.click(force=True)
+        except Exception:
+            pass
+        page.wait_for_timeout(1200)
+    ratio_btn = next((item for item, text in fresh_radios if text.endswith(ratio) or text == ratio), None)
+    count_btn = next((item for item, text in fresh_radios if text == f"x{count}"), None)
+    if ratio_btn is None or count_btn is None:
+        raise RuntimeError(f"radio settings tidak lengkap setelah reopen: {[text for _, text in fresh_radios]}")
 
     if ratio_btn.get_attribute("aria-checked") != "true":
         ratio_btn.click(force=True)
@@ -302,10 +381,17 @@ def configure_image_settings(page, ratio: str = "16:9", count: int = 2, model: s
         page.wait_for_timeout(300)
         print(f"  selected count x{count}")
 
+    if count_btn.get_attribute("aria-checked") != "true":
+        raise RuntimeError(f"gagal memilih x{count}; aria-checked masih {count_btn.get_attribute('aria-checked')}")
+
     summary = page.locator("span.settings-summary").first.inner_text().strip()
     selected_settings = " ".join(page.locator("button[aria-label='Settings trigger']").first.inner_text().split())
     known_models = ["Nano Banana Pro", "Nano Banana 2 Lite", "Nano Banana 2"]
-    detected_model = next((name for name in known_models if name in selected_settings), None)
+    detected_model = next(
+        (name for name in sorted(known_models, key=len, reverse=True)
+         if name in selected_settings),
+        None,
+    )
     if detected_model != model:
         raise RuntimeError(f"model summary tidak sesuai: {selected_settings!r}")
     summary_ratio = {"16:9": "crop_16_9", "4:3": "crop_landscape", "1:1": "crop_square", "3:4": "crop_portrait", "9:16": "crop_9_16"}
@@ -409,6 +495,7 @@ def fill_prompt(page, prompt_text: str):
         return False
     try:
         fill_loc.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+        move_mouse(page, fill_loc)
         fill_loc.click(force=True); page.wait_for_timeout(300)
         # Flow's contenteditable requires real keyboard events; DOM fill can
         # look correct while Flow's internal prompt state remains empty.
@@ -432,6 +519,7 @@ def fill_prompt(page, prompt_text: str):
                 live_text = fill_loc.text_content() or ""
         if prompt_text.strip() not in live_text.strip():
             print(f"[fill] composer readback mismatch; retry with keyboard insert_text")
+            move_mouse(page, fill_loc)
             fill_loc.click(force=True)
             fill_loc.press("Control+A")
             fill_loc.press("Backspace")
@@ -452,12 +540,24 @@ def fill_prompt(page, prompt_text: str):
             print("  pressed Enter")
         except: pass
         # coba klik tombol kirim (arrow)
-        for sel in ["button:has(mat-icon:has-text('arrow_forward'))", "button:has-text('→')", "button[aria-label*='Send']"]:
+        for sel in ["button[aria-label='Start generation']", "button:has(mat-icon:has-text('arrow_forward'))", "button:has-text('→')", "button[aria-label*='Send']"]:
             try:
                 btn = page.locator(sel).first
                 if btn.count()>0 and btn.is_visible():
+                    print(f"  generate button enabled={btn.is_enabled()} box={btn.bounding_box()}")
+                    move_mouse(page, btn)
                     btn.click(force=True, timeout=2000)
                     print(f"  clicked send {sel}")
+                    # Capture the immediate post-submit state before any
+                    # follow-up card/menu interaction. This exposes whether
+                    # Flow accepted the prompt or only updated the composer.
+                    page.wait_for_timeout(1500)
+                    cards = page.locator("flow-grid-tile-container:has(flow-image-tile)")
+                    print(f"  post-generate cards={cards.count()} url={page.url}")
+                    try:
+                        page.screenshot(path=str(pathlib.Path("F:/alpha/images/flow") / "post_generate_probe.png"), full_page=True)
+                    except Exception as exc:
+                        print(f"  post-generate screenshot failed: {exc}")
                     break
             except: pass
         page.wait_for_timeout(1500)
@@ -594,6 +694,7 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expec
                 if more.count() == 0 or not more.is_visible():
                     raise RuntimeError("More image tidak visible di dalam card")
                 print(f"  found image More box={more.bounding_box()}")
+                move_mouse(page, more)
                 more.click(force=True, timeout=4000)
                 page.wait_for_timeout(500)
                 dl = None
@@ -607,6 +708,7 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expec
                 if dl is None:
                     raise RuntimeError("Download menuitem tidak ketemu setelah image More")
                 print(f"  found Download: {dl.inner_text()!r}")
+                move_mouse(page, dl)
                 dl.click(force=True, timeout=4000)
                 page.wait_for_timeout(500)
                 one_k = None
@@ -619,6 +721,7 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expec
                     raise RuntimeError("1K menuitem tidak ketemu setelah Download")
                 print(f"  found 1K: {one_k.inner_text()!r}")
                 with page.expect_download(timeout=15000) as dl_info:
+                    move_mouse(page, one_k)
                     one_k.click(force=True, timeout=4000)
                 download = dl_info.value
                 download.save_as(str(save_path))
@@ -642,7 +745,7 @@ def download_results(page, result_dir: pathlib.Path, folder: pathlib.Path, expec
     except Exception: pass
     return downloaded == expected_count
 
-def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str = "16:9", count: int = 2, input_image: str = None, model: str = "Nano Banana 2"):
+def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str = "16:9", count: int = 2, input_image: str = None, model: str = "Nano Banana 2", wait_for_close: bool = True):
     ensure_dirs()
     folder = ensure_flow_session()
     print(f"=== Google Flow Vision ({folder.name}) ===")
@@ -681,6 +784,7 @@ def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str =
                 box = btn.bounding_box()
                 print(f"  box after scroll {box}")
                 try:
+                    move_mouse(page, btn)
                     btn.click(force=True, timeout=4000)
                     print("  -> force click OK")
                 except Exception as e:
@@ -721,6 +825,7 @@ def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str =
                 print(f"  create box {box2}")
                 # no_wait_after biar tidak timeout nunggu navigasi login
                 try:
+                    move_mouse(page, create_btn)
                     create_btn.click(force=True, timeout=4000, no_wait_after=True)
                 except:
                     # fallback: mouse atau JS
@@ -753,29 +858,49 @@ def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str =
         ctx.storage_state(path=str(SESSION_FILE))
         advisor_click(page, folder, "03_after_login", "User sudah login Google. Cari 'New Project' - dimana?")
         page.wait_for_timeout(2500)
-        # 3 New Project - pakai full viewport screenshot biar tidak kepotong
-        np=find_new_project(page)
-        if np:
-            try:
-                np.scroll_into_view_if_needed(); page.wait_for_timeout(500)
-                # pastikan tidak kepotong bawah - scroll sedikit ke atas
-                page.evaluate("window.scrollBy(0, -100)")
-                page.wait_for_timeout(300)
-                np.click(force=True); page.wait_for_timeout(3000)
-                print("  -> New Project clicked")
-            except Exception as e:
-                print(f"  New Project click fail {e}")
-                try: page.evaluate("(el)=>el.click()", np.element_handle())
-                except: pass
-            advisor_click(page, folder, "04_new_project_clicked", "Sudah klik New Project. Cari popup 'Get Started'")
-        else:
-            advisor_click(page, folder, "04_new_project_not_found", "Tombol New Project tidak ketemu - dimana?")
-            if not has_session:
-                try: input("Klik New Project manual lalu ENTER >> ")
-                except: pass
-            else:
-                print("[auto] skip manual New Project (sudah login)")
-                page.wait_for_timeout(1000)
+        # 3 Open a project editor. New project can be visually present but
+        # inert on the current Flow home, so fall back to an existing card.
+        opened_editor = has_prompt_composer(page)
+        if not opened_editor:
+            np = find_new_project(page)
+            if np:
+                try:
+                    np.scroll_into_view_if_needed(); page.wait_for_timeout(500)
+                    page.evaluate("window.scrollBy(0, -100)")
+                    page.wait_for_timeout(300)
+                    move_mouse(page, np)
+                    np.click(force=True); page.wait_for_timeout(3000)
+                    print("  -> New Project clicked")
+                except Exception as e:
+                    print(f"  New Project click fail {e}")
+                opened_editor = has_prompt_composer(page)
+        if not opened_editor:
+            project = find_existing_project(page)
+            if project:
+                try:
+                    project.scroll_into_view_if_needed(); page.wait_for_timeout(400)
+                    move_mouse(page, project)
+                    project.click(force=True, no_wait_after=True)
+                    page.wait_for_timeout(2500)
+                except Exception as e:
+                    print(f"  Existing project click fail {e}")
+                if not has_prompt_composer(page):
+                    try:
+                        href = project.get_attribute("href")
+                        if href:
+                            target_url = href if href.startswith("http") else f"https://flow.google.com{href}"
+                            print(f"  -> membuka alamat project langsung: {target_url}")
+                            page.goto(target_url, wait_until="commit", timeout=30000)
+                            page.wait_for_timeout(5000)
+                    except Exception as e:
+                        print(f"  Existing project direct open fail {e}")
+                opened_editor = has_prompt_composer(page)
+        if not opened_editor:
+            raise RuntimeError(
+                "Editor Google Flow belum terbuka. Pilih salah satu project di browser "
+                "sekali, lalu jalankan agent lagi."
+            )
+        advisor_click(page, folder, "04_project_editor_ready", "Editor project siap. Cari area prompt.")
         # 4 Get Started - handle overlay click-blocker
         gs=find_get_started(page)
         if gs:
@@ -787,6 +912,7 @@ def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str =
                     page.wait_for_selector("div.click-blocker-overlay", state="hidden", timeout=3000)
                 except: pass
                 try:
+                    move_mouse(page, gs)
                     gs.click(force=True, timeout=3000, no_wait_after=True)
                     print("  -> Get Started clicked (force)")
                 except:
@@ -833,8 +959,7 @@ def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str =
             configure_image_settings(page, ratio=ratio, count=count, model=selected_model)
             print(f"✅ Image settings OK: {selected_model}, {ratio}, x{count}")
         except Exception as e:
-            print(f"⚠️ Image settings gagal: {e}")
-            advisor_click(page, folder, "07b_image_settings_fail", "Image settings gagal; extract ratio/count candidates")
+            raise RuntimeError(f"Image settings wajib berhasil: {e}") from e
         advisor_click(page, folder, "07_after_video_switch", "Setelah switch Video->Images, apakah sudah jadi Images? Jika belum, dimana tombol Images?")
         if ok: print("✅ Video -> Images OK")
         else: print("⚠️  Cek manual Video->Images di browser")
@@ -850,7 +975,7 @@ def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str =
                 raise
         # 6-7 Batch prompts: one settings setup, then one prompt/download group
         prompt_list = prompt_text if isinstance(prompt_text, (list, tuple)) else [prompt_text]
-        batch_root = pathlib.Path("F:/alpha/result image") / f"batch_{folder.name}"
+        batch_root = PROJECT_ROOT / "result image" / f"batch_{folder.name}"
         batch_root.mkdir(parents=True, exist_ok=True)
         for batch_idx, current_prompt in enumerate(prompt_list, start=1):
             # Flow prepends the newest generation cards before older cards.
@@ -886,18 +1011,22 @@ def main(headless=False, prompt_text="Buatkan logo untuk edukasi.", ratio: str =
         print(f"File: {list(folder.glob('*'))}")
         print(f"Session: {SESSION_FILE}")
         print("Kirim folder ini ke AI: AI baca steps.json + lihat png untuk tau sesi & next click")
-        try: input("ENTER untuk tutup browser >> ")
-        except: page.wait_for_timeout(15000)
+        if wait_for_close:
+            try: input("ENTER untuk tutup browser >> ")
+            except: page.wait_for_timeout(15000)
+        else:
+            page.wait_for_timeout(500)
         browser.close()
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--headless", action="store_true", default=False)
     ap.add_argument("--no-headless", dest="headless", action="store_false")
+    ap.add_argument("--no-wait", action="store_true", help="tutup browser otomatis setelah selesai")
     ap.add_argument("--prompt", action="append", dest="prompts", default=None, help="prompt; ulangi opsi ini untuk menjalankan batch beberapa prompt")
     ap.add_argument("--ratio", default="16:9", choices=["16:9", "4:3", "1:1", "3:4", "9:16"], help="Image aspect ratio")
     ap.add_argument("--count", type=int, default=2, choices=[1, 2, 3, 4], help="jumlah hasil gambar")
     ap.add_argument("--input-image", default=None, help="path foto referensi untuk di-upload sebagai ingredient")
     ap.add_argument("--model", default="Nano Banana 2", choices=["Nano Banana Pro", "Nano Banana 2", "Nano Banana 2 Lite"], help="model Image; otomatis Pro jika memakai input-image")
     args=ap.parse_args()
-    main(headless=args.headless, prompt_text=args.prompts or ["Buatkan logo untuk edukasi."], ratio=args.ratio, count=args.count, input_image=args.input_image, model=args.model)
+    main(headless=args.headless, prompt_text=args.prompts or ["Buatkan logo untuk edukasi."], ratio=args.ratio, count=args.count, input_image=args.input_image, model=args.model, wait_for_close=not args.no_wait)

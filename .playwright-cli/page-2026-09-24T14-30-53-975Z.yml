@@ -1,0 +1,333 @@
+- generic [ref=f16e3]:
+  - button "Lewati ke konten" [ref=f16e4] [cursor=pointer]
+  - generic [ref=f16e5]:
+    - status
+  - banner [ref=f16e7]:
+    - generic [ref=f16e11]:
+      - generic [ref=f16e12]:
+        - link "Jobstreet" [ref=f16e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f16e22]:
+          - link "Cari lowongan" [ref=f16e24] [cursor=pointer]:
+            - /url: /
+          - link "Cari profil" [ref=f16e29] [cursor=pointer]:
+            - /url: /id/profiles/search?tracking=ILC-profile-search-header
+          - link "Sumber daya karir" [ref=f16e34] [cursor=pointer]:
+            - /url: /id/career-advice
+          - link "Perusahaan" [ref=f16e39] [cursor=pointer]:
+            - /url: /id/companies
+      - generic [ref=f16e43]:
+        - button "Bahasa" [ref=f16e46] [cursor=pointer]
+        - button "Profile Avatar" [ref=f16e65] [cursor=pointer]
+        - link "Untuk perusahaan" [ref=f16e78] [cursor=pointer]:
+          - /url: https://id.employer.seek.com/id
+  - main [ref=f16e81]:
+    - generic [ref=f16e93]:
+      - generic [ref=f16e94]:
+        - button "Bagikan atau laporkan iklan" [ref=f16e109] [cursor=pointer]
+        - generic [ref=f16e117]:
+          - heading "AI Engineer" [level=1] [ref=f16e118]
+          - generic [ref=f16e119]:
+            - button "PT Karisma Zona Kreatifku" [ref=f16e120] [cursor=pointer]
+            - link "Lihat semua lowongan kerja" [ref=f16e128] [cursor=pointer]:
+              - /url: /id/KAZOKKU-jobs/at-this-company
+        - generic [ref=f16e129]:
+          - generic [ref=f16e130]:
+            - generic [ref=f16e131]:
+              - img "Lokasi" [ref=f16e135]
+              - generic [ref=f16e139]:
+                - link "Jakarta Selatan, Jakarta Raya":
+                  - /url: /id/Artificial-Intelligence-Engineer-jobs/in-South-Jakarta-Jakarta
+            - generic [ref=f16e140]:
+              - img "Industri" [ref=f16e144]
+              - generic [ref=f16e148]:
+                - link "Developer/Programmer (Teknologi Informasi & Komunikasi)":
+                  - /url: /id/jobs-in-information-communication-technology/developers-programmers
+            - generic [ref=f16e149]:
+              - img "Jenis pekerjaan" [ref=f16e153]
+              - generic [ref=f16e157]:
+                - link "Kontrak/Temporer":
+                  - /url: /id/Artificial-Intelligence-Engineer-jobs/contract-temp
+            - generic [ref=f16e158]:
+              - img "Gaji" [ref=f16e162]
+              - generic [ref=f16e167]:
+                - generic [ref=f16e168]: Rp 10.000.000 – Rp 15.000.000 per month
+                - generic [ref=f16e169]:
+                  - generic [ref=f16e170]: Gaji sesuai ekspektasi
+                  - button "Detail kecocokan gaji" [ref=f16e174] [cursor=pointer]
+          - generic [ref=f16e180]:
+            - generic [ref=f16e181]: Diposting 3 hari yang lalu
+            - generic [ref=f16e182]: Pelamar sangat banyak
+        - generic [ref=f16e187]:
+          - link "Kirim lamaran sebagai AI Engineer di PT Karisma Zona Kreatifku" [ref=f16e189] [cursor=pointer]:
+            - /url: /id/job/94765485/apply
+            - generic [ref=f16e190]: Lamaran Cepat
+          - button "Simpan AI Engineer di PT Karisma Zona Kreatifku" [ref=f16e191] [cursor=pointer]:
+            - generic [ref=f16e192]: Simpan
+      - generic [ref=f16e193]:
+        - generic [ref=f16e197]:
+          - paragraph [ref=f16e198]:
+            - strong [ref=f16e199]:
+              - emphasis [ref=f16e200]: AI Engineer (Python)
+          - paragraph [ref=f16e201]:
+            - strong [ref=f16e202]: "Contract: 3 Months"
+          - paragraph [ref=f16e203]:
+            - strong [ref=f16e204]: Onsite - Gatot Subroto, Tebet, South Jakarta
+          - paragraph [ref=f16e205]: Mencari AI Engineer dengan pengalaman 2–4 tahun yang mampu membangun, melatih, dan men-deploy model AI/ML ke production, sekaligus punya eksposur ke GenAI/LLM (RAG, prompt engineering, integrasi API LLM). Pengalaman di industri banking/financial services menjadi nilai tambah signifikan, meski tidak wajib.
+          - paragraph [ref=f16e206]:
+            - strong [ref=f16e207]:
+              - emphasis [ref=f16e208]: Requirement / Kualifikasi
+          - paragraph [ref=f16e209]:
+            - strong [ref=f16e210]: "Wajib (Must-have):"
+          - list [ref=f16e211]:
+            - listitem [ref=f16e212]:
+              - paragraph [ref=f16e213]: "* Min. 2–4 tahun pengalaman sebagai AI Engineer / ML Engineer / Data Scientist dengan porsi coding signifikan"
+            - listitem [ref=f16e214]:
+              - paragraph [ref=f16e215]: "* Python tingkat mahir — OOP, clean code, unit testing"
+            - listitem [ref=f16e216]:
+              - paragraph [ref=f16e217]: "* Familiar library ML inti: Pandas, NumPy, Scikit-learn"
+            - listitem [ref=f16e218]:
+              - paragraph [ref=f16e219]: "* Pengalaman membangun dan melatih model (min. salah satu): supervised/unsupervised learning, deep learning (PyTorch/TensorFlow)"
+            - listitem [ref=f16e220]:
+              - paragraph [ref=f16e221]: "* Pengalaman deploy model ke production — REST API (FastAPI/Flask) atau containerized (Docker)"
+            - listitem [ref=f16e222]:
+              - paragraph [ref=f16e223]: "* Memahami SQL dan bekerja dengan database relational"
+            - listitem [ref=f16e224]:
+              - paragraph [ref=f16e225]: "* Pendidikan min. S1 Teknik Informatika, Ilmu Komputer, Data Science, Statistika, atau bidang terkait"
+            - listitem [ref=f16e226]:
+              - paragraph [ref=f16e227]: "* Bahasa Inggris pasif-aktif"
+          - paragraph [ref=f16e228]
+          - paragraph [ref=f16e229]:
+            - strong [ref=f16e230]:
+              - emphasis [ref=f16e231]: "Nilai Tambah (Nice-to-have):"
+          - list [ref=f16e232]:
+            - listitem [ref=f16e233]:
+              - paragraph [ref=f16e234]: "* Pengalaman kerja di industri banking/financial services (in-house di bank, atau project untuk klien perbankan) — is a plus"
+            - listitem [ref=f16e235]:
+              - paragraph [ref=f16e236]: "* Familiar dengan use case AI di banking: credit scoring/credit risk modeling, fraud detection, AML analytics, customer churn prediction, atau chatbot perbankan"
+            - listitem [ref=f16e237]:
+              - paragraph [ref=f16e238]: "* Pemahaman sensitivitas data nasabah dan prinsip data security/compliance di industri keuangan"
+            - listitem [ref=f16e239]:
+              - paragraph [ref=f16e240]: "* Pengalaman GenAI/LLM: integrasi OpenAI/Anthropic/Gemini API, LangChain/LlamaIndex, RAG pipeline, vector database (Pinecone, Weaviate, ChromaDB)"
+            - listitem [ref=f16e241]:
+              - paragraph [ref=f16e242]: "* Pengalaman MLOps: MLflow, Airflow, model versioning, CI/CD untuk ML"
+            - listitem [ref=f16e243]:
+              - paragraph [ref=f16e244]: "* Familiar cloud platform: AWS (SageMaker), GCP (Vertex AI), atau Azure ML"
+            - listitem [ref=f16e245]:
+              - paragraph [ref=f16e246]: "* Pengalaman dengan big data tools: Spark, Hadoop"
+            - listitem [ref=f16e247]:
+              - paragraph [ref=f16e248]: "* Kontribusi open-source, portfolio GitHub, atau publikasi/kompetisi (Kaggle, dll)"
+            - listitem [ref=f16e249]:
+              - paragraph [ref=f16e250]: "* Sertifikasi terkait AI/ML/Cloud"
+          - paragraph [ref=f16e251]
+          - paragraph [ref=f16e252]:
+            - strong [ref=f16e253]:
+              - emphasis [ref=f16e254]: Job Description / Tanggung Jawab
+          - list [ref=f16e255]:
+            - listitem [ref=f16e256]:
+              - paragraph [ref=f16e257]: "* Merancang, membangun, dan melatih model machine learning untuk menyelesaikan use case bisnis (klasifikasi, prediksi, rekomendasi, NLP, dll)"
+            - listitem [ref=f16e258]:
+              - paragraph [ref=f16e259]: "* Mengembangkan dan mengintegrasikan solusi berbasis LLM/GenAI (chatbot, RAG, automation) sesuai kebutuhan proyek"
+            - listitem [ref=f16e260]:
+              - paragraph [ref=f16e261]: "* Melakukan data preprocessing, feature engineering, dan evaluasi model (metrics, validation)"
+            - listitem [ref=f16e262]:
+              - paragraph [ref=f16e263]: "* Men-deploy model ke environment production dan memastikan skalabilitas serta performa"
+            - listitem [ref=f16e264]:
+              - paragraph [ref=f16e265]: "* Melakukan monitoring, retraining, dan improvement model secara berkelanjutan"
+            - listitem [ref=f16e266]:
+              - paragraph [ref=f16e267]: "* Berkolaborasi dengan Data Engineer, Backend Engineer, dan Product Team dalam pengembangan fitur AI"
+            - listitem [ref=f16e268]:
+              - paragraph [ref=f16e269]: "* Mendokumentasikan pipeline, eksperimen, dan hasil model secara rapi"
+            - listitem [ref=f16e270]:
+              - paragraph [ref=f16e271]: "* Mengikuti best practice dalam version control (Git) dan code review"
+          - paragraph [ref=f16e272]
+        - generic [ref=f16e274]:
+          - heading "Pertanyaan dari perusahaan" [level=2] [ref=f16e275]
+          - generic [ref=f16e276]:
+            - generic [ref=f16e277]: "Lamaran kamu akan mencakup pertanyaan-pertanyaan berikut:"
+            - list [ref=f16e278]:
+              - listitem [ref=f16e279]:
+                - generic [ref=f16e283]: Pernyataan mana di bawah ini yang paling mendeskripsikan hakmu bekerja di Indonesia?
+              - listitem [ref=f16e285]:
+                - generic [ref=f16e289]: Berapa gaji bulanan yang kamu inginkan?
+              - listitem [ref=f16e291]:
+                - generic [ref=f16e295]: How many years' experience do you have as an Artificial Intelligence Engineer?
+              - listitem [ref=f16e297]:
+                - generic [ref=f16e301]: Kualifikasi mana yang kamu miliki?
+              - listitem [ref=f16e303]:
+                - generic [ref=f16e307]: Berapa lama waktu yang kamu butuhkan untuk memberi tahu perusahaanmu saat ini?
+              - listitem [ref=f16e309]:
+                - generic [ref=f16e313]: How many years' experience do you have as a Python Engineer?
+              - listitem [ref=f16e315]:
+                - generic [ref=f16e319]: Berapa tahun pengalaman kerjamu di Industri Perbankan?
+              - listitem [ref=f16e321]:
+                - generic [ref=f16e325]: Bagaimana kamu menilai kemampuan bahasa Inggrismu?
+              - listitem [ref=f16e327]:
+                - generic [ref=f16e331]: How many years of AI Engineering experience do you have?
+        - generic [ref=f16e336]:
+          - heading "Profil perusahaan" [level=3] [ref=f16e337]
+          - generic [ref=f16e338]:
+            - generic [ref=f16e339]:
+              - generic [ref=f16e342]:
+                - img "Company Logo for KAZOKKU" [ref=f16e344]
+                - button [ref=f16e346] [cursor=pointer]:
+                  - heading [level=4] [ref=f16e347]
+              - generic [ref=f16e353]:
+                - generic [ref=f16e354]: Information Technology Services
+                - generic [ref=f16e362]: 51-100 employees
+              - generic [ref=f16e370]:
+                - generic [ref=f16e371]:
+                  - generic:
+                    - generic:
+                      - paragraph: KAZOKKU adalah perusahaan Staffing IT di Indonesia yang berfokus pada penyediaan Talenta IT untuk pengembangan perangkat lunak. KAZOKKU juga merupakan bagian dari grup LOGIQUE, yaitu salah satu pengembang sistem web terbaik di Jakarta. Telah beroperasi sejak tahun 2017, kami sudah dipercaya berbagai perusahaan dari berbagai industri untuk meningkatkan produktivitas proyek IT mereka dengan menyediakan Talenta IT berkompeten yang sesuai dengan kebutuhan spesifik proyek.
+                  - paragraph [ref=f16e375]: KAZOKKU adalah perusahaan Staffing IT di Indonesia yang berfokus pada penyediaan Talenta IT untuk pengembangan perangkat lunak. KAZOKKU juga merupakan bagian dari grup LOGIQUE, yaitu salah satu pengembang sistem web terbaik di Jakarta. Telah beroperasi sejak tahun 2017, kami sudah dipercaya berbagai perusahaan dari berbagai industri untuk meningkatkan produktivitas proyek IT mereka dengan menyediakan Talenta IT berkompeten yang sesuai dengan kebutuhan spesifik proyek.
+                - button [ref=f16e378] [cursor=pointer]:
+                  - text: Tampilkan selengkapnya
+                  - generic [aria-hidden] [ref=f16e379]: ⁠
+            - generic [ref=f16e385]:
+              - generic [ref=f16e386]: Manfaat dan keuntungan
+              - generic [ref=f16e393]: • others allowance
+            - link [ref=f16e398] [cursor=pointer]:
+              - /url: /id/companies/kazokku-168551436316689
+              - generic [ref=f16e399]:
+                - generic:
+                  - generic:
+                    - text: Selengkapnya tentang perusahaan ini
+                    - generic [aria-hidden]: ⁠
+        - generic [ref=f16e402]:
+          - heading "Laporkan iklan lowongan ini" [level=2] [ref=f16e404]
+          - generic [ref=f16e405]:
+            - generic [ref=f16e406]: Hati-hati
+            - generic [ref=f16e407]: Jangan berikan detail bank atau kartu kredit kamu saat mengirimkan lamaran kerja.
+            - link "Pelajari cara melindungi diri kamu" [ref=f16e409] [cursor=pointer]:
+              - /url: /id/security-hub#protect-yourself-online
+            - button "Laporkan iklan lowongan ini" [ref=f16e415] [cursor=pointer]:
+              - text: Laporkan iklan lowongan ini
+              - generic [aria-hidden] [ref=f16e416]: ⁠
+        - generic [ref=f16e426] [cursor=pointer]
+        - generic [ref=f16e447]:
+          - generic [ref=f16e448]: Temukan karier Anda di Saran Karier
+          - generic [ref=f16e449]: Bergabunglah dengan jutaan pencari kerja di seluruh dunia menggunakan alat dan wawasan pembentukan karier kami.
+          - list [ref=f16e450]:
+            - listitem [ref=f16e451]:
+              - text: •
+              - generic [ref=f16e452]: Lakukan riset terkait gaji dan tren pekerjaan
+            - listitem [ref=f16e453]:
+              - text: •
+              - generic [ref=f16e454]: Akses alat, templat, dan artikel gratis yang membantu Anda tampak lebih menonjol
+            - listitem [ref=f16e455]:
+              - text: •
+              - generic [ref=f16e456]: Temukan jalur menuju beragam pilihan karier
+          - link "Jelajahi Saran Karier arrow-right" [ref=f16e457] [cursor=pointer]:
+            - /url: https://id.jobstreet.com/id/career-advice?utm_campaign=LMIS_Web&utm_source=JobStreet&utm_medium=LMIS&utm_content=job-details
+            - generic [ref=f16e458]: Jelajahi Saran Karier
+            - img "arrow-right" [ref=f16e459]
+  - contentinfo [ref=f16e461]:
+    - generic [ref=f16e463]:
+      - generic [ref=f16e466]:
+        - generic [ref=f16e468]:
+          - generic [ref=f16e470]:
+            - generic [ref=f16e471]: Pencari kerja
+            - list [ref=f16e472]:
+              - listitem [ref=f16e473]:
+                - link "Cari lowongan" [ref=f16e474] [cursor=pointer]:
+                  - /url: /id/jobs
+              - listitem [ref=f16e477]:
+                - link "Lihat profil" [ref=f16e478] [cursor=pointer]:
+                  - /url: /id/profile/me
+              - listitem [ref=f16e481]:
+                - link "Cari profil" [ref=f16e482] [cursor=pointer]:
+                  - /url: /id/profiles/search?tracking=ILC-profile-search-footer
+              - listitem [ref=f16e485]:
+                - link "Pencarian tersimpan" [ref=f16e486] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-searches
+              - listitem [ref=f16e489]:
+                - link "Lowongan tersimpan" [ref=f16e490] [cursor=pointer]:
+                  - /url: /id/my-activity/saved-jobs
+              - listitem [ref=f16e493]:
+                - link "Lamaran kerja" [ref=f16e494] [cursor=pointer]:
+                  - /url: /id/my-activity/applied-jobs
+              - listitem [ref=f16e497]:
+                - link "Sumber daya karir" [ref=f16e498] [cursor=pointer]:
+                  - /url: /id/career-advice
+              - listitem [ref=f16e501]:
+                - link "Jelajahi karier" [ref=f16e502] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-careers
+              - listitem [ref=f16e505]:
+                - link "Jelajahi gaji" [ref=f16e506] [cursor=pointer]:
+                  - /url: /id/career-advice/explore-salaries
+              - listitem [ref=f16e509]:
+                - link "Perusahaan" [ref=f16e510] [cursor=pointer]:
+                  - /url: /id/companies
+              - listitem [ref=f16e513]:
+                - button "Unduh aplikasi" [ref=f16e518] [cursor=pointer]
+          - generic [ref=f16e527]:
+            - generic [ref=f16e528]: Perusahaan
+            - list [ref=f16e529]:
+              - listitem [ref=f16e530]:
+                - link "Daftar gratis" [ref=f16e531] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f16e534]:
+                - link "Pasang iklan lowongan kerja" [ref=f16e535] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id
+              - listitem [ref=f16e538]:
+                - link "Produk & harga" [ref=f16e539] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/products/jobads
+              - listitem [ref=f16e542]:
+                - link "Layanan pelanggan" [ref=f16e543] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/contactus
+              - listitem [ref=f16e546]:
+                - link "Saran perekrutan" [ref=f16e547] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/hiring-advice
+              - listitem [ref=f16e550]:
+                - link "Wawasan pasar" [ref=f16e551] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/market-insights
+              - listitem [ref=f16e554]:
+                - link "Mitra perangkat lunak perekrutan" [ref=f16e555] [cursor=pointer]:
+                  - /url: https://id.employer.seek.com/id/partners/connect-with-seek
+        - generic [ref=f16e560]:
+          - generic [ref=f16e562]:
+            - generic [ref=f16e563]: Tentang kami
+            - list [ref=f16e564]:
+              - listitem [ref=f16e565]:
+                - link "Tentang kami" [ref=f16e566] [cursor=pointer]:
+                  - /url: /id/about
+              - listitem [ref=f16e569]:
+                - link "Ruang berita" [ref=f16e570] [cursor=pointer]:
+                  - /url: /id/about/news
+              - listitem [ref=f16e573]:
+                - link "Investor" [ref=f16e574] [cursor=pointer]:
+                  - /url: https://au.seek.com/about/investors
+              - listitem [ref=f16e577]:
+                - link "Karir" [ref=f16e578] [cursor=pointer]:
+                  - /url: /id/careers
+              - listitem [ref=f16e581]:
+                - button "Mitra internasional" [ref=f16e586] [cursor=pointer]
+              - listitem [ref=f16e594]:
+                - button "Layanan mitra" [ref=f16e599] [cursor=pointer]
+          - generic [ref=f16e608]:
+            - generic [ref=f16e609]: Kontak
+            - list [ref=f16e610]:
+              - listitem [ref=f16e611]:
+                - link "Pusat bantuan" [ref=f16e612] [cursor=pointer]:
+                  - /url: https://help.id.jobstreet.com/id/s/?language=in
+              - listitem [ref=f16e615]:
+                - link "Hubungi kami" [ref=f16e616] [cursor=pointer]:
+                  - /url: /id/contact-us
+              - listitem [ref=f16e619]:
+                - link "Blog produk & teknologi" [ref=f16e620] [cursor=pointer]:
+                  - /url: https://medium.com/seek-blog
+              - listitem [ref=f16e623]:
+                - button "Media sosial" [ref=f16e628] [cursor=pointer]
+      - generic [ref=f16e638]:
+        - button "Lokasi" [ref=f16e642] [cursor=pointer]:
+          - generic [ref=f16e643]: Indonesia
+        - generic [ref=f16e656]:
+          - generic [ref=f16e657]:
+            - link "Persyaratan & ketentuan" [ref=f16e659] [cursor=pointer]:
+              - /url: /id/terms
+            - link "Keamanan" [ref=f16e663] [cursor=pointer]:
+              - /url: /id/security-hub
+            - link "Privasi" [ref=f16e667] [cursor=pointer]:
+              - /url: /id/my-privacy
+          - generic [ref=f16e670]: Hak cipta © 2026 Jobstreet

@@ -1,0 +1,133 @@
+- generic [ref=f64e3]:
+  - link "%%%Skip to content" [ref=f64e18] [cursor=pointer]:
+    - /url: "#start-of-content"
+  - generic [ref=f64e19]:
+    - banner [ref=f64e21]:
+      - generic [ref=f64e25]:
+        - generic [ref=f64e26]:
+          - link "Jobstreet" [ref=f64e28] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f64e36]:
+            - link "Cari lowongan" [ref=f64e38] [cursor=pointer]:
+              - /url: /
+            - link "Cari profil" [ref=f64e43] [cursor=pointer]:
+              - /url: /id/profiles/search?tracking=ILC-profile-search-header
+            - link "Sumber daya karir" [ref=f64e48] [cursor=pointer]:
+              - /url: /id/career-advice
+            - link "Perusahaan" [ref=f64e53] [cursor=pointer]:
+              - /url: /id/companies
+        - generic [ref=f64e57]:
+          - button "Bahasa" [ref=f64e60] [cursor=pointer]
+          - button "Profile Avatar" [ref=f64e80] [cursor=pointer]
+          - link "Untuk perusahaan" [ref=f64e93] [cursor=pointer]:
+            - /url: https://id.employer.seek.com/id
+    - generic [ref=f64e97]:
+      - generic [ref=f64e101]:
+        - img "PT Organik Sehat Alami" [ref=f64e103]
+        - generic [ref=f64e104]:
+          - generic [ref=f64e105]: Melamar untuk
+          - heading "AI Productivity & Enablement Specialist" [level=1] [ref=f64e106]
+          - generic [ref=f64e107]: PT Organik Sehat Alami
+          - button "Lihat deskripsi pekerjaan" [ref=f64e109] [cursor=pointer]
+      - navigation "Progress bar" [ref=f64e111]:
+        - list [ref=f64e112]:
+          - listitem [ref=f64e113]:
+            - button "Pilih dokumen"
+          - listitem [ref=f64e126]:
+            - button "Jawab pertanyaan perusahaan"
+          - listitem [ref=f64e127]:
+            - button "Perbarui Profil Jobstreet"
+          - listitem [ref=f64e128]:
+            - button "Review dan kirim" [ref=f64e844]
+        - progressbar
+      - generic [ref=f64e854]:
+        - generic [ref=f64e858]:
+          - generic [ref=f64e860]:
+            - button "Profile photo options" [ref=f64e865] [cursor=pointer]:
+              - generic [ref=f64e867]:
+                - generic:
+                  - heading [level=3]
+            - generic [ref=f64e871]:
+              - heading [level=4] [ref=f64e873]:
+                - text: Lukman Zakaria
+                - generic "Identitas terverifikasi" [ref=f64e874]
+              - generic [ref=f64e877]:
+                - generic [ref=f64e878]: Jakarta Selatan, Jakarta Raya
+                - generic [ref=f64e886]: +62 85785255577
+                - generic [ref=f64e893]: lukmanzakaria04@gmail.com
+          - button "Edit detail pribadi" [ref=f64e902] [cursor=pointer]
+        - generic [ref=f64e907]:
+          - heading "Dokumen yang disertakan" [level=3] [ref=f64e908]
+          - generic [ref=f64e909]:
+            - generic [ref=f64e911]:
+              - generic [ref=f64e912]:
+                - generic [ref=f64e913]: Resume
+                - generic [ref=f64e914]: CV_Eng.pdf
+              - button "Edit resume" [ref=f64e917] [cursor=pointer]
+            - generic [ref=f64e924]:
+              - generic [ref=f64e925]:
+                - generic [ref=f64e926]: Surat lamaran
+                - generic [ref=f64e927]: Kamu menulis surat lamaran untuk lamaran ini
+              - button "Edit surat pengantar" [ref=f64e930] [cursor=pointer]
+        - generic [ref=f64e937]:
+          - heading "Pertanyaan perusahaan" [level=3] [ref=f64e938]
+          - generic [ref=f64e940]:
+            - generic [ref=f64e941]:
+              - text: Anda menjawab
+              - strong [ref=f64e942]: 3 dari 3
+            - button "Ubah pertanyaan pemberi kerja" [ref=f64e945] [cursor=pointer]
+        - generic [ref=f64e952]:
+          - heading "Profil Jobstreet kamu" [level=3] [ref=f64e953]
+          - generic [ref=f64e954]: Saat Anda melamar pekerjaan, Profil Jobstreet dan kredensial terverifikasi Anda akan diakses oleh PT Organik Sehat Alami sebagai bagian dari proses lamaran.
+          - generic [ref=f64e955]:
+            - generic [ref=f64e956]:
+              - generic [ref=f64e957]:
+                - generic [ref=f64e958]: Riwayat karir
+                - generic [ref=f64e959]: 4 peran
+              - button "Ubah" [ref=f64e962] [cursor=pointer]
+            - generic [ref=f64e968]:
+              - generic [ref=f64e969]:
+                - generic [ref=f64e970]: Pendidikan
+                - generic [ref=f64e971]: 1 qualifications
+              - button "Ubah" [ref=f64e974] [cursor=pointer]
+            - generic [ref=f64e980]:
+              - generic [ref=f64e981]:
+                - generic [ref=f64e982]: Lisensi & sertifikasi
+                - generic [ref=f64e983]: 2 kredensial
+              - button "Ubah lisensi atau sertifikasi" [ref=f64e986] [cursor=pointer]
+            - generic [ref=f64e992]:
+              - generic [ref=f64e993]:
+                - generic [ref=f64e994]: Keahlian
+                - generic [ref=f64e995]: 15 keterampilan
+              - button "Ubah keahlian" [ref=f64e998] [cursor=pointer]
+        - generic [ref=f64e1007]:
+          - heading "Buat lamaranmu lebih berkesan" [level=3] [ref=f64e1008]
+          - generic [ref=f64e1009]:
+            - text: Tunjukkan bahwa kamu sangat berminat agar peluangmu dilirik rekruter lebih besar.
+            - link "Pelajari" [ref=f64e1010] [cursor=pointer]:
+              - /url: https://help.id.jobstreet.com/in/article/Show-strong-interest-in-the-jobs-you-really-want
+          - generic [ref=f64e1011]:
+            - generic [ref=f64e1012]: Saya sangat berminat
+            - generic [ref=f64e1018]:
+              - checkbox [ref=f64e1020] [cursor=pointer]
+              - generic [ref=f64e1025] [cursor=pointer]
+          - generic [ref=f64e1026]: Kamu bisa pakai fitur ini untuk 3 lamaran lagi (termasuk lamaran ini) hingga 1 Okt 2026.
+        - generic [ref=f64e1027]:
+          - generic [ref=f64e1028]:
+            - text: Dengan mendaftar, Anda menyetujui
+            - link "Pemberitahuan Pengumpulan" [ref=f64e1029] [cursor=pointer]:
+              - /url: /id/collection-notice
+            - text: dan
+            - link "Kebijakan Privasi" [ref=f64e1030] [cursor=pointer]:
+              - /url: /id/privacy
+            - text: .
+          - button [ref=f64e1032] [cursor=pointer]:
+            - generic [ref=f64e1033]:
+              - generic:
+                - generic:
+                  - generic [aria-hidden]: ⁠
+                  - text: Kirim lamaran
+  - contentinfo [ref=f64e407]:
+    - generic [ref=f64e411] [cursor=pointer]:
+      - generic [ref=f64e412]: Hak cipta © 2026 Jobstreet
+      - generic [ref=f64e417]: Telusuri situs

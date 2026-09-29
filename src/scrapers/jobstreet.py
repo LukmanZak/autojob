@@ -2,7 +2,7 @@ import datetime, re, asyncio
 from playwright.async_api import async_playwright
 from src.models import JobPosting
 from src.normalizer import clean
-from src.config import get_launch_kwargs, DEBUG_DIR, ensure_dirs
+from src.config import get_launch_kwargs, DEBUG_DIR, SESSIONS_DIR, ensure_dirs
 
 # Tetap pakai id.jobstreet.com, location ganti via ?where=
 SEARCH_CONFIGS = [
@@ -18,7 +18,17 @@ async def scrape_one_config(keyword_label, url, country_hint, headless=True):
     async with async_playwright() as p:
         launch_kwargs = get_launch_kwargs(headless)
         browser = await p.chromium.launch(**launch_kwargs)
-        ctx = await browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36", locale="id-ID")
+        ctx_kwargs = dict(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
+            locale="id-ID",
+        )
+        session_file = SESSIONS_DIR / "jobstreet.json"
+        if session_file.exists():
+            ctx_kwargs["storage_state"] = str(session_file)
+            print(f"[jobstreet] load session {session_file}")
+        else:
+            print("[jobstreet] no saved session; browsing anonymously")
+        ctx = await browser.new_context(**ctx_kwargs)
         page = await ctx.new_page()
         try:
             print(f"[jobstreet:{country_hint}] goto {url}")
